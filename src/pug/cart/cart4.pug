@@ -1,0 +1,63 @@
+section.main-body.body--margin
+    .main-wrapper
+        article.breadcrumbs
+            ul.breadcrumbs__list
+                li: a(href="#") Home
+                li: a(href="#") Haustiershop Marken
+                li: a(href="#") Warenkorb
+
+        article.progress-bar
+            h1.progress-bar__header
+                span SICHERE VERBINDUNG
+            ul.progress-bar__list.df-c
+                li.progress-bar__element.df-c.active-element.active-element-pass
+                    a(href="#").progress-bar__element-sub.df-cc
+                        span WARENKORB
+                li.progress-bar__element.df-c.active-element.active-element-pass
+                    a(href="#").progress-bar__element-sub.df-cc
+                        span ANMELDEN
+                li.progress-bar__element.df-c.active-element
+                    .active-border
+                    .progress-bar__element-sub.df-cc
+                        .progress-bar__element-number.df-cc
+                            span 3
+                        span RECHNUNG & LIEFERUNG
+                li.progress-bar__element.df-c
+                    .progress-bar__element-sub.df-cc
+                        span ZAHLUNG & BESTELLUNG
+        h3.payment-header
+            span Bitte wählen Sie Zahlungsmethode aus
+        article.payment
+            ul.payment__list
+                li.payment__element
+                    label(for="paypal").payment__label.df-c
+                        .payment__image.df-c
+                            img(src="/img/paypal-pay.png" alt="#").image
+                        input(type="radio" name="payment" id="paypal").payment__input
+                        .payment__text
+                            h6.header
+                                span PAYPAL
+                            p.text.
+                                Sie werden auf die geschützte PayPal-Seite weitergeleitet um die Bezahlung abzuschließen
+                li.payment__element
+                    label(for="sofort").payment__label.df-c
+                        .payment__image.df-c
+                            img(src="/img/sofort-pay.png" alt="#").image
+                        input(type="radio" name="payment" id="sofort").payment__input
+                        .payment__text
+                            h6.header
+                                span SOFORTÜBERWEISUNG
+                            p.text.
+                                Sofortige und bequeme Zahlungsart für Online-Banking Nutzer.
+                li.payment__element.df-c
+                    label(for="vorkasse").payment__label.df-c
+                        .payment__image.df-c
+                            img(src="/img/vorkasse-pay.png" alt="#").image
+                        input(type="radio" name="payment" id="vorkasse").payment__input
+                        .payment__text
+                            h6.header
+                                span VORKASSE
+                            p.text.
+                                Einfache Überweisung über Ihre Hausbank
+            button(type="button").big-orange-btn.big-orange-btn--invert ANMELDEN
+            button(type="button").big-orange-btn WEITER

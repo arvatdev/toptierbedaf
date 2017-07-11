@@ -1,0 +1,59 @@
+/***************************************************************
+***
+***    BASE FUNCTIONS AND MIXINS
+***
+***************************************************************/
+
+// Example of mixin construction
+//
+//  vendor(prop, args)
+//		-webkit-{prop} args
+//		-moz-{prop} args
+//		{prop} args
+//
+//	border-radius()
+//		vendor('border-radius', arguments)
+
+
+//--------------------------
+// Cross-browser placeholder
+//--------------------------
+
+placeholder()
+	&::-webkit-input-placeholder
+		{block}
+	&:-moz-placeholder
+		{block}
+	&::-moz-placeholder
+		{block}
+	&:-ms-input-placeholder
+		{block}
+
+input:focus::-webkit-input-placeholder
+	opacity 0
+	-webkit-transition 0.3s ease
+	-moz-transition 0.3s ease
+	-o-transition 0.3s ease
+	transition 0.3s ease
+
+input:focus::-moz-placeholder
+	opacity 0
+	-webkit-transition 0.3s ease
+	-moz-transition 0.3s ease
+	-o-transition 0.3s ease
+	transition 0.3s ease
+
+input:focus:-moz-placeholder
+	opacity 0
+	-webkit-transition 0.3s ease
+	-moz-transition 0.3s ease
+	-o-transition 0.3s ease
+	transition 0.3s ease
+
+input:focus:-ms-input-placeholder
+	opacity 0
+	-webkit-transition 0.3s ease
+	-moz-transition 0.3s ease
+	-o-transition 0.3s ease
+	transition 0.3s ease
+
