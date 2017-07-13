@@ -152,6 +152,8 @@
     padding 5px 25px
     box-sizing border-box
     border-right 1px solid c_mgray
+    &--large
+      flex 1.5
     &:last-of-type
       border-right none
     .price
@@ -168,12 +170,19 @@
         background-color c_orange
         border-radius 3px
         border none
+        &--transparent
+          border 1px solid c_orange
+          background-color transparent
+          color c_orange
       &__header
         display inline-block
         max-width 50%
         text-align left
         font-family r_reg
         font-size 16px
+        & b
+          margin-right 3px
+          font-weight normal
       &__value
         display inline-block
         font-family r_reg
@@ -189,6 +198,13 @@
           display block
           font-family r_reg
           font-size 10px
+      &__clarification
+        color c_mgray
+        margin-top 10px
+        font-size 12px
+        line-height 14px
+        & b
+          margin-right 3px
     .header
       display block
       font-family r_med
@@ -2181,6 +2197,3 @@
       &:hover
         -webkit-filter brightness(110%)
         filter brightness(110%)
-
-
-
