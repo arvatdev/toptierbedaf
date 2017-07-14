@@ -2197,3 +2197,215 @@
       &:hover
         -webkit-filter brightness(110%)
         filter brightness(110%)
+
+
+//--------------------------
+// Filter-product
+//--------------------------
+
+.filter
+  margin-bottom 10px
+  margin-top 16px
+
+  &__search
+    align-items center
+    padding 10px 0
+    border 0
+    border-bottom 1px solid c_mgray
+    width 100%
+    box-sizing border-box
+    font-family r_med
+    &-image
+      margin-right 10px
+      color c_mgray
+      font-size 20px
+    &-text
+      text-transform uppercase
+      color c_mgray
+      font-size 20px
+    &-numbers
+      margin-left 7px
+      color c_orange
+  &__label
+    max-width 130px
+    margin-right 5px
+  &__select
+    width 200px
+    &--small
+      width 67px
+    &-block
+      flex-wrap wrap
+      justify-content space-between
+      align-items flex-start
+      padding 38px 0 28px
+      margin-bottom 20px
+      border-bottom 1px solid c_mgray
+    &-type
+      width 345px
+      margin-bottom 10px
+      align-items center
+    &-quantity
+      width 160px
+      margin-bottom 10px
+      align-items center
+    &-view
+      width 190px
+      margin-bottom 10px
+      text-align right
+      display flex
+      align-items center
+      justify-content flex-end
+    .select2-container--default .select2-selection--single
+      height 34px
+    .select2-container--default .select2-selection--single .select2-selection__rendered
+      line-height 34px
+    .select2-container--default .select2-selection--single .select2-selection__arrow
+      height 34px
+
+  &__button
+    background-color #e8e8e8
+    font-size 0
+    width 27px
+    height 27px
+    margin-left 10px
+    border 0
+    padding 0
+    color #a2a2a2
+    & .material-icons
+      font-size 16px
+      line-height 27px
+      text-align center
+    &--active
+      background-color #a2a2a2
+      color #ffffff
+  &__stock
+    justify-content flex-end
+    align-items center
+    display flex
+    & .input
+      -webkit-appearance none
+      width 13px
+      height 13px
+      border-radius 2px
+      outline none
+      margin 0 10px 0 5px
+      position relative
+      border 1px solid c_black
+      &:checked
+        border 1px solid c_black
+      &:checked:before
+        position absolute
+        top 0
+        bottom 0
+        left 0
+        right 0
+        margin auto
+        font-size 14px
+        line-height 13px
+        background c_black
+        content '✓'
+        color white
+
+//--------------------------
+// Aside-filter
+//--------------------------
+.aside-filter
+  margin-top 16px
+.filter
+  &__fieldset
+    margin-bottom 10px
+  &__legend
+    padding 12px 17px
+    text-transform uppercase
+    background-color #d9d9d9
+    color c_black
+    font-size 17px
+    line-height 20px
+    margin-bottom 10px
+    font-family r_bold
+  &__type
+    border 1px solid #d9d9d9
+    margin-bottom 10px
+    &-name
+      display block
+      padding 10px 15px
+      font-size 16px
+      color c_orange
+      font-family r_bold
+  &__list
+    padding 15px
+    max-height 210px
+    overflow-y scroll
+    &--with-border
+      border-top 1px solid #d9d9d9
+  &__item
+    justify-content space-between
+    align-items flex-start
+    &:nth-child(n+2)
+      margin-top 15px
+    & .input
+      -webkit-appearance none
+      width 13px
+      height 13px
+      border-radius 2px
+      outline none
+      margin-right 5px
+      position relative
+      border 1px solid c_black
+      &:checked
+        border 1px solid c_black
+      &:checked:before
+        position absolute
+        top 0
+        bottom 0
+        left 0
+        right 0
+        margin auto
+        font-size 14px
+        line-height 13px
+        background c_black
+        content '✓'
+        color white
+
+
+  &__list-label
+    max-width 210px
+    align-items flex-start
+    font-size 13px
+    & label
+      max-width 200px
+  &__list-numbers
+    font-size 13px
+    color c_orange
+    max-width 45px
+
+
+
+
+
+//--------------------------
+// Pagination
+//--------------------------
+
+.pagination
+  margin-top 30px
+  &__list
+    align-items center
+    justify-content center
+    flex-wrap wrap
+    & li
+      margin-right 16px
+  &__link
+    display inline-block
+    font-size 14px
+    color c_black
+    &--active
+      color c_orange
+    &:hover
+      color c_orange
+    &--arrows
+      max-width 15px
+      & .material-icons
+        margin-top 3px
+        font-size 20px
+        margin-left -13px

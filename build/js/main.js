@@ -65,6 +65,10 @@ $(document).ready(function () {
         templateSelection: formatState
     });
 
+    $(".js-cart-select4").select2({
+        minimumResultsForSearch: Infinity
+    });
+
     function formatState () {
         var $state = $('<span><img src="/img/flags/deu.png" class="image" /></span>');
         return $state;
