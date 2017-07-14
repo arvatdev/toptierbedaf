@@ -1452,6 +1452,28 @@
           transition all .2s ease
           &:hover
             color c_orange
+        &--active
+          color c_orange
+          &>a
+            color c_orange
+    &__sub-navigation
+      padding-top 20px
+      padding-left 30px
+      &-element
+        display block
+        font-family r_light
+        font-size 14px
+        margin-bottom 15px
+        &:last-of-type
+          margin-bottom 0
+        & a
+          transition all .2s ease
+          &:hover
+            color c_orange
+        &--active
+          color c_orange
+          & a
+            color c_orange
     .products__ad
       height 335px
       margin-bottom 35px
@@ -2206,12 +2228,13 @@
 .filter
   margin-bottom 10px
   margin-top 16px
+  flex-wrap wrap
+  justify-content space-between
 
   &__search
     align-items center
     padding 10px 0
     border 0
-    border-bottom 1px solid c_mgray
     width 100%
     box-sizing border-box
     font-family r_med
@@ -2234,16 +2257,20 @@
     &--small
       width 67px
     &-block
+      width 100%
       flex-wrap wrap
       justify-content space-between
       align-items flex-start
       padding 38px 0 28px
       margin-bottom 20px
       border-bottom 1px solid c_mgray
+      border-top 1px solid c_mgray
     &-type
-      width 345px
+      width 325px
       margin-bottom 10px
       align-items center
+      &--brand
+        width 275px
     &-quantity
       width 160px
       margin-bottom 10px
@@ -2279,6 +2306,8 @@
       background-color #a2a2a2
       color #ffffff
   &__stock
+    max-width 200px
+    margin-left auto
     justify-content flex-end
     align-items center
     display flex
