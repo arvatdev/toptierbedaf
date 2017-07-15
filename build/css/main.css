@@ -3985,7 +3985,7 @@ input:focus:-ms-input-placeholder {
   max-width: 45px;
 }
 .pagination {
-  margin-top: 30px;
+  margin: 30px 0;
 }
 .pagination__list {
   -webkit-box-align: center;
@@ -4014,6 +4014,11 @@ input:focus:-ms-input-placeholder {
   display: inline-block;
   font-size: 14px;
   color: #191919;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .pagination__link--active {
   color: #f95318;
