@@ -491,8 +491,13 @@
 .form-block
   justify-content space-between
   margin 40px 0 30px 0
+  &--center
+    margin 40px auto 200px
+    width 842px
   &__element
     width 510px
+    &--full-width
+      width 100%
     .header
       font-family r_reg
       font-size 18px
@@ -566,7 +571,11 @@
             font-family r_reg
             font-size 14px
             line-height 13px
+  &__caption
+    margin-bottom 35px
   .social
+    &--center
+      justify-content center
     &__and
       font-family r_reg
       font-size 16px

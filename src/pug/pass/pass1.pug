@@ -1,0 +1,21 @@
+section.main-body.body--margin
+    .main-wrapper
+        article.breadcrumbs
+            ul.breadcrumbs__list
+                li: a(href="#") Home
+                li: a(href="#") Passwort-wiederherstellung
+
+        article.progress-bar
+            h1.progress-bar__header
+                span PASSWORT-WIEDERHERSTELLUNG
+
+        article.form-block.form-block--center.df
+            .form-block__element.form-block__element--full-width
+                form.forms
+                    label(for="email").forms__label
+                        span E-Mail-Adresse
+                    input(type="email" id="email").forms__input
+                p.form-block__caption Wir senden Ihnen eine Bestätigungsmail. Klicken Sie auf den darin enthaltenen Link, um Ihr Passwort zu ändern.
+
+                .social.social--center.df-cb
+                    button(type="button").big-orange-btn Senden

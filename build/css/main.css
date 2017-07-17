@@ -1183,8 +1183,15 @@ input:focus:-ms-input-placeholder {
   justify-content: space-between;
   margin: 40px 0 30px 0;
 }
+.form-block--center {
+  margin: 40px auto 200px;
+  width: 842px;
+}
 .form-block__element {
   width: 510px;
+}
+.form-block__element--full-width {
+  width: 100%;
 }
 .form-block__element .header {
   font-family: "Roboto-Regular", sans-serif;
@@ -1292,6 +1299,17 @@ input:focus:-ms-input-placeholder {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 14px;
   line-height: 13px;
+}
+.form-block__caption {
+  margin-bottom: 35px;
+}
+.form-block .social--center {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 .form-block .social__and {
   font-family: "Roboto-Regular", sans-serif;
