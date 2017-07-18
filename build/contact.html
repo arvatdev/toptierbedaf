@@ -45,31 +45,54 @@
           <article class="breadcrumbs">
             <ul class="breadcrumbs__list">
               <li><a href="#">Home</a></li>
-              <li><a href="#">Passwort ändern</a></li>
+              <li><a href="#">Kontakt</a></li>
             </ul>
           </article>
           <article class="progress-bar">
-            <h1 class="progress-bar__header"><span>Passwort ändern</span></h1>
+            <h1 class="progress-bar__header"><span>KONTAKT</span></h1>
           </article>
-          <article class="form-block form-block--center df">
+          <article class="form-block form-block--transparent form-block--center df">
+            <div class="progress-bar__description df">
+              <div class="progress-bar__callback">
+                <h2 class="progress-bar__legend">Wir helfen Ihnen gerne weiter!</h2>
+                <p>Zufriedene Kunden liegen uns am Herzen, daher kümmern wir uns um alle Ihre Fragen, Probleme und Wünsche. Kontaktieren Sie uns telefonisch per E-Mail oder über das Kontaktformular. Unser Zoobio.de Team meldet sich umgehend bei Ihnen.</p>
+              </div>
+              <div class="progress-bar__address">
+                <h2 class="progress-bar__legend">Firmensitz:</h2>
+                <p>Toptirbedaf GmbH<br>Josef-Orlopp-Straße 55<br>10365 Berlin</p>
+              </div>
+            </div>
             <div class="form-block__element form-block__element--full-width">
-              <h2 class="progress-bar__legend"><span>ANMELDEINFORMATION</span></h2>
-              <form class="forms">
-                <label class="forms__label" for="email2"><span>E-Mail-Adresse</span></label>
-                <input class="forms__input" type="email" id="email2">
+              <form class="forms forms--transparent">
+                <label class="forms__label" for="email2"><span>E-Mail-Adresse*</span></label>
+                <input class="forms__input forms__input--gray" type="email" id="email2">
                 <div class="forms__half">
-                  <label class="forms__label" for="passwot1"><span>PasswotAltes Passwort*</span></label>
-                  <input class="forms__input" type="password" id="passwot1">
+                  <label class="forms__label" for="passwot1"><span>Name*</span></label>
+                  <input class="forms__input forms__input--gray" type="password" id="passwot1">
                 </div>
                 <div class="forms__half">
-                  <label class="forms__label" for="passwot2"><span>Neues Kennwort*</span></label>
-                  <input class="forms__input" type="password" id="passwot2">
+                  <div class="main-form__sex df-c"><span class="header">Anrede</span>
+                    <input class="input" type="radio" name="sex" id="sex1" checked>
+                    <label class="label" for="sex1"><span>Herr</span></label>
+                    <input class="input" type="radio" name="sex" id="sex2">
+                    <label class="label" for="sex2"><span>Frau</span></label>
+                    <input class="input" type="radio" name="sex" id="sex3">
+                    <label class="label" for="sex3"><span>Firma</span></label>
+                  </div>
+                </div>
+                <label class="forms__label" for="message"><span>Nachricht*</span></label>
+                <textarea class="textarea"></textarea>
+                <div class="forms__half">
+                  <p class="form-block__caption">*Pflichtfelder</p>
+                  <div class="main-form__info-mark df-c">
+                    <input class="input" type="checkbox" id="news" checked>
+                    <label class="label" for="news"><span>Wünschen Sie einen Rückruf?</span></label>
+                  </div>
+                </div>
+                <div class="main-form__submit-block df-cb">
+                  <button class="big-orange-btn big-orange-btn--huge" type="button">Senden</button>
                 </div>
               </form>
-              <p class="form-block__caption">* Pflichtfelder</p>
-              <div class="social social--center df-cb">
-                <button class="big-orange-btn" type="button">Senden</button>
-              </div>
             </div>
           </article>
         </div>

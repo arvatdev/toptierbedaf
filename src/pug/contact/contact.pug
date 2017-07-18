@@ -1,0 +1,56 @@
+section.main-body.body--margin
+    .main-wrapper
+        article.breadcrumbs
+            ul.breadcrumbs__list
+                li: a(href="#") Home
+                li: a(href="#") Kontakt
+
+        article.progress-bar
+            h1.progress-bar__header
+                span KONTAKT
+
+        article.form-block.form-block--transparent.form-block--center.df
+            .progress-bar__description.df
+                .progress-bar__callback
+                    h2.progress-bar__legend Wir helfen Ihnen gerne weiter!
+                    p Zufriedene Kunden liegen uns am Herzen, daher kümmern wir uns um alle Ihre Fragen, Probleme und Wünsche. Kontaktieren Sie uns telefonisch per E-Mail oder über das Kontaktformular. Unser Zoobio.de Team meldet sich umgehend bei Ihnen.
+                .progress-bar__address
+                    h2.progress-bar__legend Firmensitz:
+                    p
+                      | Toptirbedaf GmbH
+                      br
+                      | Josef-Orlopp-Straße 55
+                      br
+                      | 10365 Berlin
+            .form-block__element.form-block__element--full-width
+                form.forms.forms--transparent
+                    label(for="email2").forms__label
+                        span E-Mail-Adresse*
+                    input(type="email" id="email2").forms__input.forms__input--gray
+                    .forms__half
+                        label(for="passwot1").forms__label
+                            span Name*
+                        input(type="password" id="passwot1").forms__input.forms__input--gray
+                    .forms__half
+                      .main-form__sex.df-c
+                          span.header Anrede
+                          input(type="radio" name="sex" id="sex1" checked).input
+                          label(for="sex1").label
+                              span Herr
+                          input(type="radio" name="sex" id="sex2").input
+                          label(for="sex2").label
+                              span Frau
+                          input(type="radio" name="sex" id="sex3").input
+                          label(for="sex3").label
+                              span Firma
+                    label(for="message").forms__label
+                        span Nachricht*
+                    textarea.textarea
+                    .forms__half
+                      p.form-block__caption *Pflichtfelder
+                      .main-form__info-mark.df-c
+                          input(type="checkbox" id="news" checked).input
+                          label(for="news").label
+                              span Wünschen Sie einen Rückruf?
+                    .main-form__submit-block.df-cb
+                        button(type="button").big-orange-btn.big-orange-btn--huge Senden
