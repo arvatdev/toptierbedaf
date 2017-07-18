@@ -497,7 +497,7 @@
   flex-wrap wrap
   margin 40px 0 30px 0
   &--center
-    margin 40px auto 200px
+    margin 40px auto 100px
     width 842px
   &--transparent
     background-color #fff
@@ -523,6 +523,8 @@
         background-color #ffffff
         border 1px solid c_lgray
         padding 35px
+      &-wrapper
+        padding 0 15px
       &__half
         width 362px
         & .main-form__sex
@@ -558,6 +560,7 @@
         margin-bottom 15px
         font-family r_reg
         font-size 16px
+        border-radius 2px
         border none
         &--gray
           background-color c_lgray
@@ -783,6 +786,7 @@
     font-family r_reg
     font-size 12px
     color c_gray
+    width 100%
     .input
       -webkit-appearance none
       width 13px
@@ -852,6 +856,11 @@
     width 100%
     .column
       width 365px
+      &--full-width
+        width 100%
+      &--third
+        width 30%
+        flex-direction column
       .main-form__sex
         margin-top 31px
       .select-wrapper
@@ -957,6 +966,38 @@
       .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b
         border-color transparent transparent c_black transparent
 
+.input-wrapper
+  margin-bottom 20px
+  font-size 14px
+  & .input
+    margin-right 25px
+    margin-left 0
+    vertical-align middle
+.input--gray
+  -webkit-appearance none
+  width 13px
+  height 13px
+  border-radius 2px
+  outline none
+  margin 0 10px 0 5px
+  position relative
+  border 1px solid c_gray
+  &:checked
+    border 1px solid c_gray
+  &:checked:before
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    margin auto
+    font-size 14px
+    line-height 13px
+    background c_gray
+    content '✓'
+    color white
+.label--gray
+  color c_gray
 
 //--------------------------
 // Header

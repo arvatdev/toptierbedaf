@@ -1195,7 +1195,7 @@ input:focus:-ms-input-placeholder {
   margin: 40px 0 30px 0;
 }
 .form-block--center {
-  margin: 40px auto 200px;
+  margin: 40px auto 100px;
   width: 842px;
 }
 .form-block--transparent {
@@ -1249,6 +1249,9 @@ input:focus:-ms-input-placeholder {
   background-color: #fff;
   border: 1px solid #ececed;
   padding: 35px;
+}
+.form-block__element .forms-wrapper {
+  padding: 0 15px;
 }
 .form-block__element .forms__half {
   width: 362px;
@@ -1312,6 +1315,7 @@ input:focus:-ms-input-placeholder {
   margin-bottom: 15px;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
+  border-radius: 2px;
   border: none;
 }
 .form-block__element .forms__input--gray {
@@ -1604,6 +1608,7 @@ input:focus:-ms-input-placeholder {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 12px;
   color: #777;
+  width: 100%;
 }
 .main-form__info-mark .input {
   -webkit-appearance: none;
@@ -1695,6 +1700,18 @@ input:focus:-ms-input-placeholder {
 }
 .main-form__columns .column {
   width: 365px;
+}
+.main-form__columns .column--full-width {
+  width: 100%;
+}
+.main-form__columns .column--third {
+  width: 30%;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .main-form__columns .column .main-form__sex {
   margin-top: 31px;
@@ -1841,6 +1858,44 @@ input:focus:-ms-input-placeholder {
 }
 .main-form__columns .column .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
   border-color: transparent transparent #191919 transparent;
+}
+.input-wrapper {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.input-wrapper .input {
+  margin-right: 25px;
+  margin-left: 0;
+  vertical-align: middle;
+}
+.input--gray {
+  -webkit-appearance: none;
+  width: 13px;
+  height: 13px;
+  border-radius: 2px;
+  outline: none;
+  margin: 0 10px 0 5px;
+  position: relative;
+  border: 1px solid #777;
+}
+.input--gray:checked {
+  border: 1px solid #777;
+}
+.input--gray:checked:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 14px;
+  line-height: 13px;
+  background: #777;
+  content: '✓';
+  color: #fff;
+}
+.label--gray {
+  color: #777;
 }
 .main-header {
   position: fixed;
