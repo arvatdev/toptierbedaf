@@ -1992,7 +1992,7 @@
       margin-bottom 35px
     &__sub-info
       text-align right
-      margin 25px 0 35px 0
+      margin 25px 0 25px 0
       color c_mgray
       font-family r_reg
       font-size 14px
@@ -2546,7 +2546,7 @@
 //--------------------------
 
 .pagination
-  margin 30px 0
+  margin 20px 0
   &__list
     align-items center
     justify-content center
@@ -2568,3 +2568,83 @@
         margin-top 3px
         font-size 20px
         margin-left -13px
+
+//--------------------------
+// Cards
+//--------------------------
+
+.list--list
+  flex-direction column
+.main-body .main-block .products__main .content .list--list.df--b.dfw li
+  margin 0
+.main-body .main-block .products__main .content .list .element .status-block--list
+  display none
+.main-body .main-block .products__main .content .list--list .element
+  width 100%
+  flex-direction row
+  border-bottom 1px solid c_mgray
+  min-height 162px
+  & .hover
+    display none
+.element--list
+  width 100%
+  margin-right 0
+.element .element-visible
+  display flex
+  flex-direction column
+  & .buttons-block
+    display none
+
+
+.main-body .main-block .products__main .content .list .element--list
+  & .element-visible
+    display flex
+    flex-direction row
+    justify-content space-between
+    width 100%
+    padding 20px 18px 20px 0
+    box-sizing border-box
+    & .element__image
+      width 290px
+      margin-bottom 0
+    & .element__text
+      width 250px
+    & .element__stars
+      margin 10px 0
+    & .buttons-block
+      display flex
+    & .element__buy
+      width 150px
+      & .element__button
+        width 100%
+    & .buttons-block__image
+      margin-bottom 5px
+      margin-right 10px
+      height 34px
+      width 34px
+      border 1px solid #777
+      border-radius 2px
+      color #f95318
+      transition all 0.2s ease
+      & i
+        font-size 18px
+    & .status-block
+      display block
+      margin 5px 0 20px
+      &__header
+        font-size 12px
+        display inline-block
+        vertical-align baseline
+      &__info
+        display inline-block
+        vertical-align baseline
+        font-family r_reg
+        font-size 12px
+        color #008c28
+
+.main-body .main-block .products__main .content .list .element .hover
+  display none
+.main-body .main-block .products__main .content .list .element:hover .hover
+  display block
+.main-body .main-block .products__main .content .list--list .element--list:hover .hover
+  display none
