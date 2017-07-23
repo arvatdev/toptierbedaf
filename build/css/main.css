@@ -553,6 +553,11 @@ input:focus:-ms-input-placeholder {
   background-color: #fff;
   color: #f95318;
 }
+.big-orange-btn--huge {
+  min-width: 284px;
+  height: 52px;
+  text-transform: uppercase;
+}
 .sale-corner {
   position: absolute;
   top: 0;
@@ -1181,10 +1186,26 @@ input:focus:-ms-input-placeholder {
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 40px 0 30px 0;
+}
+.form-block--center {
+  margin: 40px auto 100px;
+  width: 842px;
+}
+.form-block--transparent {
+  background-color: #fff;
 }
 .form-block__element {
   width: 510px;
+}
+.form-block__element--full-width {
+  width: 100%;
 }
 .form-block__element .header {
   font-family: "Roboto-Regular", sans-serif;
@@ -1199,6 +1220,55 @@ input:focus:-ms-input-placeholder {
   background-color: #ececed;
   width: 100%;
   margin-bottom: 30px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+.form-block__element .forms--transparent {
+  background-color: #fff;
+  border: 1px solid #ececed;
+  padding: 35px;
+}
+.form-block__element .forms-wrapper {
+  padding: 0 15px;
+}
+.form-block__element .forms__half {
+  width: 362px;
+}
+.form-block__element .forms__half .main-form__sex {
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+.form-block__element .forms__half .main-form__sex span {
+  margin-bottom: 0;
+}
+.form-block__element .forms__half .main-form__info-mark {
+  margin-bottom: 0;
+}
+.form-block__element .forms__half .form-block__caption {
+  margin-bottom: 30px;
+  padding: 0;
 }
 .form-block__element .forms__label {
   display: -webkit-box;
@@ -1222,6 +1292,7 @@ input:focus:-ms-input-placeholder {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
   margin: 0 5px 5px 5px;
+  width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1244,7 +1315,11 @@ input:focus:-ms-input-placeholder {
   margin-bottom: 15px;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
+  border-radius: 2px;
   border: none;
+}
+.form-block__element .forms__input--gray {
+  background-color: #ececed;
 }
 .form-block__element .forms__link {
   font-family: "Roboto-Regular", sans-serif;
@@ -1257,6 +1332,17 @@ input:focus:-ms-input-placeholder {
   line-height: 18px;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 12px;
+}
+.form-block__element .forms .textarea {
+  width: 100%;
+  height: 222px;
+  background-color: #ececed;
+  margin: 10px 0 30px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0;
 }
 .form-block__element .forms__subscribe {
   margin-bottom: 15px;
@@ -1293,6 +1379,27 @@ input:focus:-ms-input-placeholder {
   font-size: 14px;
   line-height: 13px;
 }
+.form-block__caption {
+  padding: 0 15px;
+  margin-bottom: 35px;
+  color: #949494;
+  font-size: 12px;
+  width: 100%;
+}
+.form-block__callback {
+  width: 575px;
+}
+.form-block__address {
+  width: 235px;
+}
+.form-block .social--center {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
 .form-block .social__and {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
@@ -1319,6 +1426,7 @@ input:focus:-ms-input-placeholder {
   width: 100%;
   text-align: center;
   font-family: "Roboto-Medium", sans-serif;
+  text-transform: uppercase;
   font-size: 24px;
   margin-bottom: 40px;
 }
@@ -1339,6 +1447,48 @@ input:focus:-ms-input-placeholder {
 .progress-bar__list .active-element-pass .progress-bar__element-sub {
   font-size: 18px;
   font-family: "Roboto-Regular", sans-serif;
+}
+.progress-bar__description {
+  width: 100%;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.progress-bar__description .progress-bar__legend {
+  padding-left: 0;
+  padding-right: 0;
+}
+.progress-bar__description .progress-bar__legend::before {
+  left: 0;
+}
+.progress-bar__callback {
+  width: 67%;
+  margin-right: 5%;
+}
+.progress-bar__address {
+  width: 28%;
+}
+.progress-bar__legend {
+  padding: 10px 15px 18px;
+  position: relative;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.progress-bar__legend::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: -5px;
+  width: 46px;
+  height: 3px;
+  background-color: #f95318;
 }
 .progress-bar__element {
   height: 100%;
@@ -1458,6 +1608,7 @@ input:focus:-ms-input-placeholder {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 12px;
   color: #777;
+  width: 100%;
 }
 .main-form__info-mark .input {
   -webkit-appearance: none;
@@ -1490,9 +1641,16 @@ input:focus:-ms-input-placeholder {
   font-size: 14px;
   margin-right: auto;
   color: #191919;
+  max-width: 90%;
 }
 .main-form__sex {
   margin: 0 5px 20px 5px;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .main-form__sex .header {
   display: inline-block;
@@ -1542,6 +1700,18 @@ input:focus:-ms-input-placeholder {
 }
 .main-form__columns .column {
   width: 365px;
+}
+.main-form__columns .column--full-width {
+  width: 100%;
+}
+.main-form__columns .column--third {
+  width: 30%;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .main-form__columns .column .main-form__sex {
   margin-top: 31px;
@@ -1688,6 +1858,44 @@ input:focus:-ms-input-placeholder {
 }
 .main-form__columns .column .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
   border-color: transparent transparent #191919 transparent;
+}
+.input-wrapper {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.input-wrapper .input {
+  margin-right: 25px;
+  margin-left: 0;
+  vertical-align: middle;
+}
+.input--gray {
+  -webkit-appearance: none;
+  width: 13px;
+  height: 13px;
+  border-radius: 2px;
+  outline: none;
+  margin: 0 10px 0 5px;
+  position: relative;
+  border: 1px solid #777;
+}
+.input--gray:checked {
+  border: 1px solid #777;
+}
+.input--gray:checked:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 14px;
+  line-height: 13px;
+  background: #777;
+  content: '✓';
+  color: #fff;
+}
+.label--gray {
+  color: #777;
 }
 .main-header {
   position: fixed;
@@ -3121,7 +3329,7 @@ input:focus:-ms-input-placeholder {
 }
 .main-body .main-block__sub-info {
   text-align: right;
-  margin: 25px 0 35px 0;
+  margin: 25px 0 25px 0;
   color: #b9b9b9;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 14px;
@@ -3985,7 +4193,7 @@ input:focus:-ms-input-placeholder {
   max-width: 45px;
 }
 .pagination {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 .pagination__list {
   -webkit-box-align: center;
@@ -4033,6 +4241,146 @@ input:focus:-ms-input-placeholder {
   margin-top: 3px;
   font-size: 20px;
   margin-left: -13px;
+}
+.list--list {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.main-body .main-block .products__main .content .list--list.df--b.dfw li {
+  margin: 0;
+}
+.main-body .main-block .products__main .content .list .element .status-block--list {
+  display: none;
+}
+.main-body .main-block .products__main .content .list--list .element {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border-bottom: 1px solid #b9b9b9;
+  min-height: 162px;
+}
+.main-body .main-block .products__main .content .list--list .element .hover {
+  display: none;
+}
+.element--list {
+  width: 100%;
+  margin-right: 0;
+}
+.element .element-visible {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.element .element-visible .buttons-block {
+  display: none;
+}
+.main-body .main-block .products__main .content .list .element--list .element-visible {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 18px 20px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.main-body .main-block .products__main .content .list .element--list .element-visible .element__image {
+  width: 290px;
+  margin-bottom: 0;
+}
+.main-body .main-block .products__main .content .list .element--list .element-visible .element__text {
+  width: 250px;
+}
+.main-body .main-block .products__main .content .list .element--list .element-visible .element__stars {
+  margin: 10px 0;
+}
+.main-body .main-block .products__main .content .list .element--list .element-visible .buttons-block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.main-body .main-block .products__main .content .list .element--list .element-visible .element__buy {
+  width: 150px;
+}
+.main-body .main-block .products__main .content .list .element--list .element-visible .element__buy .element__button {
+  width: 100%;
+}
+.main-body .main-block .products__main .content .list .element--list .element-visible .buttons-block__image {
+  margin-bottom: 5px;
+  margin-right: 10px;
+  height: 34px;
+  width: 34px;
+  border: 1px solid #777;
+  border-radius: 2px;
+  color: #f95318;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.main-body .main-block .products__main .content .list .element--list .element-visible .buttons-block__image i {
+  font-size: 18px;
+}
+.main-body .main-block .products__main .content .list .element--list .element-visible .status-block {
+  display: block;
+  margin: 5px 0 20px;
+}
+.main-body .main-block .products__main .content .list .element--list .element-visible .status-block__header {
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: baseline;
+}
+.main-body .main-block .products__main .content .list .element--list .element-visible .status-block__info {
+  display: inline-block;
+  vertical-align: baseline;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 12px;
+  color: #008c28;
+}
+.main-body .main-block .products__main .content .list .element .hover {
+  display: none;
+}
+.main-body .main-block .products__main .content .list .element:hover .hover {
+  display: block;
+}
+.main-body .main-block .products__main .content .list--list .element--list:hover .hover {
+  display: none;
 }
 .hidden {
   display: none !important;
