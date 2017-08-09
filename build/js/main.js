@@ -122,7 +122,7 @@ $(document).ready(function () {
     })
 
     //--------------------------
-    // CARDS
+    // Cards
     //--------------------------
 
     //change card-views to blocks
@@ -141,5 +141,37 @@ $(document).ready(function () {
       $(".list-products .element").removeClass("element--list");
     });
 
+    //--------------------------
+    // Slider
+    //--------------------------
+    $('.slider__list').bxSlider({
+        moveSlides: 1,
+        maxSlides: 5,
+        minSlides: 5,
+        touchEnabled: false
+    })
 
+    //--------------------------
+    // tabs
+    //--------------------------
+
+    var linksParent = $('.tab-links');
+    var links = linksParent.find('a');
+    var items = $('.tab-content__item');
+    links.eq(0).add(items.eq(0)).addClass('active');
+    linksParent.on('click','a',function(){
+    	var t = $(this);
+    	var i = t.index();
+    	t.add(items.eq(i))
+    		.addClass('active')
+    		.siblings().removeClass('active');
+    });
+
+    $('.bxslider-pic').bxSlider({
+      pagerCustom: '#bx-pager',
+      mode: 'vertical',
+      touchEnabled: false,
+      useCSS: true,
+      controls: false
+    });
 });

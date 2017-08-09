@@ -1,0 +1,425 @@
+.product-wrapper
+  padding 20px 0 45px
+  align-items flex-start
+.product-view
+  height 562px
+  position relative
+  align-items flex-end
+  width 510px
+  padding 15px
+  box-sizing border-box
+  margin-bottom 40px
+  border 1px solid c_lgray
+  &__big-image
+    width 397px
+    height 100%
+
+
+
+  &__list
+    width 100px
+  &__item
+    padding 5px
+    margin-top 15px
+    display block
+    border 1px solid c_lgray
+    &:hover
+      border 1px solid c_orange
+    &.active
+      border 1px solid c_orange
+    & img
+      max-height 90px
+      height 100%
+      width auto
+.product-cart
+  width 540px
+  margin-bottom 40px
+  &__header
+    text-transform uppercase
+    font-family r_med
+    font-size 20px
+    letter-spacing 0.7px
+    padding 15px 0
+    position relative
+    &::before
+      position absolute
+      content ''
+      left 0
+      top 0
+      width 45px
+      border-top 3px solid #f95318
+  &__brand
+    margin-bottom 15px
+    font-size 19px
+    &-name
+      font-size 18px
+      text-decoration underline
+      color c_orange
+      font-family r_med
+
+  & .element__stars
+    margin-bottom 10px
+    .active
+      font-size 20px
+      color c_yellow
+    .not-active
+      font-size 20px
+      color c_gray
+  & .status-block
+    margin-top 5px
+    margin-bottom 10px
+    font-size 18px
+    &__header
+      font-family r_reg
+      margin-right 7px
+      color c_black
+    &__info
+      font-family r_med
+      color c_green
+  &__vendorcode
+    font-size 18px
+    margin-bottom 10px
+    &-header
+      font-family r_reg
+      margin-right 7px
+    &-number
+      font-family r_med
+  &__barcode
+    font-size 18px
+    margin-bottom 10px
+    &-header
+      font-family r_reg
+      margin-right 7px
+    &-number
+      font-family r_med
+  // &__form
+  &__weight
+    font-size 20px
+    margin-bottom 15px
+    &-header
+      font-family r_reg
+      margin-bottom 10px
+    &-type
+      font-family r_med
+      & .input
+        display none
+  &__amount
+    margin-bottom 20px
+    &-choice
+      position relative
+      margin-left 25px
+    &-header
+      font-size 20px
+    .input
+      height 30px
+      width 75px
+      border 1px solid c_mgray
+      border-radius 3px
+      padding 0 30px 0 15px
+      box-sizing border-box
+      text-align center
+      font-family r_bold
+      font-size 18px
+    .arrow
+      position absolute
+      content ''
+      height 28px
+      width 30px
+      top 1px
+      right 1px
+      border-radius 0 3px 3px 0
+      background-color #fff
+      cursor pointer
+      &::before
+        position absolute
+        content ''
+        top 12px
+        left 11px
+        border 5px solid transparent
+        border-top 5px solid #191919
+  &__price
+    &-new
+      font-size 32px
+      font-family r_med
+      color c_orange
+      margin-bottom 10px
+    &-old
+      margin-bottom 3px
+      font-size 20px
+      font-family r_med
+      color c_mgray
+      text-decoration line-through
+    &-details
+      margin-bottom 30px
+      span
+        display block
+        font-size 15px
+        line-height 20px
+  &__favorites
+    margin-top 25px
+    & i
+      font-size 20px
+      margin-right 10px
+      color c_orange
+    & span
+      color c_gray
+      text-decoration underline
+    &:hover
+      & span
+        color c_orange
+  &__button
+    height 55px
+    min-width 290px
+
+.tabs
+  &--product
+    width 722px
+    margin-right 40px
+    margin-bottom 20px
+  &--reviews
+    width 100%
+    box-sizing border-box
+  &__nav
+    border-bottom 1px solid c_lgray
+  &__nav-item
+    padding 0 18px
+    text-transform uppercase
+    font-size 20px
+    background-color transparent
+    border 0
+    border-bottom 1px solid transparent
+    font-family r_med
+    &--active
+      position relative
+      &::after
+        content ''
+        display block
+        position absolute
+        bottom -2px
+        left 0
+        width 100%
+        height 2px
+        background-color c_orange
+  &__item
+    padding-top 15px
+  &__product-logo
+    width 158px
+    padding 0 10px
+    box-sizing border-box
+  &__product-text
+    width 565px
+    font-size 14px
+    line-height 18px
+    & p
+      margin-bottom 20px
+    & ul
+      margin-bottom 20px
+
+
+.aside-recomendations
+  width 335px
+  border 1px solid c_mgray
+  padding-bottom 10px
+  &__header
+    width 100%
+    box-sizing border-box
+    background-color c_mgray
+    text-align center
+    font-size 19px
+    padding 20px
+    text-transform uppercase
+    font-family r_bold
+  &__item
+    width 100%
+    box-sizing border-box
+    display flex
+    align-items center
+    justify-content space-between
+    padding 0px 20px
+    margin 10px 0
+    &:hover
+      color c_orange
+  &__image
+    width 90px
+    & img
+      width 100%
+      height auto
+  &__text
+    width 190px
+  &__name
+    font-size 14px
+    display block
+  &__price
+    display block
+    font-size 18px
+    margin-top 5px
+    color c_orange
+    font-family r_bold
+
+.product-feeding
+  width 650px
+  font-family r_reg
+  font-size 14px
+  line-height 18px
+  margin-bottom 20px
+  &__header
+    text-transform uppercase
+    font-size 20px
+    font-family r_med
+    margin-bottom 20px
+  &>span
+    display block
+  &>strong
+    display block
+    margin 18px 0
+  & p
+    margin-bottom 10px
+
+
+.slider
+  width 100%
+  margin 0 auto
+  box-sizing border-box
+  padding 10px 0px
+  margin-bottom 15px
+  &__header
+    text-transform uppercase
+    color c_orange
+    font-size 20px
+    margin-bottom 15px
+    font-family r_med
+  & .bx-wrapper
+    & .bx-pager
+      display none
+      width 1020px
+      margin 0 auto
+    & .bx-prev
+      display block
+      left -40px
+    & .bx-next
+      display block
+      right -40px
+    & .bx-controls-direction a
+      top 0
+      bottom 0
+      margin auto 0
+      display inline-block
+      background-color #ededed
+      &:first-of-type
+        height 40px
+        width 40px
+        background-image none
+        &::before
+          content 'import_contacts'
+          font-family 'Material Icons'
+          font-size 20px
+          display block
+          position absolute
+          left 4px
+          top 13px
+      &:last-of-type
+        height 40px
+        width 40px
+        background-image none
+        &::before
+          content ''
+          position absolute
+          right 4px
+          top 13px
+          font-size 20px
+  &::after
+    content ''
+    left 5px
+    top -32px
+    position absolute
+    retinaSprite($big_paw_group)
+  &__wrapper
+    width 1020px
+    margin 0 auto
+  &__list
+    height 100%
+    width 100%
+    & li
+      list-style none
+      display flex
+      flex-direction column
+      align-items center
+      max-width 180px
+      margin 0 10px
+
+  &__link
+    display flex
+    flex-direction column
+    align-items center
+    width 100%
+    padding 5px 6px
+    box-sizing border-box
+    text-decoration none
+    border 1px solid transparent
+    &:hover
+      border 1px solid c_mgray
+      border-radius 3px
+    & img
+      max-height 95px
+      min-height 80px
+      max-width 150px
+      width auto
+    & strong
+      display block
+      width 120px
+      margin-top 5px
+      margin-bottom 5px
+      text-transform uppercase
+      font-family r_med
+      font-size 14px
+      line-height 18px
+      color #323232
+      text-align left
+      width 120px
+  &__price
+    text-align
+    display block
+    width 120px
+    font-size 18px
+    color c_orange
+    font-family r_bold
+
+
+
+
+.tab
+    &-content
+        width 100%
+        margin auto
+
+    &-links
+        display table
+        position relative
+        top 1px
+        & a
+            display block
+            float left
+            line-height 3
+            background #ddd
+            padding 0 1em
+            text-decoration none
+            margin-right 1px
+            border-radius 5px 5px 0 0
+            border 1px solid #bbb
+            color steelblue
+            border-bottom-color transparent
+            position relative
+            &.active
+                z-index 100
+                background #eee
+                font-weight bold
+    &-content
+        position relative
+        &__item
+            background #eee
+            padding 1em
+            border 1px solid #bbb
+            display none
+            width 100%
+            &.active
+                display block

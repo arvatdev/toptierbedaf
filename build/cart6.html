@@ -7,6 +7,7 @@
     <link href="css/fonts.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
     <link href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" rel="stylesheet" type="text/css">
+    <link href="lib/jquery.bxslider.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet">
   </head>
   <body>
@@ -23,6 +24,42 @@
           <article class="wishlist"><a class="wishlist__image" href="#"></a></article>
           <article class="cart"><a class="df-c" href="#">
               <div class="cart__image"></div><span>€12.00</span></a></article>
+        </div>
+      </header>
+      <header class="main-header">
+        <div class="main-wrapper df-c h100p">
+          <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
+          <article class="contacts df-cc">
+            <div class="contacts__image df-cc"><i class="material-icons">phone</i></div>
+            <div class="contacts__number"><span>+49 30 208 476 906</span></div>
+            <div class="contacts__time"><span>Mo - Fr 9:00 - 18:00 Uhr</span></div>
+          </article>
+          <article class="account account--registration">
+            <div class="header-login-registration">
+              <button class="header-login-registration__button" type="button"> <span>ANMELDEN</span><i class="material-icons">exit_to_app</i></button>
+              <div class="header-login-registration__block">
+                <div class="header-login__form">
+                  <form>
+                    <div class="header-login__mail">
+                      <label for="email"><span>E-Mail-Adresse*</span></label>
+                      <input class="header-login__input" type="email" id="email" placeholder="E-Mail-Adresse*">
+                    </div>
+                    <div class="header-login__password">
+                      <label for="password"><span>Passwort*</span></label>
+                      <input class="header-login__input" type="name" id="password" placeholder="Passwort*">
+                    </div>
+                    <button class="header-login__button" type="submit">ANMELDEN</button>
+                  </form><a class="header-login__recovery" href="#">Passwort vergessen?</a>
+                </div>
+                <div class="header-login__social"><span class="header-login__social-header">REGISTRIERUNG DURCH SOZIALE NETZWERKE:</span>
+                  <div class="social df-ca"><a class="social__link" href="#"><img class="image" src="/img/facebook-link.png" alt="#"></a><a class="social__link" href="#"><img class="image" src="/img/google-link.png" alt="#"></a><a class="social__link" href="#"><img class="image" src="/img/twitter-link.png" alt="#"></a><a class="social__link" href="#"><img class="image" src="/img/instagram-link.png" alt="#"></a></div>
+                </div>
+                <div class="header-registration__block">
+                  <p class="header-registration__text">Falls Sie noch kein Benutzerkonto bei Zoobio.de haben, REGISTRIEREN Sie sich jetzt. </p><a class="header-registration__button" href="#">REGISTRIEREN</a>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </header>
       <nav class="main-navigation">
@@ -204,6 +241,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
     <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" type="text/javascript"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
   </body>
