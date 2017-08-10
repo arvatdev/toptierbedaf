@@ -9,17 +9,13 @@
                 li: a(href="#") Delights Beef Kauknochen L
         .product-wrapper.df.dfw.df--b
             .product-view.df
-                .product-view__big-image
-                  ul.bxslider-pic
-                    li: img(src="/img/product2.png").image
-                    li: img(src="/img/product3.png").image
-                    li: img(src="/img/product4.png").image
-                  
-                ul.product-view__list.df.df-dc
-                  div#bx-pager
-                      a(href="#" data-slide-index="0").product-view__item.product-view__item--active: img(src="/img/product2.png").image
-                      a(href="#" data-slide-index="1").product-view__item.product-view__item: img(src="/img/product3.png").image
-                      a(href="#" data-slide-index="2").product-view__item.product-view__item: img(src="/img/product4.png").image
+                ul(id="vertical")
+                  li(data-thumb="/img/product12.jpg")
+                    img(src="/img/product12.jpg") 
+                  li(data-thumb="/img/product11.jpg")
+                    img(src="/img/product11.jpg")
+                  li(data-thumb="/img/product11.jpg")
+                    img(src="/img/product11.jpg")
                 .sale-corner.sale-corner--big
                     span SALE
             article.product-cart
@@ -54,10 +50,10 @@
                             .product-cart__weight-header
                                 span Gewicht: 
                             .product-cart__weight-type.df
-                                input(type="checkbox" id="small-weight").input
+                                input(type="radio" id="small-weight" name="weight-type" checked).input
                                 label(for="small-weight").label
                                   span 10x0.05g
-                                input(type="checkbox" id="big-weight").input
+                                input(type="radio" id="big-weight" name="weight-type").input
                                 label(for="big-weight").label
                                   span 35x190g  
                         .product-cart__amount.df.df-c
@@ -80,9 +76,9 @@
                 
             .tabs.tabs--product
                 .tabs__nav
-                  a(href="#tabs3").tabs__nav-item.tabs__nav-item--active PRODUKTINFORMATION
-                  a(href="#tabs4").tabs__nav-item Inhaltsstoffe
-                article(id="tabs-0").tabs__item.df
+                  a(href="#" data-tablink="product-tab1").tabs__nav-item.tabs__nav-item--active PRODUKTINFORMATION
+                  a(href="#" data-tablink="product-tab2").tabs__nav-item Inhaltsstoffe
+                article(data-tabcontent="product-tab1").tabs__item.df
                   .tabs__product-logo
                     img(src="/img/8in1.png").image
                   .tabs__product-text
@@ -106,7 +102,7 @@
 
                       p 8in1 Delights Beef Kauknochen L 85g
 
-                article(id="tabs-0").product__ingredients
+                article(data-tabcontent="product-tab2" hidden="").product__ingredients
                   
                   
             .aside-recomendations.df.df-dc
@@ -149,7 +145,7 @@
 
               
             section.slider
-                .slider__header WIRD OFT ZUSAMMEN GEKAUFT
+                .slider__header WIRD OFT ZUSAMMEN GEKAUFT 
                 .slider__wrapper
                     ul.slider__list
                         li
@@ -192,58 +188,44 @@
                             img(src="./img/product2.png" alt="#")
                             strong Gürteltasche Basic Detroit
                             span.slider__price 24,69 €
-                  
+                    .slider__controls.outside
+                        span(id="slider-prev")
+                        span(id="slider-next")
             .tabs.tabs--reviews
                 .tabs__nav
-                    a(href="#tabs-1").tabs__nav-item Bewertungen
-                    a(href="#tabs-2").tabs__nav-item.tabs__nav-item--active Eine Bewertung schreiben
-                article(id="tabs-0").tabs__item.df
-                  .form-block.form-block--reviews
-                    .form-block__element.form-block__element--full-width
-                        form.df-cb.dfw
-                            .form-block__stars.df
-                                .form-block__description Bewerten Sie das Produkt nach den folgenden Kriterien 
-                                    span (1 Stern- schlecht, 5 - sehr gut)
-                                .element__stars
-                                    .not-active
-                                        span ☆☆☆☆☆
-                            .form-block__inputs-wrapper.df-cb.dfw
-                                .form-block__name
-                                  label(for="name")
-                                    span Name*
-                                  input(type="name" id="name" placeholder="Name").forms__input.forms__input--border
-                                .form-block__mail
-                                  label(for="email")
-                                    span E-Mail-Adresse*
-                                  input(type="email" id="email" placeholder="E-Mail-Adresse*").forms__input.forms__input--border
-                                .form-block__sex
-                                  .main-form__sex.df-c
-                                      span.header Anrede
-                                      input(type="radio" name="sex" id="sex1" checked).input
-                                      label(for="sex1").label
-                                          span Herr
-                                      input(type="radio" name="sex" id="sex2").input
-                                      label(for="sex2").label
-                                          span Frau
-                                textarea.textarea.textarea--border
-                                .main-form__submit-block.df-cb
-                                    button(type="submit").big-orange-btn Bewertung hinzufügen
-                article(id="tabs-").tabs__item.df
-                    span kjljh kljhkljhkljh
-            //-         
-            //-     
-            //- div.tab
-            //-     .tab-links
-            //-         a(href="#tabs-1") Nunc tincidunt 
-            //-         a(href="#tabs-2") Proin dolor 
-            //-         a(href="#tabs-3") Aenean lacinia 
-            //-     .tab-content
-            //-         div(id="tabs-1").tab-content__item
-            //-             p.
-            //-               Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
-            //-         div(id="tabs-2").tab-content__item
-            //-             p Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.
-            //- 
-            //-         div(id="tabs-3").tab-content__item
-            //-             p Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.
-            //-             p Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit./p
+                    a(href="#" data-tablink="form").tabs__nav-item.tabs__nav-item--active Bewertungen
+                    a(href="#" data-tablink="reviews").tabs__nav-item Eine Bewertung schreiben
+                .tabs__content(data-tabgroup="product-footer")
+                    article(data-tabcontent="form").tabs__item.df
+                      .form-block.form-block--reviews
+                        .form-block__element.form-block__element--full-width
+                            form.df-cb.dfw
+                                .form-block__stars.df
+                                    .form-block__description Bewerten Sie das Produkt nach den folgenden Kriterien 
+                                        span (1 Stern- schlecht, 5 - sehr gut)
+                                    .element__stars
+                                        .not-active
+                                            span ☆☆☆☆☆
+                                .form-block__inputs-wrapper.df-cb.dfw
+                                    .form-block__name
+                                      label(for="name")
+                                        span Name*
+                                      input(type="name" id="name" placeholder="Name").forms__input.forms__input--border
+                                    .form-block__mail
+                                      label(for="email")
+                                        span E-Mail-Adresse*
+                                      input(type="email" id="email" placeholder="E-Mail-Adresse*").forms__input.forms__input--border
+                                    .form-block__sex
+                                      .main-form__sex.df-c
+                                          span.header Anrede
+                                          input(type="radio" name="sex" id="sex1" checked).input
+                                          label(for="sex1").label
+                                              span Herr
+                                          input(type="radio" name="sex" id="sex2").input
+                                          label(for="sex2").label
+                                              span Frau
+                                    textarea.textarea.textarea--border
+                                    .main-form__submit-block.df-cb
+                                        button(type="submit").big-orange-btn Bewertung hinzufügen
+                    article(data-tabcontent="reviews" hidden="").tabs__item.df.hidden
+                        span kjljh kljhkljhkljh
