@@ -168,6 +168,34 @@ $(document).ready(function () {
     });
 
 
+    // var acc = document.getElementsByClassName("accordion-ite");
+    // var i;
+    //
+    // for (i = 0; i < acc.length; i++) {
+    //     acc[i].onclick = function(){
+    //         /* Toggle between adding and removing the "active" class,
+    //         to highlight the button that controls the panel */
+    //         this.classList.toggle("active");
+    //
+    //         /* Toggle between hiding and showing the active panel */
+    //         var panel = this.nextElementSibling;
+    //         if (panel.style.display === "block") {
+    //             panel.style.display = "none";
+    //         } else {
+    //             panel.style.display = "block";
+    //         }
+    //     }
+    // }
+    var allPanels = $('.account__tab-content').hide();
+    $('.accordion-item').click(function() {
+
+      allPanels.hide();
+      $(this).closest('table').next().toggle();
+      return false;
+    });
+
+
+
     var tabs = document.querySelectorAll('[data-tablink]');
     if (tabs && tabs.length > 0) {
       [].forEach.call(tabs, function(tab) {

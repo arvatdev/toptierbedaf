@@ -1,0 +1,179 @@
+section.main-body.body--margin
+    .main-wrapper
+        .account-page.df
+            aside.account-menu
+              ul.account-menu__list
+                li.account-menu__item
+                  a(href="#").account-menu__link Bestellungen  verwalten
+                li.account-menu__item
+                  a(href="#").account-menu__link Zahlungsart
+                li.account-menu__item
+                  a(href="#").account-menu__link Lieferadresse
+                li.account-menu__item
+                  a(href="#").account-menu__link.account-menu__link--active Meine Daten
+                li.account-menu__item
+                  a(href="#").account-menu__link Zuletzt gesehene  Artikel
+                li.account-menu__item
+                  a(href="#").account-menu__link Wunschliste
+            .account-main-content.account-main-content--wide
+                h1.account__header
+                    span MEIN KONTO
+                .account__form-header
+                  span.account__form-title Bestellungen verwalten
+                  .account__unit-ammount
+                      span 2 
+                      | Menge
+                
+
+                  .account__form-table
+                      articel.account__orders.cart-table
+                          .account__accordion(id="account__accordion")
+                              table.table.table--transparent 
+                                  tr.table__header
+                                      th Datum
+                                      th Bestellung
+                                      th Betrag
+                                      th(colspan="2") Status
+                                      th Gekaufte artikeln
+                                  tr.table__content
+                                      td.table__data
+                                          span March 17, 2017
+                                      td.table__order-number
+                                          span 12654
+                                      td.table__order-price
+                                          span 75,58€
+                                      td.table__status
+                                          span Bestellprozess
+                                      td.table__products
+                                          img(src="/img/product5.png" alt="#").image
+                                          img(src="/img/product5.png" alt="#").image
+                                          img(src="/img/product5.png" alt="#").image
+                                      td.table__total-price.t-ar
+                                          button(type="button").table__accordion-btn.accordion-item Bestellung anzeigen
+                              .account__tab-content
+                                  span пролпополрп
+                              table.table.table--transparent 
+                                  tr.table__content
+                                      td.table__data
+                                          span March 17, 2017
+                                      td.table__order-number
+                                          span 12654
+                                      td.table__order-price
+                                          span 75,58€
+                                      td.table__status
+                                          span Bestellprozess
+                                      td.table__products
+                                          img(src="/img/product5.png" alt="#").image
+                                          img(src="/img/product5.png" alt="#").image
+                                      td.table__total-price.t-ar
+                                          button(type="button").table__accordion-btn.accordion-item Bestellung anzeigen
+                              .account__tab-content
+                                  .account__progress.df--b.dfw
+                                      h2.account__progress-title
+                                          span FORTSCHRITTSANZEIGE DER BESTELLUNG
+                                      ul.account__progress-list.df--b
+                                          li.account__progress-item.df.df-cb
+                                              span.account__progress-step 1
+                                              p.account__progress-description Ihre Bestellung wurde bearbeitet
+                                          li.account__progress-item.df.df-cb
+                                              span.account__progress-step 2
+                                              p.account__progress-description Ihre Bestellung wurde bearbeitet
+                                          li.account__progress-item.df.df-cb
+                                              span.account__progress-step 3
+                                              p.account__progress-description Ihre Bestellung wurde bearbeitet
+                                          li.account__progress-item.df.df-cb
+                                              span.account__progress-step 4
+                                              p.account__progress-description Ihre Bestellung wurde bearbeitet
+                                      button(type="button" disabled).account__progress-button Alles zum Warenkorb hinzufügen
+                                      
+                                  article.cart-table
+                                      h2.account__table-title DETAILS DER BESTELLUNG
+                                      table.table.table--transparent 
+                                          tr.table__header.table__header--transparent
+                                              th(colspan="3") Artikel
+                                              th Lieferzeit
+                                              th Mehr
+                                              th Einzelprris
+                                              th Gesamtpreis
+                                          tr.table__content.table__content--white
+                                              td.table__input
+                                                  input(type="checkbox" id="news").input
+                                              td.table__image.table__image--small
+                                                  img(src="/img/product5.png" alt="#").image
+                                              td.table__product-name
+                                                  h3.header 
+                                                      span RAFINE ADULT HUHN, LACHS & SCHRIMPS
+                                              td.table__delivery
+                                                  span 
+                                                      | Voraussichtlicher Versand 
+                                                      br
+                                                      | Montag, 20.03.2017 - 
+                                                      br
+                                                      | Mittwoch, 22.03.2017
+                                              td.table__value-wrapper
+                                                  .table__value
+                                                      input(type="text" placeholder="2").input
+                                                      .arrow
+                                              td.table__unit-price
+                                                  span €3,45
+                                              td.table__total-price.t-ar
+                                                  span.table__price €3,45
+                                          tr.table__content.table__content--white
+                                              td.table__input
+                                                  input(type="checkbox" id="news").input
+                                              td.table__image.table__image--small
+                                                  img(src="/img/product7.png" alt="#").image
+                                              td.table__product-name
+                                                  h3.header
+                                                      span Cat Dose Natural Huhn, Rind mit Reis
+                                              td.table__delivery
+                                                  span 
+                                                      | Voraussichtlicher Versand 
+                                                      br
+                                                      | Montag, 20.03.2017 - 
+                                                      br
+                                                      | Mittwoch, 22.03.2017
+                                              td.table__value-wrapper
+                                                  .table__value
+                                                      input(type="text" placeholder="2").input
+                                                      .arrow
+                                              td.table__unit-price
+                                                  span €23,49
+                                              td.table__total-price.t-ar
+                                                  span.table__price €23,49
+                                          tr.table__content.table__content--white
+                                              td.table__input
+                                                  input(type="checkbox" id="news").input
+                                              td.table__image.table__image--small
+                                                  img(src="/img/product6.png" alt="#").image
+                                              td.table__product-name
+                                                  h3.header
+                                                      span Cat Dose Natural Huhn, Rind mit Reis
+                                              td.table__delivery
+                                                  span 
+                                                      | Voraussichtlicher Versand 
+                                                      br
+                                                      | Montag, 20.03.2017 - 
+                                                      br
+                                                      | Mittwoch, 22.03.2017 
+                                              td.table__value-wrapper
+                                                  .table__value
+                                                      input(type="text" placeholder="2").input
+                                                      .arrow
+                                              td.table__unit-price
+                                                  span €3,45
+                                              td.table__total-price.t-ar
+                                                  span.table__price €3,45
+                                      .account__final.df.df--b
+                                          p.account__address
+                                              | Adresse
+                                              br
+                                              | Robert Thomson 
+                                              br
+                                              | asfesdfg, 234234 21 
+                                              br
+                                              | Deutschland
+                                          .account__final-price.t-ar
+                                              span.account__final-info Gesamtpreis
+                                              span.account__final-value 114.10 €
+                                              button(type="button").big-orange-btn Zur Kasse
