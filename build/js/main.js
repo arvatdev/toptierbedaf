@@ -187,9 +187,8 @@ $(document).ready(function () {
     //     }
     // }
     var allPanels = $('.account__tab-content').hide();
-    $('.accordion-item').click(function() {
-
-      allPanels.hide();
+    $('.table__accordion-btn').click(function() {
+      $(this).toggleClass('table__accordion-btn--active');
       $(this).closest('table').next().toggle();
       return false;
     });
