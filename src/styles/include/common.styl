@@ -261,13 +261,13 @@
     border 0
     padding 0
     margin 0
+  &--padding
+    padding 0 30px
   .table
     width 100%
     &--transparent
       border-spacing 0 15px
       border-collapse separate
-    &--with-borders
-
     &__header
       background-color c_mgray
       height 40px
@@ -317,16 +317,17 @@
         background-color #ffffff
         margin-bottom 10px
         box-shadow 0px 0px 0px 1px #cdcdcd
-      &--border
+      &--border-top
         border-top 1px solid #a6a6a6
         & td:first-of-type
           padding-left 25px
         & td:last-of-type
           padding-right 25px
+      &--border-bottom
+        border-bottom 1px solid #a6a6a6
     &__image
       height 85px
       width 85px
-      min-width 85px
       padding 10px 10px 10px 15px
       &--small
         text-align center
@@ -362,6 +363,27 @@
       vertical-align top
       width 216px
       padding 30px 0
+    &__to-cart
+      vertical-align middle
+      width 150px
+    &__btn-to-cart
+      width 150px
+      background-color c_orange
+      color #fff
+      border-radius 3px
+      text-align center
+      padding 7px 10px
+      box-sizing border-box
+      font-size 14px
+      text-decoration none
+      border 2px solid #f95318
+      &:hover
+        background-color #fff
+        color #f95318
+        transition all 0.2s ease
+    &__stars
+      width 140px
+      padding-right 10px
     &__accordion-btn
       min-height 40px
       text-align center
@@ -409,8 +431,11 @@
         font-size 14px
         margin-bottom 5px
     &__product-info
-      min-width 300px
+      width 300px
       padding-right 5px
+      &--small
+        width 245px
+        padding-left 25px
       .header
         width 100%
         font-family r_bold
@@ -420,12 +445,7 @@
         font-family r_reg
         font-size 12px
         margin-bottom 5px
-      .stars
-        font-family 18px
-        .active
-          color c_yellow
-        .not-active
-          color c_gray
+
     &__delivery
       font-size 13px
       line-height 15px
@@ -524,6 +544,13 @@
         font-size 20px
         font-weight bold
 
+.stars
+  font-family 18px
+  .active
+    color c_yellow
+  .not-active
+    color c_gray
+
 .reg-info
   margin 25px 0 40px 0
   justify-content space-between
@@ -586,6 +613,9 @@
 .payment
   width 940px
   margin 0 auto
+  &--info-list
+    width 100%
+    padding 30px 0
   .big-orange-btn.big-orange-btn--invert
     margin 0 30px 85px 238px
   &__list
@@ -594,6 +624,10 @@
   &__element
     margin-bottom 5px
     width 100%
+  &__status
+    & i
+      color #20a85e
+      font-size 27px
   &__label
     background-color rgba(255, 255, 255, 0)
     height 100%
@@ -635,6 +669,7 @@
       background c_orange
   &__text
     direction ltr
+    width 643px
     .header
       display block
       font-family r_bold
@@ -2970,8 +3005,11 @@
     box-sizing border-box
   &-main-content
     width 842px
+    align-items flex-start
     &--wide
       width 900px
+    &--full-width
+      width 924px
   &__header
     width 100%
     text-align center
@@ -2981,6 +3019,25 @@
     margin-bottom 30px
   &__form-table
     border 1px solid #a6a6a6
+  &__footer
+    background-color c_lgray
+    padding 15px 30px
+  &__show-all
+    text-align center
+    display inline-block
+    color #fff
+    background-color #a6a6a6
+    border-radius 2px
+    padding 10px 15px
+    min-width 150px
+    box-sizing border-box
+    max-width 200px
+    border none
+    text-decoration none
+    font-size 14px
+    &:hover
+      background-color c_gray
+      transition all 0.2s ease
   &__tab-content
     padding 25px
     box-sizing border-box
@@ -3091,6 +3148,61 @@
       color #fff
       border 0
       text-decoration none
+  &__footer
+    justify-content flex-end
+
+  &__payment
+    & .payment__list
+      margin-bottom 0
+
+  &__ordering-block
+    width 100%
+    margin-bottom 30px
+    &--half
+      width 452px
+
+
+.delivery
+  &__list
+    padding 28px 0px
+  &__item
+    margin-bottom 20px
+    &:last-child
+      margin-bottom 0
+  &__address
+    width 220px
+    font-size 14px
+    line-height 21px
+    padding-right 40px
+    box-sizing border-box
+    font-family r_reg
+  &__btn
+    width 118px
+    display inline-block
+    border 1px solid #727272
+    padding 10px
+    box-sizing border-box
+    color #727272
+    font-size 14px
+    text-align center
+    border-radius 3px
+    &:hover
+      background-color #727272
+      color #fff
+
+.order-details
+  padding 28px 0px
+  &__item
+    margin-bottom 8px
+    font-size 14px
+    &:last-child
+      margin-bottom 0
+  &__name
+    margin-right 5px
+    font-family r_bold
+  &__value
+    font-family r_reg
+
 
 
 .input-red
@@ -3113,3 +3225,43 @@
     background #f95318
     content '✓'
     color #fff
+.input-radio-red
+  -webkit-appearance none
+  width 15px
+  height 15px
+  min-width 15px
+  min-height 15px
+  border 1px solid #f95318
+  border-radius 50%
+  outline none
+  position relative
+  &:before
+    position absolute
+    margin auto
+    top 0
+    bottom 0
+    left 0
+    right 0
+    content ''
+    display block
+    width 9px
+    height 9px
+    border-radius 50%
+  &:checked:before
+    background-color c_orange
+
+.title-with-stripe
+  padding 10px 15px 18px
+  position relative
+  font-weight 400
+  text-transform uppercase
+  font-size 18px
+  font-family r_med
+  &::before
+    content ''
+    position absolute
+    left 15px
+    top -5px
+    width 46px
+    height 3px
+    background-color #f95318
