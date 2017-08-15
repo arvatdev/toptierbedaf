@@ -974,6 +974,7 @@ input:focus:-ms-input-placeholder {
 }
 .cart-table .table__to-cart {
   vertical-align: middle;
+  padding-right: 20px;
 }
 .cart-table .table__btn-buy {
   width: 110px;
@@ -1089,6 +1090,10 @@ input:focus:-ms-input-placeholder {
 .cart-table .table__product-info--small {
   width: 245px;
   padding-left: 25px;
+}
+.cart-table .table__product-info--very-small {
+  width: 220px;
+  padding-left: 0;
 }
 .cart-table .table__product-info .header {
   width: 100%;
