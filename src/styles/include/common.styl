@@ -624,6 +624,8 @@
   &__element
     margin-bottom 5px
     width 100%
+    &:last-child .payment__wrapper
+      padding-bottom 0
   &__status
     & i
       color #20a85e
@@ -640,8 +642,11 @@
     height 50px
     width 150px
     min-height 50px
-    min-width 150px
     justify-content flex-end
+    &--small
+      justify-content flex-start
+      width 120px
+
   &__input
     -webkit-appearance none
     width 15px
@@ -679,6 +684,9 @@
       display block
       font-family r_reg
       font-size 16px
+      line-height 20px
+  &__wrapper
+    padding-bottom 20px
 .form-block
   justify-content space-between
   flex-wrap wrap
@@ -3265,3 +3273,7 @@
     width 46px
     height 3px
     background-color #f95318
+  &--without-space
+    padding 10px 0px
+    &::before
+      left 0

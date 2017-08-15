@@ -1352,6 +1352,9 @@ input:focus:-ms-input-placeholder {
   margin-bottom: 5px;
   width: 100%;
 }
+.payment__element:last-child .payment__wrapper {
+  padding-bottom: 0;
+}
 .payment__status i {
   color: #20a85e;
   font-size: 27px;
@@ -1370,13 +1373,21 @@ input:focus:-ms-input-placeholder {
   height: 50px;
   width: 150px;
   min-height: 50px;
-  min-width: 150px;
   -webkit-box-pack: end;
   -moz-box-pack: end;
   -o-box-pack: end;
   -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
+}
+.payment__image--small {
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 120px;
 }
 .payment__input {
   -webkit-appearance: none;
@@ -1420,6 +1431,10 @@ input:focus:-ms-input-placeholder {
   display: block;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
+  line-height: 20px;
+}
+.payment__wrapper {
+  padding-bottom: 20px;
 }
 .form-block {
   -webkit-box-pack: justify;
@@ -5169,6 +5184,12 @@ input:focus:-ms-input-placeholder {
   width: 46px;
   height: 3px;
   background-color: #f95318;
+}
+.title-with-stripe--without-space {
+  padding: 10px 0px;
+}
+.title-with-stripe--without-space::before {
+  left: 0;
 }
 .hidden {
   display: none !important;
