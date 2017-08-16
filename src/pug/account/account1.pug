@@ -68,7 +68,7 @@ section.main-body.body--margin
                     h2.title-with-stripe
                         span Lieferadresse
                     .account__form-table
-                        .delivery.cart-table.cart-table--transparent.cart-table--padding
+                        .delivery.account__wrapper
                             ul.delivery__list
                                 li.delivery__item
                                     label(for="address1").delivery__label.df-cb
@@ -95,22 +95,21 @@ section.main-body.body--margin
                     h2.title-with-stripe
                         span Bestellungen verwalten
                     .account__form-table
-                        .account__order-details.cart-table.cart-table--transparent.cart-table--padding
-                            .order-details
-                                .order-details__item
-                                    b.order-details__name Bestellung stornieren:
-                                    span.order-details__value May 17, 2017
-                                .order-details__item
-                                    b.order-details__name Bestellung Nr:
-                                    span.order-details__value 15674
-                                .order-details__item
-                                    b.order-details__name Zugestellt:
-                                .order-details__item
-                                    b.order-details__name Status:
-                                    span.order-details__value Abgebrochene PayPal-Bestellungen
-                                .order-details__item
-                                    b.order-details__name Gesamtpreis:
-                                    span.order-details__value 63,02
+                        .order-details.account__wrapper
+                            .order-details__item
+                                b.order-details__name Bestellung stornieren:
+                                span.order-details__value May 17, 2017
+                            .order-details__item
+                                b.order-details__name Bestellung Nr:
+                                span.order-details__value 15674
+                            .order-details__item
+                                b.order-details__name Zugestellt:
+                            .order-details__item
+                                b.order-details__name Status:
+                                span.order-details__value Abgebrochene PayPal-Bestellungen
+                            .order-details__item
+                                b.order-details__name Gesamtpreis:
+                                span.order-details__value 63,02
                         .account__footer.df
                             a(href="#").account__show-all Alles anzeigen 
 
@@ -118,7 +117,7 @@ section.main-body.body--margin
                   h2.title-with-stripe
                       span Lieferadresse
                   .account__form-table
-                      .account__payment.cart-table.cart-table--transparent.cart-table--padding
+                      .account__payment.account__wrapper
                         article.payment.payment--info-list
                             ul.payment__list
                                 li.payment__element
