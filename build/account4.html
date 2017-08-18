@@ -44,85 +44,105 @@
       </nav>
       <section class="main-body body--margin">
         <div class="main-wrapper">
-          <article class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Registration</a></li>
-            </ul>
-          </article>
-          <article class="progress-bar">
-            <h1 class="progress-bar__header"><span>BENUTZERKONTO ANLEGEN</span></h1>
-          </article>
-          <article class="form-block form-block--center df">
-            <div class="form-block__element form-block__element--full-width">
-              <h2 class="progress-bar__legend"><span>ANMELDEINFORMATION</span></h2>
-              <form>
-                <div class="forms">
-                  <label class="forms__label" for="email2"><span>E-Mail-Adresse*</span></label>
-                  <input class="forms__input" type="email" id="email2">
-                  <div class="forms__half">
-                    <label class="forms__label" for="passwot1"><span>Passwort*</span></label>
-                    <input class="forms__input" type="password" id="passwot1">
-                  </div>
-                  <div class="forms__half">
-                    <label class="forms__label" for="passwot2"><span>Passwort wiederholen*</span></label>
-                    <input class="forms__input" type="password" id="passwot2">
+          <div class="account-page df">
+            <aside class="account-menu">
+              <ul class="account-menu__list">
+                <li class="account-menu__item"><a class="account-menu__link" href="#">Bestellungen  verwalten</a></li>
+                <li class="account-menu__item"><a class="account-menu__link" href="#">Zahlungsart</a></li>
+                <li class="account-menu__item"><a class="account-menu__link" href="#">Lieferadresse</a></li>
+                <li class="account-menu__item"><a class="account-menu__link account-menu__link--active" href="#">Meine Daten</a></li>
+                <li class="account-menu__item"><a class="account-menu__link" href="#">Zuletzt gesehene  Artikel</a></li>
+                <li class="account-menu__item"><a class="account-menu__link" href="#">Wunschliste</a></li>
+              </ul>
+            </aside>
+            <div class="account-main-content">
+              <h1 class="account__header"><span>MEIN KONTO</span></h1>
+              <article class="form-block df">
+                <div class="form-block__element form-block__element--full-width">
+                  <h2 class="progress-bar__legend"><span>ANMELDEINFORMATION</span></h2>
+                  <div class="forms">
+                    <label class="forms__label" for="email2"><span>E-Mail-Adresse*</span></label>
+                    <input class="forms__input" type="email" id="email2">
+                    <div class="forms__half">
+                      <label class="forms__label" for="passwot1"><span>Passwort*</span></label>
+                      <input class="forms__input" type="password" id="passwot1">
+                    </div>
+                    <div class="forms__half">
+                      <label class="forms__label" for="passwot2"><span>Passwort wiederholen*</span></label>
+                      <input class="forms__input" type="password" id="passwot2">
+                    </div>
                   </div>
                 </div>
-                <h2 class="progress-bar__legend"><span>PERSÖNLICHE INFORMATION</span></h2>
-                <div class="forms">
-                  <div class="main-form__columns df">
-                    <div class="column column--full-width">
-                      <label class="column__label" for="anrede"><span>Anrede</span></label>
-                      <select class="column__select js-cart-select">
-                        <option>Deutschland</option>
-                        <option>Ukraine</option>
-                        <option>Something</option>
+              </article>
+              <h2 class="progress-bar__legend"><span>PERSÖNLICHE INFORMATION</span></h2>
+              <div class="main-form main-form--account">
+                <div class="main-form__sex df-c"><span class="header">Anrede</span>
+                  <input class="input" type="radio" name="sex" id="sex1">
+                  <label class="label" for="sex1"><span>Herr</span></label>
+                  <input class="input" type="radio" name="sex" id="sex2">
+                  <label class="label" for="sex2"><span>Frau</span></label>
+                  <input class="input" type="radio" name="sex" id="sex3">
+                  <label class="label" for="sex3"><span>Firma</span></label>
+                </div>
+                <div class="main-form__columns df">
+                  <div class="column">
+                    <label class="column__label" for="vorname"><span>Vorname*</span></label>
+                    <input class="column__input" type="text" id="vorname">
+                    <label class="column__label" for="firma"><span>Firma*</span></label>
+                    <input class="column__input" type="text" id="firma">
+                    <label class="column__label" for="ust"><span>USt-IdNr.*</span></label>
+                    <div class="select-wrapper df">
+                      <select class="js-cart-select2">
+                        <option></option>
+                        <option></option>
+                        <option><span><img class="image" src="/img/flags/deu.png"></span></option>
                       </select>
+                      <input class="column__input-small" type="text" id="telefon">
                     </div>
+                    <label class="column__label" for="strabe"><span>Straße*</span></label>
+                    <input class="column__input" type="text" id="strabe">
+                    <label class="column__label" for="adresszusatz"><span>Adresszusatz</span></label>
+                    <input class="column__input column__input-sub" type="text" id="adresszusatz">
+                    <div class="column__label-sub"><span>Die Angabe einer DHL-Packstation ist nicht zulässig!</span></div>
+                    <label class="column__label" for="stadt"><span>Stadt*</span></label>
+                    <input class="column__input" type="text" id="stadt">
                   </div>
-                  <div class="main-form__columns df">
-                    <div class="column">
-                      <label class="column__label" for="vorname"><span>Vorname*</span></label>
-                      <input class="column__input" type="text" id="vorname">
-                      <label class="column__label" for="firma"><span>Haustiername</span></label>
-                      <input class="column__input" type="text" id="haustiername">
-                      <label class="column__label" for="strabe"><span>Straße*</span></label>
-                      <input class="column__input" type="text" id="strabe">
-                      <label class="column__label" for="stadt"><span>Stadt*</span></label>
-                      <input class="column__input" type="text" id="stadt">
-                      <label class="column__label" for="land"><span>Land*</span></label>
-                      <select class="column__select js-cart-select">
-                        <option>Deutschland</option>
-                        <option>Ukraine</option>
-                        <option>Something</option>
+                  <div class="column">
+                    <label class="column__label" for="nachname"><span>Nachname*</span></label>
+                    <input class="column__input" type="text" id="nachname">
+                    <label class="column__label" for="steuernummer"><span>Steuernummer</span></label>
+                    <input class="column__input" type="text" id="steuernummer">
+                    <label class="column__label" for="hausnummer"><span>Hausnummer*</span></label>
+                    <input class="column__input" type="text" id="hausnummer">
+                    <label class="column__label" for="postleitzahl"><span>Postleitzahl*</span></label>
+                    <input class="column__input" type="text" id="postleitzahl">
+                    <label class="column__label" for="land"><span>Land*</span></label>
+                    <select class="column__select js-cart-select">
+                      <option>Deutschland</option>
+                      <option>Ukraine</option>
+                      <option>Something</option>
+                    </select>
+                    <label class="column__label w100p" for="telefon"><span>Telefon*</span></label>
+                    <div class="select-wrapper df">
+                      <select class="js-cart-select3">
+                        <option></option>
+                        <option></option>
+                        <option><span><img class="image" src="/img/flags/deu.png"></span></option>
                       </select>
-                    </div>
-                    <div class="column">
-                      <label class="column__label" for="nachname"><span>Nachname*</span></label>
-                      <input class="column__input" type="text" id="nachname">
-                      <label class="column__label" for="adresszusatz"><span>Firma / Adresszusatz</span></label>
-                      <input class="column__input" type="text" id="adresszusatz">
-                      <label class="column__label" for="nummer"><span>Nummer*</span></label>
-                      <input class="column__input" type="text" id="nummer">
-                      <label class="column__label" for="postleitzahl"><span>Postleitzahl*</span></label>
-                      <input class="column__input" type="text" id="postleitzahl">
-                      <label class="column__label w100p" for="telefon"><span>Telefon*</span></label>
-                      <div class="select-wrapper df">
-                        <select class="js-cart-select3">
-                          <option></option>
-                          <option></option>
-                          <option><span><img class="image" src="/img/flags/deu.png"></span></option>
-                        </select>
-                        <div class="column__input-pre df-cc"><span>+049</span></div>
-                        <input class="column__input-small" type="text" id="telefon">
-                      </div>
+                      <div class="column__input-pre df-cc"><span>+049</span></div>
+                      <input class="column__input-small" type="text" id="telefon">
                     </div>
                   </div>
-                  <div class="main-form__info-mark df-c">
-                    <input class="input" type="checkbox" id="news">
-                    <label class="label" for="news"><span>Erhalten Sie einen 10% Rabatt für das Abonnieren des Newsletters</span></label>
-                  </div>
+                </div>
+                <div class="main-form__info-mark df-c">
+                  <input class="input" type="checkbox" id="news" checked>
+                  <label class="label" for="news"><span>Lieferung ebenfalls an diese Adresse</span></label><span>* Pflichtfelder</span>
+                </div>
+              </div>
+              <div class="account__small-wrapper">
+                <div class="account__submit-block df-cb">
+                  <button class="big-orange-btn big-orange-btn--invert" type="button">ANMELDEN</button>
+                  <button class="big-orange-btn" type="button">WEITER</button>
                 </div>
                 <h2 class="progress-bar__legend"><span>INTERESSENGEBIETE:</span></h2>
                 <div class="forms-wrapper">
@@ -172,22 +192,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="input-wrapper">
-                    <input class="input input--gray" type="checkbox" id="news-yes">
-                    <label class="label label--gray" for="news-yes"><span>Ja, ich möchte per Email informiert werden. Abmeldung jederzeit möglich.</span></label>
-                  </div>
-                  <div class="input-wrapper">
-                    <input class="input input--gray" type="checkbox" id="news-no">
-                    <label class="label label--gray" for="news-no"><span>Nach meiner ersten Bestellung darf mich Zoobio mit einem Willkommensanruf begrüßen</span></label>
-                  </div>
                 </div>
-                <p class="form-block__caption">* Pflichtfelder</p>
-                <div class="social social--center df-cb">
-                  <button class="big-orange-btn" type="button">Absenden</button>
-                </div>
-              </form>
+              </div>
             </div>
-          </article>
+          </div>
         </div>
       </section>
       <footer class="footer">

@@ -44,99 +44,66 @@
       </nav>
       <section class="main-body body--margin">
         <div class="main-wrapper">
-          <article class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Haustiershop Marken</a></li>
-              <li><a href="#">Warenkorb</a></li>
-            </ul>
-          </article>
-          <article class="progress-bar">
-            <h1 class="progress-bar__header"><span>SICHERE VERBINDUNG</span></h1>
-            <ul class="progress-bar__list df-c">
-              <li class="progress-bar__element df-c active-element active-element-pass"><a class="progress-bar__element-sub df-cc" href="#"><span>WARENKORB</span></a></li>
-              <li class="progress-bar__element df-c active-element">
-                <div class="active-border"></div>
-                <div class="progress-bar__element-sub df-cc">
-                  <div class="progress-bar__element-number df-cc"><span>2</span></div><span>ANMELDEN</span>
+          <div class="account-page df">
+            <aside class="account-menu">
+              <ul class="account-menu__list">
+                <li class="account-menu__item"><a class="account-menu__link" href="#">Bestellungen  verwalten</a></li>
+                <li class="account-menu__item"><a class="account-menu__link account-menu__link--active" href="#">Zahlungsart</a></li>
+                <li class="account-menu__item"><a class="account-menu__link" href="#">Lieferadresse</a></li>
+                <li class="account-menu__item"><a class="account-menu__link" href="#">Meine Daten</a></li>
+                <li class="account-menu__item"><a class="account-menu__link" href="#">Zuletzt gesehene  Artikel</a></li>
+                <li class="account-menu__item"><a class="account-menu__link" href="#">Wunschliste</a></li>
+              </ul>
+            </aside>
+            <div class="account-main-content account-main-content--wide df df-dc">
+              <h1 class="account__header"><span>MEIN KONTO</span></h1>
+              <article class="account__ordering-block">
+                <h2 class="title-with-stripe title-with-stripe--without-space"><span>Zahlungsart wählen</span></h2>
+                <div class="account__payment">
+                  <article class="payment payment--info-list">
+                    <ul class="payment__list">
+                      <li class="payment__element">
+                        <div class="payment__wrapper df-cb"> 
+                          <div class="payment__status"><i class="material-icons">done</i></div>
+                          <div class="payment__image payment__image--small df-c"><img class="image" src="/img/paypal-pay.png" alt="#"></div>
+                          <div class="payment__text">
+                            <p class="text">Master Card, VISA. Sie werden direkt auf die sicher verschlüsselte Seite geleitet, wo Sie die Zahlung per Kreditkarte vornehmen.</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="payment__element">
+                        <div class="payment__wrapper df-cb">
+                          <div class="payment__status"><i class="material-icons">done</i></div>
+                          <div class="payment__image payment__image--small df-c"><img class="image" src="/img/sofort-pay.png" alt="#"></div>
+                          <div class="payment__text">
+                            <p class="text">Sie werden auf die geschützte PayPal-Seite weitergeleitet um die Bezahlung abzuschließen. </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="payment__element">
+                        <div class="payment__wrapper df-cb">
+                          <div class="payment__status"><i class="material-icons">done</i></div>
+                          <div class="payment__image payment__image--small df-c"><img class="image" src="/img/vorkasse-pay.png" alt="#"></div>
+                          <div class="payment__text">
+                            <p class="text">Sofortige und bequeme Zahlungsart für Online-Banking Nutzer.  </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="payment__element">
+                        <div class="payment__wrapper df-cb">
+                          <div class="payment__status"><i class="material-icons">done</i></div>
+                          <div class="payment__image payment__image--small df-c"><img class="image" src="/img/bar-nachnahme.jpg" alt="#"></div>
+                          <div class="payment__text">
+                            <p class="text">Einfache Überweisung über Ihre Hausbank.</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </article>
                 </div>
-              </li>
-              <li class="progress-bar__element df-c">
-                <div class="progress-bar__element-sub df-cc"><span>RECHNUNG & LIEFERUNG</span></div>
-              </li>
-              <li class="progress-bar__element df-c">
-                <div class="progress-bar__element-sub df-cc"><span>ZAHLUNG & BESTELLUNG</span></div>
-              </li>
-            </ul>
-          </article>
-          <article class="main-form">
-            <div class="main-form__sex df-c"><span class="header">Anrede</span>
-              <input class="input" type="radio" name="sex" id="sex1">
-              <label class="label" for="sex1"><span>Herr</span></label>
-              <input class="input" type="radio" name="sex" id="sex2">
-              <label class="label" for="sex2"><span>Frau</span></label>
-              <input class="input" type="radio" name="sex" id="sex3">
-              <label class="label" for="sex3"><span>Firma</span></label>
+              </article>
             </div>
-            <div class="main-form__columns df">
-              <div class="column">
-                <label class="column__label" for="vorname"><span>Vorname*</span></label>
-                <input class="column__input" type="text" id="vorname">
-                <label class="column__label" for="firma"><span>Firma*</span></label>
-                <input class="column__input" type="text" id="firma">
-                <label class="column__label" for="ust"><span>USt-IdNr.*</span></label>
-                <div class="select-wrapper df">
-                  <select class="js-cart-select2">
-                    <option></option>
-                    <option></option>
-                    <option><span><img class="image" src="/img/flags/deu.png"></span></option>
-                  </select>
-                  <input class="column__input-small" type="text" id="telefon">
-                </div>
-                <label class="column__label" for="strabe"><span>Straße*</span></label>
-                <input class="column__input" type="text" id="strabe">
-                <label class="column__label" for="adresszusatz"><span>Adresszusatz</span></label>
-                <input class="column__input column__input-sub" type="text" id="adresszusatz">
-                <div class="column__label-sub"><span>Die Angabe einer DHL-Packstation ist nicht zulässig!</span></div>
-                <label class="column__label" for="stadt"><span>Stadt*</span></label>
-                <input class="column__input" type="text" id="stadt">
-              </div>
-              <div class="column">
-                <label class="column__label" for="nachname"><span>Nachname*</span></label>
-                <input class="column__input" type="text" id="nachname">
-                <label class="column__label" for="steuernummer"><span>Steuernummer</span></label>
-                <input class="column__input" type="text" id="steuernummer">
-                <label class="column__label" for="hausnummer"><span>Hausnummer*</span></label>
-                <input class="column__input" type="text" id="hausnummer">
-                <label class="column__label" for="postleitzahl"><span>Postleitzahl*</span></label>
-                <input class="column__input" type="text" id="postleitzahl">
-                <label class="column__label" for="land"><span>Land*</span></label>
-                <select class="column__select js-cart-select">
-                  <option>Deutschland</option>
-                  <option>Ukraine</option>
-                  <option>Something</option>
-                </select>
-                <label class="column__label w100p" for="telefon"><span>Telefon*</span></label>
-                <div class="select-wrapper df">
-                  <select class="js-cart-select3">
-                    <option></option>
-                    <option></option>
-                    <option><span><img class="image" src="/img/flags/deu.png"></span></option>
-                  </select>
-                  <div class="column__input-pre df-cc"><span>+049</span></div>
-                  <input class="column__input-small" type="text" id="telefon">
-                </div>
-              </div>
-            </div>
-            <div class="main-form__info-mark df-c">
-              <input class="input" type="checkbox" id="news">
-              <label class="label" for="news"><span>Lieferung ebenfalls an diese Adresse</span></label><span>* Pflichtfelder</span>
-            </div>
-            <div class="main-form__submit-block df-cb">
-              <button class="big-orange-btn big-orange-btn--invert" type="button">ZURÜCK</button>
-              <button class="big-orange-btn" type="button">WEITER</button>
-            </div>
-          </article>
+          </div>
         </div>
       </section>
       <footer class="footer">

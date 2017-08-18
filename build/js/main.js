@@ -145,33 +145,73 @@ $(document).ready(function () {
     // Slider
     //--------------------------
     $('.slider__list').bxSlider({
+        nextSelector: '#slider-next',
+        prevSelector: '#slider-prev',
+        nextText: '<i class="material-icons">keyboard_arrow_right</i>',
+        prevText: '<i class="material-icons">keyboard_arrow_left</i>',
         moveSlides: 1,
         maxSlides: 5,
         minSlides: 5,
         touchEnabled: false
     })
 
-    //--------------------------
-    // tabs
-    //--------------------------
-
-    var linksParent = $('.tab-links');
-    var links = linksParent.find('a');
-    var items = $('.tab-content__item');
-    links.eq(0).add(items.eq(0)).addClass('active');
-    linksParent.on('click','a',function(){
-    	var t = $(this);
-    	var i = t.index();
-    	t.add(items.eq(i))
-    		.addClass('active')
-    		.siblings().removeClass('active');
+    $('#vertical').lightSlider({
+      gallery:true,
+      item:1,
+      vertical:true,
+      verticalHeight:532,
+      vThumbWidth:98,
+      thumbItem:6,
+      thumbMargin:15,
+      enableDrag: false,
+      slideMargin:0
     });
 
-    $('.bxslider-pic').bxSlider({
-      pagerCustom: '#bx-pager',
-      mode: 'vertical',
-      touchEnabled: false,
-      useCSS: true,
-      controls: false
+
+    // var acc = document.getElementsByClassName("accordion-ite");
+    // var i;
+    //
+    // for (i = 0; i < acc.length; i++) {
+    //     acc[i].onclick = function(){
+    //         /* Toggle between adding and removing the "active" class,
+    //         to highlight the button that controls the panel */
+    //         this.classList.toggle("active");
+    //
+    //         /* Toggle between hiding and showing the active panel */
+    //         var panel = this.nextElementSibling;
+    //         if (panel.style.display === "block") {
+    //             panel.style.display = "none";
+    //         } else {
+    //             panel.style.display = "block";
+    //         }
+    //     }
+    // }
+    var allPanels = $('.account__tab-content').hide();
+    $('.table__accordion-btn').click(function() {
+      $(this).toggleClass('table__accordion-btn--active');
+      $(this).closest('table').next().toggle();
+      return false;
     });
+
+
+
+    var tabs = document.querySelectorAll('[data-tablink]');
+    if (tabs && tabs.length > 0) {
+      [].forEach.call(tabs, function(tab) {
+        tab.addEventListener('click', function(event) {
+          event.preventDefault();
+          var allTabs = this.parentNode.parentNode.querySelectorAll('[data-tablink]');
+          [].forEach.call(allTabs, function(item) {
+            item.classList.remove('tabs__nav-item--active');
+          });
+          this.classList.add('tabs__nav-item--active');
+          var content = document.querySelector('[data-tabcontent="' + this.dataset.tablink + '"]');
+          var allContent = content.parentNode.querySelectorAll('[data-tabcontent]');
+          [].forEach.call(allContent, function(item) {
+            item.classList.add('hidden');
+          });
+          content.classList.remove('hidden');
+        });
+      });
+    }
 });

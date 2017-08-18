@@ -1,0 +1,151 @@
+section.main-body.body--margin
+    .main-wrapper
+        .account-page.df
+            aside.account-menu
+              ul.account-menu__list
+                li.account-menu__item
+                  a(href="#").account-menu__link.account-menu__link--active Bestellungen  verwalten
+                li.account-menu__item
+                  a(href="#").account-menu__link Zahlungsart
+                li.account-menu__item
+                  a(href="#").account-menu__link Lieferadresse
+                li.account-menu__item
+                  a(href="#").account-menu__link Meine Daten
+                li.account-menu__item
+                  a(href="#").account-menu__link Zuletzt gesehene  Artikel
+                li.account-menu__item
+                  a(href="#").account-menu__link Wunschliste
+            .account-main-content.account-main-content--full-width.df-cb.dfw
+                h1.account__header
+                    span MEIN KONTO
+                article.account__ordering-block
+                    h2.title-with-stripe
+                        span Zuletzt gesehene Artikel
+                    .account__form-table
+                        .account__orders.cart-table.cart-table--transparent.cart-table--padding
+                            table.table
+                                tr.table__content.table__content--border-bottom 
+                                    td.table__image.t-ac
+                                        img(src="/img/product5.png" alt="#").image
+                                    td.table__product-info.table__product-info--small
+                                        h3.header
+                                            span Brit JUNIOR LARGE BREED 
+                                        .article
+                                            span Getreidefrei Lachs & Kartoffel 1kg
+
+                                    td.table__stars
+                                        .stars.df-c
+                                            .active
+                                                span ★★
+                                            .not-active
+                                                span ☆☆☆
+                                    td.table__unit-price
+                                        span €12.00
+                                    td.table__to-cart.t-ar
+                                        button(type="button").table__btn-to-cart In den Warenkorb
+                                tr.table__content
+                                    td.table__image.t-ac
+                                        img(src="/img/product5.png" alt="#").image
+                                    td.table__product-info.table__product-info--small
+                                        h3.header
+                                            span Brit JUNIOR LARGE BREED 
+                                        .article
+                                            span Getreidefrei Lachs & Kartoffel 1kg
+                                    td.table__stars
+                                        .stars.df-c
+                                            .active
+                                                span ★★
+                                            .not-active
+                                                span ☆☆☆
+                                    td.table__unit-price
+                                        span €12.00
+                                    td.table__to-cart.t-ar
+                                        button(type="button").table__btn-to-cart In den Warenkorb
+                                    
+                        .account__footer.df
+                            a(href="#").account__show-all Alles anzeigen
+                article.account__ordering-block.account__ordering-block--half
+                    h2.title-with-stripe
+                        span Lieferadresse
+                    .account__form-table
+                        .delivery.account__wrapper
+                            ul.delivery__list
+                                li.delivery__item
+                                    label(for="address1").delivery__label.df-cb
+                                        input(type="radio" name="address" id="address1").input-radio-red
+                                        .delivery__address
+                                            p.text
+                                                |Asfesdfg, 21.
+                                                br
+                                                |Portugal fsd, 1000-001 
+                                        span.delivery__btn Wahlen
+                                li.delivery__item
+                                    label(for="address2").delivery__label.df-cb
+                                        input(type="radio" name="address" id="address2").input-radio-red
+                                        .delivery__address
+                                            p.text
+                                              |Asfesdfg, 21.
+                                              br
+                                              |Portugal fsd, 1000-001 
+                                        span.delivery__btn Wahlen
+                                          
+                        .account__footer.df
+                            a(href="#").account__show-all Alles anzeigen
+                article.account__ordering-block.account__ordering-block--half
+                    h2.title-with-stripe
+                        span Bestellungen verwalten
+                    .account__form-table
+                        .order-details.account__wrapper
+                            .order-details__item
+                                b.order-details__name Bestellung stornieren:
+                                span.order-details__value May 17, 2017
+                            .order-details__item
+                                b.order-details__name Bestellung Nr:
+                                span.order-details__value 15674
+                            .order-details__item
+                                b.order-details__name Zugestellt:
+                            .order-details__item
+                                b.order-details__name Status:
+                                span.order-details__value Abgebrochene PayPal-Bestellungen
+                            .order-details__item
+                                b.order-details__name Gesamtpreis:
+                                span.order-details__value 63,02
+                        .account__footer.df
+                            a(href="#").account__show-all Alles anzeigen 
+
+                article.account__ordering-block
+                  h2.title-with-stripe
+                      span Lieferadresse
+                  .account__form-table
+                      .account__payment.account__wrapper
+                        article.payment.payment--info-list
+                            ul.payment__list
+                                li.payment__element
+                                    .payment__wrapper.df-cb 
+                                        .payment__status
+                                            i.material-icons done
+                                        .payment__image.df-c
+                                            img(src="/img/paypal-pay.png" alt="#").image
+                                        .payment__text
+                                            p.text.
+                                              Master Card, VISA. Sie werden direkt auf die sicher verschlüsselte Seite geleitet, wo Sie die Zahlung per Kreditkarte vornehmen.
+                                li.payment__element
+                                    .payment__wrapper.df-cb
+                                        .payment__status
+                                            i.material-icons done
+                                        .payment__image.df-c
+                                            img(src="/img/sofort-pay.png" alt="#").image
+                                        .payment__text
+                                            p.text.
+                                              Sie werden auf die geschützte PayPal-Seite weitergeleitet um die Bezahlung abzuschließen. 
+                                li.payment__element
+                                    .payment__wrapper.df-cb
+                                        .payment__status
+                                            i.material-icons done
+                                        .payment__image.df-c
+                                            img(src="/img/vorkasse-pay.png" alt="#").image
+                                        .payment__text
+                                            p.text.
+                                              Sofortige und bequeme Zahlungsart für Online-Banking Nutzer.  
+                      .account__footer.df
+                          a(href="#").account__show-all Alles anzeigen

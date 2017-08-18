@@ -10,27 +10,25 @@
   box-sizing border-box
   margin-bottom 40px
   border 1px solid c_lgray
-  &__big-image
-    width 397px
-    height 100%
-
-
-
   &__list
     width 100px
-  &__item
+
+  & .lSSlideOuter .lSPager.lSGallery li
     padding 5px
-    margin-top 15px
+    box-sizing border-box
+    text-align center
     display block
     border 1px solid c_lgray
     &:hover
-      border 1px solid c_orange
-    &.active
       border 1px solid c_orange
     & img
       max-height 90px
       height 100%
       width auto
+      display block
+      margin 0 auto
+  & .lSSlideOuter .lSPager.lSGallery li.active
+    border 1px solid c_orange
 .product-cart
   width 540px
   margin-bottom 40px
@@ -101,8 +99,28 @@
       margin-bottom 10px
     &-type
       font-family r_med
+      align-items flex-end
       & .input
         display none
+      & label
+        font-size 16px
+        color c_mgray
+        &::after
+          content ''
+          display inline-block
+          height 14px
+          width 1px
+          background-color c_mgray
+          margin-right 5px
+          margin-left 5px
+        &:last-child::after
+          display none
+        &:hover
+          color c_orange
+      & input[type='radio']:checked + label
+        font-size 20px
+        color c_orange
+
   &__amount
     margin-bottom 20px
     &-choice
@@ -182,7 +200,8 @@
   &__nav
     border-bottom 1px solid c_lgray
   &__nav-item
-    padding 0 18px
+    display inline-block
+    padding 0 18px 5px
     text-transform uppercase
     font-size 20px
     background-color transparent
@@ -282,6 +301,7 @@
   box-sizing border-box
   padding 10px 0px
   margin-bottom 15px
+  position relative
   &__header
     text-transform uppercase
     color c_orange
@@ -293,46 +313,56 @@
       display none
       width 1020px
       margin 0 auto
-    & .bx-prev
-      display block
-      left -40px
-    & .bx-next
-      display block
-      right -40px
-    & .bx-controls-direction a
-      top 0
-      bottom 0
-      margin auto 0
-      display inline-block
-      background-color #ededed
-      &:first-of-type
-        height 40px
-        width 40px
-        background-image none
-        &::before
-          content 'import_contacts'
-          font-family 'Material Icons'
-          font-size 20px
-          display block
-          position absolute
-          left 4px
-          top 13px
-      &:last-of-type
-        height 40px
-        width 40px
-        background-image none
-        &::before
-          content ''
-          position absolute
-          right 4px
-          top 13px
-          font-size 20px
   &::after
     content ''
     left 5px
     top -32px
     position absolute
     retinaSprite($big_paw_group)
+  & .bx-prev
+    position absolute
+    display block
+    top 0
+    bottom 0
+    left 0px
+    margin auto 0
+    font-size 0
+    height 40px
+    width 40px
+    background-image none
+    background-color c_mgray
+    border 0
+    & i
+      position absolute
+      margin auto
+      top 0
+      bottom 0
+      left 0
+      right 0
+      width 24px
+      height 24px
+  & .bx-next
+    position absolute
+    display block
+    top 0
+    bottom 0
+    right 0px
+    margin auto 0
+    font-size 0
+    height 40px
+    width 40px
+    background-image none
+    background-color c_mgray
+    border 0
+    & i
+      position absolute
+      margin auto
+      top 0
+      bottom 0
+      left 0
+      right 0
+      width 24px
+      height 24px
   &__wrapper
     width 1020px
     margin 0 auto

@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>TOPTIERBEDAF</title>
-    <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/fonts.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
     <link href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" rel="stylesheet" type="text/css">
     <link href="lib/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    <link href="lib/lightslider.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="main">
@@ -54,15 +55,10 @@
           </article>
           <div class="product-wrapper df dfw df--b">
             <div class="product-view df">
-              <div class="product-view__big-image">
-                <ul class="bxslider-pic">
-                  <li><img class="image" src="/img/product2.png"></li>
-                  <li><img class="image" src="/img/product3.png"></li>
-                  <li><img class="image" src="/img/product4.png"></li>
-                </ul>
-              </div>
-              <ul class="product-view__list df df-dc">
-                <div id="bx-pager"><a class="product-view__item product-view__item--active" href="#" data-slide-index="0"><img class="image" src="/img/product2.png"></a><a class="product-view__item product-view__item" href="#" data-slide-index="1"><img class="image" src="/img/product3.png"></a><a class="product-view__item product-view__item" href="#" data-slide-index="2"><img class="image" src="/img/product4.png"></a></div>
+              <ul id="vertical">
+                <li data-thumb="/img/product12.jpg"><img src="/img/product12.jpg"></li>
+                <li data-thumb="/img/product11.jpg"><img src="/img/product11.jpg"></li>
+                <li data-thumb="/img/product11.jpg"><img src="/img/product11.jpg"></li>
               </ul>
               <div class="sale-corner sale-corner--big"><span>SALE</span></div>
             </div>
@@ -90,9 +86,9 @@
                   <div class="product-cart__weight">
                     <div class="product-cart__weight-header"><span>Gewicht: </span></div>
                     <div class="product-cart__weight-type df">
-                      <input class="input" type="checkbox" id="small-weight">
+                      <input class="input" type="radio" id="small-weight" name="weight-type" checked>
                       <label class="label" for="small-weight"><span>10x0.05g</span></label>
-                      <input class="input" type="checkbox" id="big-weight">
+                      <input class="input" type="radio" id="big-weight" name="weight-type">
                       <label class="label" for="big-weight"><span>35x190g  </span></label>
                     </div>
                   </div>
@@ -113,8 +109,8 @@
               </div>
             </article>
             <div class="tabs tabs--product">
-              <div class="tabs__nav"><a class="tabs__nav-item tabs__nav-item--active" href="#tabs3">PRODUKTINFORMATION</a><a class="tabs__nav-item" href="#tabs4">Inhaltsstoffe</a></div>
-              <article class="tabs__item df" id="tabs-0">
+              <div class="tabs__nav"><a class="tabs__nav-item tabs__nav-item--active" href="#" data-tablink="product-tab1">PRODUKTINFORMATION</a><a class="tabs__nav-item" href="#" data-tablink="product-tab2">Inhaltsstoffe</a></div>
+              <article class="tabs__item df" data-tabcontent="product-tab1">
                 <div class="tabs__product-logo"><img class="image" src="/img/8in1.png"></div>
                 <div class="tabs__product-text">
                   <p>Delights Beef Kauknochen L 8in1  im ZooBio Online Tiershop Kauknochen mit Rindfleisch - die Geschmacksvariante.</p>
@@ -135,7 +131,7 @@
                   <p>8in1 Delights Beef Kauknochen L 85g</p>
                 </div>
               </article>
-              <article class="product__ingredients" id="tabs-0"></article>
+              <article class="product__ingredients" data-tabcontent="product-tab2" hidden=""></article>
             </div>
             <div class="aside-recomendations df df-dc">
               <h4 class="aside-recomendations__header"> <span>EMPFEHLUNG FÜR HUND</span></h4><a class="aside-recomendations__item" href="#">
@@ -159,7 +155,7 @@
               </p>
             </div>
             <section class="slider">
-              <div class="slider__header">WIRD OFT ZUSAMMEN GEKAUFT</div>
+              <div class="slider__header">WIRD OFT ZUSAMMEN GEKAUFT </div>
               <div class="slider__wrapper">
                 <ul class="slider__list">
                   <li><a class="slider__link" href="#"><img src="./img/product2.png" alt="#"><strong>Gürteltasche Basic Detroit</strong><span class="slider__price">24,69 €</span></a></li>
@@ -171,47 +167,50 @@
                   <li><a class="slider__link" href="#"><img src="./img/product2.png" alt="#"><strong>Gürteltasche Basic Detroit</strong><span class="slider__price">24,69 €</span></a></li>
                   <li><a class="slider__link" href="#"><img src="./img/product2.png" alt="#"><strong>Gürteltasche Basic Detroit</strong><span class="slider__price">24,69 €</span></a></li>
                 </ul>
+                <div class="slider__controls outside"><span id="slider-prev"></span><span id="slider-next"></span></div>
               </div>
             </section>
             <div class="tabs tabs--reviews">
-              <div class="tabs__nav"><a class="tabs__nav-item" href="#tabs-1">Bewertungen</a><a class="tabs__nav-item tabs__nav-item--active" href="#tabs-2">Eine Bewertung schreiben</a></div>
-              <article class="tabs__item df" id="tabs-0">
-                <div class="form-block form-block--reviews">
-                  <div class="form-block__element form-block__element--full-width">
-                    <form class="df-cb dfw">
-                      <div class="form-block__stars df">
-                        <div class="form-block__description">Bewerten Sie das Produkt nach den folgenden Kriterien <span>(1 Stern- schlecht, 5 - sehr gut)</span></div>
-                        <div class="element__stars">
-                          <div class="not-active"><span>☆☆☆☆☆</span></div>
-                        </div>
-                      </div>
-                      <div class="form-block__inputs-wrapper df-cb dfw">
-                        <div class="form-block__name">
-                          <label for="name"><span>Name*</span></label>
-                          <input class="forms__input forms__input--border" type="name" id="name" placeholder="Name">
-                        </div>
-                        <div class="form-block__mail">
-                          <label for="email"><span>E-Mail-Adresse*</span></label>
-                          <input class="forms__input forms__input--border" type="email" id="email" placeholder="E-Mail-Adresse*">
-                        </div>
-                        <div class="form-block__sex">
-                          <div class="main-form__sex df-c"><span class="header">Anrede</span>
-                            <input class="input" type="radio" name="sex" id="sex1" checked>
-                            <label class="label" for="sex1"><span>Herr</span></label>
-                            <input class="input" type="radio" name="sex" id="sex2">
-                            <label class="label" for="sex2"><span>Frau</span></label>
+              <div class="tabs__nav"><a class="tabs__nav-item tabs__nav-item--active" href="#" data-tablink="form">Bewertungen</a><a class="tabs__nav-item" href="#" data-tablink="reviews">Eine Bewertung schreiben</a></div>
+              <div class="tabs__content" data-tabgroup="product-footer">
+                <article class="tabs__item df" data-tabcontent="form">
+                  <div class="form-block form-block--reviews">
+                    <div class="form-block__element form-block__element--full-width">
+                      <form class="df-cb dfw">
+                        <div class="form-block__stars df">
+                          <div class="form-block__description">Bewerten Sie das Produkt nach den folgenden Kriterien <span>(1 Stern- schlecht, 5 - sehr gut)</span></div>
+                          <div class="element__stars">
+                            <div class="not-active"><span>☆☆☆☆☆</span></div>
                           </div>
                         </div>
-                        <textarea class="textarea textarea--border"></textarea>
-                        <div class="main-form__submit-block df-cb">
-                          <button class="big-orange-btn" type="submit">Bewertung hinzufügen</button>
+                        <div class="form-block__inputs-wrapper df-cb dfw">
+                          <div class="form-block__name">
+                            <label for="name"><span>Name*</span></label>
+                            <input class="forms__input forms__input--border" type="name" id="name" placeholder="Name">
+                          </div>
+                          <div class="form-block__mail">
+                            <label for="email"><span>E-Mail-Adresse*</span></label>
+                            <input class="forms__input forms__input--border" type="email" id="email" placeholder="E-Mail-Adresse*">
+                          </div>
+                          <div class="form-block__sex">
+                            <div class="main-form__sex df-c"><span class="header">Anrede</span>
+                              <input class="input" type="radio" name="sex" id="sex1" checked>
+                              <label class="label" for="sex1"><span>Herr</span></label>
+                              <input class="input" type="radio" name="sex" id="sex2">
+                              <label class="label" for="sex2"><span>Frau</span></label>
+                            </div>
+                          </div>
+                          <textarea class="textarea textarea--border"></textarea>
+                          <div class="main-form__submit-block df-cb">
+                            <button class="big-orange-btn" type="submit">Bewertung hinzufügen</button>
+                          </div>
                         </div>
-                      </div>
-                    </form>
+                      </form>
+                    </div>
                   </div>
-                </div>
-              </article>
-              <article class="tabs__item df" id="tabs-"><span>kjljh kljhkljhkljh</span></article>
+                </article>
+                <article class="tabs__item df hidden" data-tabcontent="reviews" hidden=""><span>kjljh kljhkljhkljh</span></article>
+              </div>
             </div>
           </div>
         </div>
@@ -272,6 +271,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
     <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" type="text/javascript"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    <script src="lib/lightslider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
   </body>

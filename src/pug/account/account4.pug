@@ -1,0 +1,163 @@
+section.main-body.body--margin
+    .main-wrapper
+        .account-page.df
+            aside.account-menu
+              ul.account-menu__list
+                li.account-menu__item
+                  a(href="#").account-menu__link Bestellungen  verwalten
+                li.account-menu__item
+                  a(href="#").account-menu__link Zahlungsart
+                li.account-menu__item
+                  a(href="#").account-menu__link Lieferadresse
+                li.account-menu__item
+                  a(href="#").account-menu__link.account-menu__link--active Meine Daten
+                li.account-menu__item
+                  a(href="#").account-menu__link Zuletzt gesehene  Artikel
+                li.account-menu__item
+                  a(href="#").account-menu__link Wunschliste
+            .account-main-content
+                h1.account__header
+                    span MEIN KONTO
+
+                article.form-block.df
+                    .form-block__element.form-block__element--full-width
+                        h2.progress-bar__legend
+                            span ANMELDEINFORMATION
+                        .forms
+                            label(for="email2").forms__label
+                                span E-Mail-Adresse*
+                            input(type="email" id="email2").forms__input
+                            .forms__half
+                              label(for="passwot1").forms__label
+                                  span Passwort*
+                              input(type="password" id="passwot1").forms__input
+                            .forms__half
+                              label(for="passwot2").forms__label
+                                  span Passwort wiederholen*
+                              input(type="password" id="passwot2").forms__input
+                h2.progress-bar__legend
+                    span PERSÖNLICHE INFORMATION
+                .main-form.main-form--account
+                    .main-form__sex.df-c
+                        span.header Anrede
+                        input(type="radio" name="sex" id="sex1").input
+                        label(for="sex1").label
+                            span Herr
+                        input(type="radio" name="sex" id="sex2").input
+                        label(for="sex2").label
+                            span Frau
+                        input(type="radio" name="sex" id="sex3").input
+                        label(for="sex3").label
+                            span Firma
+                    .main-form__columns.df
+                        .column
+                            label(for="vorname").column__label
+                                span Vorname*
+                            input(type="text" id="vorname").column__input
+                            label(for="firma").column__label
+                                span Firma*
+                            input(type="text" id="firma").column__input
+                            label(for="ust").column__label
+                                span USt-IdNr.*
+                            .select-wrapper.df
+                                select.js-cart-select2
+                                    option
+                                    option
+                                    option
+                                        span: img(src="/img/flags/deu.png").image
+                                input(type="text" id="telefon").column__input-small
+                            label(for="strabe").column__label
+                                span Straße*
+                            input(type="text" id="strabe").column__input
+                            label(for="adresszusatz").column__label
+                                span Adresszusatz
+                            input(type="text" id="adresszusatz").column__input.column__input-sub
+                            .column__label-sub
+                                span Die Angabe einer DHL-Packstation ist nicht zulässig!
+                            label(for="stadt").column__label
+                                span Stadt*
+                            input(type="text" id="stadt").column__input
+                        .column
+                            label(for="nachname").column__label
+                                span Nachname*
+                            input(type="text" id="nachname").column__input
+                            label(for="steuernummer").column__label
+                                span Steuernummer
+                            input(type="text" id="steuernummer").column__input
+                            label(for="hausnummer").column__label
+                                span Hausnummer*
+                            input(type="text" id="hausnummer").column__input
+                            label(for="postleitzahl").column__label
+                                span Postleitzahl*
+                            input(type="text" id="postleitzahl").column__input
+                            label(for="land").column__label
+                                span Land*
+                            select.column__select.js-cart-select
+                                option Deutschland
+                                option Ukraine
+                                option Something
+                            label(for="telefon").column__label.w100p
+                                span Telefon*
+                            .select-wrapper.df
+                                select.js-cart-select3
+                                    option
+                                    option
+                                    option
+                                        span: img(src="/img/flags/deu.png").image
+                                .column__input-pre.df-cc
+                                    span +049
+                                input(type="text" id="telefon").column__input-small
+
+                    .main-form__info-mark.df-c
+                        input(type="checkbox" id="news" checked).input
+                        label(for="news").label
+                            span Lieferung ebenfalls an diese Adresse
+                        span * Pflichtfelder
+                .account__small-wrapper
+                    .account__submit-block.df-cb
+                        button(type="button").big-orange-btn.big-orange-btn--invert ANMELDEN
+                        button(type="button").big-orange-btn WEITER
+                    h2.progress-bar__legend
+                        span INTERESSENGEBIETE:
+                    .forms-wrapper
+                        .main-form__info-mark
+                            .main-form__columns.df
+                                .column.column--third.df
+                                    .input-wrapper
+                                      input(type="checkbox" id="hunde").input
+                                      label(for="hunde").label
+                                          span Hunde
+                                    .input-wrapper 
+                                      input(type="checkbox" id="katzen").input
+                                      label(for="katzen").label
+                                          span Katzen
+                                    .input-wrapper
+                                      input(type="checkbox" id="vogel").input
+                                      label(for="vogel").label
+                                          span Vogel
+                                .column.column--third.df
+                                    .input-wrapper
+                                        input(type="checkbox" id="kleintiere").input
+                                        label(for="kleintiere").label
+                                            span Kleintiere 
+                                    .input-wrapper
+                                        input(type="checkbox" id="aquaristik").input
+                                        label(for="aquaristik").label
+                                            span Aquaristik
+                                    .input-wrapper
+                                        input(type="checkbox" id="pferd").input
+                                        label(for="pferd").label
+                                            span Pferd
+                                .column.column--third.df
+                                    .input-wrapper
+                                        input(type="checkbox" id="biofutter-hunde").input
+                                        label(for="biofutter-hunde").label
+                                            span Biofutter für Hunde
+                                    .input-wrapper
+                                        input(type="checkbox" id="biofutter-katzen").input
+                                        label(for="biofutter-katzen").label
+                                            span Biofutter für Katzen
+                                    .input-wrapper
+                                        input(type="checkbox" id="terraristik").input
+                                        label(for="terraristik").label
+                                            span Terraristik
