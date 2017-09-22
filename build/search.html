@@ -12,38 +12,38 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="main">
+    <div id="wrapper">
       <header class="main-header">
         <div class="main-wrapper df-c h100p">
           <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
-          <article class="contacts df-cc">
-            <div class="contacts__image df-cc"><i class="material-icons">phone</i></div>
-            <div class="contacts__number"><span>+49 30 208 476 906</span></div>
-            <div class="contacts__time"><span>Mo - Fr 9:00 - 18:00 Uhr</span></div>
+          <article class="main-header__contacts df-cc">
+            <div class="main-header__contacts-image df-cc"><i class="material-icons">phone</i></div>
+            <div class="main-header__contacts-number"><span>+49 30 208 476 906</span></div>
+            <div class="main-header__contacts-time"><span>Mo - Fr 9:00 - 18:00 Uhr</span></div>
           </article>
-          <article class="account"><a class="account__image" href="#"></a></article>
-          <article class="wishlist"><a class="wishlist__image" href="#"></a></article>
-          <article class="cart"><a class="df-c" href="#">
-              <div class="cart__image"></div><span>€12.00</span></a></article>
+          <article class="main-header__account"><a class="main-header__account-image" href="#"></a></article>
+          <article class="main-header__wishlist"><a class="main-header__wishlist-image" href="#"></a></article>
+          <article class="main-header__cart"><a class="df-c" href="#">
+              <div class="main-header__cart-image"></div><span class="main-header__cart-price">€12.00</span></a></article>
         </div>
       </header>
       <nav class="main-navigation">
-        <div class="main-wrapper df-c h100p"><a class="sandwich df-cc" href="#"><i class="material-icons">menu</i></a>
-          <ul class="list df-c">
-            <li><a class="list__element" href="#">HUND</a></li>
-            <li><a class="list__element" href="#">KATZE</a></li>
-            <li><a class="list__element" href="#">VOGEL</a></li>
-            <li><a class="list__element" href="#">KLEINTIERE</a></li>
-            <li><a class="list__element" href="#">AQUARISTIK</a></li>
-            <li><a class="list__element" href="#">PFERD</a></li>
-            <li><a class="list__element" href="#">MARKEN</a></li>
-            <li><a class="list__element" href="#">TERRARISTIK</a></li>
+        <div class="main-wrapper df-c h100p"><a class="main-navigation__sandwich df-cc" href="#"><i class="main-navigation__sandwich-icon material-icons">menu</i></a>
+          <ul class="main-navigation__list df-c">
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">HUND</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">KATZE</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">VOGEL</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">KLEINTIERE</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">AQUARISTIK</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">PFERD</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">MARKEN</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">TERRARISTIK</a></li>
           </ul>
-          <article class="search"><a class="search__image" href="#"><i class="material-icons">search</i></a></article>
+          <article class="main-navigation__search"><a class="main-navigation__search-image" href="#"><i class="material-icons">search</i></a></article>
         </div>
       </nav>
-      <div class="main-body">
-        <div class="main-wrapper main-menu-margin df--b dfw">
+      <main class="search-page">
+        <div class="main-wrapper">
           <aside class="aside-block">
             <div class="aside-filter">
               <form action="#" method="get">
@@ -203,28 +203,28 @@
                 </div>
               </form>
             </div>
-            <article class="products__ad"><img class="ad-image" src="/img/ad-slot1.jpg" alt="#">
-              <div class="header df-c">
-                <div class="percent df-cc"><span>10%</span></div>
-                <h2 class="text"><span>Rabatt</span></h2>
+            <article class="aside-special-offers"><img class="ad-image" src="/img/ad-slot1.jpg" alt="#">
+              <div class="aside-special-offers__header df-c">
+                <div class="aside-special-offers__percent df-cc"><span>10%</span></div>
+                <div class="aside-special-offers__text"><span>Rabatt</span></div>
               </div>
-              <div class="info">
-                <div class="info__main"><span>Auf Ihre Bestellung</span></div>
-                <div class="info__text"><span>Erfahren Sie Nutzliches, Kaufen Sie Billiger!</span></div>
+              <div class="aside-special-offers__info">
+                <div class="aside-special-offers__info-main"><span>Auf Ihre Bestellung</span></div>
+                <div class="aside-special-offers__info-text"><span>Erfahren Sie Nutzliches, Kaufen Sie Billiger!</span></div>
               </div>
             </article>
-            <article class="products__ad">
-              <div class="ad-form">
-                <h2 class="ad-form__header"><span>Angebote & Rabatte sichern!</span></h2>
-                <div class="ad-form__text">
+            <article class="aside-registration">
+              <div class="aside-registration__form">
+                <h2 class="aside-registration__header"><span>Angebote & Rabatte sichern!</span></h2>
+                <div class="aside-registration__text">
                   <p>
                     Dann sind Sie bei uns genau richtig. Wir bieten Ihnen zahlreiche Produkte aus dem Bereich
                     Tierbedarf. So finden Sie in unserem Sortiment ebenfalls erstklassige Artikel für Nager,
                     alles rund um die
                   </p>
                 </div>
-                <input class="ad-form__input" type="text" placeholder="E-Mail Adresse hier eingeben">
-                <button class="ad-form__button" type="button">ABONNIEREN</button>
+                <input class="aside-registration__input" type="text" placeholder="E-Mail Adresse hier eingeben">
+                <button class="aside-registration__button" type="button">ABONNIEREN</button>
               </div>
             </article>
           </aside>
@@ -260,54 +260,54 @@
                 <label class="column__label" for="stock"><span>auf Lager</span></label>
               </div>
             </article>
-            <article class="products__main df">
-              <div class="content df">
-                <ul class="list list-products df--b dfw">
-                  <li class="element df">
-                    <div class="element-visible">
+            <article class="products-main df">
+              <div class="products-main__content df">
+                <ul class="products-main__list df--b dfw">
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
                       <div class="sale-corner corner"><span>SALE</span></div>
-                      <div class="element__image df-cc df-cc"><img class="image" src="/img/product1.png" alt="#"></div>
-                      <div class="element__text">
-                        <h6 class="element__header"><span>Brit JUNIOR LARGE BREED</span></h6>
-                        <div class="element__info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
-                        <div class="element__stars df-c">
-                          <div class="active"><span>★★</span></div>
-                          <div class="not-active"><span>☆☆☆</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product1.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>Brit JUNIOR LARGE BREED</span></h6>
+                        <div class="products-main__element-info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
                         </div>
                         <div class="buttons-block buttons-block--list df"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
                       </div>
-                      <div class="element__buy">
-                        <div class="element__price"><span>€12.00</span></div>
-                        <div class="status-block status-block--list">
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <div class="status-block">
                           <div class="status-block__header"><span>Status</span></div>
                           <div class="status-block__info"><span>auf Lager</span></div>
                         </div>
-                        <button class="element__button" type="button">In den Warenkorb</button>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
                       </div>
                     </div>
-                    <div class="hover">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -316,51 +316,51 @@
                       </div>
                     </div>
                   </li>
-                  <li class="element df">
-                    <div class="element-visible">
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
                       <div class="natural-corner corner"><span>SALE</span></div>
-                      <div class="element__image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
-                      <div class="element__text">
-                        <h6 class="element__header"><span>Brit JUNIOR LARGE BREED</span></h6>
-                        <div class="element__info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
-                        <div class="element__stars df-c">
-                          <div class="active"><span>★★</span></div>
-                          <div class="not-active"><span>☆☆☆</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>Brit JUNIOR LARGE BREED</span></h6>
+                        <div class="products-main__element-info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
                         </div>
                         <div class="buttons-block buttons-block--list df"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
                       </div>
-                      <div class="element__buy">
-                        <div class="element__price"><span>€12.00</span></div>
-                        <div class="status-block status-block--list">
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <div class="status-block">
                           <div class="status-block__header"><span>Status</span></div>
                           <div class="status-block__info"><span>auf Lager</span></div>
                         </div>
-                        <button class="element__button" type="button">In den Warenkorb</button>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
                       </div>
                     </div>
-                    <div class="hover">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -369,51 +369,51 @@
                       </div>
                     </div>
                   </li>
-                  <li class="element df">
-                    <div class="element-visible">
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
                       <div class="new-corner corner"><span>SALE</span></div>
-                      <div class="element__image df-cc df-cc"><img class="image" src="/img/product3.png" alt="#"></div>
-                      <div class="element__text">
-                        <h6 class="element__header"><span>Brit JUNIOR LARGE BREED</span></h6>
-                        <div class="element__info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
-                        <div class="element__stars df-c">
-                          <div class="active"><span>★★</span></div>
-                          <div class="not-active"><span>☆☆☆</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product3.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>Brit JUNIOR LARGE BREED</span></h6>
+                        <div class="products-main__element-info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
                         </div>
                         <div class="buttons-block buttons-block--list df"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
                       </div>
-                      <div class="element__buy">
-                        <div class="element__price"><span>€12.00</span></div>
-                        <div class="status-block status-block--list">
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <div class="status-block">
                           <div class="status-block__header"><span>Status</span></div>
                           <div class="status-block__info"><span>auf Lager</span></div>
                         </div>
-                        <button class="element__button" type="button">In den Warenkorb</button>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
                       </div>
                     </div>
-                    <div class="hover">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -422,51 +422,51 @@
                       </div>
                     </div>
                   </li>
-                  <li class="element df">
-                    <div class="element-visible">
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
                       <div class="natural-corner corner"><span>NATURAL</span></div>
-                      <div class="element__image df-cc df-cc"><img class="image" src="/img/product4.png" alt="#"></div>
-                      <div class="element__text">
-                        <h6 class="element__header"><span>Brit JUNIOR LARGE BREED</span></h6>
-                        <div class="element__info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
-                        <div class="element__stars df-c">
-                          <div class="active"><span>★★</span></div>
-                          <div class="not-active"><span>☆☆☆</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product4.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>Brit JUNIOR LARGE BREED</span></h6>
+                        <div class="products-main__element-info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
                         </div>
                         <div class="buttons-block buttons-block--list df"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
                       </div>
-                      <div class="element__buy">
-                        <div class="element__price"><span>€12.00</span></div>
-                        <div class="status-block status-block--list">
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <div class="status-block">
                           <div class="status-block__header"><span>Status</span></div>
                           <div class="status-block__info"><span>auf Lager</span></div>
                         </div>
-                        <button class="element__button" type="button">In den Warenkorb</button>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
                       </div>
                     </div>
-                    <div class="hover">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -475,51 +475,51 @@
                       </div>
                     </div>
                   </li>
-                  <li class="element df">
-                    <div class="element-visible">
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
                       <div class="sale-corner corner"><span>SALE</span></div>
-                      <div class="element__image df-cc df-cc"><img class="image" src="/img/product1.png" alt="#"></div>
-                      <div class="element__text">
-                        <h6 class="element__header"><span>Brit JUNIOR LARGE BREED</span></h6>
-                        <div class="element__info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
-                        <div class="element__stars df-c">
-                          <div class="active"><span>★★</span></div>
-                          <div class="not-active"><span>☆☆☆</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product1.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>Brit JUNIOR LARGE BREED</span></h6>
+                        <div class="products-main__element-info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
                         </div>
                         <div class="buttons-block buttons-block--list df"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
                       </div>
-                      <div class="element__buy">
-                        <div class="element__price"><span>€12.00</span></div>
-                        <div class="status-block status-block--list">
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <div class="status-block">
                           <div class="status-block__header"><span>Status</span></div>
                           <div class="status-block__info"><span>auf Lager</span></div>
                         </div>
-                        <button class="element__button" type="button">In den Warenkorb</button>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
                       </div>
                     </div>
-                    <div class="hover">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -528,51 +528,51 @@
                       </div>
                     </div>
                   </li>
-                  <li class="element df">
-                    <div class="element-visible">
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
                       <div class="new-corner corner"><span>SALE</span></div>
-                      <div class="element__image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
-                      <div class="element__text">
-                        <h6 class="element__header"><span>Brit JUNIOR LARGE BREED</span></h6>
-                        <div class="element__info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
-                        <div class="element__stars df-c">
-                          <div class="active"><span>★★</span></div>
-                          <div class="not-active"><span>☆☆☆</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>Brit JUNIOR LARGE BREED</span></h6>
+                        <div class="products-main__element-info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
                         </div>
                         <div class="buttons-block buttons-block--list df"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
                       </div>
-                      <div class="element__buy">
-                        <div class="element__price"><span>€12.00</span></div>
-                        <div class="status-block status-block--list">
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <div class="status-block">
                           <div class="status-block__header"><span>Status</span></div>
                           <div class="status-block__info"><span>auf Lager</span></div>
                         </div>
-                        <button class="element__button" type="button">In den Warenkorb</button>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
                       </div>
                     </div>
-                    <div class="hover">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -581,51 +581,51 @@
                       </div>
                     </div>
                   </li>
-                  <li class="element df">
-                    <div class="element-visible">
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
                       <div class="sale-corner corner"><span>SALE</span></div>
-                      <div class="element__image df-cc df-cc"><img class="image" src="/img/product3.png" alt="#"></div>
-                      <div class="element__text">
-                        <h6 class="element__header"><span>Brit JUNIOR LARGE BREED</span></h6>
-                        <div class="element__info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
-                        <div class="element__stars df-c">
-                          <div class="active"><span>★★</span></div>
-                          <div class="not-active"><span>☆☆☆</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product3.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>Brit JUNIOR LARGE BREED</span></h6>
+                        <div class="products-main__element-info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
                         </div>
                         <div class="buttons-block buttons-block--list df"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
                       </div>
-                      <div class="element__buy">
-                        <div class="element__price"><span>€12.00</span></div>
-                        <div class="status-block status-block--list">
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <div class="status-block">
                           <div class="status-block__header"><span>Status</span></div>
                           <div class="status-block__info"><span>auf Lager</span></div>
                         </div>
-                        <button class="element__button" type="button">In den Warenkorb</button>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
                       </div>
                     </div>
-                    <div class="hover">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -634,51 +634,51 @@
                       </div>
                     </div>
                   </li>
-                  <li class="element df">
-                    <div class="element-visible">
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
                       <div class="sale-corner corner"><span>SALE</span></div>
-                      <div class="element__image df-cc df-cc"><img class="image" src="/img/product4.png" alt="#"></div>
-                      <div class="element__text">
-                        <h6 class="element__header"><span>Brit JUNIOR LARGE BREED</span></h6>
-                        <div class="element__info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
-                        <div class="element__stars df-c">
-                          <div class="active"><span>★★</span></div>
-                          <div class="not-active"><span>☆☆☆</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product4.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>Brit JUNIOR LARGE BREED</span></h6>
+                        <div class="products-main__element-info"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
                         </div>
                         <div class="buttons-block buttons-block--list df"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
                       </div>
-                      <div class="element__buy">
-                        <div class="element__price"><span>€12.00</span></div>
-                        <div class="status-block status-block--list">
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <div class="status-block">
                           <div class="status-block__header"><span>Status</span></div>
                           <div class="status-block__info"><span>auf Lager</span></div>
                         </div>
-                        <button class="element__button" type="button">In den Warenkorb</button>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
                       </div>
                     </div>
-                    <div class="hover">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -691,70 +691,70 @@
               </div>
               <div class="pagination">
                 <ul class="pagination__list df">
-                  <li><a class="pagination__link pagination__link--active" href="#">1</a></li>
-                  <li><a class="pagination__link" href="#">2</a></li>
-                  <li><a class="pagination__link" href="#">3</a></li>
-                  <li><a class="pagination__link" href="#">4</a></li>
-                  <li><a class="pagination__link" href="#">5</a></li>
-                  <li><a class="pagination__link" href="#">6...</a></li>
-                  <li><a class="pagination__link pagination__link--arrows" href="#"><i class="material-icons">navigate_next</i></a></li>
-                  <li><a class="pagination__link pagination__link--arrows" href="#"><i class="material-icons">last_page</i></a></li>
+                  <li class="pagination__item"><a class="pagination__link pagination__link--active" href="#">1</a></li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">6...</a></li>
+                  <li class="pagination__item"><a class="pagination__link pagination__link--arrows" href="#"><i class="material-icons">navigate_next</i></a></li>
+                  <li class="pagination__item"><a class="pagination__link pagination__link--arrows" href="#"><i class="material-icons">last_page</i></a></li>
                 </ul>
               </div>
             </article>
           </section>
         </div>
-      </div>
+      </main>
       <footer class="footer">
         <div class="main-wrapper df">
           <article class="footer__column">
-            <h3 class="header"><span>KUNDENSERVICE</span></h3>
-            <ul class="list">
-              <li><a class="list__element" href="#">Registrieren</a></li>
-              <li><a class="list__element" href="#">Kontakt</a></li>
-              <li><a class="list__element" href="#">Versand</a></li>
-              <li><a class="list__element" href="#">Zahlung</a></li>
-              <li><a class="list__element" href="#">Widerruf</a></li>
-              <li><a class="list__element" href="#">FAQ</a></li>
+            <h3 class="footer__header"><span>KUNDENSERVICE</span></h3>
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#">Registrieren</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Kontakt</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Versand</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Zahlung</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Widerruf</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">FAQ</a></li>
             </ul>
           </article>
           <article class="footer__column">
-            <h3 class="header"><span>ÜBER ZOOBOOM</span></h3>
-            <ul class="list">
-              <li><a class="list__element" href="#">Impressum</a></li>
-              <li><a class="list__element" href="#">AGB</a></li>
-              <li><a class="list__element" href="#">Datenschutz</a></li>
-              <li><a class="list__element" href="#">Newsletter</a></li>
-              <li><a class="list__element" href="#">Blog</a></li>
-              <li><a class="list__element" href="#">Partnerprogramm</a></li>
+            <h3 class="footer__header"><span>ÜBER ZOOBOOM</span></h3>
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#">Impressum</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">AGB</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Datenschutz</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Newsletter</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Blog</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Partnerprogramm</a></li>
             </ul>
           </article>
           <article class="footer__column">
-            <h3 class="header"><span>SICHER EINKAUFEN</span></h3>
-            <ul class="list marked">
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Schneller Versand</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Käuferschutz</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Datenschutz</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Sichere Zahlung mit SSL-Ver­schlüs­se­lung</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Günstige Preise</a></li>
+            <h3 class="footer__header"><span>SICHER EINKAUFEN</span></h3>
+            <ul class="footer__list">
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Schneller Versand</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Käuferschutz</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Datenschutz</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Sichere Zahlung mit SSL-Ver­schlüs­se­lung</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="list__element" href="#">Günstige Preise</a></li>
             </ul>
           </article>
-          <article class="footer__label-column"><a class="logo" href="#"><img class="image" src="/img/logo-white.png" alt="#"></a>
-            <h3 class="header"><span>Folge auf</span></h3>
-            <ul class="social">
-              <li><a class="social__element df-cc" href="#"><img class="image" src="/img/facebook.png" alt="#"></a></li>
-              <li><a class="social__element df-cc" href="#"><img class="image" src="/img/twitter.png" alt="#"></a></li>
-              <li><a class="social__element df-cc" href="#"><img class="image" src="/img/linked-in.png" alt="#"></a></li>
+          <article class="footer__label-column"><a class="footer__logo" href="#"><img class="image" src="/img/logo-white.png" alt="#"></a>
+            <h3 class="footer__header"><span>Folge auf</span></h3>
+            <ul class="footer__social">
+              <li class="footer__social-item"><a class="footer__social-link df-cc" href="#"><img class="image" src="/img/facebook.png" alt="#"></a></li>
+              <li class="footer__social-item"><a class="footer__social-link df-cc" href="#"><img class="image" src="/img/twitter.png" alt="#"></a></li>
+              <li class="footer__social-item"><a class="footer__social-link df-cc" href="#"><img class="image" src="/img/linked-in.png" alt="#"></a></li>
             </ul>
-            <div class="delivery df-c"><a class="delivery__element df-cc" href="#"><img class="image" src="/img/dhl.png" alt="#"></a><a class="delivery__element df-cc" href="#"><img class="image" src="/img/dhl-pack.png" alt="#"></a></div>
+            <div class="footer__delivery df-c"><a class="footer__delivery-element df-cc" href="#"><img class="image" src="/img/dhl.png" alt="#"></a><a class="footer__delivery-element df-cc" href="#"><img class="image" src="/img/dhl-pack.png" alt="#"></a></div>
           </article>
         </div>
       </footer>
-      <section class="footer-info">
+      <section class="footer__info">
         <div class="main-wrapper h100p df-c">
-          <article class="language df-c"><span>Sprache</span><img class="image" src="/img/flags/deu.png" alt="#"></article>
-          <article class="information"><span>© 2016, Haustierbedarf Zoobio Online Shop für Tierbedarf & Tierfutter</span></article>
-          <article class="payment-links df-c"><a class="payment-links__image" href="#"><img class="image" src="/img/visa.png" alt="#"></a><a class="payment-links__image" href="#"><img class="image" src="/img/mastercard.png" alt="#"></a><a class="payment-links__image" href="#"><img class="image" src="/img/paypal.png" alt="#"></a></article>
+          <article class="footer__language df-c"><span>Sprache</span><img class="footer__language-image image" src="/img/flags/deu.png" alt="#"></article>
+          <article class="footer__information"><span>© 2016, Haustierbedarf Zoobio Online Shop für Tierbedarf & Tierfutter</span></article>
+          <article class="footer__payment-links df-c"><a class="footer__payment-image" href="#"><img class="image" src="/img/visa.png" alt="#"></a><a class="footer__payment-image" href="#"><img class="image" src="/img/mastercard.png" alt="#"></a><a class="footer__payment-image" href="#"><img class="image" src="/img/paypal.png" alt="#"></a></article>
         </div>
       </section>
     </div>

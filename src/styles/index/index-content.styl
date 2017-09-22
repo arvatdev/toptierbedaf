@@ -1,0 +1,83 @@
+.benefits
+  display flex
+  height 115px
+  width 100%
+  &__wrapper
+    width 25%
+  &__element
+    direction ltr
+  &__header
+    font-family r_bold
+    font-size 16px
+    color c_orange
+  &__info
+    font-family r_reg
+    font-size 14px
+.pet-choice
+  width 100%
+  &__block
+    display flex
+    flex-direction column
+    height 200px
+    width 540px
+    border 1px solid c_orange
+    padding 20px
+    box-sizing border-box
+  &__header
+    font-family r_med
+    font-size 16px
+    position relative
+    padding-bottom 10px
+    color c_black
+    &::before
+      position absolute
+      content ''
+      left 0
+      bottom 0
+      width 30px
+      border-bottom 2px solid c_orange
+  &__list
+    flex 1 1 auto
+  &__item
+    height 35px
+  &__link
+    height 100%
+    width 100%
+    font-family r_med
+    font-size 16px
+    padding 0 20px
+    box-sizing border-box
+    border-radius 3px
+    color c_gray
+    text-align center
+    transition all .2s ease
+    &:hover
+      background-color c_orange
+      color white
+.market-brands
+  margin 35px 0 35px 0
+  width 100%
+  &__header
+    display block
+    width 100%
+    text-align center
+    letter-spacing 1px
+    font-family r_med
+    font-size 26px
+    padding-bottom 20px
+    margin-bottom 20px
+    position relative
+    &::before
+      position absolute
+      content ''
+      bottom  0
+      right 48%
+      text-align center
+      width 30px
+      border-bottom 2px solid c_orange
+  &__link
+    width 140px
+    transition all .2s ease
+    &:hover
+      -webkit-filter brightness(110%)
+      filter brightness(110%)
