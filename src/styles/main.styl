@@ -11,7 +11,7 @@
 @import "mixins/reset"
 @import "mixins/sprites"
 @import "mixins/base"
-
+@import "mixins/breadcrumbs"
 
 /***************************************************************
 ***
@@ -24,7 +24,34 @@
 @import "index/index"
 @import "search/search"
 @import "brand/brand-main"
+@import "static/static1/static1-main"
+@import "static/static2/static2-main"
+@import "static/static3/static3-main"
+@import "static/static4/static4-main"
+@import "static/static5/static5-main"
+@import "static/static6/static6-main"
+@import "static/static7/static7-main"
+@import "static/static8/static8-main"
+@import "static/static9/static9-main"
 @import "include/addons"
-@import "include/common"
+// @import "include/common"
 @import "include/modifiers"
 @import "include/product"
+
+.big-orange-btn
+  height 50px
+  min-width 210px
+  font-family r_bold
+  font-size 18px
+  color white
+  background-color c_orange
+  border 2px solid c_orange
+  border-radius 3px
+  transition all .2s ease
+  &:hover
+    background-color white
+    color c_orange
+  &--huge
+    min-width 284px
+    height 52px
+    text-transform uppercase

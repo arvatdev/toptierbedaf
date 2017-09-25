@@ -1,0 +1,29 @@
+.breadcrumbs
+  width 100%
+  box-sizing border-box
+  padding 30px 0 10px 0
+  direction ltr
+  border-bottom 1px solid c_lgray
+  &__list
+    & li+li:before
+      padding 5px
+      color c_gray
+      content "|"
+      opacity .5
+    & li
+      display inline
+      &:last-of-type
+        & a
+          font-family r_med
+          color c_orange
+      &:first-of-type
+        & a
+          color c_gray
+    & a
+      opacity .5
+      font-size 14px
+      font-family r_reg
+      color c_gray
+      transition all .2s ease
+      &:hover
+        opacity 1

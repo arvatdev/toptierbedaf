@@ -1,0 +1,78 @@
+.static
+  &__main-header
+    width 100%
+    text-align center
+    margin-top 50px
+    font-family r_med
+    font-size 24px
+.pics-block
+  margin-top 40px
+  border-bottom 1px solid #ececed
+  flex-wrap wrap
+  &__wrapper
+    flex-wrap wrap
+  &__text
+    width 50%
+    background-color c_lgray
+    padding 30px
+    box-sizing border-box
+  &__header
+    padding-top 15px
+    margin-bottom 15px
+    text-align center
+    position relative
+    &:first-of-type
+      padding-top 20px
+      margin-bottom 25px
+    &:first-of-type::before
+      position absolute
+      content ''
+      top 0
+      right 46%
+      text-align center
+      width 30px
+      border-bottom 2px solid c_orange
+    &-element
+      display block
+      font-family r_med
+      font-size 16px
+      color c_black
+      margin-bottom 10px
+  &__info
+    font-family r_reg
+    font-size 14px
+    color c_black
+    line-height 20px
+    text-align justify
+    word-spacing 0
+    margin-bottom 15px
+  &__image
+    width 50%
+    padding 80px
+    box-sizing border-box
+.market-brands
+  margin 35px 0 35px 0
+  &__header
+    display block
+    width 100%
+    text-align center
+    letter-spacing 1px
+    font-family r_med
+    font-size 26px
+    padding-bottom 20px
+    margin-bottom 20px
+    position relative
+    &::before
+      position absolute
+      content ''
+      bottom  0
+      right 48%
+      text-align center
+      width 30px
+      border-bottom 2px solid c_orange
+  &__element
+    width 140px
+    transition all .2s ease
+    &:hover
+      -webkit-filter brightness(110%)
+      filter brightness(110%)

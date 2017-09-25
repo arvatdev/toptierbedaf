@@ -97,9 +97,9 @@ $(document).ready(function () {
 // Static page - FAQ sub menu
 //--------------------------
 
-    $('.sub-info-block__header').on('click', function() {
-        $(this).closest('.sub-info-block__element').find('.sub-info-block__text').slideToggle(300)
-        $(this).find('.sub-info-block__arrow').toggleClass('sub-info-block__arrow-active')
+    $('.faq-drop__header').on('click', function() {
+        $(this).closest('.faq-drop__element').find('.faq-drop__text').slideToggle(300)
+        $(this).find('.faq-drop__arrow').toggleClass('faq-drop__arrow-active')
     })
 
     //--------------------------
