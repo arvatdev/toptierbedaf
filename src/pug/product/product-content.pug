@@ -1,231 +1,226 @@
-.main-body
-    .main-wrapper.main-menu-margin.df--b.dfw
-        article.breadcrumbs
-            ul.breadcrumbs__list
-                li: a(href="#") 8in1 Tierbedarf Shop
-                li: a(href="#") Hundeshop
-                li: a(href="#") Hunde Futter
-                li: a(href="#") Leckerlis für Hund
-                li: a(href="#") Delights Beef Kauknochen L
-        .product-wrapper.df.dfw.df--b
-            .product-view.df
-                ul(id="vertical")
-                  li(data-thumb="/img/product12.jpg")
-                    img(src="/img/product12.jpg") 
-                  li(data-thumb="/img/product11.jpg")
-                    img(src="/img/product11.jpg")
-                  li(data-thumb="/img/product11.jpg")
-                    img(src="/img/product11.jpg")
-                .sale-corner.sale-corner--big
-                    span SALE
-            article.product-cart
-                h3.product-cart__header
-                    span Delights Beef Kauknochen L 85g
-                .product-cart__brand
-                    span Hersteller: 
-                    a(href="#").product-cart__brand-name 8 in 1
-                .element__stars.df-c
-                    .active
-                        span ★★
-                    .not-active
-                        span ☆☆☆
-                .status-block.df
-                    .status-block__header
-                        span Status:
-                    .status-block__info
-                        span auf Lager
-                .product-cart__vendorcode.df
-                    .product-cart__vendorcode-header
-                        span Art.-Nr.:
-                    .product-cart__vendorcode-number
-                        span 7100
-                .product-cart__barcode.df
-                    .product-cart__barcode-header
-                        span EAN:
-                    .product-cart__barcode-number
-                        span 4048422108825
-                .product-cart__form
-                    form
-                        .product-cart__weight
-                            .product-cart__weight-header
-                                span Gewicht: 
-                            .product-cart__weight-type.df
-                                input(type="radio" id="small-weight" name="weight-type" checked).input
-                                label(for="small-weight").label
-                                  span 10x0.05g
-                                input(type="radio" id="big-weight" name="weight-type").input
-                                label(for="big-weight").label
-                                  span 35x190g  
-                        .product-cart__amount.df.df-c
-                            .product-cart__amount-header
-                                span Menge:
-                            .product-cart__amount-choice
-                                input.input(type="text" placeholder="2")
-                                .arrow
-                        .product-cart__price
-                            .product-cart__price-new 3,52 € 
-                            .product-cart__price-old 3,91 € 
-                            .product-cart__price-details
-                                span Preis pro kg: 46* / kg
-                                span * Preis pro Einheit
-                                span * Preise inkl. gesetzlicher MwSt. zzgl. Versand
-                            button.big-orange-btn.product-cart__button(type="submit") In den Warenkorb
-                        a(href="#").product-cart__favorites.df.df-c
-                            i.material-icons favorite
-                            span Auf den Merkzettel
-                
-            .tabs.tabs--product
-                .tabs__nav
-                  a(href="#" data-tablink="product-tab1").tabs__nav-item.tabs__nav-item--active PRODUKTINFORMATION
-                  a(href="#" data-tablink="product-tab2").tabs__nav-item Inhaltsstoffe
-                article(data-tabcontent="product-tab1").tabs__item.df
-                  .tabs__product-logo
-                    img(src="/img/8in1.png").image
-                  .tabs__product-text
-                      p Delights Beef Kauknochen L 8in1  im ZooBio Online Tiershop Kauknochen mit Rindfleisch - die Geschmacksvariante.
+article.breadcrumbs
+    ul.breadcrumbs__list
+        li.breadcrumbs__item: a(href="#").breadcrumbs__link 8in1 Tierbedarf Shop
+        li.breadcrumbs__item: a(href="#").breadcrumbs__link Hundeshop
+        li.breadcrumbs__item: a(href="#").breadcrumbs__link Hunde Futter
+        li.breadcrumbs__item: a(href="#").breadcrumbs__link Leckerlis für Hund
+        li.breadcrumbs__item: a(href="#").breadcrumbs__link Delights Beef Kauknochen L
+.product.df.dfw.df--b
+    .product__view.df
+        ul(id="vertical")
+          li(data-thumb="/img/product12.jpg")
+            img(src="/img/product12.jpg") 
+          li(data-thumb="/img/product11.jpg")
+            img(src="/img/product11.jpg")
+          li(data-thumb="/img/product11.jpg")
+            img(src="/img/product11.jpg")
+        .sale-corner.sale-corner--big
+            span.sale-corner__text SALE
+    article.product-cart
+        h3.product-cart__header
+            span Delights Beef Kauknochen L 85g
+        .product-cart__brand
+            span Hersteller: 
+            a(href="#").product-cart__brand-name 8 in 1
+        .element__stars.df-c
+            .active
+                span ★★
+            .not-active
+                span ☆☆☆
+        .status-block.df
+            .status-block__header
+                span Status:
+            .status-block__info
+                span auf Lager
+        .product-cart__vendorcode.df
+            .product-cart__vendorcode-header
+                span Art.-Nr.:
+            .product-cart__vendorcode-number
+                span 7100
+        .product-cart__barcode.df
+            .product-cart__barcode-header
+                span EAN:
+            .product-cart__barcode-number
+                span 4048422108825
+        .product-cart__form
+            form
+                .product-cart__weight
+                    .product-cart__weight-header
+                        span Gewicht: 
+                    .product-cart__weight-type.df
+                        input(type="radio" id="small-weight" name="weight-type" checked).input
+                        label(for="small-weight").label
+                          span 10x0.05g
+                        input(type="radio" id="big-weight" name="weight-type").input
+                        label(for="big-weight").label
+                          span 35x190g  
+                .product-cart__amount.df.df-c
+                    .product-cart__amount-header
+                        span Menge:
+                    .product-cart__amount-choice
+                        input.input(type="text" placeholder="2")
+                        .arrow
+                .product-cart__price
+                    .product-cart__price-new 3,52 € 
+                    .product-cart__price-old 3,91 € 
+                    .product-cart__price-details
+                        span.product-cart__price-details-text Preis pro kg: 46* / kg
+                        span.product-cart__price-details-text * Preis pro Einheit
+                        span.product-cart__price-details-text * Preise inkl. gesetzlicher MwSt. zzgl. Versand
+                    button.big-orange-btn.product-cart__button(type="submit") In den Warenkorb
+                a(href="#").product-cart__favorites.df.df-c
+                    i.material-icons favorite
+                    span.product-cart__favorites-text Auf den Merkzettel
+        
+    .tabs.tabs--product
+        .tabs__nav
+          a(href="#" data-tablink="product-tab1").tabs__nav-item.tabs__nav-item--active PRODUKTINFORMATION
+          a(href="#" data-tablink="product-tab2").tabs__nav-item Inhaltsstoffe
+        article(data-tabcontent="product-tab1").tabs__item.df
+          .tabs__product-logo
+            img(src="/img/8in1.png").image
+          .tabs__product-text-block
+              p.tabs__product-text Delights Beef Kauknochen L 8in1  im ZooBio Online Tiershop Kauknochen mit Rindfleisch - die Geschmacksvariante.
 
-                      p Leckeres Rindfleisch in bissfeste Premium-Rinderhaut eingewickelt - die einzigartige Kombination aus Kauknochen und Belohnung.
-                      ul
-                          li - Geschmacksvariante mit Rindfleisch
-                          li - nur eine Proteinquelle [Rind]: besonders gut geeignet für sensible Hunde mit Futtermittelunverträglichkeiten oder -allergien
-                          li - Einzigartig und patentiert
-                          li - Pflegt die Zähne
-                          li - Vermindert Plaque und beugt so der Zahnsteinneubildung vor
-                          li - Befriedigt den natürlichen Kauinstinkt des Hundes
-                          li - Anhaltender Kauspaß ohne Reste
-                          li - Nur 3.5% Fett
-                          li - Ohne künstliche Farbstoffe und Geschmacksverstärker
-                       
-                      p Delights Beef L - Ideal für große und riesige Hunderassen. Empfohlen für Hunde ab 20 kg.
+              p.tabs__product-text Leckeres Rindfleisch in bissfeste Premium-Rinderhaut eingewickelt - die einzigartige Kombination aus Kauknochen und Belohnung.
+              ul.tabs__product-list
+                  li - Geschmacksvariante mit Rindfleisch
+                  li - nur eine Proteinquelle [Rind]: besonders gut geeignet für sensible Hunde mit Futtermittelunverträglichkeiten oder -allergien
+                  li - Einzigartig und patentiert
+                  li - Pflegt die Zähne
+                  li - Vermindert Plaque und beugt so der Zahnsteinneubildung vor
+                  li - Befriedigt den natürlichen Kauinstinkt des Hundes
+                  li - Anhaltender Kauspaß ohne Reste
+                  li - Nur 3.5% Fett
+                  li - Ohne künstliche Farbstoffe und Geschmacksverstärker
+               
+              p.tabs__product-text Delights Beef L - Ideal für große und riesige Hunderassen. Empfohlen für Hunde ab 20 kg.
 
-                      p Hundekauartikel 8in1 Delights Beef Kauknochen L Packungsgrößen
+              p.tabs__product-text Hundekauartikel 8in1 Delights Beef Kauknochen L Packungsgrößen
 
-                      p 8in1 Delights Beef Kauknochen L 85g
+              p.tabs__product-text 8in1 Delights Beef Kauknochen L 85g
 
-                article(data-tabcontent="product-tab2" hidden="").product__ingredients
-                  
-                  
-            .aside-recomendations.df.df-dc
-                h4.aside-recomendations__header 
-                  span EMPFEHLUNG FÜR HUND
-                a(href="#").aside-recomendations__item
-                    .aside-recomendations__image
-                      img(src="/img/product2.png")
-                    .aside-recomendations__text
-                      span.aside-recomendations__name Dog Smart plast, Rot
-                      span.aside-recomendations__price 24,69 €
-                a(href="#").aside-recomendations__item
-                    .aside-recomendations__image
-                      img(src="/img/product2.png")
-                    .aside-recomendations__text
-                      span.aside-recomendations__name 
-                        | Freshline V-Leine Spot,
-                        br
-                        | L-XL: 2 m / 25 mm,
-                        br
-                        | aquamarin/türkis/schwarz
-                      span.aside-recomendations__price 24,69 €
-                a(href="#").aside-recomendations__item
-                    .aside-recomendations__image
-                      img(src="/img/product2.png")
-                    .aside-recomendations__text
-                      span.aside-recomendations__name "Oeko-bed" Körbchen Rot (L)
-                      span.aside-recomendations__price 24,69 €
-            .product-feeding
-                h4.product-feeding__header
-                  span ZU EMPFEHLEN FÜR FOLGENDE HUNDERASSEN
-                span Large, ab 26 kg
-                span Medium, 11-25 kg
-                strong Ratschläge zur Ernährung
-                p.
-                  Bitte beachten Sie die empfohlene Hundefutter 
-                  Tagesration, um eine optimale Gewichtszunahme zu gewährleisten 
-                  und Übergewicht zu vermeiden. Achten Sie darauf, das Ihr Hund stets 
-                  Zugang zum frischen Wasser hat.
+        article(data-tabcontent="product-tab2" hidden="").product__ingredients
+          
+          
+    .aside-recomendations.df.df-dc
+        h4.aside-recomendations__header 
+          span EMPFEHLUNG FÜR HUND
+        a(href="#").aside-recomendations__item
+            .aside-recomendations__image
+              img(src="/img/product2.png")
+            .aside-recomendations__text
+              span.aside-recomendations__name Dog Smart plast, Rot
+              span.aside-recomendations__price 24,69 €
+        a(href="#").aside-recomendations__item
+            .aside-recomendations__image
+              img(src="/img/product2.png")
+            .aside-recomendations__text
+              span.aside-recomendations__name 
+                | Freshline V-Leine Spot,
+                br
+                | L-XL: 2 m / 25 mm,
+                br
+                | aquamarin/türkis/schwarz
+              span.aside-recomendations__price 24,69 €
+        a(href="#").aside-recomendations__item
+            .aside-recomendations__image
+              img(src="/img/product2.png")
+            .aside-recomendations__text
+              span.aside-recomendations__name "Oeko-bed" Körbchen Rot (L)
+              span.aside-recomendations__price 24,69 €
+    .product-feeding
+        h4.product-feeding__header
+          span ZU EMPFEHLEN FÜR FOLGENDE HUNDERASSEN
+        span Large, ab 26 kg
+        span Medium, 11-25 kg
+        strong.product-feeding__advice Ratschläge zur Ernährung
+        p.product-feeding__advice-text.
+          Bitte beachten Sie die empfohlene Hundefutter 
+          Tagesration, um eine optimale Gewichtszunahme zu gewährleisten 
+          und Übergewicht zu vermeiden. Achten Sie darauf, das Ihr Hund stets 
+          Zugang zum frischen Wasser hat.
 
-              
-            section.slider
-                .slider__header WIRD OFT ZUSAMMEN GEKAUFT 
-                .slider__wrapper
-                    ul.slider__list
-                        li
-                          a(href="#").slider__link
-                            img(src="./img/product2.png" alt="#")
-                            strong Gürteltasche Basic Detroit
-                            span.slider__price 24,69 €
-                        li
-                          a(href="#").slider__link
-                            img(src="./img/product2.png" alt="#")
-                            strong Gürteltasche Basic Detroit
-                            span.slider__price 24,69 €
-                        li
-                          a(href="#").slider__link
-                            img(src="./img/product2.png" alt="#")
-                            strong Gürteltasche Basic Detroit
-                            span.slider__price 24,69 €
-                        li
-                          a(href="#").slider__link
-                            img(src="./img/product2.png" alt="#")
-                            strong Gürteltasche Basic Detroit
-                            span.slider__price 24,69 €
-                        li
-                          a(href="#").slider__link
-                            img(src="./img/product2.png" alt="#")
-                            strong Gürteltasche Basic Detroit
-                            span.slider__price 24,69 €
-                        li
-                          a(href="#").slider__link
-                            img(src="./img/product2.png" alt="#")
-                            strong Gürteltasche Basic Detroit
-                            span.slider__price 24,69 €
-                        li
-                          a(href="#").slider__link
-                            img(src="./img/product2.png" alt="#")
-                            strong Gürteltasche Basic Detroit
-                            span.slider__price 24,69 €
-                        li
-                          a(href="#").slider__link
-                            img(src="./img/product2.png" alt="#")
-                            strong Gürteltasche Basic Detroit
-                            span.slider__price 24,69 €
-                    .slider__controls.outside
-                        span(id="slider-prev")
-                        span(id="slider-next")
-            .tabs.tabs--reviews
-                .tabs__nav
-                    a(href="#" data-tablink="form").tabs__nav-item.tabs__nav-item--active Bewertungen
-                    a(href="#" data-tablink="reviews").tabs__nav-item Eine Bewertung schreiben
-                .tabs__content(data-tabgroup="product-footer")
-                    article(data-tabcontent="form").tabs__item.df
-                      .form-block.form-block--reviews
-                        .form-block__element.form-block__element--full-width
-                            form.df-cb.dfw
-                                .form-block__stars.df
-                                    .form-block__description Bewerten Sie das Produkt nach den folgenden Kriterien 
-                                        span (1 Stern- schlecht, 5 - sehr gut)
-                                    .element__stars
-                                        .not-active
-                                            span ☆☆☆☆☆
-                                .form-block__inputs-wrapper.df-cb.dfw
-                                    .form-block__name
-                                      label(for="name")
-                                        span Name*
-                                      input(type="name" id="name" placeholder="Name").forms__input.forms__input--border
-                                    .form-block__mail
-                                      label(for="email")
-                                        span E-Mail-Adresse*
-                                      input(type="email" id="email" placeholder="E-Mail-Adresse*").forms__input.forms__input--border
-                                    .form-block__sex
-                                      .main-form__sex.df-c
-                                          span.header Anrede
-                                          input(type="radio" name="sex" id="sex1" checked).input
-                                          label(for="sex1").label
-                                              span Herr
-                                          input(type="radio" name="sex" id="sex2").input
-                                          label(for="sex2").label
-                                              span Frau
-                                    textarea.textarea.textarea--border
-                                    .main-form__submit-block.df-cb
-                                        button(type="submit").big-orange-btn Bewertung hinzufügen
-                    article(data-tabcontent="reviews" hidden="").tabs__item.df.hidden
-                        span kjljh kljhkljhkljh
+      
+    section.product-slider
+        .product-slider__header WIRD OFT ZUSAMMEN GEKAUFT 
+        .product-slider__wrapper
+            ul.product-slider__list
+                li.product-slider__item
+                  a(href="#").product-slider__link
+                    img(src="./img/product2.png" alt="#")
+                    strong.product-slider__name Gürteltasche Basic Detroit
+                    span.product-slider__price 24,69 €
+                li.product-slider__item
+                  a(href="#").product-slider__link
+                    img(src="./img/product2.png" alt="#")
+                    strong.product-slider__name Gürteltasche Basic Detroit
+                    span.product-slider__price 24,69 €
+                li.product-slider__item
+                  a(href="#").product-slider__link
+                    img(src="./img/product2.png" alt="#")
+                    strong.product-slider__name Gürteltasche Basic Detroit
+                    span.product-slider__price 24,69 €
+                li.product-slider__item
+                  a(href="#").product-slider__link
+                    img(src="./img/product2.png" alt="#")
+                    strong.product-slider__name Gürteltasche Basic Detroit
+                    span.product-slider__price 24,69 €
+                li.product-slider__item
+                  a(href="#").product-slider__link
+                    img(src="./img/product2.png" alt="#")
+                    strong.product-slider__name Gürteltasche Basic Detroit
+                    span.product-slider__price 24,69 €
+                li.product-slider__item
+                  a(href="#").product-slider__link
+                    img(src="./img/product2.png" alt="#")
+                    strong.product-slider__name Gürteltasche Basic Detroit
+                    span.product-slider__price 24,69 €
+                li.product-slider__item
+                  a(href="#").product-slider__link
+                    img(src="./img/product2.png" alt="#")
+                    strong.product-slider__name Gürteltasche Basic Detroit
+                    span.product-slider__price 24,69 €
+                li.product-slider__item
+                  a(href="#").product-slider__link
+                    img(src="./img/product2.png" alt="#")
+                    strong.product-slider__name Gürteltasche Basic Detroit
+                    span.product-slider__price 24,69 €
+    .tabs.tabs--reviews
+        .tabs__nav
+            a(href="#" data-tablink="form").tabs__nav-item.tabs__nav-item--active Bewertungen
+            a(href="#" data-tablink="reviews").tabs__nav-item Eine Bewertung schreiben
+        .tabs__content(data-tabgroup="product-footer")
+            article(data-tabcontent="form").tabs__item.df
+              .form-block.form-block--reviews
+                .form-block__element.form-block__element--full-width
+                    form.df-cb.dfw
+                        .form-block__stars.df
+                            .form-block__description Bewerten Sie das Produkt nach den folgenden Kriterien 
+                                span (1 Stern- schlecht, 5 - sehr gut)
+                            .element__stars
+                                .not-active
+                                    span ☆☆☆☆☆
+                        .form-block__inputs-wrapper.df-cb.dfw
+                            .form-block__name
+                              label(for="name")
+                                span Name*
+                              input(type="name" id="name" placeholder="Name").forms__input.forms__input--border
+                            .form-block__mail
+                              label(for="email")
+                                span E-Mail-Adresse*
+                              input(type="email" id="email" placeholder="E-Mail-Adresse*").forms__input.forms__input--border
+                            .form-block__sex
+                              .main-form__sex.df-c
+                                  span.header Anrede
+                                  input(type="radio" name="sex" id="sex1" checked).input
+                                  label(for="sex1").label
+                                      span Herr
+                                  input(type="radio" name="sex" id="sex2").input
+                                  label(for="sex2").label
+                                      span Frau
+                            textarea.textarea.textarea--border
+                            .main-form__submit-block.df-cb
+                                button(type="submit").big-orange-btn Bewertung hinzufügen
+            article(data-tabcontent="reviews" hidden="").tabs__item.df.hidden
+                span kjljh kljhkljhkljh

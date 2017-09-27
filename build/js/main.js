@@ -125,15 +125,12 @@ $(document).ready(function () {
     //--------------------------
     // Slider
     //--------------------------
-    $('.slider__list').bxSlider({
-        nextSelector: '#slider-next',
-        prevSelector: '#slider-prev',
-        nextText: '<i class="material-icons">keyboard_arrow_right</i>',
-        prevText: '<i class="material-icons">keyboard_arrow_left</i>',
-        moveSlides: 1,
-        maxSlides: 5,
-        minSlides: 5,
-        touchEnabled: false
+    $('.product-slider__list').slick({
+      nextArrow: '<button type="button" class="slick-next product-slider__next"><i class="material-icons">keyboard_arrow_right</i></button>',
+      prevArrow: '<button type="button" class="slick-prev product-slider__prev"><i class="material-icons">keyboard_arrow_left</i></button>',
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      touchMove: false
     })
 
     $('#vertical').lightSlider({

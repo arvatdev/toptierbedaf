@@ -6,13 +6,12 @@
     <link href="css/fonts.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
     <link href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" rel="stylesheet" type="text/css">
-    <link href="lib/jquery.bxslider.css" rel="stylesheet" type="text/css">
     <link href="lib/lightslider.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="main">
+    <div id="wrapper">
       <header class="main-header">
         <div class="main-wrapper df-c h100p">
           <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
@@ -42,25 +41,25 @@
           <article class="main-navigation__search"><a class="main-navigation__search-image" href="#"><i class="material-icons">search</i></a></article>
         </div>
       </nav>
-      <div class="main-body">
-        <div class="main-wrapper main-menu-margin df--b dfw">
+      <main class="product-page">
+        <div class="main-wrapper">
           <article class="breadcrumbs">
             <ul class="breadcrumbs__list">
-              <li><a href="#">8in1 Tierbedarf Shop</a></li>
-              <li><a href="#">Hundeshop</a></li>
-              <li><a href="#">Hunde Futter</a></li>
-              <li><a href="#">Leckerlis für Hund</a></li>
-              <li><a href="#">Delights Beef Kauknochen L</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">8in1 Tierbedarf Shop</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Hundeshop</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Hunde Futter</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Leckerlis für Hund</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Delights Beef Kauknochen L</a></li>
             </ul>
           </article>
-          <div class="product-wrapper df dfw df--b">
-            <div class="product-view df">
+          <div class="product df dfw df--b">
+            <div class="product__view df">
               <ul id="vertical">
                 <li data-thumb="/img/product12.jpg"><img src="/img/product12.jpg"></li>
                 <li data-thumb="/img/product11.jpg"><img src="/img/product11.jpg"></li>
                 <li data-thumb="/img/product11.jpg"><img src="/img/product11.jpg"></li>
               </ul>
-              <div class="sale-corner sale-corner--big"><span>SALE</span></div>
+              <div class="sale-corner sale-corner--big"><span class="sale-corner__text">SALE</span></div>
             </div>
             <article class="product-cart">
               <h3 class="product-cart__header"><span>Delights Beef Kauknochen L 85g</span></h3>
@@ -102,9 +101,9 @@
                   <div class="product-cart__price">
                     <div class="product-cart__price-new">3,52 € </div>
                     <div class="product-cart__price-old">3,91 € </div>
-                    <div class="product-cart__price-details"><span>Preis pro kg: 46* / kg</span><span>* Preis pro Einheit</span><span>* Preise inkl. gesetzlicher MwSt. zzgl. Versand</span></div>
+                    <div class="product-cart__price-details"><span class="product-cart__price-details-text">Preis pro kg: 46* / kg</span><span class="product-cart__price-details-text">* Preis pro Einheit</span><span class="product-cart__price-details-text">* Preise inkl. gesetzlicher MwSt. zzgl. Versand</span></div>
                     <button class="big-orange-btn product-cart__button" type="submit">In den Warenkorb</button>
-                  </div><a class="product-cart__favorites df df-c" href="#"><i class="material-icons">favorite</i><span>Auf den Merkzettel</span></a>
+                  </div><a class="product-cart__favorites df df-c" href="#"><i class="material-icons">favorite</i><span class="product-cart__favorites-text">Auf den Merkzettel</span></a>
                 </form>
               </div>
             </article>
@@ -112,10 +111,10 @@
               <div class="tabs__nav"><a class="tabs__nav-item tabs__nav-item--active" href="#" data-tablink="product-tab1">PRODUKTINFORMATION</a><a class="tabs__nav-item" href="#" data-tablink="product-tab2">Inhaltsstoffe</a></div>
               <article class="tabs__item df" data-tabcontent="product-tab1">
                 <div class="tabs__product-logo"><img class="image" src="/img/8in1.png"></div>
-                <div class="tabs__product-text">
-                  <p>Delights Beef Kauknochen L 8in1  im ZooBio Online Tiershop Kauknochen mit Rindfleisch - die Geschmacksvariante.</p>
-                  <p>Leckeres Rindfleisch in bissfeste Premium-Rinderhaut eingewickelt - die einzigartige Kombination aus Kauknochen und Belohnung.</p>
-                  <ul>
+                <div class="tabs__product-text-block">
+                  <p class="tabs__product-text">Delights Beef Kauknochen L 8in1  im ZooBio Online Tiershop Kauknochen mit Rindfleisch - die Geschmacksvariante.</p>
+                  <p class="tabs__product-text">Leckeres Rindfleisch in bissfeste Premium-Rinderhaut eingewickelt - die einzigartige Kombination aus Kauknochen und Belohnung.</p>
+                  <ul class="tabs__product-list">
                     <li>- Geschmacksvariante mit Rindfleisch</li>
                     <li>- nur eine Proteinquelle [Rind]: besonders gut geeignet für sensible Hunde mit Futtermittelunverträglichkeiten oder -allergien</li>
                     <li>- Einzigartig und patentiert</li>
@@ -126,9 +125,9 @@
                     <li>- Nur 3.5% Fett</li>
                     <li>- Ohne künstliche Farbstoffe und Geschmacksverstärker</li>
                   </ul>
-                  <p>Delights Beef L - Ideal für große und riesige Hunderassen. Empfohlen für Hunde ab 20 kg.</p>
-                  <p>Hundekauartikel 8in1 Delights Beef Kauknochen L Packungsgrößen</p>
-                  <p>8in1 Delights Beef Kauknochen L 85g</p>
+                  <p class="tabs__product-text">Delights Beef L - Ideal für große und riesige Hunderassen. Empfohlen für Hunde ab 20 kg.</p>
+                  <p class="tabs__product-text">Hundekauartikel 8in1 Delights Beef Kauknochen L Packungsgrößen</p>
+                  <p class="tabs__product-text">8in1 Delights Beef Kauknochen L 85g</p>
                 </div>
               </article>
               <article class="product__ingredients" data-tabcontent="product-tab2" hidden=""></article>
@@ -144,8 +143,8 @@
                 <div class="aside-recomendations__text"><span class="aside-recomendations__name">"Oeko-bed" Körbchen Rot (L)</span><span class="aside-recomendations__price">24,69 €</span></div></a>
             </div>
             <div class="product-feeding">
-              <h4 class="product-feeding__header"><span>ZU EMPFEHLEN FÜR FOLGENDE HUNDERASSEN</span></h4><span>Large, ab 26 kg</span><span>Medium, 11-25 kg</span><strong>Ratschläge zur Ernährung</strong>
-              <p>
+              <h4 class="product-feeding__header"><span>ZU EMPFEHLEN FÜR FOLGENDE HUNDERASSEN</span></h4><span>Large, ab 26 kg</span><span>Medium, 11-25 kg</span><strong class="product-feeding__advice">Ratschläge zur Ernährung</strong>
+              <p class="product-feeding__advice-text">
                 Bitte beachten Sie die empfohlene Hundefutter 
                 Tagesration, um eine optimale Gewichtszunahme zu gewährleisten 
                 und Übergewicht zu vermeiden. Achten Sie darauf, das Ihr Hund stets 
@@ -154,20 +153,19 @@
                 
               </p>
             </div>
-            <section class="slider">
-              <div class="slider__header">WIRD OFT ZUSAMMEN GEKAUFT </div>
-              <div class="slider__wrapper">
-                <ul class="slider__list">
-                  <li><a class="slider__link" href="#"><img src="./img/product2.png" alt="#"><strong>Gürteltasche Basic Detroit</strong><span class="slider__price">24,69 €</span></a></li>
-                  <li><a class="slider__link" href="#"><img src="./img/product2.png" alt="#"><strong>Gürteltasche Basic Detroit</strong><span class="slider__price">24,69 €</span></a></li>
-                  <li><a class="slider__link" href="#"><img src="./img/product2.png" alt="#"><strong>Gürteltasche Basic Detroit</strong><span class="slider__price">24,69 €</span></a></li>
-                  <li><a class="slider__link" href="#"><img src="./img/product2.png" alt="#"><strong>Gürteltasche Basic Detroit</strong><span class="slider__price">24,69 €</span></a></li>
-                  <li><a class="slider__link" href="#"><img src="./img/product2.png" alt="#"><strong>Gürteltasche Basic Detroit</strong><span class="slider__price">24,69 €</span></a></li>
-                  <li><a class="slider__link" href="#"><img src="./img/product2.png" alt="#"><strong>Gürteltasche Basic Detroit</strong><span class="slider__price">24,69 €</span></a></li>
-                  <li><a class="slider__link" href="#"><img src="./img/product2.png" alt="#"><strong>Gürteltasche Basic Detroit</strong><span class="slider__price">24,69 €</span></a></li>
-                  <li><a class="slider__link" href="#"><img src="./img/product2.png" alt="#"><strong>Gürteltasche Basic Detroit</strong><span class="slider__price">24,69 €</span></a></li>
+            <section class="product-slider">
+              <div class="product-slider__header">WIRD OFT ZUSAMMEN GEKAUFT </div>
+              <div class="product-slider__wrapper">
+                <ul class="product-slider__list">
+                  <li class="product-slider__item"><a class="product-slider__link" href="#"><img src="./img/product2.png" alt="#"><strong class="product-slider__name">Gürteltasche Basic Detroit</strong><span class="product-slider__price">24,69 €</span></a></li>
+                  <li class="product-slider__item"><a class="product-slider__link" href="#"><img src="./img/product2.png" alt="#"><strong class="product-slider__name">Gürteltasche Basic Detroit</strong><span class="product-slider__price">24,69 €</span></a></li>
+                  <li class="product-slider__item"><a class="product-slider__link" href="#"><img src="./img/product2.png" alt="#"><strong class="product-slider__name">Gürteltasche Basic Detroit</strong><span class="product-slider__price">24,69 €</span></a></li>
+                  <li class="product-slider__item"><a class="product-slider__link" href="#"><img src="./img/product2.png" alt="#"><strong class="product-slider__name">Gürteltasche Basic Detroit</strong><span class="product-slider__price">24,69 €</span></a></li>
+                  <li class="product-slider__item"><a class="product-slider__link" href="#"><img src="./img/product2.png" alt="#"><strong class="product-slider__name">Gürteltasche Basic Detroit</strong><span class="product-slider__price">24,69 €</span></a></li>
+                  <li class="product-slider__item"><a class="product-slider__link" href="#"><img src="./img/product2.png" alt="#"><strong class="product-slider__name">Gürteltasche Basic Detroit</strong><span class="product-slider__price">24,69 €</span></a></li>
+                  <li class="product-slider__item"><a class="product-slider__link" href="#"><img src="./img/product2.png" alt="#"><strong class="product-slider__name">Gürteltasche Basic Detroit</strong><span class="product-slider__price">24,69 €</span></a></li>
+                  <li class="product-slider__item"><a class="product-slider__link" href="#"><img src="./img/product2.png" alt="#"><strong class="product-slider__name">Gürteltasche Basic Detroit</strong><span class="product-slider__price">24,69 €</span></a></li>
                 </ul>
-                <div class="slider__controls outside"><span id="slider-prev"></span><span id="slider-next"></span></div>
               </div>
             </section>
             <div class="tabs tabs--reviews">
@@ -214,7 +212,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <footer class="footer">
         <div class="main-wrapper df">
           <article class="footer__column">
@@ -270,7 +268,6 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
     <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" type="text/javascript"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
     <script src="lib/lightslider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
