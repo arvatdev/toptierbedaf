@@ -11,7 +11,7 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="main">
+    <div id="wrapper">
       <header class="main-header">
         <div class="main-wrapper df-c h100p">
           <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
@@ -41,33 +41,33 @@
           <article class="main-navigation__search"><a class="main-navigation__search-image" href="#"><i class="material-icons">search</i></a></article>
         </div>
       </nav>
-      <div class="main-body">
-        <div class="main-wrapper main-menu-margin df--b dfw">
+      <main class="catalog-page">
+        <div class="main-wrapper">
           <aside class="aside-block">
             <ul class="aside-nav">
               <li class="aside-nav__element"><a class="aside-nav__title df-cb" href="#"><span class="aside-nav__header">HUNDESHOP</span>
                   <div class="main-arrow hidden"></div></a>
                 <ul class="aside-nav-sub">
-                  <li class="aside-nav-sub__element"><a href="#">Hundefutter</a></li>
-                  <li class="aside-nav-sub__element"><a href="#">Hundeboxen & Autozubehör</a></li>
-                  <li class="aside-nav-sub__element"><a href="#">Hundeschlafplatz</a></li>
-                  <li class="aside-nav-sub__element"><a href="#">Training & Hundesportartikel</a></li>
-                  <li class="aside-nav-sub__element"><a href="#">Leinen & Halsbänder</a></li>
-                  <li class="aside-nav-sub__element"><a href="#">Hundespielzeug</a></li>
-                  <li class="aside-nav-sub__element"><a href="#"><span>Alle</span>
+                  <li class="aside-nav-sub__element"><a class="aside-nav-sub__link" href="#">Hundefutter</a></li>
+                  <li class="aside-nav-sub__element"><a class="aside-nav-sub__link" href="#">Hundeboxen & Autozubehör</a></li>
+                  <li class="aside-nav-sub__element"><a class="aside-nav-sub__link" href="#">Hundeschlafplatz</a></li>
+                  <li class="aside-nav-sub__element"><a class="aside-nav-sub__link" href="#">Training & Hundesportartikel</a></li>
+                  <li class="aside-nav-sub__element"><a class="aside-nav-sub__link" href="#">Leinen & Halsbänder</a></li>
+                  <li class="aside-nav-sub__element"><a class="aside-nav-sub__link" href="#">Hundespielzeug</a></li>
+                  <li class="aside-nav-sub__element"><a class="aside-nav-sub__link" href="#"><span class="aside-nav-sub__all">Alle</span>
                       <div class="main-arrow"></div></a></li>
                 </ul>
               </li>
               <li class="aside-nav__element"><a class="aside-nav__title df-cb" href="#"><span class="aside-nav__header">KATZENSHOP</span>
                   <div class="main-arrow hidden"></div></a>
                 <ul class="aside-nav-sub">
-                  <li class="aside-nav-sub__element"><a href="#">Katzenfutter</a></li>
-                  <li class="aside-nav-sub__element"><a href="#">Tränken & Fressnäpfe</a></li>
-                  <li class="aside-nav-sub__element"><a href="#">Kratzbaum & Kratzmöbel</a></li>
-                  <li class="aside-nav-sub__element"><a href="#">Katzen Schlafplatz</a></li>
-                  <li class="aside-nav-sub__element"><a href="#">Pflege und Hygieneartikel</a></li>
-                  <li class="aside-nav-sub__element"><a href="#">Transportzubehör</a></li>
-                  <li class="aside-nav-sub__element"><a href="#"><span>Alle</span>
+                  <li class="aside-nav-sub__element"><a class="aside-nav-sub__link" href="#">Katzenfutter</a></li>
+                  <li class="aside-nav-sub__element"><a class="aside-nav-sub__link" href="#">Tränken & Fressnäpfe</a></li>
+                  <li class="aside-nav-sub__element"><a class="aside-nav-sub__link" href="#">Kratzbaum & Kratzmöbel</a></li>
+                  <li class="aside-nav-sub__element"><a class="aside-nav-sub__link" href="#">Katzen Schlafplatz</a></li>
+                  <li class="aside-nav-sub__element"><a class="aside-nav-sub__link" href="#">Pflege und Hygieneartikel</a></li>
+                  <li class="aside-nav-sub__element"><a class="aside-nav-sub__link" href="#">Transportzubehör</a></li>
+                  <li class="aside-nav-sub__element"><a class="aside-nav-sub__link" href="#"><span class="aside-nav-sub__all">Alle</span>
                       <div class="main-arrow"></div></a></li>
                 </ul>
               </li>
@@ -82,41 +82,41 @@
               <li class="aside-nav__element"><a class="aside-nav__title df-cb" href="#"><span class="aside-nav__header">TERRARISTIK SHOP</span>
                   <div class="main-arrow"></div></a></li>
             </ul>
-            <article class="products__ad"><img class="ad-image" src="/img/ad-slot1.jpg" alt="#">
-              <div class="header df-c">
-                <div class="percent df-cc"><span>10%</span></div>
-                <h2 class="text"><span>Rabatt</span></h2>
+            <article class="aside-special-offers"><img class="ad-image" src="/img/ad-slot1.jpg" alt="#">
+              <div class="aside-special-offers__header df-c">
+                <div class="aside-special-offers__percent df-cc"><span>10%</span></div>
+                <div class="aside-special-offers__text"><span>Rabatt</span></div>
               </div>
-              <div class="info">
-                <div class="info__main"><span>Auf Ihre Bestellung</span></div>
-                <div class="info__text"><span>Erfahren Sie Nutzliches, Kaufen Sie Billiger!</span></div>
+              <div class="aside-special-offers__info">
+                <div class="aside-special-offers__info-main"><span>Auf Ihre Bestellung</span></div>
+                <div class="aside-special-offers__info-text"><span>Erfahren Sie Nutzliches, Kaufen Sie Billiger!</span></div>
               </div>
             </article>
-            <article class="products__ad">
-              <div class="ad-form">
-                <h2 class="ad-form__header"><span>Angebote & Rabatte sichern!</span></h2>
-                <div class="ad-form__text">
+            <article class="aside-registration">
+              <div class="aside-registration__form">
+                <h2 class="aside-registration__header"><span>Angebote & Rabatte sichern!</span></h2>
+                <div class="aside-registration__text">
                   <p>
                     Dann sind Sie bei uns genau richtig. Wir bieten Ihnen zahlreiche Produkte aus dem Bereich
                     Tierbedarf. So finden Sie in unserem Sortiment ebenfalls erstklassige Artikel für Nager,
                     alles rund um die
                   </p>
                 </div>
-                <input class="ad-form__input" type="text" placeholder="E-Mail Adresse hier eingeben">
-                <button class="ad-form__button" type="button">ABONNIEREN</button>
+                <input class="aside-registration__input" type="text" placeholder="E-Mail Adresse hier eingeben">
+                <button class="aside-registration__button" type="button">ABONNIEREN</button>
               </div>
             </article>
           </aside>
           <section class="main-block">
             <article class="breadcrumbs">
               <ul class="breadcrumbs__list">
-                <li><a href="#">Tiershop Toptierbedaf</a></li>
-                <li><a href="#">Haustiershop Marken</a></li>
-                <li><a href="#">8in1 Tierbedarf</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Tiershop Toptierbedaf</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Haustiershop Marken</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">8in1 Tierbedarf</a></li>
               </ul>
             </article>
             <article class="raiting">
-              <h3 class="main-block__header"><span>TIERBEDARF VON 8IN1</span></h3>
+              <h3 class="raiting__header"><span>TIERBEDARF VON 8IN1</span></h3>
               <div class="raiting__wrapper df--b">
                 <div class="raiting__main">
                   <div class="raiting__image"><img class="image" src="/img/8in1.png" alt="#"></div>
@@ -194,36 +194,56 @@
                     <div class="main-arrow"></div></a></li>
               </ul>
             </article>
-            <article class="products__main df">
-              <div class="list-prev df-cc"><i class="material-icons">keyboard_arrow_left</i></div>
-              <div class="list-next df-cc"><i class="material-icons">keyboard_arrow_right</i></div>
-              <h3 class="header"><span>8IN1 HAUSTIERBEDARF ONLINE SHOP</span></h3>
-              <div class="content df">
-                <ul class="list df--b dfw">
-                  <li class="element df">
-                    <div class="hover hidden">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+            <article class="products-main dfw">
+              <div class="products-main__prev df-cc"><i class="material-icons">keyboard_arrow_left</i></div>
+              <div class="products-main__next df-cc"><i class="material-icons">keyboard_arrow_right</i></div>
+              <h3 class="products-main__header"><span>8IN1 HAUSTIERBEDARF ONLINE SHOP</span></h3>
+              <div class="products-main__content df">
+                <ul class="products-main__list df--b dfw">
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="sale-corner corner"><span class="sale-corner__text">
+                           SALE <br>-10%</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product1.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -231,41 +251,50 @@
                         </div>
                       </div>
                     </div>
-                    <div class="sale-corner"><span class="sale-corner__text">SALE<br><span>-10%</span></span></div>
-                    <div class="element__image df-cc df-cc"><img class="image" src="/img/product1.png" alt="#"></div>
-                    <h6 class="element__header"><span>8in1 Delights Beef</span></h6>
-                    <div class="element__info"><span>Kauknochen L 85g</span><span>Art.-Nr.: 7100</span></div>
-                    <div class="element__stars df-c">
-                      <div class="active"><span>★★</span></div>
-                      <div class="not-active"><span>☆☆☆</span></div>
-                    </div>
-                    <div class="element__price"><span>€12.00</span></div>
-                    <button class="element__button" type="button">In den Warenkorb</button>
                   </li>
-                  <li class="element df">
-                    <div class="hover hidden">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="sale-corner"><span class="sale-corner__text">SALE <br>-10%</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -273,40 +302,49 @@
                         </div>
                       </div>
                     </div>
-                    <div class="element__image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
-                    <h6 class="element__header"><span>8in1 Delights Beef</span></h6>
-                    <div class="element__info"><span>Kauknochen L 85g</span><span>Art.-Nr.: 7100</span></div>
-                    <div class="element__stars df-c">
-                      <div class="active"><span>★★</span></div>
-                      <div class="not-active"><span>☆☆☆</span></div>
-                    </div>
-                    <div class="element__price"><span>€12.00</span></div>
-                    <button class="element__button" type="button">In den Warenkorb</button>
                   </li>
-                  <li class="element df">
-                    <div class="hover hidden">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product3.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -314,41 +352,49 @@
                         </div>
                       </div>
                     </div>
-                    <div class="sale-corner"><span class="sale-corner__text">SALE<br><span>-10%</span></span></div>
-                    <div class="element__image df-cc df-cc"><img class="image" src="/img/product3.png" alt="#"></div>
-                    <h6 class="element__header"><span>8in1 Delights Beef</span></h6>
-                    <div class="element__info"><span>Kauknochen L 85g</span><span>Art.-Nr.: 7100</span></div>
-                    <div class="element__stars df-c">
-                      <div class="active"><span>★★</span></div>
-                      <div class="not-active"><span>☆☆☆</span></div>
-                    </div>
-                    <div class="element__price"><span>€12.00</span></div>
-                    <button class="element__button" type="button">In den Warenkorb</button>
                   </li>
-                  <li class="element df">
-                    <div class="hover hidden">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -356,40 +402,49 @@
                         </div>
                       </div>
                     </div>
-                    <div class="element__image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
-                    <h6 class="element__header"><span>8in1 Delights Beef</span></h6>
-                    <div class="element__info"><span>Kauknochen L 85g</span><span>Art.-Nr.: 7100</span></div>
-                    <div class="element__stars df-c">
-                      <div class="active"><span>★★</span></div>
-                      <div class="not-active"><span>☆☆☆</span></div>
-                    </div>
-                    <div class="element__price"><span>€12.00</span></div>
-                    <button class="element__button" type="button">In den Warenkorb</button>
                   </li>
-                  <li class="element df">
-                    <div class="hover hidden">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product3.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -397,40 +452,49 @@
                         </div>
                       </div>
                     </div>
-                    <div class="element__image df-cc df-cc"><img class="image" src="/img/product1.png" alt="#"></div>
-                    <h6 class="element__header"><span>8in1 Delights Pork Twisted Sticks 35</span></h6>
-                    <div class="element__info"><span>Kauknochen L 85g</span><span>Art.-Nr.: 7100</span></div>
-                    <div class="element__stars df-c">
-                      <div class="active"><span>★★</span></div>
-                      <div class="not-active"><span>☆☆☆</span></div>
-                    </div>
-                    <div class="element__price"><span>€12.00</span></div>
-                    <button class="element__button" type="button">In den Warenkorb</button>
                   </li>
-                  <li class="element df">
-                    <div class="hover hidden">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -438,40 +502,50 @@
                         </div>
                       </div>
                     </div>
-                    <div class="element__image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
-                    <h6 class="element__header"><span>8in1 Delights Pork Twisted Sticks 35</span></h6>
-                    <div class="element__info"><span>Kauknochen L 85g</span><span>Art.-Nr.: 7100</span></div>
-                    <div class="element__stars df-c">
-                      <div class="active"><span>★★</span></div>
-                      <div class="not-active"><span>☆☆☆</span></div>
-                    </div>
-                    <div class="element__price"><span>€12.00</span></div>
-                    <button class="element__button" type="button">In den Warenkorb</button>
                   </li>
-                  <li class="element df">
-                    <div class="hover hidden">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="sale-corner corner"><span class="sale-corner__text">SALE</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product1.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -479,40 +553,50 @@
                         </div>
                       </div>
                     </div>
-                    <div class="element__image df-cc df-cc"><img class="image" src="/img/product3.png" alt="#"></div>
-                    <h6 class="element__header"><span>8in1 Delights Pork Twisted Sticks 35</span></h6>
-                    <div class="element__info"><span>Kauknochen L 85g</span><span>Art.-Nr.: 7100</span></div>
-                    <div class="element__stars df-c">
-                      <div class="active"><span>★★</span></div>
-                      <div class="not-active"><span>☆☆☆</span></div>
-                    </div>
-                    <div class="element__price"><span>€12.00</span></div>
-                    <button class="element__button" type="button">In den Warenkorb</button>
                   </li>
-                  <li class="element df">
-                    <div class="hover hidden">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="natural-corner corner"><span>NATURAL</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -520,40 +604,50 @@
                         </div>
                       </div>
                     </div>
-                    <div class="element__image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
-                    <h6 class="element__header"><span>8in1 Delights Pork Twisted Sticks 35</span></h6>
-                    <div class="element__info"><span>Kauknochen L 85g</span><span>Art.-Nr.: 7100</span></div>
-                    <div class="element__stars df-c">
-                      <div class="active"><span>★★</span></div>
-                      <div class="not-active"><span>☆☆☆</span></div>
-                    </div>
-                    <div class="element__price"><span>€12.00</span></div>
-                    <button class="element__button" type="button">In den Warenkorb</button>
                   </li>
-                  <li class="element df">
-                    <div class="hover hidden">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="sale-corner corner"><span class="sale-corner__text">SALE</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product1.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -561,41 +655,352 @@
                         </div>
                       </div>
                     </div>
-                    <div class="sale-corner"><span class="sale-corner__text">SALE<br><span>-10%</span></span></div>
-                    <div class="element__image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
-                    <h6 class="element__header"><span>8in1 Delights Beef</span></h6>
-                    <div class="element__info"><span>Kauknochen L 85g</span><span>Art.-Nr.: 7100</span></div>
-                    <div class="element__stars df-c">
-                      <div class="active"><span>★★</span></div>
-                      <div class="not-active"><span>☆☆☆</span></div>
-                    </div>
-                    <div class="element__price"><span>€12.00</span></div>
-                    <button class="element__button" type="button">In den Warenkorb</button>
                   </li>
-                  <li class="element df">
-                    <div class="hover hidden">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="natural-corner corner"><span>NATURAL</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
                             </div>
                           </div>
                         </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
+                              Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
+                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
+                              Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
+                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product3.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
+                              Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
+                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
+                              Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
+                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
+                              Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
+                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
+                              Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
+                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product3.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
+                              Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
+                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
+                              Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
+                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
+                              Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
+                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
+                              Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
+                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="sale-corner corner"><span class="sale-corner__text">SALE</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product1.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
+                              Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
+                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
+                              Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
+                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="products-main__element df">
+                    <div class="products-main__element-visible">
+                      <div class="natural-corner corner"><span>NATURAL</span></div>
+                      <div class="products-main__element-image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
+                      <div class="products-main__element-text">
+                        <h6 class="products-main__element-header"><span>8in1 Delights Beef</span></h6>
+                        <div class="products-main__element-info">
+                          <div>Kauknochen L 85g</div>
+                          <div>Art.-Nr.: 7100</div>
+                        </div>
+                        <div class="products-main__element-stars df-c">
+                          <div class="stars-active"><span>★★</span></div>
+                          <div class="stars-not-active"><span>☆☆☆</span></div>
+                        </div>
+                      </div>
+                      <div class="products-main__element-buy">
+                        <div class="products-main__element-price"><span>€12.00</span></div>
+                        <button class="products-main__element-button" type="button">In den Warenkorb</button>
+                      </div>
+                    </div>
+                    <div class="products-main__hover">
+                      <div class="products-main__hover-container df">
+                        <div class="products-main__hover-header df">
+                          <div class="products-main__hover-brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
+                          <div class="products-main__hover-buttons">
+                            <div class="products-main__hover-buttons-block df-cb"><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="products-main__hover-buttons-image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
+                            <div class="products-main__hover-status-block">
+                              <div class="products-main__hover-status-header"><span>Status</span></div>
+                              <div class="products-main__hover-status-info"><span>auf Lager</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="products-main__hover-info df">
+                          <div class="products-main__hover-info-block"><span>Marke:</span></div>
+                          <div class="products-main__hover-info-block"><span>Pedigree</span></div>
+                          <div class="products-main__hover-info-block"><span>Produkttyp:</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunde Kekse und Kuchen</span></div>
+                          <div class="products-main__hover-info-block"><span>Lebensalter:</span></div>
+                          <div class="products-main__hover-info-block"><span>für jedes Alter</span></div>
+                          <div class="products-main__hover-info-block"><span>Hunderassen:</span></div>
+                          <div class="products-main__hover-info-block"><span>für große Hunde</span></div>
+                          <div class="products-main__hover-info-block-big"><span>Lieferumfang:</span></div>
+                          <div class="products-main__hover-info-block-big"><span>
                               Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
                               Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
                               Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
@@ -604,99 +1009,6 @@
                         </div>
                       </div>
                     </div>
-                    <div class="new-corner"><span>NEW</span></div>
-                    <div class="element__image df-cc df-cc"><img class="image" src="/img/product1.png" alt="#"></div>
-                    <h6 class="element__header"><span>8in1 Delights Beef</span></h6>
-                    <div class="element__info"><span>Kauknochen L 85g</span><span>Art.-Nr.: 7100</span></div>
-                    <div class="element__stars df-c">
-                      <div class="active"><span>★★</span></div>
-                      <div class="not-active"><span>☆☆☆</span></div>
-                    </div>
-                    <div class="element__price"><span>€12.00</span></div>
-                    <button class="element__button" type="button">In den Warenkorb</button>
-                  </li>
-                  <li class="element df">
-                    <div class="hover hidden">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
-                              Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
-                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
-                              Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
-                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein</span></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="element__image df-cc df-cc"><img class="image" src="/img/product2.png" alt="#"></div>
-                    <h6 class="element__header"><span>8in1 Delights Beef</span></h6>
-                    <div class="element__info"><span>Kauknochen L 85g</span><span>Art.-Nr.: 7100</span></div>
-                    <div class="element__stars df-c">
-                      <div class="active"><span>★★</span></div>
-                      <div class="not-active"><span>☆☆☆</span></div>
-                    </div>
-                    <div class="element__price"><span>€12.00</span></div>
-                    <button class="element__button" type="button">In den Warenkorb</button>
-                  </li>
-                  <li class="element df">
-                    <div class="hover hidden">
-                      <div class="hover__container df">
-                        <div class="hover__header df">
-                          <div class="hover__brand df-cc"><a href="#"><img class="image" src="/img/brand1.png" alt="#"></a></div>
-                          <div class="hover__buttons">
-                            <div class="buttons-block df-cb"><a class="buttons-block__image df-cc" href="#"><i class="material-icons">favorite</i></a><a class="buttons-block__image df-cc" href="#"><i class="material-icons">remove_red_eye</i></a></div>
-                            <div class="status-block">
-                              <div class="status-block__header"><span>Status</span></div>
-                              <div class="status-block__info"><span>auf Lager</span></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="hover__info df">
-                          <div class="hover__info-block"><span>Marke:</span></div>
-                          <div class="hover__info-block"><span>Pedigree</span></div>
-                          <div class="hover__info-block"><span>Produkttyp:</span></div>
-                          <div class="hover__info-block"><span>Hunde Kekse und Kuchen</span></div>
-                          <div class="hover__info-block"><span>Lebensalter:</span></div>
-                          <div class="hover__info-block"><span>für jedes Alter</span></div>
-                          <div class="hover__info-block"><span>Hunderassen:</span></div>
-                          <div class="hover__info-block"><span>für große Hunde</span></div>
-                          <div class="hover__info-block-big"><span>Lieferumfang:</span></div>
-                          <div class="hover__info-block-big"><span>
-                              Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
-                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein
-                              Genuss Multipackung Pedigree Riesenknochen ist der perfekte Leckerbissen für
-                              Ihren Hund - ein Genuss der perfekte Leckerbissen für Ihren Hund - ein</span></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="natural-corner"><span>NATURAL</span></div>
-                    <div class="element__image df-cc df-cc"><img class="image" src="/img/product3.png" alt="#"></div>
-                    <h6 class="element__header"><span>8in1 Delights Beef</span></h6>
-                    <div class="element__info"><span>Kauknochen L 85g</span><span>Art.-Nr.: 7100</span></div>
-                    <div class="element__stars df-c">
-                      <div class="active"><span>★★</span></div>
-                      <div class="not-active"><span>☆☆☆</span></div>
-                    </div>
-                    <div class="element__price"><span>€12.00</span></div>
-                    <button class="element__button" type="button">In den Warenkorb</button>
                   </li>
                 </ul>
               </div>
@@ -706,7 +1018,7 @@
             </article>
           </section>
         </div>
-      </div>
+      </main>
       <footer class="footer">
         <div class="main-wrapper df">
           <article class="footer__column">

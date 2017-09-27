@@ -75,7 +75,7 @@ $(document).ready(function () {
     };
 
 //--------------------------
-// Aside navigation
+// Header registration
 //--------------------------
 
     $('.account-popup__button').on('click', function () {
@@ -83,9 +83,10 @@ $(document).ready(function () {
     })
 
 //--------------------------
-// Header registration
+// Aside navigation
 //--------------------------
-    $('.main-header__account--registration').on('click', function () {
+
+    $('.aside-nav__element').on('click', function () {
         $(this).find('.aside-nav-sub').toggleClass('hidden')
         $(this).find('.main-arrow').toggleClass('hidden')
     })

@@ -1,14 +1,11 @@
 extends template
 
 block content
-    .main
+    #wrapper
         include include/header
         include include/navigation
-        include catalog/catalog
+        main.catalog-page
+            .main-wrapper
+                include catalog/aside
+                include catalog/catalog
         include include/footer
-
-
-
-
-
-
