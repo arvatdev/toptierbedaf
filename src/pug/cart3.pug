@@ -1,14 +1,10 @@
 extends template
 
 block content
-    .main
+    #wrapper
         include include/header
         include include/navigation
-        include cart/cart3
+        main.cart3-page
+            .main-wrapper
+                include cart/cart3/cart3
         include include/footer
-
-
-
-
-
-

@@ -11,7 +11,7 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="main">
+    <div id="wrapper">
       <header class="main-header">
         <div class="main-wrapper df-c h100p">
           <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
@@ -24,42 +24,6 @@
           <article class="main-header__wishlist"><a class="main-header__wishlist-image" href="#"></a></article>
           <article class="main-header__cart"><a class="df-c" href="#">
               <div class="main-header__cart-image"></div><span class="main-header__cart-price">€12.00</span></a></article>
-        </div>
-      </header>
-      <header class="main-header">
-        <div class="main-wrapper df-c h100p">
-          <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
-          <article class="main-header__contacts df-cc">
-            <div class="main-header__contacts-image df-cc"><i class="material-icons">phone</i></div>
-            <div class="main-header__contacts-number"><span>+49 30 208 476 906</span></div>
-            <div class="main-header__contacts-time"><span>Mo - Fr 9:00 - 18:00 Uhr</span></div>
-          </article>
-          <article class="main-header__account main-header__account--registration">
-            <div class="account-popup">
-              <button class="account-popup__button" type="button"> <span>ANMELDEN</span><i class="account-popup__icon material-icons">exit_to_app</i></button>
-              <div class="account-popup__block">
-                <div class="account-login__form">
-                  <form>
-                    <div class="account-login__mail">
-                      <label class="account-login__mail-label" for="email"><span>E-Mail-Adresse*</span></label>
-                      <input class="account-login__input" type="email" id="email" placeholder="E-Mail-Adresse*">
-                    </div>
-                    <div class="account-login__password">
-                      <label class="account-login__password-label" for="password"><span>Passwort*</span></label>
-                      <input class="account-login__input" type="name" id="password" placeholder="Passwort*">
-                    </div>
-                    <button class="account-login__button" type="submit">ANMELDEN</button>
-                  </form><a class="account-login__recovery" href="#">Passwort vergessen?</a>
-                </div>
-                <div class="account-login__social"><span class="account-login__social-header">REGISTRIERUNG DURCH SOZIALE NETZWERKE:</span>
-                  <div class="social df-ca"><a class="social__link" href="#"><img class="image" src="/img/facebook-link.png" alt="#"></a><a class="social__link" href="#"><img class="image" src="/img/google-link.png" alt="#"></a><a class="social__link" href="#"><img class="image" src="/img/twitter-link.png" alt="#"></a><a class="social__link" href="#"><img class="image" src="/img/instagram-link.png" alt="#"></a></div>
-                </div>
-                <div class="account-registration__block">
-                  <p class="account-registration__text">Falls Sie noch kein Benutzerkonto bei Zoobio.de haben, REGISTRIEREN Sie sich jetzt. </p><a class="account-registration__button" href="#">REGISTRIEREN</a>
-                </div>
-              </div>
-            </div>
-          </article>
         </div>
       </header>
       <nav class="main-navigation">
@@ -77,12 +41,12 @@
           <article class="main-navigation__search"><a class="main-navigation__search-image" href="#"><i class="material-icons">search</i></a></article>
         </div>
       </nav>
-      <section class="main-body body--margin">
+      <main class="cart6-page">
         <div class="main-wrapper">
           <article class="breadcrumbs">
             <ul class="breadcrumbs__list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Warenkorb</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Home</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Warenkorb</a></li>
             </ul>
           </article>
           <article class="progress-bar">
@@ -91,23 +55,26 @@
           <article class="cart-table">
             <table class="table">
               <tr class="table__header">
-                <th colspan="2">Artikel</th>
-                <th>Lieferzeit</th>
-                <th>Menge</th>
-                <th class="t-ar">Einzelpreis</th>
-                <th class="t-ar" colspan="2">Betrag</th>
+                <th class="table__header-item" colspan="2">Artikel</th>
+                <th class="table__header-item">Lieferzeit</th>
+                <th class="table__header-item">Menge</th>
+                <th class="table__header-item t-ar">Einzelpreis</th>
+                <th class="table__header-item t-ar" colspan="2">Betrag</th>
               </tr>
               <tr class="table__content">
                 <td class="table__image"><img class="image" src="/img/product5.png" alt="#"></td>
                 <td class="table__product-info">
-                  <h3 class="header"><span>RAFINE ADULT HUHN, LACHS & SCHRIMPS</span></h3>
-                  <div class="article"><span>Art.-Nr.: 11153</span></div>
+                  <h3 class="table__product-header"><span>RAFINE ADULT HUHN, LACHS & SCHRIMPS</span></h3>
+                  <div class="table__product-article"><span>Art.-Nr.: 11153</span></div>
                   <div class="stars df-c">
                     <div class="active"><span>★★</span></div>
                     <div class="not-active"><span>☆☆☆</span></div>
                   </div>
                 </td>
-                <td class="table__packedge"><span>Sofort versandfertig, Lieferzeit ca.</span><span>1-3 Werktage</span></td>
+                <td class="table__package">
+                  <p>Sofort versandfertig, Lieferzeit ca.</p>
+                  <p>1-3 Werktage</p>
+                </td>
                 <td class="table__value-wrapper">
                   <div class="table__value">
                     <input class="input" type="text" placeholder="2">
@@ -121,14 +88,17 @@
               <tr class="table__content">
                 <td class="table__image"><img class="image" src="/img/product7.png" alt="#"></td>
                 <td class="table__product-info">
-                  <h3 class="header"><span>RAFINE ADULT HUHN, LACHS & SCHRIMPS</span></h3>
-                  <div class="article"><span>Art.-Nr.: 11153</span></div>
+                  <h3 class="table__product-header"><span>RAFINE ADULT HUHN, LACHS & SCHRIMPS</span></h3>
+                  <div class="table__product-article"><span>Art.-Nr.: 11153</span></div>
                   <div class="stars df-c">
                     <div class="active"><span>★★</span></div>
                     <div class="not-active"><span>☆☆☆</span></div>
                   </div>
                 </td>
-                <td class="table__packedge"><span>Sofort versandfertig, Lieferzeit ca.</span><span>1-3 Werktage</span></td>
+                <td class="table__package">
+                  <p>Sofort versandfertig, Lieferzeit ca.</p>
+                  <p>1-3 Werktage</p>
+                </td>
                 <td class="table__value-wrapper">
                   <div class="table__value">
                     <input class="input" type="text" placeholder="2">
@@ -142,14 +112,17 @@
               <tr class="table__content">
                 <td class="table__image"><img class="image" src="/img/product6.png" alt="#"></td>
                 <td class="table__product-info">
-                  <h3 class="header"><span>RAFINE ADULT HUHN, LACHS & SCHRIMPS</span></h3>
-                  <div class="article"><span>Art.-Nr.: 11153</span></div>
+                  <h3 class="table__product-header"><span>RAFINE ADULT HUHN, LACHS & SCHRIMPS</span></h3>
+                  <div class="table__product-article"><span>Art.-Nr.: 11153</span></div>
                   <div class="stars df-c">
                     <div class="active"><span>★★</span></div>
                     <div class="not-active"><span>☆☆☆</span></div>
                   </div>
                 </td>
-                <td class="table__packedge"><span>Sofort versandfertig, Lieferzeit ca.</span><span>1-3 Werktage</span></td>
+                <td class="table__package">
+                  <p>Sofort versandfertig, Lieferzeit ca.</p>
+                  <p>1-3 Werktage</p>
+                </td>
                 <td class="table__value-wrapper">
                   <div class="table__value">
                     <input class="input" type="text" placeholder="2">
@@ -164,28 +137,31 @@
           </article>
           <article class="cart-final df">
             <div class="cart-final__block">
-              <h2 class="header"><span>VORAUSSICHTLICHER VERSAND DIESES ARTIKELS:</span></h2>
-              <div class="text"><span>Freitag, 01.04.2016 - Sonntag, 03.04.2016</span><span>Bei Vorkassezahlung 2-4 Werktage nach Zahlungseingang.</span></div>
+              <h2 class="cart-final__header"><span>VORAUSSICHTLICHER VERSAND DIESES ARTIKELS:</span></h2>
+              <div class="cart-final__text">
+                <p>Freitag, 01.04.2016 - Sonntag, 03.04.2016</p>
+                <p>Bei Vorkassezahlung 2-4 Werktage nach Zahlungseingang.</p>
+              </div>
             </div>
             <div class="cart-final__block cart-final__block--large">
-              <div class="price df--b"><span class="price__header">Gesamtpreis</span><span class="price__value">56.10 €</span></div>
-              <div class="price df--b"><span class="price__header">Preis ohne MwSt</span><span class="price__value">56.10 €</span></div>
-              <div class="price df--b"><span class="price__header"><b>*</b>Versandkosten</span><span class="price__value">0 €</span></div>
-              <div class="price df--b"><span class="price__header">Zahlungsbetrag, Steuern inklusive</span>
-                <div class="price__final t-ar"><span class="price__final-value">114.10 €</span><span class="price__final-info">inkl. gesetzlicher MwSt.</span></div>
+              <div class="cart-final__price df--b"><span class="cart-final__price-header">Gesamtpreis</span><span class="cart-final__price-value">56.10 €</span></div>
+              <div class="cart-final__price df--b"><span class="cart-final__price-header">Preis ohne MwSt</span><span class="cart-final__price-value">56.10 €</span></div>
+              <div class="cart-final__price df--b"><span class="cart-final__price-header"><b>*</b>Versandkosten</span><span class="cart-final__price-value">0 €</span></div>
+              <div class="cart-final__price df--b"><span class="cart-final__price-header">Zahlungsbetrag, Steuern inklusive</span>
+                <div class="cart-final__price-final t-ar"><span class="cart-final__price-final-value">114.10 €</span><span class="cart-final__price-final-info">inkl. gesetzlicher MwSt.</span></div>
               </div>
-              <div class="price t-ar df--b">
-                <button class="price__button price__button--transparent" type="button">Warenkorb aktualisieren</button>
-                <button class="price__button" type="button">JETZT KAUFEN</button>
+              <div class="cart-final__price t-ar df--b">
+                <button class="cart-final__price-button cart-final__price-button--transparent" type="button">Warenkorb aktualisieren</button>
+                <button class="cart-final__price-button" type="button">JETZT KAUFEN</button>
               </div>
-              <div class="price">
-                <p class="price__clarification">Gutscheincodes können Sie im letzten Bestellschritt "Bestätigen" einlösen</p>
-                <p class="price__clarification"><b>* Bitte beachten:</b>Falls Sie schwere Fracht erwarten, muss der Preis von unserer Auslieferung sabteilung genehmigt werden. Wir halten Sie darüber auf dem Laufenden.</p>
+              <div class="cart-final__price">
+                <p class="cart-final__price-clarification">Gutscheincodes können Sie im letzten Bestellschritt "Bestätigen" einlösen</p>
+                <p class="cart-final__price-clarification"><b class="cart-final__price-clarification-bold">* Bitte beachten:</b>Falls Sie schwere Fracht erwarten, muss der Preis von unserer Auslieferung sabteilung genehmigt werden. Wir halten Sie darüber auf dem Laufenden.</p>
               </div>
             </div>
           </article>
         </div>
-      </section>
+      </main>
       <footer class="footer">
         <div class="main-wrapper df">
           <article class="footer__column">

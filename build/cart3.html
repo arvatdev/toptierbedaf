@@ -11,7 +11,7 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="main">
+    <div id="wrapper">
       <header class="main-header">
         <div class="main-wrapper df-c h100p">
           <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
@@ -41,20 +41,20 @@
           <article class="main-navigation__search"><a class="main-navigation__search-image" href="#"><i class="material-icons">search</i></a></article>
         </div>
       </nav>
-      <section class="main-body body--margin">
+      <main class="cart3-page">
         <div class="main-wrapper">
           <article class="breadcrumbs">
             <ul class="breadcrumbs__list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Haustiershop Marken</a></li>
-              <li><a href="#">Warenkorb</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Home</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Haustiershop Marken</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Warenkorb</a></li>
             </ul>
           </article>
           <article class="progress-bar">
             <h1 class="progress-bar__header"><span>SICHERE VERBINDUNG</span></h1>
             <ul class="progress-bar__list df-c">
-              <li class="progress-bar__element df-c active-element active-element-pass"><a class="progress-bar__element-sub df-cc" href="#"><span>WARENKORB</span></a></li>
-              <li class="progress-bar__element df-c active-element">
+              <li class="progress-bar__element df-c progress-bar__element--active progress-bar__element--active-pass"><a class="progress-bar__element-sub df-cc" href="#"><span>WARENKORB</span></a></li>
+              <li class="progress-bar__element df-c progress-bar__element--active">
                 <div class="active-border"></div>
                 <div class="progress-bar__element-sub df-cc">
                   <div class="progress-bar__element-number df-cc"><span>2</span></div><span>ANMELDEN</span>
@@ -69,7 +69,7 @@
             </ul>
           </article>
           <article class="main-form">
-            <div class="main-form__sex df-c"><span class="header">Anrede</span>
+            <div class="main-form__sex df-c"><span class="main-form__sex-header">Anrede</span>
               <input class="input" type="radio" name="sex" id="sex1">
               <label class="label" for="sex1"><span>Herr</span></label>
               <input class="input" type="radio" name="sex" id="sex2">
@@ -78,52 +78,52 @@
               <label class="label" for="sex3"><span>Firma</span></label>
             </div>
             <div class="main-form__columns df">
-              <div class="column">
-                <label class="column__label" for="vorname"><span>Vorname*</span></label>
-                <input class="column__input" type="text" id="vorname">
-                <label class="column__label" for="firma"><span>Firma*</span></label>
-                <input class="column__input" type="text" id="firma">
-                <label class="column__label" for="ust"><span>USt-IdNr.*</span></label>
+              <div class="form-column">
+                <label class="form-column__label" for="vorname"><span>Vorname*</span></label>
+                <input class="form-column__input" type="text" id="vorname">
+                <label class="form-column__label" for="firma"><span>Firma*</span></label>
+                <input class="form-column__input" type="text" id="firma">
+                <label class="form-column__label" for="ust"><span>USt-IdNr.*</span></label>
                 <div class="select-wrapper df">
                   <select class="js-cart-select2">
                     <option></option>
                     <option></option>
                     <option><span><img class="image" src="/img/flags/deu.png"></span></option>
                   </select>
-                  <input class="column__input-small" type="text" id="telefon">
+                  <input class="form-column__input-small" type="text" id="telefon">
                 </div>
-                <label class="column__label" for="strabe"><span>Straße*</span></label>
-                <input class="column__input" type="text" id="strabe">
-                <label class="column__label" for="adresszusatz"><span>Adresszusatz</span></label>
-                <input class="column__input column__input-sub" type="text" id="adresszusatz">
-                <div class="column__label-sub"><span>Die Angabe einer DHL-Packstation ist nicht zulässig!</span></div>
-                <label class="column__label" for="stadt"><span>Stadt*</span></label>
-                <input class="column__input" type="text" id="stadt">
+                <label class="form-column__label" for="strabe"><span>Straße*</span></label>
+                <input class="form-column__input" type="text" id="strabe">
+                <label class="form-column__label" for="adresszusatz"><span>Adresszusatz</span></label>
+                <input class="form-column__input form-column__input-sub" type="text" id="adresszusatz">
+                <div class="form-column__label-sub"><span>Die Angabe einer DHL-Packstation ist nicht zulässig!</span></div>
+                <label class="form-column__label" for="stadt"><span>Stadt*</span></label>
+                <input class="form-column__input" type="text" id="stadt">
               </div>
-              <div class="column">
-                <label class="column__label" for="nachname"><span>Nachname*</span></label>
-                <input class="column__input" type="text" id="nachname">
-                <label class="column__label" for="steuernummer"><span>Steuernummer</span></label>
-                <input class="column__input" type="text" id="steuernummer">
-                <label class="column__label" for="hausnummer"><span>Hausnummer*</span></label>
-                <input class="column__input" type="text" id="hausnummer">
-                <label class="column__label" for="postleitzahl"><span>Postleitzahl*</span></label>
-                <input class="column__input" type="text" id="postleitzahl">
-                <label class="column__label" for="land"><span>Land*</span></label>
-                <select class="column__select js-cart-select">
+              <div class="form-column">
+                <label class="form-column__label" for="nachname"><span>Nachname*</span></label>
+                <input class="form-column__input" type="text" id="nachname">
+                <label class="form-column__label" for="steuernummer"><span>Steuernummer</span></label>
+                <input class="form-column__input" type="text" id="steuernummer">
+                <label class="form-column__label" for="hausnummer"><span>Hausnummer*</span></label>
+                <input class="form-column__input" type="text" id="hausnummer">
+                <label class="form-column__label" for="postleitzahl"><span>Postleitzahl*</span></label>
+                <input class="form-column__input" type="text" id="postleitzahl">
+                <label class="form-column__label" for="land"><span>Land*</span></label>
+                <select class="form-column__select js-cart-select">
                   <option>Deutschland</option>
                   <option>Ukraine</option>
                   <option>Something</option>
                 </select>
-                <label class="column__label w100p" for="telefon"><span>Telefon*</span></label>
+                <label class="form-column__label w100p" for="telefon"><span>Telefon*</span></label>
                 <div class="select-wrapper df">
                   <select class="js-cart-select3">
                     <option></option>
                     <option></option>
                     <option><span><img class="image" src="/img/flags/deu.png"></span></option>
                   </select>
-                  <div class="column__input-pre df-cc"><span>+049</span></div>
-                  <input class="column__input-small" type="text" id="telefon">
+                  <div class="form-column__input-pre df-cc"><span>+049</span></div>
+                  <input class="form-column__input-small" type="text" id="telefon">
                 </div>
               </div>
             </div>
@@ -137,7 +137,7 @@
             </div>
           </article>
         </div>
-      </section>
+      </main>
       <footer class="footer">
         <div class="main-wrapper df">
           <article class="footer__column">

@@ -11,7 +11,7 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="main">
+    <div id="wrapper">
       <header class="main-header">
         <div class="main-wrapper df-c h100p">
           <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
@@ -41,11 +41,11 @@
           <article class="main-navigation__search"><a class="main-navigation__search-image" href="#"><i class="material-icons">search</i></a></article>
         </div>
       </nav>
-      <section class="main-body body--margin">
+      <main class="cart1-page">
         <div class="main-wrapper">
           <article class="breadcrumbs">
             <ul class="breadcrumbs__list">
-              <li><a href="#">Home</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Home</a></li>
             </ul>
           </article>
           <article class="cart-body">
@@ -53,7 +53,10 @@
               <h1 class="order__header"><span>VIELEN DANKE FÜR IHRE BESTELLUNG!</span></h1>
               <div class="order__image"><i class="material-icons">done</i></div>
               <h2 class="order__sub-header"><span>Danke für Ihren Einkauf!</span></h2>
-              <div class="order__info"><span>Ihr Auftrag wurde erfolgreich aufgenommen und wird so schnell wie möglich bearbeitet.</span><span>Die Auftragsnummer lautet</span></div>
+              <div class="order__info">
+                <p class="order__info-text">Ihr Auftrag wurde erfolgreich aufgenommen und wird so schnell wie möglich bearbeitet.</p>
+                <p class="order__info-text">Die Auftragsnummer lautet</p>
+              </div>
               <div class="order__number"><span>4088604858</span></div>
               <div class="order__text">
                 <p>
@@ -65,7 +68,7 @@
             </div>
           </article>
         </div>
-      </section>
+      </main>
       <footer class="footer">
         <div class="main-wrapper df">
           <article class="footer__column">

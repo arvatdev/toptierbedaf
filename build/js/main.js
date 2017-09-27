@@ -78,11 +78,17 @@ $(document).ready(function () {
 // Aside navigation
 //--------------------------
 
-    $('.aside-nav__element').on('click', function () {
+    $('.account-popup__button').on('click', function () {
+        $('.account-popup__block').toggleClass('hidden')
+    })
+
+//--------------------------
+// Header registration
+//--------------------------
+    $('.main-header__account--registration').on('click', function () {
         $(this).find('.aside-nav-sub').toggleClass('hidden')
         $(this).find('.main-arrow').toggleClass('hidden')
     })
-
 //--------------------------
 // Catalog page rating ease loading
 //--------------------------

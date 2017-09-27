@@ -1,9 +1,10 @@
 extends template
 
 block content
-    .main
+    #wrapper
         include include/header
-        include include/header-registration.pug
         include include/navigation
-        include cart/cart6
+        main.cart6-page
+            .main-wrapper
+                include cart/cart6/cart6
         include include/footer

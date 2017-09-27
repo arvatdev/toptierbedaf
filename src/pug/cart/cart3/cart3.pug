@@ -1,0 +1,104 @@
+article.breadcrumbs
+    ul.breadcrumbs__list
+        li.breadcrumbs__item: a(href="#").breadcrumbs__link Home
+        li.breadcrumbs__item: a(href="#").breadcrumbs__link Haustiershop Marken
+        li.breadcrumbs__item: a(href="#").breadcrumbs__link Warenkorb
+
+article.progress-bar
+    h1.progress-bar__header
+        span SICHERE VERBINDUNG
+    ul.progress-bar__list.df-c
+        li.progress-bar__element.df-c.progress-bar__element--active.progress-bar__element--active-pass
+            a(href="#").progress-bar__element-sub.df-cc
+                span WARENKORB
+        li.progress-bar__element.df-c.progress-bar__element--active
+            .active-border
+            .progress-bar__element-sub.df-cc
+                .progress-bar__element-number.df-cc
+                    span 2
+                span ANMELDEN
+        li.progress-bar__element.df-c
+            .progress-bar__element-sub.df-cc
+                span RECHNUNG & LIEFERUNG
+        li.progress-bar__element.df-c
+            .progress-bar__element-sub.df-cc
+                span ZAHLUNG & BESTELLUNG
+article.main-form
+    .main-form__sex.df-c
+        span.main-form__sex-header Anrede
+        input(type="radio" name="sex" id="sex1").input
+        label(for="sex1").label
+            span Herr
+        input(type="radio" name="sex" id="sex2").input
+        label(for="sex2").label
+            span Frau
+        input(type="radio" name="sex" id="sex3").input
+        label(for="sex3").label
+            span Firma
+    .main-form__columns.df
+        .form-column
+            label(for="vorname").form-column__label
+                span Vorname*
+            input(type="text" id="vorname").form-column__input
+            label(for="firma").form-column__label
+                span Firma*
+            input(type="text" id="firma").form-column__input
+            label(for="ust").form-column__label
+                span USt-IdNr.*
+            .select-wrapper.df
+                select.js-cart-select2
+                    option
+                    option
+                    option
+                        span: img(src="/img/flags/deu.png").image
+                input(type="text" id="telefon").form-column__input-small
+            label(for="strabe").form-column__label
+                span Straße*
+            input(type="text" id="strabe").form-column__input
+            label(for="adresszusatz").form-column__label
+                span Adresszusatz
+            input(type="text" id="adresszusatz").form-column__input.form-column__input-sub
+            .form-column__label-sub
+                span Die Angabe einer DHL-Packstation ist nicht zulässig!
+            label(for="stadt").form-column__label
+                span Stadt*
+            input(type="text" id="stadt").form-column__input
+        .form-column
+            label(for="nachname").form-column__label
+                span Nachname*
+            input(type="text" id="nachname").form-column__input
+            label(for="steuernummer").form-column__label
+                span Steuernummer
+            input(type="text" id="steuernummer").form-column__input
+            label(for="hausnummer").form-column__label
+                span Hausnummer*
+            input(type="text" id="hausnummer").form-column__input
+            label(for="postleitzahl").form-column__label
+                span Postleitzahl*
+            input(type="text" id="postleitzahl").form-column__input
+            label(for="land").form-column__label
+                span Land*
+            select.form-column__select.js-cart-select
+                option Deutschland
+                option Ukraine
+                option Something
+            label(for="telefon").form-column__label.w100p
+                span Telefon*
+            .select-wrapper.df
+                select.js-cart-select3
+                    option
+                    option
+                    option
+                        span: img(src="/img/flags/deu.png").image
+                .form-column__input-pre.df-cc
+                    span +049
+                input(type="text" id="telefon").form-column__input-small
+
+    .main-form__info-mark.df-c
+        input(type="checkbox" id="news").input
+        label(for="news").label
+            span Lieferung ebenfalls an diese Adresse
+        span * Pflichtfelder
+    .main-form__submit-block.df-cb
+        button(type="button").big-orange-btn.big-orange-btn--invert ZURÜCK
+        button(type="button").big-orange-btn WEITER
