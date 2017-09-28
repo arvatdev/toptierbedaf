@@ -1,3 +1,50 @@
+.main-block__separator
+  border-bottom 1px solid c_lgray
+  margin-bottom 35px
+.oshop-block
+  margin 20px 0 25px 0
+  &__header
+    font-family r_med
+    font-size 18px
+    padding 15px 0
+    position relative
+    &::before
+      position absolute
+      content ''
+      left 0
+      top 0
+      width 45px
+      border-top 3px solid #f95318
+  &__text
+    font-family r_reg
+    font-size 14px
+    line-height 18px
+.market-brands
+  margin 35px 0 35px 0
+  &__header
+    display block
+    width 100%
+    text-align center
+    letter-spacing 1px
+    font-family r_med
+    font-size 26px
+    padding-bottom 20px
+    margin-bottom 20px
+    position relative
+    &::before
+      position absolute
+      content ''
+      bottom  0
+      right 48%
+      text-align center
+      width 30px
+      border-bottom 2px solid c_orange
+  &__element
+    width 140px
+    transition all .2s ease
+    &:hover
+      -webkit-filter brightness(110%)
+      filter brightness(110%)
 .filter
   margin-bottom 10px
   margin-top 16px
@@ -580,13 +627,12 @@
   &--big
     padding 15px
     left 0
-    & .sale-corner__text
+    &__text
       font-size 26px
     &::before
       border 35px solid transparent
       border-left 35px solid c_orange
       border-top 35px solid c_orange
-
 .natural-corner
   position absolute
   top 0
@@ -608,7 +654,6 @@
     border 15px solid transparent
     border-left 15px solid c_bgreen
     border-top 15px solid c_bgreen
-
 .new-corner
   position absolute
   top 0
@@ -630,3 +675,12 @@
     border 15px solid transparent
     border-left 15px solid c_bblue
     border-top 15px solid c_bblue
+.main-block__sub-info
+  text-align right
+  margin 25px 0 25px 0
+  color c_mgray
+  font-family r_reg
+  font-size 14px
+  &-link
+    color c_orange
+    text-decoration underline

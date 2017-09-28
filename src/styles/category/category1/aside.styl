@@ -47,6 +47,24 @@
               border-left-color c_orange
           & .aside-nav-sub__all
             margin-right 20px
+    &__category
+      padding-top 20px
+      padding-left 30px
+      &-element
+        display block
+        font-family r_light
+        font-size 14px
+        margin-bottom 15px
+        &:last-of-type
+          margin-bottom 0
+      &--active
+        color c_orange
+        & .aside-nav-sub__category-nav-link
+          color c_orange
+      &-link
+        transition all .2s ease
+        &:hover
+          color c_orange
 .main-arrow
   position absolute
   content ''

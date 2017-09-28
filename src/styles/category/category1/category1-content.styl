@@ -1,6 +1,8 @@
-.raiting
-  margin 20px 0 25px
+.main-block__separator
   border-bottom 1px solid c_lgray
+  margin-bottom 35px
+.oshop-block
+  margin 20px 0 25px 0
   &__header
     font-family r_med
     font-size 18px
@@ -13,102 +15,96 @@
       top 0
       width 45px
       border-top 3px solid #f95318
-  &__wrapper
-    margin 20px 0 35px
-  &__main
-    width 120px
-  &__image
-    margin-bottom 10px
-  &__number
-    text-align center
-    font-family r_reg
-    font-size 37px
-    margin-bottom 15px
-  &__stars
-    margin-bottom 5px
-    text-align center
-    .active
-      font-size 12px
-      color c_yellow
-  &__total
-    text-align center
+  &__text
     font-family r_reg
     font-size 14px
-    color c_gray
-  &__info
-    width 610px
-    &-text
-      line-height 20px
-      font-family r_reg
-      font-size 14px
-      &-small
-        line-height 18px
-        font-family r_reg
-        font-size 12px
-.stats
-  margin 25px 0
-  &--green
-    width 0
-    max-width 395px
-    background-color #9ec153
-    transition all 4s ease-out .2s
-  &--lgreen
-    width 0
-    max-width 190px
-    background-color #acd819
-    transition all 4s ease-out .2s
-  &--yellow
-    width 0
-    max-width 80px
-    background-color #f2d800
-    transition all 4s ease-out .2s
-  &--orange
-    width 0
-    max-width 30px
-    background-color #ffb31b
-    transition all 4s ease-out .2s
-  &--red
-    width 0
-    max-width 15px
-    background-color #ff8b53
-    transition all 4s ease-out .2s
-  &__element
-    margin-bottom 2px
-  &__number
-    font-family r_reg
-    font-size 14px
-    width 20px
-  &__star
-    font-family r_reg
-    font-size 12px
-    width 25px
-    color c_gray
-  &__length
-    font-family r_reg
-    font-size 14px
-    box-sizing border-box
-    height 17px
-    padding-left 10px
-.links-8in1
-  padding-bottom 10px
-  border-bottom 1px solid c_lgray
-  margin-bottom 40px
-  &__list
-    padding 0 5px
-  &__element-wrapper
-    margin-bottom 20px
-    width 340px
-  &__elememnt
-    display block
+    line-height 18px
+.tabs-block
+  border-top 1px solid c_lgray
+  padding-top 20px
+  &__header
+    font-family r_med
+    font-size 18px
+    padding 15px 0
     position relative
-    padding-right 15px
-    font-family r_reg
-    font-size 14px
+    &::before
+      position absolute
+      content ''
+      left 0
+      top 0
+      width 45px
+      border-top 3px solid #f95318
+  &__list
+    margin-top 10px
+  &__item
+    width 23%
+    margin 0 2.66% 2.66% 0
+    &:nth-child(4n)
+      margin-right 0
+    &:last-of-type
+      margin-right auto
+  &__link
+    display block
+    height 180px
+    width 180px
+    overflow hidden
+    position relative
+    &:hover
+      & img
+        top -5px
+        bottom -5px
+        left -5px
+        right -5px
+        height 105%
+        width 105%
+    & img
+      position absolute
+      top 0
+      bottom 0
+      left 0
+      right 0
+      height 100%
+      max-width inherit
+      width 100%
+      transition all .3s ease
+  &__text
+    position absolute
+    left 0
+    bottom 0
+    height 50px
+    width 100%
+    padding 0 15px
+    box-sizing border-box
+    background-color rgba(0, 0, 0, .4)
+    color white
+    font-family r_black
+    font-size 13px
+.market-brands
+  margin 35px 0 35px 0
+  &__header
+    display block
+    width 100%
+    text-align center
+    letter-spacing 1px
+    font-family r_med
+    font-size 26px
+    padding-bottom 20px
+    margin-bottom 20px
+    position relative
+    &::before
+      position absolute
+      content ''
+      bottom  0
+      right 48%
+      text-align center
+      width 30px
+      border-bottom 2px solid c_orange
+  &__element
+    width 140px
     transition all .2s ease
     &:hover
-      color c_orange
-      .main-arrow
-        border-left-color c_orange
+      -webkit-filter brightness(110%)
+      filter brightness(110%)
 .products-main
   margin-bottom 35px
   flex-direction column
