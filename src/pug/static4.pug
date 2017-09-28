@@ -1,14 +1,10 @@
 extends template
 
 block content
-    .main
+    #wrapper
         include include/header
         include include/navigation
-        include static/static4
+        main.static4-page
+            .main-wrapper
+                include static/static4/static4
         include include/footer
-
-
-
-
-
-

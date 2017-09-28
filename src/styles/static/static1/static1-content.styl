@@ -1,0 +1,150 @@
+.static
+  &__wrapper
+    width 1050px
+    margin 0 auto
+  &__main-header
+    width 100%
+    text-align center
+    margin-top 50px
+    font-family r_med
+    font-size 24px
+  &__main-text
+    display block
+    width 100%
+    margin-top 35px
+    font-family r_reg
+    font-size 16px
+    line-height 20px
+  &__column
+    width 500px
+    margin-bottom 40px
+    &-text
+      display block
+      margin-bottom 15px
+      font-family r_reg
+      font-size 16px
+      line-height 20px
+      &:first-child
+        margin-top 40px
+    &-header
+      font-family r_med
+      font-size 18px
+      padding 15px 0
+      position relative
+      margin-top 40px
+      &::before
+        position absolute
+        content ''
+        left 0
+        top 0
+        width 45px
+        border-top 3px solid #f95318
+    &-small-header
+      display block
+      margin-bottom 15px
+      font-family r_bold
+      font-size 16px
+      line-height 20px
+      &:first-child
+        margin-top 40px
+  &__input-block
+    margin 25px 0
+  &__header
+    margin-top 40px
+    &-pic
+      margin-top 40px
+  &__input
+    height 45px
+    line-height 45px
+    padding 0 20px
+    box-sizing border-box
+    font-family r_med
+    font-size 24px
+    border 1px solid c_mgray
+    border-radius 2px
+    width 25%
+    text-align center
+    &::-webkit-input-placeholder
+      color c_black
+      font-family r_med
+      font-size 24px
+    &:-moz-placeholder
+      color c_black
+      font-family r_med
+      font-size 24px
+    &::-moz-placeholder
+      color c_black
+      font-family r_med
+      font-size 24px
+    &:-ms-input-placeholder
+      color c_black
+      font-family r_med
+      font-size 24px
+    &:last-of-type
+      margin-bottom 0
+  &__input-small
+    display inline-block
+    flex 1
+    height 45px
+    line-height 45px
+    padding 0 20px
+    box-sizing border-box
+    font-family r_reg
+    font-size 16px
+    border 1px solid c_mgray
+    border-radius 0 2px 2px 0
+    &::-webkit-input-placeholder
+      color c_black
+      font-family r_reg
+      font-size 16px
+    &:-moz-placeholder
+      color c_black
+      font-family r_reg
+      font-size 16px
+    &::-moz-placeholder
+      color c_black
+      font-family r_reg
+      font-size 16px
+    &:-ms-input-placeholder
+      color c_black
+      font-family r_reg
+      font-size 16px
+  &__select-wrapper
+    border-radius 2px
+    overflow hidden
+    width 65%
+    .select2-dropdown
+      border none
+    .select2.select2-container.select2-container--default
+      border-radius 2px
+      overflow hidden
+    .select-flag
+      display block
+      background-color c_mgray
+      height 20px
+      width 20px
+      background c_mgray url("/img/flags/deu.png") no-repeat 7px
+      background-size 20px
+    .select2.select2-container.select2-container--default
+      margin-bottom 0
+      border-radius 0
+      min-width 60px
+    .select2-container--default .select2-selection--single
+      padding 0
+      height 45px
+      box-sizing border-box
+      border none
+      border-radius 2px
+      .select2-selection__rendered
+        padding 4px 0 0 10px
+        line-height 45px
+        background-color c_mgray
+      .select2-selection__arrow
+        background-color c_mgray
+        width 20px
+        top 10px
+        left 40px
+        & b
+          border-color c_black transparent transparent transparent
+    .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b
+      border-color transparent transparent c_black transparent

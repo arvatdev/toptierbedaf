@@ -12,37 +12,37 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="main">
+    <div id="wrapper">
       <header class="main-header">
         <div class="main-wrapper df-c h100p">
           <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
-          <article class="contacts df-cc">
-            <div class="contacts__image df-cc"><i class="material-icons">phone</i></div>
-            <div class="contacts__number"><span>+49 30 208 476 906</span></div>
-            <div class="contacts__time"><span>Mo - Fr 9:00 - 18:00 Uhr</span></div>
+          <article class="main-header__contacts df-cc">
+            <div class="main-header__contacts-image df-cc"><i class="material-icons">phone</i></div>
+            <div class="main-header__contacts-number"><span>+49 30 208 476 906</span></div>
+            <div class="main-header__contacts-time"><span>Mo - Fr 9:00 - 18:00 Uhr</span></div>
           </article>
-          <article class="account"><a class="account__image" href="#"></a></article>
-          <article class="wishlist"><a class="wishlist__image" href="#"></a></article>
-          <article class="cart"><a class="df-c" href="#">
-              <div class="cart__image"></div><span>€12.00</span></a></article>
+          <article class="main-header__account"><a class="main-header__account-image" href="#"></a></article>
+          <article class="main-header__wishlist"><a class="main-header__wishlist-image" href="#"></a></article>
+          <article class="main-header__cart"><a class="df-c" href="#">
+              <div class="main-header__cart-image"></div><span class="main-header__cart-price">€12.00</span></a></article>
         </div>
       </header>
       <nav class="main-navigation">
-        <div class="main-wrapper df-c h100p"><a class="sandwich df-cc" href="#"><i class="material-icons">menu</i></a>
-          <ul class="list df-c">
-            <li><a class="list__element" href="#">HUND</a></li>
-            <li><a class="list__element" href="#">KATZE</a></li>
-            <li><a class="list__element" href="#">VOGEL</a></li>
-            <li><a class="list__element" href="#">KLEINTIERE</a></li>
-            <li><a class="list__element" href="#">AQUARISTIK</a></li>
-            <li><a class="list__element" href="#">PFERD</a></li>
-            <li><a class="list__element" href="#">MARKEN</a></li>
-            <li><a class="list__element" href="#">TERRARISTIK</a></li>
+        <div class="main-wrapper df-c h100p"><a class="main-navigation__sandwich df-cc" href="#"><i class="main-navigation__sandwich-icon material-icons">menu</i></a>
+          <ul class="main-navigation__list df-c">
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">HUND</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">KATZE</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">VOGEL</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">KLEINTIERE</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">AQUARISTIK</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">PFERD</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">MARKEN</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">TERRARISTIK</a></li>
           </ul>
-          <article class="search"><a class="search__image" href="#"><i class="material-icons">search</i></a></article>
+          <article class="main-navigation__search"><a class="main-navigation__search-image" href="#"><i class="material-icons">search</i></a></article>
         </div>
       </nav>
-      <section class="main-body body--margin">
+      <main class="static3-page">
         <div class="main-wrapper">
           <article class="breadcrumbs">
             <ul class="breadcrumbs__list">
@@ -50,31 +50,31 @@
               <li><a href="#">Impressum</a></li>
             </ul>
           </article>
-          <article class="static-wrapper df--b dfw">
-            <h1 class="static-header"><span>IMPRESSUM</span></h1>
-            <div class="static-column">
-              <h3 class="main-block__header"><span>FIRMENSITZ:</span></h3>
-              <p class="static-column__text">Geschäftsführer: Vitalij Kungel</p>
-              <p class="static-column__text">HRB 175197 B</p>
-              <p class="static-column__text">USt-IdNr.: DE 305780777</p>
-              <p class="static-column__text">Amtsgericht Berlin (Charlottenburg)</p><br>
-              <p class="static-column__text"></p><br>
-              <p class="static-column__text">Toptierbedaf GmbH</p>
-              <p class="static-column__text">Josef-Orlopp-Straße 55</p>
-              <p class="static-column__text">10365 Berlin</p><br>
-              <p class="static-column__text"></p><br>
-              <p class="static-column__text">E-Mail: info@toptierbedaf.de</p>
-              <p class="static-column__text">Web: www.toptierbedaf.de</p>
-              <p class="static-column__text">Tel.: +49 30 200 042 082</p><br>
-              <p class="static-column__text"></p><br>
-              <p class="static-column__text">Plattform der EU-Kommission zur Online-Streitbeilegung: www.ec.europa.eu/consumers/odr</p>
-              <p class="static-column__text">
+          <article class="static__wrapper df--b dfw">
+            <h1 class="static__main-header"><span>IMPRESSUM</span></h1>
+            <div class="static__column">
+              <h3 class="static__column-header"><span>FIRMENSITZ:</span></h3>
+              <p class="static__column-text">Geschäftsführer: Vitalij Kungel</p>
+              <p class="static__column-text">HRB 175197 B</p>
+              <p class="static__column-text">USt-IdNr.: DE 305780777</p>
+              <p class="static__column-text">Amtsgericht Berlin (Charlottenburg)</p><br>
+              <p class="static__column-text"></p><br>
+              <p class="static__column-text">Toptierbedaf GmbH</p>
+              <p class="static__column-text">Josef-Orlopp-Straße 55</p>
+              <p class="static__column-text">10365 Berlin</p><br>
+              <p class="static__column-text"></p><br>
+              <p class="static__column-text">E-Mail: info@toptierbedaf.de</p>
+              <p class="static__column-text">Web: www.toptierbedaf.de</p>
+              <p class="static__column-text">Tel.: +49 30 200 042 082</p><br>
+              <p class="static__column-text"></p><br>
+              <p class="static__column-text">Plattform der EU-Kommission zur Online-Streitbeilegung: www.ec.europa.eu/consumers/odr</p>
+              <p class="static__column-text">
                 Die Webseite der Toptierbedaf GmbH enthalten Hyperlinks auf Webseiten Dritter. Die Toptierbedaf
                 GmbH ist für die Inhalte dieser Webseiten, die durch diese Verlinkungen erreicht werden, nicht
               </p>
-              <h3 class="main-block__header"><span>HAFTUNGSAUSSCHLUSS:</span></h3>
-              <h5 class="static-column__header-small"><span>Inhalt des Onlineangebotes</span></h5>
-              <p class="static-column__text">
+              <h3 class="static__column-header"><span>HAFTUNGSAUSSCHLUSS:</span></h3>
+              <h5 class="static__column-small-header"><span>Inhalt des Onlineangebotes</span></h5>
+              <p class="static__column-text">
                 Der Autor übernimmt keinerlei Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität
                 der bereitgestellten Informationen. Haftungsansprüche gegen den Autor, welche sich auf Schäden
                 materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen
@@ -85,8 +85,8 @@
                 ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung
                 zeitweise oder endgültig einzustellen.
               </p>
-              <h5 class="static-column__header-small"><span>Verweise und Links</span></h5>
-              <p class="static-column__text">
+              <h5 class="static__column-small-header"><span>Verweise und Links</span></h5>
+              <p class="static__column-text">
                 Bei direkten oder indirekten Verweisen auf fremde Webseiten ("Hyperlinks"), die außerhalb des
                 Verantwortungsbereiches des Autors liegen, würde eine Haftungsverpflichtung ausschließlich in dem
                 Fall in Kraft treten, in dem der Autor von den Inhalten Kenntnis hat und es ihm technisch möglich
@@ -103,9 +103,9 @@
                 derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist.
               </p>
             </div>
-            <div class="static-column">
-              <h5 class="static-column__header-small"><span>Urheber- und Kennzeichenrecht</span></h5>
-              <p class="static-column__text">
+            <div class="static__column">
+              <h5 class="static__column-small-header"><span>Urheber- und Kennzeichenrecht</span></h5>
+              <p class="static__column-text">
                 Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Grafiken,
                 Tondokumente, Videosequenzen und Texte zu beachten, von ihm selbst erstellte Grafiken, Tondokumente,
                 Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente, Videosequenzen und
@@ -118,78 +118,78 @@
                 Videosequenzen und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne
                 ausdrückliche Zustimmung des Autors nicht gestattet.
               </p>
-              <h5 class="static-column__header-small"><span>Rechtswirksamkeit dieses Haftungsausschlusses</span></h5>
-              <p class="static-column__text">
+              <h5 class="static__column-small-header"><span>Rechtswirksamkeit dieses Haftungsausschlusses</span></h5>
+              <p class="static__column-text">
                 Dieser Haftungsausschluss ist als Teil des Internetangebotes zu betrachten, von dem aus auf
                 diese Seite verwiesen wurde. Sofern Teile oder einzelne Formulierungen dieses Textes der
                 geltenden Rechtslage nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die
                 übrigen Teile des Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt.
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 Bitte prüfen Sie, ob die über unseren Onlineshop gekaufte Ware auch tatsächlich ihren Wünschen
                 entspricht. Gegebenenfalls sind ergänzende Informationen notwendig, um sicherzustellen, dass die
                 gewählte Ware auch ihrem Tier passt. Bei Fragen stehen wir Ihnen gerne zur Verfügung.
               </p>
-              <div class="static-blank"><img class="image" src="/img/blank.png" alt="#">
-                <ul class="static-blank__buttons">
-                  <li class="static-blank__element"><a class="static-blank__link df-cc" href="#"><i class="material-icons">zoom_in</i></a></li>
-                  <li class="static-blank__element"><a class="static-blank__link df-cc" href="#"><i class="material-icons">file_download</i></a></li>
+              <div class="static__blank"><img class="image" src="/img/blank.png" alt="#">
+                <ul class="static__blank-buttons">
+                  <li class="static__blank-element"><a class="static__blank-link df-cc" href="#"><i class="material-icons">zoom_in</i></a></li>
+                  <li class="static__blank-element"><a class="static__blank-link df-cc" href="#"><i class="material-icons">file_download</i></a></li>
                 </ul>
               </div>
             </div>
           </article>
         </div>
-      </section>
+      </main>
       <footer class="footer">
         <div class="main-wrapper df">
           <article class="footer__column">
-            <h3 class="header"><span>KUNDENSERVICE</span></h3>
-            <ul class="list">
-              <li><a class="list__element" href="#">Registrieren</a></li>
-              <li><a class="list__element" href="#">Kontakt</a></li>
-              <li><a class="list__element" href="#">Versand</a></li>
-              <li><a class="list__element" href="#">Zahlung</a></li>
-              <li><a class="list__element" href="#">Widerruf</a></li>
-              <li><a class="list__element" href="#">FAQ</a></li>
+            <h3 class="footer__header"><span>KUNDENSERVICE</span></h3>
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#">Registrieren</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Kontakt</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Versand</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Zahlung</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Widerruf</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">FAQ</a></li>
             </ul>
           </article>
           <article class="footer__column">
-            <h3 class="header"><span>ÜBER ZOOBOOM</span></h3>
-            <ul class="list">
-              <li><a class="list__element" href="#">Impressum</a></li>
-              <li><a class="list__element" href="#">AGB</a></li>
-              <li><a class="list__element" href="#">Datenschutz</a></li>
-              <li><a class="list__element" href="#">Newsletter</a></li>
-              <li><a class="list__element" href="#">Blog</a></li>
-              <li><a class="list__element" href="#">Partnerprogramm</a></li>
+            <h3 class="footer__header"><span>ÜBER ZOOBOOM</span></h3>
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#">Impressum</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">AGB</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Datenschutz</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Newsletter</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Blog</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Partnerprogramm</a></li>
             </ul>
           </article>
           <article class="footer__column">
-            <h3 class="header"><span>SICHER EINKAUFEN</span></h3>
-            <ul class="list marked">
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Schneller Versand</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Käuferschutz</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Datenschutz</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Sichere Zahlung mit SSL-Ver­schlüs­se­lung</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Günstige Preise</a></li>
+            <h3 class="footer__header"><span>SICHER EINKAUFEN</span></h3>
+            <ul class="footer__list">
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Schneller Versand</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Käuferschutz</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Datenschutz</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Sichere Zahlung mit SSL-Ver­schlüs­se­lung</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Günstige Preise</a></li>
             </ul>
           </article>
-          <article class="footer__label-column"><a class="logo" href="#"><img class="image" src="/img/logo-white.png" alt="#"></a>
-            <h3 class="header"><span>Folge auf</span></h3>
-            <ul class="social">
-              <li><a class="social__element df-cc" href="#"><img class="image" src="/img/facebook.png" alt="#"></a></li>
-              <li><a class="social__element df-cc" href="#"><img class="image" src="/img/twitter.png" alt="#"></a></li>
-              <li><a class="social__element df-cc" href="#"><img class="image" src="/img/linked-in.png" alt="#"></a></li>
+          <article class="footer__label-column"><a class="footer__logo" href="#"><img class="image" src="/img/logo-white.png" alt="#"></a>
+            <h3 class="footer__header"><span>Folge auf</span></h3>
+            <ul class="footer__social">
+              <li class="footer__social-item"><a class="footer__social-link df-cc" href="#"><img class="image" src="/img/facebook.png" alt="#"></a></li>
+              <li class="footer__social-item"><a class="footer__social-link df-cc" href="#"><img class="image" src="/img/twitter.png" alt="#"></a></li>
+              <li class="footer__social-item"><a class="footer__social-link df-cc" href="#"><img class="image" src="/img/linked-in.png" alt="#"></a></li>
             </ul>
-            <div class="delivery df-c"><a class="delivery__element df-cc" href="#"><img class="image" src="/img/dhl.png" alt="#"></a><a class="delivery__element df-cc" href="#"><img class="image" src="/img/dhl-pack.png" alt="#"></a></div>
+            <div class="footer__delivery df-c"><a class="footer__delivery-element df-cc" href="#"><img class="image" src="/img/dhl.png" alt="#"></a><a class="footer__delivery-element df-cc" href="#"><img class="image" src="/img/dhl-pack.png" alt="#"></a></div>
           </article>
         </div>
       </footer>
-      <section class="footer-info">
+      <section class="footer__info">
         <div class="main-wrapper h100p df-c">
-          <article class="language df-c"><span>Sprache</span><img class="image" src="/img/flags/deu.png" alt="#"></article>
-          <article class="information"><span>© 2016, Haustierbedarf Zoobio Online Shop für Tierbedarf & Tierfutter</span></article>
-          <article class="payment-links df-c"><a class="payment-links__image" href="#"><img class="image" src="/img/visa.png" alt="#"></a><a class="payment-links__image" href="#"><img class="image" src="/img/mastercard.png" alt="#"></a><a class="payment-links__image" href="#"><img class="image" src="/img/paypal.png" alt="#"></a></article>
+          <article class="footer__language df-c"><span>Sprache</span><img class="footer__language-image image" src="/img/flags/deu.png" alt="#"></article>
+          <article class="footer__information"><span>© 2016, Haustierbedarf Zoobio Online Shop für Tierbedarf & Tierfutter</span></article>
+          <article class="footer__payment-links df-c"><a class="footer__payment-image" href="#"><img class="image" src="/img/visa.png" alt="#"></a><a class="footer__payment-image" href="#"><img class="image" src="/img/mastercard.png" alt="#"></a><a class="footer__payment-image" href="#"><img class="image" src="/img/paypal.png" alt="#"></a></article>
         </div>
       </section>
     </div>

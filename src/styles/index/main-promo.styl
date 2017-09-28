@@ -1,0 +1,43 @@
+.main-promo
+  border-top 1px solid c_lgray
+  border-bottom 1px solid c_lgray
+  &__description
+    width 50%
+    background-color c_lgray
+    padding 30px
+    box-sizing border-box
+  &__header
+    padding-top 30px
+    margin-bottom 15px
+    text-align center
+    position relative
+    &:first-of-type
+      padding-top 20px
+      margin-bottom 25px
+    &:first-of-type::before
+      position absolute
+      content ''
+      top 0
+      right 0
+      left 0
+      margin 0 auto
+      text-align center
+      width 30px
+      border-bottom 2px solid c_orange
+    &-element
+      display block
+      font-family r_med
+      font-size 16px
+      color c_black
+      margin-bottom 10px
+  &__text
+    font-family r_reg
+    font-size 14px
+    color c_black
+    line-height 20px
+    text-align justify
+    word-spacing 0
+  &__image
+    width 50%
+    padding 80px
+    box-sizing border-box

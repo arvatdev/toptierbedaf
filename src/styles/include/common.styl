@@ -3,10 +3,13 @@
 ***    ALL COMMON STYLES
 ***
 ***************************************************************/
+body
+  min-width 1120px
 
 .main-wrapper
   width 1100px
   margin 0 auto
+  padding 0 10px
 
 .main-menu-margin
   margin-top 140px
@@ -235,6 +238,7 @@
     .subs
       margin 20px 0 10px 0
       &__input
+        width 210px
         flex 1
         height 55px
         border-radius 3px
@@ -277,8 +281,11 @@
       text-align left
       vertical-align middle
       & th
+        text-align left
         padding-right 5px
         box-sizing border-box
+        &.t-ac
+          text-align center
       & th:first-of-type
         padding-left 50px
         box-sizing border-box
@@ -364,7 +371,8 @@
       padding 30px 0
     &__to-cart
       vertical-align middle
-      padding-right 20px
+      &--padding-right
+        padding-right 20px
     &__btn-buy
       width 110px
       background-color c_orange
@@ -665,31 +673,9 @@
       justify-content flex-start
       width 120px
 
-  &__input
-    -webkit-appearance none
-    width 15px
-    height 15px
-    min-width 15px
-    min-height 15px
-    border 1px solid c_orange
-    border-radius 50%
-    outline none
+  &__input+label
     margin 0 40px 0 30px
-    position relative
-    &:before
-      position absolute
-      margin auto
-      top 0
-      bottom 0
-      left 0
-      right 0
-      content ''
-      display block
-      width 9px
-      height 9px
-      border-radius 50%
-    &:checked:before
-      background c_orange
+
   &__text
     direction ltr
     width 643px
@@ -786,8 +772,6 @@
           margin-top 25px
           span
             margin-bottom 0
-        & .main-form__info-mark
-          margin-bottom 0
         & .form-block__caption
           margin-bottom 30px
           padding 0
@@ -827,40 +811,47 @@
         text-decoration underline
         margin-left 5px
       &__info
+        width 100%
         color c_gray
         line-height 18px
         font-family r_reg
         font-size 12px
       &__subscribe
         margin-bottom 15px
-        .input
-          -webkit-appearance none
-          width 13px
-          min-width 13px
-          height 13px
-          border-radius 2px
-          border 1px solid c_orange
-          outline none
-          margin-right 20px
+        .label
+          font-family r_reg
+          font-size 14px
+          line-height 13px
           position relative
-          &:checked
-            border 1px solid c_orange
-          &:checked:before
+          padding-left 30px
+          &::before
+            content ''
             position absolute
-            top 0
-            bottom 0
             left 0
-            right 0
-            margin auto
+            top 0
+            width 13px
+            height 13px
+            box-sizing border-box
+            border-radius 2px
+            border 1px solid c_orange
+            outline none
+        .input
+          display none
+          &:checked+label:before
+            background-color c_orange
+          &:checked+label:after
+            position absolute
+            top 1px
+            left 1px
+            width 13px
+            height 13px
             font-size 14px
             line-height 13px
-            background c_orange
             content '✓'
             color white
-          .label
-            font-family r_reg
-            font-size 14px
-            line-height 13px
+
+
+
   &__caption
     padding 0 15px
     margin-bottom 35px
@@ -1055,35 +1046,45 @@
     font-size 12px
     color c_gray
     width 100%
-    .input
-      -webkit-appearance none
-      width 13px
-      height 13px
-      border-radius 2px
-      outline none
-      margin 0 10px 0 5px
-      position relative
-      border 1px solid c_orange
-      &:checked
-        border 1px solid c_orange
-      &:checked:before
-        position absolute
-        top 0
-        bottom 0
-        left 0
-        right 0
-        margin auto
-        font-size 14px
-        line-height 13px
-        background c_orange
-        content '✓'
-        color white
     .label
       font-family r_reg
       font-size 14px
       margin-right auto
       color c_black
       max-width 90%
+      padding-left 25px
+      box-sizing border-box
+      position relative
+      display inline-block
+      &:before
+        content ''
+        position absolute
+        left 0
+        top 0
+        width 13px
+        height 13px
+        box-sizing border-box
+        border-radius 2px
+        outline none
+        border 1px solid c_orange
+        display inline-block
+        vertical-align middle
+    .input
+      display none
+      &:checked+label::before
+        background-color c_orange
+      &:checked+label::after
+        position absolute
+        top 1px
+        left 1px
+        width 13px
+        height 13px
+        font-size 14px
+        line-height 13px
+        content '✓'
+        color white
+
+
   &__sex
     margin 0 5px 20px 5px
     flex-wrap wrap
@@ -1096,29 +1097,33 @@
       font-family r_reg
       font-size 16px
       margin-right 15px
-    .input
-      -webkit-appearance none
-      width 15px
-      height 15px
-      border 1px solid c_orange
-      border-radius 50%
-      outline none
-      margin 5px
       position relative
-      &:before
+      padding-left 20px
+      &::before
         position absolute
-        margin auto
         top 0
-        bottom 0
         left 0
-        right 0
         content ''
         display block
-        width 9px
-        height 9px
+        width 12px
+        height 12px
         border-radius 50%
-      &:checked:before
-        background c_orange
+        background-color transparent
+        border 1px solid transparent
+        box-shadow 0px 0px 0px 1px c_orange
+    .input
+      display none
+      &:checked+label::after
+        position absolute
+        top 2px
+        left 2px
+        content ''
+        display block
+        width 10px
+        height 10px
+        border-radius 50%
+        background-color c_orange
+
   &__columns
     justify-content space-between
     width 100%
@@ -1250,1677 +1255,43 @@
     margin-right 25px
     margin-left 0
     vertical-align middle
-.input--gray
-  -webkit-appearance none
-  width 13px
-  height 13px
-  border-radius 2px
-  outline none
-  margin 0 10px 0 5px
-  position relative
-  border 1px solid c_gray
-  &:checked
-    border 1px solid c_gray
-  &:checked:before
-    position absolute
-    top 0
-    bottom 0
-    left 0
-    right 0
-    margin auto
-    font-size 14px
-    line-height 13px
-    background c_gray
-    content '✓'
-    color white
 .label--gray
   color c_gray
-
-//--------------------------
-// Header
-//--------------------------
-.main-header
-  position fixed
-  top 0
-  left 0
-  right 0
-  z-index 110
-  height 70px
-  background-color white
-  .contacts
-    flex 1
-    &__image
-      height 35px
-      width 35px
-      border 1px solid c_lgray
-      border-radius 50%
-      color c_orange
-      & i
-        font-size 20px
-    &__number
-      font-size 14px
-      margin 0 10px
-    &__time
-      font-size 14px
-      margin 0 10px
-      color c_orange
-  .account
-    margin 0 15px
-    &__image
-      display inline-block
-      height 20px
-      width 20px
-      background url("/img/account.svg") no-repeat center center
-      &:hover
-        background-image url("/img/account-active.svg")
-  .wishlist
-    margin 0 15px
-    &__image
-      display inline-block
-      height 20px
-      width 20px
-      background url("/img/whishlist.svg") no-repeat center center
-      &:hover
-        background-image url("/img/whishlist-active.svg")
-  .cart
-    margin-left 10px
-    &__image
-      display inline-block
-      margin 5px
-      height 20px
-      width 20px
-      background url("/img/cart.svg") no-repeat center center
-      transition all .2s ease
-    & span
-      font-size 16px
-      font-family r_bold
-      transition all .2s ease
-    &:hover
-      & .cart__image
-        background url("/img/cart-active.svg") no-repeat center center
-      & span
-        color c_orange
-
-.header-login-registration
   position relative
-  &__block
-    position absolute
-    right 0
-    top 30px
-    z-index 120
-    box-shadow 0px 17px 18px 2px rgba(0,0,0,0.1)
-    width 330px
-    &::before
-      content ''
-      position absolute
-      z-index 121
-      top 0
-      right 24px
-      width 0
-      height 0
-      border-left 20px solid transparent
-      border-right 20px solid transparent
-      border-top 15px solid #ffffff
-  &__button
-    text-align right
-    text-transform uppercase
-    font-family r_bold
-    font-size 16px
-    background-color transparent
-    border 0
-    text-decoration none
-    &:hover
-      color c_orange
-    & span
-      max-width 300px
-    & i
-      vertical-align middle
-      font-size 18px
-      margin-left 10px
-      position relative
-      top -2px
-
-.header-login
-  &__form
-    padding 23px
-    background-color c_orange
-  &__mail
-    margin-bottom 10px
-    & label
-      display none
-  &__password
-    margin-bottom 10px
-    & label
-      display none
-  &__input
-    box-sizing border-box
-    padding 0px 20px
-    height 35px
-    border-radius 3px
-    font-size 14px
-    width 100%
-    border 0
-  &__button
-    width 100%
-    border 0
-    background-color #dddddd
-    text-align center
-    padding 10px
-    box-sizing border-box
-    border-radius 3px
-    text-transform uppercase
-    font-size 16px
-    margin-bottom 15px
-    font-family r_med
-    color #474747
-  &__recovery
-    color #ffffff
-    text-decoration underline
-    font-size 12px
-    border-radius 3px
-  &__social
-    padding 23px
-    background-color #ffffff
-    color #394b5d
-    font-size 13px
-    font-family r_med
-    &-header
-      text-transform uppercase
-      display block
-      margin-bottom 10px
-.header-registration
-  &__block
-    padding 23px
-    background-color #474747
-    color #ffffff
-    font-size 11px
-  &__text
-    margin-bottom 10px
-    line-height 16px
-  &__button
-    display block
-    box-sizing border-box
-    text-align center
-    background-color #ffcb03
-    color #474747
-    text-transform uppercase
-    font-size 16px
-    width 100%
-    border-radius 3px
-    padding 10px
-    font-family r_med
-//--------------------------
-// Navigation
-//--------------------------
-.main-navigation
-  position fixed
-  top 70px
-  left 0
-  right 0
-  z-index 100
-  height 70px
-  background-color c_black
-  .sandwich
-    height 100%
-    width 70px
-    background-color c_orange
-    & i
-      font-size 35px
-      color white
-      transition all .2s ease
-    &:hover
-      & i
-        font-size 36px
-  .list
-    margin-right auto
-    &__element
-      font-family r_med
-      font-size 16px
-      color white
-      transition all .2s ease
-      &:hover
-        color c_orange
-    & li
-      padding 0 15px
-      text-align center
-      &:first-of-type
-        padding-left 30px
-  .search
-    &__image
-      color white
-      transition all .2s ease
-      &:hover
-        color c_orange
-
-//--------------------------
-// Main banner
-//--------------------------
-.main-banner
-  margin-top 138px
-  .next-btn
-    position absolute
+  padding-left 30px
+  display inline-block
+  vertical-align middle
+  &::before
     content ''
-    right 35px
-    top 45%
-    border 20px solid transparent
-    border-left 20px solid white
-    cursor pointer
-    z-index 1
-  .prev-btn
     position absolute
-    content ''
-    left 35px
-    top 45%
-    border 20px solid transparent
-    border-right 20px solid white
-    cursor pointer
-    z-index 1
-  .list
-    height 100%
-    width 100%
-    &-wrapper
-      position relative
-    &__element
-      height 650px
-      width 100%
-    .backgound1
-      background url("/img/banner.jpg") no-repeat center
-      background-size cover
-    &__text
-      height 100%
-      flex-direction column
-      .best
-        display block
-        font-family r_med
-        font-size 30px
-        color white
-        background-color c_orange
-        padding 10px
-        margin-bottom 25px
-      .header
-        display block
-        font-family r_bold
-        font-size 90px
-        margin-bottom 15px
-        color white
-      .header-sub
-        display block
-        font-family r_reg
-        font-size 22px
-        margin-bottom 45px
-        color white
-      .info-block-big
-        display block
-        font-family r_bold
-        font-size 20px
-        color white
-        background-color c_orange
-        padding 5px
-        margin-bottom 15px
-      .info-block
-        display block
-        font-family r_reg
-        font-size 15px
-        color white
-
-//--------------------------
-// Main body
-//--------------------------
-.main-body
-  .sub-info-block
-    border-top 1px solid c_lgray
-    &__element
-      padding 0 25px 5px 25px
-      box-sizing border-box
-      border-bottom 1px solid c_lgray
-    &__header
-      margin 25px 0 20px 0
-    &__arrow
-      height 20px
-      width 20px
-      border-radius 50%
-      background-color c_gray
-      margin-right 15px
-      cursor pointer
-      transition all .3s ease
-      & i
-        color white
-        transform rotate(270deg)
-      &-active
-        transform rotate(90deg)
-        background-color c_orange
-    &__font
-      font-family r_med
-      font-size 18px
-      cursor pointer
-    &__text
-      display none
-      font-family r_reg
-      font-size 16px
-      margin-bottom 20px
-  .pics-block-wrapper.mt-40-no-brd
-    margin-top 40px
-    border-top 0
-  .static-wrapper
-    width 1050px
-    margin 0 auto
-    &-inform
-      margin-top 35px
-      text-align center
-      font-family r_reg
-      font-size 16px
-    &-button
-      margin 0 auto
-      padding 40px 0 55px 0
-      box-sizing border-box
-      text-align center
-      &-invert
-        margin 0 auto
-        padding 25px 0 55px 0
-        box-sizing border-box
-        text-align center
-    &-large
-      width 870px
-      margin 0 auto
-      .newsletter
-        margin-top 5px
-        padding 5px
-        border-bottom 1px solid c_lgray
-        &__label
-          font-family r_reg
-          font-size 14px
-          & i
-            font-size 18px
-        &__info
-          color c_gray
-          font-family r_reg
-          font-size 12px
-    &-med
-      width 830px
-      margin 0 auto
-      .links-block
-        margin-top 35px
-        padding-bottom 15px
-      .link-wrapper
-        width 48%
-        margin-bottom 20px
-      .link
-        font-family r_reg
-        font-size 18px
-        color c_gray
-        transition all .2s ease
-        &:hover
-          color c_orange
-      .main-form__info-mark:first-of-type
-        margin-top 10px
-      .main-form__info-mark:last-of-type
-        margin-top 5px
-      .main-form__info-mark
-        .input
-          border 1px solid c_gray
-        .input:checked:before
-          background-color white
-          color c_gray
-        .label
-          font-size 12px
-          color c_gray
-    &-small
-      width 770px
-      margin 0 auto
-      &__choice
-        margin-top 20px
-      .main-form__info-mark
-        display inline-block
-        width 33%
-      .main-block__header
-        font-family r_reg
-    .main-form__columns .column__input:last-of-type
-      margin-bottom 0
-  .static-header
-    width 100%
+    left 0
+    top 0
+    width 13px
+    height 13px
+    box-sizing border-box
+    border-radius 2px
     text-align center
-    margin-top 50px
-    font-family r_med
-    font-size 24px
-  .static-text
-    display block
-    width 100%
-    margin-top 35px
-    font-family r_reg
-    font-size 16px
-    line-height 20px
-  .static-column
-    width 500px
-    margin-bottom 40px
-    &__bg-header1
-      background url("/img/track.png") no-repeat left center
-    &__bg-header2
-      background url("/img/money.png") no-repeat left center
-    &__bg-header3
-      background url("/img/location.png") no-repeat left center
-    &__text
-      display block
-      margin-bottom 15px
-      font-family r_reg
-      font-size 16px
-      line-height 20px
-      &:first-child
-        margin-top 40px
-    &__header-small
-      display block
-      margin-bottom 15px
-      font-family r_bold
-      font-size 16px
-      line-height 20px
-      &:first-child
-        margin-top 40px
-    .border-bottom
-      border-bottom 1px solid c_black
-    .static-blank
-      border 1px solid c_mgray
-      display inline-block
-      margin 20px 35px 0 0
-      position relative
-      &__buttons
-        position absolute
-        top -1px
-        overflow hidden
-        right -35px
-        background-color c_mgray
-        padding 0 5px
-        border-radius 0 5px 5px 0
-      &__element
-        border-bottom 1px solid white
-        &:last-of-type
-          border-bottom 0
-      &__link
-        margin 5px 0
-        color white
-        & i
-          font-size 25px
-          transition all .2s ease
-          &:hover
-            color c_orange
-    .static__input-block
-      margin 25px 0
-    .main-block__header
-      margin-top 40px
-      &-pic
-        margin-top 40px
-    .static__input
-      height 45px
-      line-height 45px
-      padding 0 20px
-      box-sizing border-box
-      font-family r_med
-      font-size 24px
-      border 1px solid c_mgray
-      border-radius 2px
-      width 25%
-      text-align center
-      &::-webkit-input-placeholder
-        color c_black
-        font-family r_med
-        font-size 24px
-      &:-moz-placeholder
-        color c_black
-        font-family r_med
-        font-size 24px
-      &::-moz-placeholder
-        color c_black
-        font-family r_med
-        font-size 24px
-      &:-ms-input-placeholder
-        color c_black
-        font-family r_med
-        font-size 24px
-    .static__input-small
-      display inline-block
-      flex 1
-      height 45px
-      line-height 45px
-      padding 0 20px
-      box-sizing border-box
-      font-family r_reg
-      font-size 16px
-      border 1px solid c_mgray
-      border-radius 0 2px 2px 0
-      &::-webkit-input-placeholder
-        color c_black
-        font-family r_reg
-        font-size 16px
-      &:-moz-placeholder
-        color c_black
-        font-family r_reg
-        font-size 16px
-      &::-moz-placeholder
-        color c_black
-        font-family r_reg
-        font-size 16px
-      &:-ms-input-placeholder
-        color c_black
-        font-family r_reg
-        font-size 16px
-    .static__select-wrapper
-      border-radius 2px
-      overflow hidden
-      width 65%
-      .select2-dropdown
-        border none
-      .select2.select2-container.select2-container--default
-        border-radius 2px
-        overflow hidden
-      .select-flag
-        display block
-        background-color c_mgray
-        height 20px
-        width 20px
-        background c_mgray url("/img/flags/deu.png") no-repeat 7px
-        background-size 20px
-      .select2.select2-container.select2-container--default
-        margin-bottom 0
-        border-radius 0
-        min-width 60px
-      .select2-container--default .select2-selection--single
-        padding 0
-        height 45px
-        box-sizing border-box
-        border none
-        border-radius 2px
-        .select2-selection__rendered
-          padding 4px 0 0 10px
-          line-height 45px
-          background-color c_mgray
-        .select2-selection__arrow
-          background-color c_mgray
-          width 20px
-          top 10px
-          left 40px
-          & b
-            border-color c_black transparent transparent transparent
-      .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b
-        border-color transparent transparent c_black transparent
-  .content-wrapper
-    border none
-    justify-content space-between
-  .main-content
-    top -15px
-    position relative
-    background-color white
-  .info-block
-    display flex
-    height 115px
-    width 100%
-    &__wrapper
-      width 25%
-    &__element
-      direction ltr
-      .header
-        font-family r_bold
-        font-size 16px
-        color c_orange
-      .info
-        font-family r_reg
-        font-size 14px
-  .pet-choice
-    width 100%
-    &__block
-      display flex
-      flex-direction column
-      height 200px
-      width 540px
-      border 1px solid c_orange
-      padding 20px
-      box-sizing border-box
-      .header
-        font-family r_med
-        font-size 16px
-        position relative
-        padding-bottom 10px
-        color c_black
-        &::before
-          position absolute
-          content ''
-          left 0
-          bottom 0
-          width 30px
-          border-bottom 2px solid c_orange
-      .list
-        flex 1 1 auto
-        &__element
-          height 35px
-        &__link
-          height 100%
-          width 100%
-          font-family r_med
-          font-size 16px
-          padding 0 20px
-          box-sizing border-box
-          border-radius 3px
-          color c_gray
-          text-align center
-          transition all .2s ease
-          &:hover
-            background-color c_orange
-            color white
-  .aside-block
-    width 295px
-    .aside-nav
-      width 100%
-      margin 6px 0 35px 0
-      &__element
-        width 100%
-        padding 20px 0
-        &:last-of-type
-          padding-bottom 0
-      &__title
-        position relative
-        &:hover
-          .main-arrow
-            border-left-color c_orange
-      &__header
-        font-size 20px
-        font-family r_med
-        color c_orange
-        padding 0 15px
-      .aside-nav-sub
-        width 100%
-        margin-top 10px
-        border-top 3px solid c_lgray
-        padding 25px 0 0 15px
-        box-sizing border-box
-        &__element
-          margin-bottom 20px
-          font-family r_reg
-          font-size 16px
-          & a
-            transition all .2s ease
-            &:hover
-              color c_orange
-          &:last-of-type
-            margin-bottom 0
-            & a
-              position relative
-              &:hover
-                color c_orange
-                .main-arrow
-                  border-left-color c_orange
-              & span
-                margin-right 20px
-    &__header
-      padding 25px 0 10px 15px
-      border-bottom 3px solid c_lgray
-      color c_orange
-      font-family r_med
-      font-size 20px
-    &__navigation
-      margin 30px 0 35px 15px
-      &-element
-        display block
-        font-family r_reg
-        font-size 16px
-        margin-bottom 25px
-        &:last-of-type
-          margin-bottom 0
-        & a
-          transition all .2s ease
-          &:hover
-            color c_orange
-        &--active
-          color c_orange
-          &>a
-            color c_orange
-    &__sub-navigation
-      padding-top 20px
-      padding-left 30px
-      &-element
-        display block
-        font-family r_light
-        font-size 14px
-        margin-bottom 15px
-        &:last-of-type
-          margin-bottom 0
-        & a
-          transition all .2s ease
-          &:hover
-            color c_orange
-        &--active
-          color c_orange
-          & a
-            color c_orange
-    .products__ad
-      height 335px
-      margin-bottom 35px
-      position relative
-      &:last-of-type
-        margin-bottom 20px
-      .ad-form
-        display flex
-        flex-direction column
-        justify-content space-between
-        height 100%
-        width 100%
-        padding 20px
-        box-sizing border-box
-        border 3px solid c_orange
-        &__header
-          font-family r_bold
-          font-size 28px
-          color c_orange
-        &__text
-          font-family r_reg
-          font-size 14px
-          color c_gray
-        &__input
-          border 1px solid c_gray
-          height 40px
-          font-family r_reg
-          font-size 14px
-          color c_black
-          padding 0 15px
-          box-sizing border-box
-          &::-webkit-input-placeholder
-            color c_black
-          &:-moz-placeholder
-            color c_black
-          &::-moz-placeholder
-            color c_black
-          &:-ms-input-placeholder
-            color c_black
-        &__button
-          height 45px
-          width 100%
-          background-color c_orange
-          border 1px solid c_orange
-          border-radius 3px
-          font-family r_bold
-          font-size 18px
-          color white
-          transition all .2s ease
-          &:hover
-            background-color white
-            color c_black
-      .ad-image
-        height 100%
-        width 100%
-      .header
-        position absolute
-        content ''
-        top 0
-        width 100%
-        padding 20px
-        box-sizing border-box
-        z-index 1
-        .percent
-          height 75px
-          width 75px
-          background-color c_orange
-          color white
-          font-family r_med
-          font-size 22px
-          border-radius 50%
-        .text
-          margin-left 10px
-          font-family r_black
-          font-size 32px
-      .info
-        position absolute
-        content ''
-        bottom 0
-        width 100%
-        padding 20px
-        box-sizing border-box
-        z-index 1
-        &__main
-          font-family r_black
-          font-size 20px
-          margin-bottom 10px
-        &__text
-          font-family r_reg
-          font-size 14px
-          color c_gray
-  .main-block
-    width 785px
-    .brand-sort
-      &__header
-        display block
-        margin 25px 0 20px
-        font-family r_bold
-        font-size 18px
-      &__text
-        line-height 20px
-        font-family r_reg
-        font-size 14px
-        margin-bottom 30px
-      &__search-header
-        display block
-        font-family r_reg
-        font-size 16px
-        margin 25px 0 15px
-      &__search-block
-        background-color c_lgray
-        padding 25px 35px
-        box-sizing border-box
-      &__input
-        flex 1
-        height 35px
-        border-radius 3px 0 0 3px
-        border 1px solid #d9d9d9
-        border-right 0
-        padding-left 15px
-        box-sizing border-box
-        font-family r_reg
-        font-size 13px
-        &::-webkit-input-placeholder
-          color c_mgray
-        &:-moz-placeholder
-          color c_mgray
-        &::-moz-placeholder
-          color c_mgray
-        &:-ms-input-placeholder
-          color c_mgray
-      &__button
-        border 1px solid #d9d9d9
-        border-left 0
-        border-radius 0 3px 3px 0
-        background-color c_orange
-        color white
-        font-family r_reg
-        font-size 13px
-        padding 0 25px
-        box-sizing border-box
-      &__letter
-        margin 30px 0
-        height 26px
-        position relative
-        & a
-          flex 1
-          text-align center
-          display inline-block
-          margin 0 auto
-          font-family r_reg
-          font-size 20px
-          color c_orange
-          transition all .2s ease
-          &:hover
-            font-weight bold
-            font-size 25px
-      &__brands
-        border-top 2px solid c_lgray
-        position relative
-      &__brands-letter
-        position absolute
-        top -14px
-        left -5px
-        padding 5px
-        background-color white
-        font-family r_reg
-        font-size 14px
-      &__list
-        width 100%
-        margin-top 20px
-      &__element
-        width 25%
-        margin-bottom 20px
-        &:last-of-type
-          margin-right auto
-      &__image
-        height 85px
-        margin-bottom 10px
-      &__name
-        text-align center
-        font-family r_reg
-        font-size 14px
-        margin-bottom 15px
-      &__list-button
-        padding 0 30px
-        min-height 30px
-        color c_orange
-        border 1px solid c_mgray
-        border-radius 3px
-        background-color white
-        transition all .2s ease
-        &:hover
-          background-color c_orange
-          border-color c_orange
-          color white
-      &__more
-        margin 20px 0 40px
-        &-button
-          min-height 45px
-          min-width 190px
-          padding 0 20px
-          box-sizing border-box
-          border 1px solid c_orange
-          border-radius 3px
-          background-color c_orange
-          color white
-          font-family r_bold
-          font-size 18px
-          transition all .2s ease
-          &:hover
-            background-color white
-            color c_black
-    .raiting
-      margin 20px 0 25px
-      border-bottom 1px solid c_lgray
-      &__wrapper
-        margin 20px 0 35px
-      &__main
-        width 120px
-      &__image
-        margin-bottom 10px
-      &__number
-        text-align center
-        font-family r_reg
-        font-size 37px
-        margin-bottom 15px
-      &__stars
-        margin-bottom 5px
-        text-align center
-        .active
-          font-size 12px
-          color c_yellow
-      &__total
-        text-align center
-        font-family r_reg
-        font-size 14px
-        color c_gray
-      &__info
-        width 610px
-        &-text
-          line-height 20px
-          font-family r_reg
-          font-size 14px
-          &-small
-            line-height 18px
-            font-family r_reg
-            font-size 12px
-        .stats
-          margin 25px 0
-          &__element
-            margin-bottom 2px
-          &__number
-            font-family r_reg
-            font-size 14px
-            width 20px
-          &__star
-            font-family r_reg
-            font-size 12px
-            width 25px
-            color c_gray
-          &__length
-            font-family r_reg
-            font-size 14px
-            box-sizing border-box
-            height 17px
-            & span
-              padding-left 10px
-          &--green
-            width 0
-            max-width 395px
-            background-color #9ec153
-            transition all 4s ease-out .2s
-          &--lgreen
-            width 0
-            max-width 190px
-            background-color #acd819
-            transition all 4s ease-out .2s
-          &--yellow
-            width 0
-            max-width 80px
-            background-color #f2d800
-            transition all 4s ease-out .2s
-          &--orange
-            width 0
-            max-width 30px
-            background-color #ffb31b
-            transition all 4s ease-out .2s
-          &--red
-            width 0
-            max-width 15px
-            background-color #ff8b53
-            transition all 4s ease-out .2s
-    .links-8in1
-      padding-bottom 10px
-      border-bottom 1px solid c_lgray
-      margin-bottom 40px
-      &__list
-        padding 0 5px
-      &__element-wrapper
-        margin-bottom 20px
-        width 340px
-      &__elememnt
-        display block
-        position relative
-        padding-right 15px
-        font-family r_reg
-        font-size 14px
-        transition all .2s ease
-        &:hover
-          color c_orange
-          .main-arrow
-            border-left-color c_orange
-    .market-brands
-      margin-top 15px
-    .oshop-block
-      margin 20px 0 25px 0
-      &__text
-        font-family r_reg
-        font-size 14px
-        line-height 18px
-    .tabs-block
-      border-top 1px solid c_lgray
-      padding-top 20px
-      &__list
-        margin-top 10px
-        & li
-          width 23%
-          margin 0 2.66% 2.66% 0
-          &:nth-child(4n)
-            margin-right 0
-          &:last-of-type
-            margin-right auto
-      &__element
-        display block
-        height 180px
-        width 180px
-        overflow hidden
-        position relative
-        &:hover
-          & img
-            top -5px
-            bottom -5px
-            left -5px
-            right -5px
-            height 105%
-            width 105%
-        & img
-          position absolute
-          top 0
-          bottom 0
-          left 0
-          right 0
-          height 100%
-          width 100%
-          transition all .3s ease
-      &__text
-        position absolute
-        left 0
-        bottom 0
-        height 50px
-        width 100%
-        padding 0 15px
-        box-sizing border-box
-        background-color rgba(0, 0, 0, .4)
-        color white
-        font-family r_black
-        font-size 13px
-    &__header
-      font-family r_med
-      font-size 18px
-      padding 15px 0
-      position relative
-      &::before
-        position absolute
-        content ''
-        left 0
-        top 0
-        width 45px
-        border-top 3px solid #f95318
-      &-pic
-        font-family r_med
-        font-size 18px
-        padding 15px 0 15px 30px
-    &__separator
-      border-bottom 1px solid c_lgray
-      margin-bottom 35px
-    &__sub-info
-      text-align right
-      margin 25px 0 25px 0
-      color c_mgray
-      font-family r_reg
-      font-size 14px
-      &-link
-        color c_orange
-        text-decoration underline
-    .products__main
-      margin-bottom 35px
-      flex-direction column
-      position relative
-      &:last-of-type
-        margin-bottom 20px
-      .list-prev
-        position absolute
-        content ''
-        top 0
-        right 30px
-        height 15px
-        width 15px
-        border 1px solid c_lgray
-        border-radius 3px
-        cursor pointer
-        transition all .2s ease
-        &:hover
-          border 1px solid c_gray
-        & i
-          color c_black
-          font-size 18px
-          font-weight bold
-      .list-next
-        position absolute
-        content ''
-        top 0
-        right 0
-        height 15px
-        width 15px
-        border 1px solid c_lgray
-        border-radius 3px
-        cursor pointer
-        transition all .2s ease
-        &:hover
-          border 1px solid c_gray
-        & i
-          color c_black
-          font-size 18px
-          font-weight bold
-      .header
-        padding-right 50px
-        box-sizing border-box
-        font-family r_bold
-        font-size 18px
-      .content
-        margin-left 15px
-        .list.df--b.dfw
-          & li
-            margin-top 35px
-            & .element__header,
-            & .element__info
-              line-height 16px
-            &:nth-child(4n)
-              margin-right 0
-            &:last-of-type
-              margin-right auto
-        .list
-          flex 1
-          overflow hidden
-          margin-top 15px
-          .slick-list
-            height 302px
-          .slick-track
-            height 100%
-          .element
-            display flex !important
-            min-height 302px
-            width 150px
-            margin-right 56px
-            flex-direction column
-            justify-content space-between
-            position relative
-            &:nth-child(4n)
-              .hover
-                left -216px
-                padding-right 8px
-                width 216px
-            .hover
-              display block
-              position absolute
-              top 0
-              left 149px
-              padding-left 8px
-              box-sizing border-box
-              height 100%
-              width 208px
-              z-index 2
-              &__container
-                flex-direction column
-                height 100%
-                width 100%
-                padding 5px
-                box-sizing border-box
-                background-color c_lgray
-              &__header
-                margin-bottom 10px
-              &__brand
-                flex 1
-                flex-wrap wrap
-              &__buttons
-                min-width 60px
-                width 60px
-                .buttons-block
-                  flex-wrap wrap
-                  &__image
-                    margin-bottom 5px
-                    height 25px
-                    width 25px
-                    border 1px solid c_gray
-                    border-radius 2px
-                    color c_orange
-                    transition all .2s ease
-                    & i
-                      font-size 18px
-                    &:hover
-                      border 1px solid c_orange
-                .status-block
-                  margin-top 5px
-                  &__header
-                    font-family r_reg
-                    font-size 12px
-                    color c_black
-                  &__info
-                    font-family r_reg
-                    font-size 12px
-                    color c_green
-              &__info
-                flex 1
-                overflow-y scroll
-                flex-wrap wrap
-                &-block
-                  width 50%
-                  font-family r_med
-                  font-size 12px
-                  margin-bottom 10px
-                &-block-big
-                  width 100%
-                  font-family r_med
-                  font-size 12px
-                  margin-bottom 5px
-            &__image
-              height 120px
-              min-height 120px
-              width 100%
-              text-align center
-              margin-bottom 15px
-            &__header
-              width 100%
-              font-family r_black
-              font-size 14px
-              margin-bottom 5px
-            &__info
-              font-family r_reg
-              font-size 12px
-              color c_gray
-              margin-bottom auto
-              & span
-                display block
-                margin-bottom 5px
-            &__stars
-              margin 5px 0
-              .active
-                font-size 14px
-                color c_yellow
-              .not-active
-                font-size 14px
-                color c_gray
-            &__price
-              font-family r_black
-              font-size 18px
-              margin-bottom 5px
-            &__button
-              height 35px
-              font-family r_black
-              font-size 14px
-              color white
-              background-color c_orange
-              border 1px solid c_orange
-              border-radius 2px
-              transition all .2s ease
-              &:hover
-                background-color white
-                color c_black
-  .pics-block-wrapper
-    border-top 1px solid c_lgray
-    border-bottom 1px solid c_lgray
-    flex-wrap wrap
-    .pics-block
-      flex-wrap wrap
-      &__text
-        width 50%
-        background-color c_lgray
-        padding 30px
-        box-sizing border-box
-      &__header
-        padding-top 30px
-        margin-bottom 15px
-        text-align center
-        position relative
-        &:first-of-type
-          padding-top 20px
-          margin-bottom 25px
-        &:first-of-type::before
-          position absolute
-          content ''
-          top 0
-          right 46%
-          text-align center
-          width 30px
-          border-bottom 2px solid c_orange
-        &-element
-          display block
-          font-family r_med
-          font-size 16px
-          color c_black
-          margin-bottom 10px
-      &__info
-        font-family r_reg
-        font-size 14px
-        color c_black
-        line-height 20px
-        text-align justify
-        word-spacing 0
-      &__image
-        width 50%
-        padding 80px
-        box-sizing border-box
-  .market-brands
-    margin 35px 0 35px 0
-    &__header
-      display block
-      width 100%
-      text-align center
-      letter-spacing 1px
-      font-family r_med
-      font-size 26px
-      padding-bottom 20px
-      margin-bottom 20px
-      position relative
-      &::before
-        position absolute
-        content ''
-        bottom  0
-        right 48%
-        text-align center
-        width 30px
-        border-bottom 2px solid c_orange
-    &__element
-      width 140px
-      transition all .2s ease
-      &:hover
-        -webkit-filter brightness(110%)
-        filter brightness(110%)
-
-
-
-//--------------------------
-// Footer
-//--------------------------
-.footer
-  padding 25px 0
-  background-color c_black
-  &__column
-    width 25%
-    .header
-      margin 10px 0 30px 0
-      font-family r_bold
-      font-size 14px
-      color white
-    .list
-      & li
-        margin-bottom 15px
-        &:last-of-type
-          margin-bottom 0
-      &.marked
-        & li
-          position relative
-          padding-left 15px
-          & i
-            position absolute
-            top 2px
-            left 0
-            font-size 12px
-            color c_orange
-      &__element
-        font-family r_reg
-        font-size 12px
-        color white
-        transition all .2s ease
-        &:hover
-          color c_orange
-  &__label-column
-    width 25%
-    .logo
-      display block
-      width 230px
-      margin-bottom 20px
-    .header
-      display block
-      font-family r_med
-      font-size 16px
-      color white
-      margin-bottom 10px
-    .social
-      display flex
-      flex-direction row
-      flex-wrap wrap
-      margin-bottom 10px
-      & li
-        display inline-block
-        margin 0 15px 15px 0
-        &:last-of-type
-          margin-right 0
-      &__element
-        height 45px
-        width 45px
-        border 1px solid white
-        transition all .2s ease
-        &:hover
-          border 1px solid c_orange
-    .delivery
-      &__element
-        margin-right 25px
-        transition all .2s ease
-        &:hover
-          -webkit-filter brightness(110%)
-          filter brightness(110%)
-        &:last-of-type
-          margin-right 0
-.footer-info
-  height 60px
-  .language
-    font-family r_reg
+    border 1px solid c_gray
+    outline none
+    margin-right 20px
+.input--gray
+  display none
+  &:checked+label:before
+    background-color c_gray
+  &:checked+label:after
+    position absolute
+    top 1px
+    left 1px
+    width 13px
+    height 13px
     font-size 14px
-    & img
-      margin-left 5px
-  .information
-    flex 1
-    text-align center
-    font-family r_reg
-    font-size 12px
-  .payment-links
-    &__image
-      margin-left 15px
-      transition all .2s ease
-      &:hover
-        -webkit-filter brightness(110%)
-        filter brightness(110%)
-
+    line-height 13px
+    content '✓'
+    color white
 
 //--------------------------
 // Filter-product
 //--------------------------
-
-.filter
-  margin-bottom 10px
-  margin-top 16px
-  flex-wrap wrap
-  justify-content space-between
-
-  &__search
-    align-items center
-    padding 10px 0
-    border 0
-    width 100%
-    box-sizing border-box
-    font-family r_med
-    &-image
-      margin-right 10px
-      color c_mgray
-      font-size 20px
-    &-text
-      text-transform uppercase
-      color c_mgray
-      font-size 20px
-    &-numbers
-      margin-left 7px
-      color c_orange
-  &__label
-    max-width 130px
-    margin-right 5px
-  &__select
-    width 200px
-    &--small
-      width 67px
-    &-block
-      width 100%
-      flex-wrap wrap
-      justify-content space-between
-      align-items flex-start
-      padding 38px 0 28px
-      margin-bottom 20px
-      border-bottom 1px solid c_mgray
-      border-top 1px solid c_mgray
-    &-type
-      width 325px
-      margin-bottom 10px
-      align-items center
-      &--brand
-        width 275px
-    &-quantity
-      width 160px
-      margin-bottom 10px
-      align-items center
-    &-view
-      width 190px
-      margin-bottom 10px
-      text-align right
-      display flex
-      align-items center
-      justify-content flex-end
-    .select2-container--default .select2-selection--single
-      height 34px
-    .select2-container--default .select2-selection--single .select2-selection__rendered
-      line-height 34px
-    .select2-container--default .select2-selection--single .select2-selection__arrow
-      height 34px
-
-  &__button
-    background-color #e8e8e8
-    font-size 0
-    width 27px
-    height 27px
-    margin-left 10px
-    border 0
-    padding 0
-    color #a2a2a2
-    & .material-icons
-      font-size 16px
-      line-height 27px
-      text-align center
-    &--active
-      background-color #a2a2a2
-      color #ffffff
-  &__stock
-    max-width 200px
-    margin-left auto
-    justify-content flex-end
-    align-items center
-    display flex
-    & .input
-      -webkit-appearance none
-      width 13px
-      height 13px
-      border-radius 2px
-      outline none
-      margin 0 10px 0 5px
-      position relative
-      border 1px solid c_black
-      &:checked
-        border 1px solid c_black
-      &:checked:before
-        position absolute
-        top 0
-        bottom 0
-        left 0
-        right 0
-        margin auto
-        font-size 14px
-        line-height 13px
-        background c_black
-        content '✓'
-        color white
-
-//--------------------------
-// Aside-filter
-//--------------------------
-.aside-filter
-  margin-top 16px
-.filter
-  &__fieldset
-    margin-bottom 10px
-  &__legend
-    padding 12px 17px
-    text-transform uppercase
-    background-color #d9d9d9
-    color c_black
-    font-size 17px
-    line-height 20px
-    margin-bottom 10px
-    font-family r_bold
-  &__type
-    border 1px solid #d9d9d9
-    margin-bottom 10px
-    &-name
-      display block
-      padding 10px 15px
-      font-size 16px
-      color c_orange
-      font-family r_bold
-  &__list
-    padding 15px
-    max-height 210px
-    overflow-y scroll
-    &--with-border
-      border-top 1px solid #d9d9d9
-  &__item
-    justify-content space-between
-    align-items flex-start
-    &:nth-child(n+2)
-      margin-top 15px
-    & .input
-      -webkit-appearance none
-      width 13px
-      height 13px
-      border-radius 2px
-      outline none
-      margin-right 5px
-      position relative
-      border 1px solid c_black
-      &:checked
-        border 1px solid c_black
-      &:checked:before
-        position absolute
-        top 0
-        bottom 0
-        left 0
-        right 0
-        margin auto
-        font-size 14px
-        line-height 13px
-        background c_black
-        content '✓'
-        color white
-
-
-  &__list-label
-    max-width 210px
-    align-items flex-start
-    font-size 13px
-    & label
-      max-width 200px
-  &__list-numbers
-    font-size 13px
-    color c_orange
-    max-width 45px
 
 
 
@@ -2930,109 +1301,13 @@
 // Pagination
 //--------------------------
 
-.pagination
-  margin 20px 0
-  &__list
-    align-items center
-    justify-content center
-    flex-wrap wrap
-    & li
-      margin-right 16px
-  &__link
-    display inline-block
-    font-size 14px
-    color c_black
-    transition all .3s ease
-    &--active
-      color c_orange
-    &:hover
-      color c_orange
-    &--arrows
-      max-width 15px
-      & .material-icons
-        margin-top 3px
-        font-size 20px
-        margin-left -13px
+
 
 //--------------------------
 // Cards
 //--------------------------
 
-.list--list
-  flex-direction column
-.main-body .main-block .products__main .content .list--list.df--b.dfw li
-  margin 0
-.main-body .main-block .products__main .content .list .element .status-block--list
-  display none
-.main-body .main-block .products__main .content .list--list .element
-  width 100%
-  flex-direction row
-  border-bottom 1px solid c_mgray
-  min-height 162px
-  & .hover
-    display none
-.element--list
-  width 100%
-  margin-right 0
-.element .element-visible
-  display flex
-  flex-direction column
-  & .buttons-block
-    display none
 
-
-.main-body .main-block .products__main .content .list .element--list
-  & .element-visible
-    display flex
-    flex-direction row
-    justify-content space-between
-    width 100%
-    padding 20px 18px 20px 0
-    box-sizing border-box
-    & .element__image
-      width 290px
-      margin-bottom 0
-    & .element__text
-      width 250px
-    & .element__stars
-      margin 10px 0
-    & .buttons-block
-      display flex
-    & .element__buy
-      width 150px
-      & .element__button
-        width 100%
-    & .buttons-block__image
-      margin-bottom 5px
-      margin-right 10px
-      height 34px
-      width 34px
-      border 1px solid #777
-      border-radius 2px
-      color #f95318
-      transition all 0.2s ease
-      & i
-        font-size 18px
-    & .status-block
-      display block
-      margin 5px 0 20px
-      &__header
-        font-size 12px
-        display inline-block
-        vertical-align baseline
-      &__info
-        display inline-block
-        vertical-align baseline
-        font-family r_reg
-        font-size 12px
-        color #008c28
-
-.main-body .main-block .products__main .content .list .element .hover
-  display none
-.main-body .main-block .products__main .content .list .element:hover .hover
-  display block
-.main-body .main-block .products__main .content .list--list .element--list:hover .hover
-  display none
 
 
 .account
@@ -3271,51 +1546,70 @@
     font-family r_reg
 
 
-
-.input-red
-  -webkit-appearance: none
+.label-for-checkbox
+  font-size 0
+  position relative
   width 13px
   height 13px
-  border-radius 2px
-  outline none
-  position relative
-  border 1px solid #f95318
-  &:checked:before
+  display inline-block
+  &::before
+    content ''
     position absolute
-    top 0
-    bottom 0
     left 0
-    right 0
-    margin auto
+    top 0
+    width 13px
+    height 13px
+    box-sizing border-box
+    border-radius 2px
+    text-align center
+    border 1px solid c_orange
+    outline none
+    margin-right 20px
+.input-red
+  display none
+  &:checked+label:before
+    background-color c_orange
+  &:checked+label:after
+    position absolute
+    top 1px
+    left 1px
+    width 13px
+    height 13px
     font-size 14px
     line-height 13px
-    background #f95318
     content '✓'
-    color #fff
-.input-radio-red
-  -webkit-appearance none
-  width 15px
-  height 15px
-  min-width 15px
-  min-height 15px
-  border 1px solid #f95318
-  border-radius 50%
-  outline none
+    color white
+
+.label-for-radio
+  font-size 0
   position relative
-  &:before
+  width 16px
+  height 16px
+  &::before
     position absolute
-    margin auto
     top 0
-    bottom 0
     left 0
-    right 0
     content ''
     display block
-    width 9px
-    height 9px
+    width 12px
+    height 12px
     border-radius 50%
-  &:checked:before
+    background-color transparent
+    border 1px solid transparent
+    box-shadow 0px 0px 0px 1px c_orange
+.input-radio-red
+  display none
+  &:checked~label::after
+    position absolute
+    top 2px
+    left 2px
+    content ''
+    display block
+    width 10px
+    height 10px
+    border-radius 50%
     background-color c_orange
+
 
 .title-with-stripe
   padding 10px 15px 18px

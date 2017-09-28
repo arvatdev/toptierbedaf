@@ -1,0 +1,91 @@
+.main-wrapper
+  width 1100px
+  margin 0 auto
+  padding 0 10px
+.footer
+  padding 25px 0
+  background-color c_black
+  min-width 1120px
+  &__column
+    width 25%
+  &__header
+      margin 10px 0 30px 0
+      font-family r_bold
+      font-size 14px
+      color white
+  &__item
+    margin-bottom 15px
+    &:last-of-type
+      margin-bottom 0
+    &--marked
+      position relative
+      padding-left 15px
+      & i
+        position absolute
+        top 2px
+        left 0
+        font-size 12px
+        color c_orange
+  &__link
+    font-family r_reg
+    font-size 12px
+    color white
+    transition all .2s ease
+    &:hover
+      color c_orange
+  &__label-column
+    width 25%
+  &__logo
+    display block
+    width 230px
+    margin-bottom 20px
+  &__header
+    display block
+    font-family r_med
+    font-size 16px
+    color white
+    margin-bottom 10px
+  &__social
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    margin-bottom 10px
+    &-item
+      display inline-block
+      margin 0 15px 15px 0
+      &:last-of-type
+        margin-right 0
+    &-link
+      height 45px
+      width 45px
+      border 1px solid white
+      transition all .2s ease
+      &:hover
+        border 1px solid c_orange
+  &__delivery
+    &-element
+      margin-right 25px
+      transition all .2s ease
+      &:hover
+        -webkit-filter brightness(110%)
+        filter brightness(110%)
+      &:last-of-type
+        margin-right 0
+  &__info
+    height 60px
+  &__language
+    font-family r_reg
+    font-size 14px
+    &-image
+      margin-left 5px
+  &__information
+    flex 1
+    text-align center
+    font-family r_reg
+    font-size 12px
+  &__payment-image
+    margin-left 15px
+    transition all .2s ease
+    &:hover
+      -webkit-filter brightness(110%)
+      filter brightness(110%)

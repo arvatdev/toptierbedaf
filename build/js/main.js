@@ -9,12 +9,12 @@ $(document).ready(function () {
 //--------------------------
 // Slick slider
 //--------------------------
-    $('.main-banner .list').slick({
+    $('.main-banner__list').slick({
         draggable: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: $('.main-banner .list-wrapper .prev-btn'),
-        nextArrow: $('.main-banner .list-wrapper .next-btn')
+        prevArrow: $('.main-banner__prev-btn'),
+        nextArrow: $('.main-banner__next-btn')
     })
 
     $('.js-slick-list1').slick({
@@ -75,25 +75,6 @@ $(document).ready(function () {
     };
 
 //--------------------------
-// Product list hovered menu
-//--------------------------
-
-    // $('.products__main').find('.list .element').hover(
-    //   if (!el.hasClas('element--card')) {
-    //         function(e) {
-    //             e.stopPropagation()
-    //             $(this).find('.hover').fadeIn(200)
-    //             $(this).find('.hover').removeClass('hidden')
-    //         }, function() {
-    //             $(this).find('.hover').fadeOut(200, function() {
-    //                 $(this).find('.hover').addClass('hidden')
-    //             })
-    //         }
-    //     }
-    // )
-
-
-//--------------------------
 // Aside navigation
 //--------------------------
 
@@ -116,9 +97,9 @@ $(document).ready(function () {
 // Static page - FAQ sub menu
 //--------------------------
 
-    $('.sub-info-block__header').on('click', function() {
-        $(this).closest('.sub-info-block__element').find('.sub-info-block__text').slideToggle(300)
-        $(this).find('.sub-info-block__arrow').toggleClass('sub-info-block__arrow-active')
+    $('.faq-drop__header').on('click', function() {
+        $(this).closest('.faq-drop__element').find('.faq-drop__text').slideToggle(300)
+        $(this).find('.faq-drop__arrow').toggleClass('faq-drop__arrow-active')
     })
 
     //--------------------------
@@ -130,15 +111,15 @@ $(document).ready(function () {
     $(".filter__button--list").click(function(){
       $(this).addClass("filter__button--active");
       $(".filter__button--cards").removeClass("filter__button--active");
-      $(".list-products").addClass("list--list");
-      $(".list-products .element").addClass("element--list");
+      $(".products-main__list").addClass("products-main__list--list");
+      $(".products-main__element").addClass("products-main__element--list");
     });
     //change card-views to list
     $(".filter__button--cards").click(function(){
       $(this).addClass("filter__button--active");
       $(".filter__button--list").removeClass("filter__button--active");
-      $(".list-products").removeClass("list--list");
-      $(".list-products .element").removeClass("element--list");
+      $(".products-main__list").removeClass("products-main__list--list");
+      $(".products-main__element").removeClass("products-main__element--list");
     });
 
     //--------------------------

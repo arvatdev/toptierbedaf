@@ -12,37 +12,37 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="main">
+    <div id="wrapper">
       <header class="main-header">
         <div class="main-wrapper df-c h100p">
           <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
-          <article class="contacts df-cc">
-            <div class="contacts__image df-cc"><i class="material-icons">phone</i></div>
-            <div class="contacts__number"><span>+49 30 208 476 906</span></div>
-            <div class="contacts__time"><span>Mo - Fr 9:00 - 18:00 Uhr</span></div>
+          <article class="main-header__contacts df-cc">
+            <div class="main-header__contacts-image df-cc"><i class="material-icons">phone</i></div>
+            <div class="main-header__contacts-number"><span>+49 30 208 476 906</span></div>
+            <div class="main-header__contacts-time"><span>Mo - Fr 9:00 - 18:00 Uhr</span></div>
           </article>
-          <article class="account"><a class="account__image" href="#"></a></article>
-          <article class="wishlist"><a class="wishlist__image" href="#"></a></article>
-          <article class="cart"><a class="df-c" href="#">
-              <div class="cart__image"></div><span>€12.00</span></a></article>
+          <article class="main-header__account"><a class="main-header__account-image" href="#"></a></article>
+          <article class="main-header__wishlist"><a class="main-header__wishlist-image" href="#"></a></article>
+          <article class="main-header__cart"><a class="df-c" href="#">
+              <div class="main-header__cart-image"></div><span class="main-header__cart-price">€12.00</span></a></article>
         </div>
       </header>
       <nav class="main-navigation">
-        <div class="main-wrapper df-c h100p"><a class="sandwich df-cc" href="#"><i class="material-icons">menu</i></a>
-          <ul class="list df-c">
-            <li><a class="list__element" href="#">HUND</a></li>
-            <li><a class="list__element" href="#">KATZE</a></li>
-            <li><a class="list__element" href="#">VOGEL</a></li>
-            <li><a class="list__element" href="#">KLEINTIERE</a></li>
-            <li><a class="list__element" href="#">AQUARISTIK</a></li>
-            <li><a class="list__element" href="#">PFERD</a></li>
-            <li><a class="list__element" href="#">MARKEN</a></li>
-            <li><a class="list__element" href="#">TERRARISTIK</a></li>
+        <div class="main-wrapper df-c h100p"><a class="main-navigation__sandwich df-cc" href="#"><i class="main-navigation__sandwich-icon material-icons">menu</i></a>
+          <ul class="main-navigation__list df-c">
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">HUND</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">KATZE</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">VOGEL</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">KLEINTIERE</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">AQUARISTIK</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">PFERD</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">MARKEN</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">TERRARISTIK</a></li>
           </ul>
-          <article class="search"><a class="search__image" href="#"><i class="material-icons">search</i></a></article>
+          <article class="main-navigation__search"><a class="main-navigation__search-image" href="#"><i class="material-icons">search</i></a></article>
         </div>
       </nav>
-      <section class="main-body body--margin">
+      <main class="static1-page">
         <div class="main-wrapper">
           <article class="breadcrumbs">
             <ul class="breadcrumbs__list">
@@ -50,9 +50,9 @@
               <li><a href="#">AGB</a></li>
             </ul>
           </article>
-          <article class="static-wrapper df--b dfw">
-            <h1 class="static-header"><span>AGB</span></h1>
-            <div class="static-text">
+          <article class="static__wrapper df--b dfw">
+            <h1 class="static__main-header"><span>AGB</span></h1>
+            <div class="static__main-text">
               <p>
                 Die folgenden Allgemeinen Geschäftsbedingungen gelten für alle Verbrauchsgüterkäufe über den
                 Online-Shop Zoobio.de, die gemäß § 13 BGB überwiegend weder ihrer gewerblichen noch ihrer
@@ -62,9 +62,9 @@
                 Besteller („Sie“). Die Vertragssprache ist Deutsch.
               </p>
             </div>
-            <div class="static-column">
-              <h3 class="main-block__header"><span>1. AUSFÜHRUNG DER BESTELLUNG</span></h3>
-              <p class="static-column__text">
+            <div class="static__column">
+              <h3 class="static__column-header"><span>1. AUSFÜHRUNG DER BESTELLUNG</span></h3>
+              <p class="static__column-text">
                 Die Darstellung der Produkte im Online-Shop stellt kein rechtlich bindendes Angebot, sondern
                 einen unverbindlichen Online-Katalog dar. Durch Anklicken des Buttons „Jetzt Kaufen“ geben Sie
                 eine verbindliche Bestellung der im Warenkorb enthaltenen Waren ab. Die Bestätigung des Eingangs
@@ -75,20 +75,20 @@
                 Bestellungen verlieren, wenden Sie sich bitte per E-Mail oder Telefon an uns. Wir senden Ihnen
                 eine Kopie der Daten Ihrer Bestellung gerne zu.
               </p>
-              <h3 class="main-block__header"><span>2. WIDERRUFSBELEHRUNG</span></h3>
-              <p class="static-column__text">Widerrufsrecht für Verbraucher (Auszug aus unseren AGB)</p>
-              <p class="static-column__text">
+              <h3 class="static__column-header"><span>2. WIDERRUFSBELEHRUNG</span></h3>
+              <p class="static__column-text">Widerrufsrecht für Verbraucher (Auszug aus unseren AGB)</p>
+              <p class="static__column-text">
                 (Verbraucher ist jede natürliche Person, die ein Rechtsgeschäft zu Zwecken abschließt, die
                 überwiegend weder ihrer gewerblichen noch ihrer selbstständigen beruflichen Tätigkeit
                 zugerechnet werden können.)
               </p>
-              <h5 class="static-column__header-small"><span>Widerrufsrecht</span></h5>
-              <p class="static-column__text">
+              <h5 class="static__column-small-header"><span>Widerrufsrecht</span></h5>
+              <p class="static__column-text">
                 Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.
                 Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag, an dem Sie oder ein von Ihnen benannter
                 Dritter, der nicht der Beförderer ist, die letzte Ware in Besitz genommen haben bzw. hat.
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (Zoobio GmbH, Josef-Orlopp-Straße 55, 10365
                 Berlin, Deutschland, Tel.: +49 (030) 200 042 082, E-Mail-Adresse: info@zoobio.de) mittels einer
                 eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren
@@ -97,8 +97,8 @@
                 Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor
                 Ab- lauf der Widerrufsfrist absenden.
               </p>
-              <h5 class="static-column__header-small"><span>Folgen des Widerrufs</span></h5>
-              <p class="static-column__text">
+              <h5 class="static__column-small-header"><span>Folgen des Widerrufs</span></h5>
+              <p class="static__column-text">
                 Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten
                 haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus
                 ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste
@@ -108,59 +108,59 @@
                 Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes
                 vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet.
               </p>
-              <h5 class="static-column__header-small"><span>Ausnahmen vom Widerrufsrecht</span></h5>
-              <p class="static-column__text">
+              <h5 class="static__column-small-header"><span>Ausnahmen vom Widerrufsrecht</span></h5>
+              <p class="static__column-text">
                 Es existieren gesetzliche Ausnahmen vom Widerrufsrecht (§ 312g BGB), wobei wir uns vorbehalten,
                 uns Ihnen gegenüber auf folgende Regelungen zu berufen: Ein Widerrufsrecht besteht nicht bei
                 Verträgen zur Lieferung von Waren, die nicht vorgefertigt sind und für deren Herstellung eine
                 individuelle Auswahl oder Bestimmung durch den Verbraucher maßgeblich ist oder die eindeutig
                 auf die persönlichen Bedürfnisse des Verbrauchers zugeschnitten sind.
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 Ein Widerrufsrecht besteht nicht bei Lieferung von Waren, wenn diese nach der Lieferung auf
                 Grund ihrer Beschaffenheit untrennbar mit anderen Gütern vermischt wurden.
               </p>
-              <h5 class="static-column__header-small"><span>Muster-Widerrufsformular</span></h5>
-              <p class="static-column__text">
+              <h5 class="static__column-small-header"><span>Muster-Widerrufsformular</span></h5>
+              <p class="static__column-text">
                 (Wenn Sie den Vertrag widerrufen wollen, dann füllen Sie bitte dieses Formular aus und senden
                 Sie es zurück.)
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 - An: Zoobio GmbH, Josef-Orlopp-Straße 55, 10365 Berlin, Deutschland, Telefaxnummer: +49 (030)
                 200 042 082, E-Mail-Adresse: info@zoobio.de
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 - Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über den Kauf der
                  folgenden Waren (*)/die Erbringung der folgenden Dienstleistung (*)
               </p>
-              <p class="static-column__text">- Bestellt am (*)/erhalten am (*)</p>
-              <p class="static-column__text">- Name des/der Verbraucher(s)</p>
-              <p class="static-column__text">- Anschrift des/der Verbraucher(s)</p>
-              <p class="static-column__text">- Unterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier)</p>
-              <p class="static-column__text">- Datum</p>
-              <p class="static-column__text">________</p>
-              <p class="static-column__text">(*) Unzutreffendes streichen.</p>
-              <h3 class="main-block__header"><span>3. KOSTEN, LIEFERUNG UND VERSAND</span></h3>
-              <h5 class="static-column__header-small"><span>Kosten innerhalb Deutschlands:</span></h5>
-              <p class="static-column__text">
+              <p class="static__column-text">- Bestellt am (*)/erhalten am (*)</p>
+              <p class="static__column-text">- Name des/der Verbraucher(s)</p>
+              <p class="static__column-text">- Anschrift des/der Verbraucher(s)</p>
+              <p class="static__column-text">- Unterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier)</p>
+              <p class="static__column-text">- Datum</p>
+              <p class="static__column-text">________</p>
+              <p class="static__column-text">(*) Unzutreffendes streichen.</p>
+              <h3 class="static__column-header"><span>3. KOSTEN, LIEFERUNG UND VERSAND</span></h3>
+              <h5 class="static__column-small-header"><span>Kosten innerhalb Deutschlands:</span></h5>
+              <p class="static__column-text">
                 Bei Bestellungen unter einem Warenwert von 30,00 € fallen 1,99 € Versandkosten an. Ab einem
                 Warenwert von 30,00 € (ausgenommen Versand in das Ausland und Sonderversand — Sperrgut und Pfand)
                 entfallen die Versandkosten.
               </p>
-              <h5 class="static-column__header-small"><span>Kosten bei Nachnahmezahlung und Lieferung innerhalb Deutschlands:</span></h5>
-              <p class="static-column__text">
+              <h5 class="static__column-small-header"><span>Kosten bei Nachnahmezahlung und Lieferung innerhalb Deutschlands:</span></h5>
+              <p class="static__column-text">
                 Bei einer Bestellung per Nachnahme innerhalb Deutschlands und einem Warenwert unter 30,00 € fallen
                 1,99 € Versandkosten und zzgl. 5,50 € Nachnahmegebühren an. Zusätzlich erhebt DHL 2,00 €
                 Zustellgebühr bei Übergabe. Ab einem Warenwert von 30,00 € (ausgenommen Versand in das Ausland )
                 fallen nur die Nachnahmegebühren in Höhe von 5,50 € und die DHL Zustellgebühren von 2,00 € an.
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 Bei Zahlungen per PayPal, Kreditkarte, Klarna Rechnung, Vorkasse oder Sofortüberweisung fallen
                 keine weiteren Transaktionsgebühren für Sie an.
               </p>
-              <p class="static-column__text">Bei Selbstabholung entfallen alle Versandkosten.</p>
-              <h5 class="static-column__header-small"><span>Versandkosten außerhalb Deutschlands:</span></h5>
-              <p class="static-column__text">
+              <p class="static__column-text">Bei Selbstabholung entfallen alle Versandkosten.</p>
+              <h5 class="static__column-small-header"><span>Versandkosten außerhalb Deutschlands:</span></h5>
+              <p class="static__column-text">
                 Die aufgeführten Versandkosten ins Ausland gelten unabhängig vom Bestellwert und sind jeweils immer
                  zu entrichten.
               </p>
@@ -175,73 +175,73 @@
                 </div><span>für</span>
                 <input class="static__input" type="text" placeholder="1.99 €">
               </div>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 Alle genannten Preisangaben enthalten die gesetzliche Mehrwertsteuer 7% für Futter, 19% für alle
                 anderen Waren.
               </p>
-              <h5 class="static-column__header-small"><span>Lieferzeiten:</span></h5>
-              <p class="static-column__text">Versandfertig in 24 Stunden</p>
-              <p class="static-column__text">Lieferzeit beträgt 1-2 Werktage.</p>
-              <p class="static-column__text">Versandfertig in 2-3 Tagen</p>
-              <p class="static-column__text">Lieferzeit beträgt 3-4 Werktage.</p>
-              <p class="static-column__text">Versandfertig in 3-5 Tagen</p>
-              <p class="static-column__text">Lieferzeit beträgt 4-6 Werktage.</p>
-              <p class="static-column__text">Informationen zu eventuellen Zollgebühren finden Sie hier.</p>
+              <h5 class="static__column-small-header"><span>Lieferzeiten:</span></h5>
+              <p class="static__column-text">Versandfertig in 24 Stunden</p>
+              <p class="static__column-text">Lieferzeit beträgt 1-2 Werktage.</p>
+              <p class="static__column-text">Versandfertig in 2-3 Tagen</p>
+              <p class="static__column-text">Lieferzeit beträgt 3-4 Werktage.</p>
+              <p class="static__column-text">Versandfertig in 3-5 Tagen</p>
+              <p class="static__column-text">Lieferzeit beträgt 4-6 Werktage.</p>
+              <p class="static__column-text">Informationen zu eventuellen Zollgebühren finden Sie hier.</p>
             </div>
-            <div class="static-column">
-              <h3 class="main-block__header"><span>4. ZAHLUNGSBEDINGUNGEN</span></h3>
-              <h5 class="static-column__header-small"><span>Bar-Nachnahme:</span></h5>
-              <p class="static-column__text">
+            <div class="static__column">
+              <h3 class="static__column-header"><span>4. ZAHLUNGSBEDINGUNGEN</span></h3>
+              <h5 class="static__column-small-header"><span>Bar-Nachnahme:</span></h5>
+              <p class="static__column-text">
                 Der gesamte Rechnungsbetrag (zzgl. 5,50 € Nachnahmegebühren) wird bei Auslieferung der Sendung
                 inbar an den Zusteller entrichtet.<br>Beachten Sie, dass der Zusteller die Ware nur gegen den kompletten Betrag in bar aushändigt.
                 Halten Sie daher die Summe möglichst passend bereit. Zusätzlich erhebt DHL € 2,- Zustellgebühr bei
                 Übergabe.<br>Nachnahmegebühren: 5,50 €<br>Versand: 1,99 €<br>Zustellgebühr: 2,00 €
               </p>
-              <h5 class="static-column__header-small"><span>Vorkasse:</span></h5>
-              <p class="static-column__text">Der zu zahlende Geldbetrag wird auf unsere angegebene Bankverbindung überwiesen.<br>Verwendungszweck: Auftragsnummer.<br>Die Auftragsnummer erhalten Sie nach einer Bestellung per E-Mail zugesandt, zusätzlich wird diese
+              <h5 class="static__column-small-header"><span>Vorkasse:</span></h5>
+              <p class="static__column-text">Der zu zahlende Geldbetrag wird auf unsere angegebene Bankverbindung überwiesen.<br>Verwendungszweck: Auftragsnummer.<br>Die Auftragsnummer erhalten Sie nach einer Bestellung per E-Mail zugesandt, zusätzlich wird diese
                 auch direkt nach einer Bestellung angezeigt. Der Versand erfolgt, nachdem die Zahlung auf unser
                 Konto eingegangen ist. Dabei entsteht meistens eine Banklaufzeit von bis zu 3 Werktagen.
               </p>
-              <h5 class="static-column__header-small"><span>Kreditkarte:</span></h5>
-              <p class="static-column__text">
+              <h5 class="static__column-small-header"><span>Kreditkarte:</span></h5>
+              <p class="static__column-text">
                 Nachdem Sie Kreditkarte als Zahlungsmethode gewählt haben, Klicken Sie bitte auf „Kaufen“.
                 Anschließend werden Sie auf eine gesicherte Seite weitergeleitet, wo Sie Ihre Kreditkartenart
                 auswählen dürfen. Zum Abschluss müssen die richtigen Kreditkartendaten eingegeben und die Zahlung
                 bestätigt werden. Die Belastung Ihres Kreditkartenkontos erfolgt mit Abschluss der Bestellung.
               </p>
-              <h5 class="static-column__header-small"><span>PayPal:</span></h5>
-              <p class="static-column__text">
+              <h5 class="static__column-small-header"><span>PayPal:</span></h5>
+              <p class="static__column-text">
                 Nach Absenden Ihrer Bestellung werden Sie zu PayPal weitergeleitet. Loggen Sie sich ein und tätigen
                 Sie die Zahlung. Um eine Zahlung per PayPal durchführen zu können, benötigen Sie ein PayPal-Konto.
                 Für Sie fallen keine weiteren Gebühren an.
               </p>
-              <h5 class="static-column__header-small"><span>Sofortüberweisung:</span></h5>
-              <p class="static-column__text">
+              <h5 class="static__column-small-header"><span>Sofortüberweisung:</span></h5>
+              <p class="static__column-text">
                 Sofortüberweisung ist das Direkt-Überweisungsverfahren der Payment Network AG. Mit Sofortüberweisung
                 stellen Sie noch während Ihrer Bestellung bequem eine Überweisung über den jeweiligen Betrag in Ihr
                 Online-Banking-Konto ein. Wir erhalten nach Abschluss der Sofortüberweisung eine
                 Echtzeitbestätigung. So kann Lagerware sofort versenden werden - Sie erhalten dann Ihre Bestellung
                 schneller.
               </p>
-              <h5 class="static-column__header-small"><span>Selbstabholer:</span></h5>
-              <p class="static-column__text">
+              <h5 class="static__column-small-header"><span>Selbstabholer:</span></h5>
+              <p class="static__column-text">
                 Sie können Ihre Bestellung auch persönlich in unserer Filiale abholen und den Rechnungsbetrag vor
                 Ort bar oder via Kreditkarte begleichen. Dabei entfallen die Versandkosten (zusätzliche Kosten
                 fallen nicht an).
               </p>
-              <h5 class="static-column__header-small"><span>Zahlung per Rechnung:</span></h5>
-              <p class="static-column__text">
+              <h5 class="static__column-small-header"><span>Zahlung per Rechnung:</span></h5>
+              <p class="static__column-text">
                 In Zusammenarbeit mit Klarna bieten wir Ihnen den Rechnungskauf als Zahlungsoptionen. Bei einer
                 Zahlung mit Klarna müssen Sie niemals Ihre Kontodaten angeben, und Sie bezahlen erst, wenn Sie die
                 Ware erhalten haben. Die Lieferung ist an eine von der Rechnungsadresse abweichende Lieferadresse
                 nicht möglich. Wir bitten Sie hierfür um Verständnis.
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 Beim Kauf auf Rechnung mit Klarna bekommen Sie immer zuerst die Ware und Sie haben immer eine
                 Zahlungsfrist von 14 Tagen. Weitere Informationen und Klarnas vollständige AGB zum Rechnungskauf
                 finden Sie hier.
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 Klarna prüft und bewertet die Datenangaben des Konsumenten und pflegt bei berechtigtem Anlass
                 einen Datenaustausch mit anderen Unternehmen und Wirtschaftsauskunfteien (Bonitätsprüfung). Sollte
                 die Bonität des Konsumenten nicht gewährleistet sein, kann Klarna AB dem Kunden darauf Klarnas
@@ -249,10 +249,10 @@
                 Personenangaben werden in Übereinstimmung mit dem Datenschutzgesetz behandelt und werden nicht zu
                 Werbezwecken an Dritte weitergegeben. Hier erfahren Sie mehr zu Klarnas Datenschutzbestimmungen.<br>Informationen zu eventuellen Zollgebühren finden Sie hier.
               </p>
-              <h3 class="main-block__header"><span>5. EIGENTUMSVORBEHALT</span></h3>
-              <p class="static-column__text">Die Ware bleibt bis zur vollständigen Bezahlung unser Eigentum (Eigentumsvorbehalt gemäß § 455 BGB).</p>
-              <h3 class="main-block__header"><span>6. GEWÄHRLEISTUNG</span></h3>
-              <p class="static-column__text">
+              <h3 class="static__column-header"><span>5. EIGENTUMSVORBEHALT</span></h3>
+              <p class="static__column-text">Die Ware bleibt bis zur vollständigen Bezahlung unser Eigentum (Eigentumsvorbehalt gemäß § 455 BGB).</p>
+              <h3 class="static__column-header"><span>6. GEWÄHRLEISTUNG</span></h3>
+              <p class="static__column-text">
                 Es gelten die gesetzlichen Gewährleistungsbestimmungen. Die gesetzliche Gewährleistungsfrist beträgt
                 24 Monate und beginnt mit der Übergabe der Ware. Ausgenommen von der Gewährleistung sind Schäden die
                 auf natürlichen Verschleiß, auf unsachgemäßen Gebrauch oder auf mangelnde oder falsche Pflege
@@ -266,72 +266,72 @@
                 (Nacherfüllung). Sofern die gewählte Art der Nacherfüllung mit unverhältnismäßig hohen Kosten
                 verbunden ist, beschränkt sich der Anspruch auf die jeweils verbliebene Art der Nacherfüllung.
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 Im Rahmen der Lieferung mangelfreier Ware gilt der Tausch in höherwertigere Produkte mit
                 Eigenschaften bereits jetzt als akzeptiert, sofern zumutbar ist.
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 Weitergehende Rechte, insbesondere die Rückgängigmachung des Kaufvertrages oder Minderung, können
                 nur nach Ablauf einer angemessenen Frist zur Nacherfüllung oder dem zweimaligen Fehlschlagen der
                 Nacherfüllung geltend gemacht werden. Sofern eine besondere Herstellergarantie besteht, die Sie
                 neben der Gewährleistung in Anspruch nehmen können, wird dies bei der jeweiligen Produktbeschreibung
                 ausgewiesen. Diese Garantie gilt dann nur für das jeweilige Produkt.
               </p>
-              <h3 class="main-block__header"><span>7. ES GELTEN DIE GESETZLICHEN HAFTUNGSBESTIMMUNGEN.</span></h3>
+              <h3 class="static__column-header"><span>7. ES GELTEN DIE GESETZLICHEN HAFTUNGSBESTIMMUNGEN.</span></h3>
             </div>
           </article>
         </div>
-      </section>
+      </main>
       <footer class="footer">
         <div class="main-wrapper df">
           <article class="footer__column">
-            <h3 class="header"><span>KUNDENSERVICE</span></h3>
-            <ul class="list">
-              <li><a class="list__element" href="#">Registrieren</a></li>
-              <li><a class="list__element" href="#">Kontakt</a></li>
-              <li><a class="list__element" href="#">Versand</a></li>
-              <li><a class="list__element" href="#">Zahlung</a></li>
-              <li><a class="list__element" href="#">Widerruf</a></li>
-              <li><a class="list__element" href="#">FAQ</a></li>
+            <h3 class="footer__header"><span>KUNDENSERVICE</span></h3>
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#">Registrieren</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Kontakt</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Versand</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Zahlung</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Widerruf</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">FAQ</a></li>
             </ul>
           </article>
           <article class="footer__column">
-            <h3 class="header"><span>ÜBER ZOOBOOM</span></h3>
-            <ul class="list">
-              <li><a class="list__element" href="#">Impressum</a></li>
-              <li><a class="list__element" href="#">AGB</a></li>
-              <li><a class="list__element" href="#">Datenschutz</a></li>
-              <li><a class="list__element" href="#">Newsletter</a></li>
-              <li><a class="list__element" href="#">Blog</a></li>
-              <li><a class="list__element" href="#">Partnerprogramm</a></li>
+            <h3 class="footer__header"><span>ÜBER ZOOBOOM</span></h3>
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#">Impressum</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">AGB</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Datenschutz</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Newsletter</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Blog</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Partnerprogramm</a></li>
             </ul>
           </article>
           <article class="footer__column">
-            <h3 class="header"><span>SICHER EINKAUFEN</span></h3>
-            <ul class="list marked">
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Schneller Versand</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Käuferschutz</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Datenschutz</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Sichere Zahlung mit SSL-Ver­schlüs­se­lung</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Günstige Preise</a></li>
+            <h3 class="footer__header"><span>SICHER EINKAUFEN</span></h3>
+            <ul class="footer__list">
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Schneller Versand</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Käuferschutz</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Datenschutz</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Sichere Zahlung mit SSL-Ver­schlüs­se­lung</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="list__element" href="#">Günstige Preise</a></li>
             </ul>
           </article>
-          <article class="footer__label-column"><a class="logo" href="#"><img class="image" src="/img/logo-white.png" alt="#"></a>
-            <h3 class="header"><span>Folge auf</span></h3>
-            <ul class="social">
-              <li><a class="social__element df-cc" href="#"><img class="image" src="/img/facebook.png" alt="#"></a></li>
-              <li><a class="social__element df-cc" href="#"><img class="image" src="/img/twitter.png" alt="#"></a></li>
-              <li><a class="social__element df-cc" href="#"><img class="image" src="/img/linked-in.png" alt="#"></a></li>
+          <article class="footer__label-column"><a class="footer__logo" href="#"><img class="image" src="/img/logo-white.png" alt="#"></a>
+            <h3 class="footer__header"><span>Folge auf</span></h3>
+            <ul class="footer__social">
+              <li class="footer__social-item"><a class="footer__social-link df-cc" href="#"><img class="image" src="/img/facebook.png" alt="#"></a></li>
+              <li class="footer__social-item"><a class="footer__social-link df-cc" href="#"><img class="image" src="/img/twitter.png" alt="#"></a></li>
+              <li class="footer__social-item"><a class="footer__social-link df-cc" href="#"><img class="image" src="/img/linked-in.png" alt="#"></a></li>
             </ul>
-            <div class="delivery df-c"><a class="delivery__element df-cc" href="#"><img class="image" src="/img/dhl.png" alt="#"></a><a class="delivery__element df-cc" href="#"><img class="image" src="/img/dhl-pack.png" alt="#"></a></div>
+            <div class="footer__delivery df-c"><a class="footer__delivery-element df-cc" href="#"><img class="image" src="/img/dhl.png" alt="#"></a><a class="footer__delivery-element df-cc" href="#"><img class="image" src="/img/dhl-pack.png" alt="#"></a></div>
           </article>
         </div>
       </footer>
-      <section class="footer-info">
+      <section class="footer__info">
         <div class="main-wrapper h100p df-c">
-          <article class="language df-c"><span>Sprache</span><img class="image" src="/img/flags/deu.png" alt="#"></article>
-          <article class="information"><span>© 2016, Haustierbedarf Zoobio Online Shop für Tierbedarf & Tierfutter</span></article>
-          <article class="payment-links df-c"><a class="payment-links__image" href="#"><img class="image" src="/img/visa.png" alt="#"></a><a class="payment-links__image" href="#"><img class="image" src="/img/mastercard.png" alt="#"></a><a class="payment-links__image" href="#"><img class="image" src="/img/paypal.png" alt="#"></a></article>
+          <article class="footer__language df-c"><span>Sprache</span><img class="footer__language-image image" src="/img/flags/deu.png" alt="#"></article>
+          <article class="footer__information"><span>© 2016, Haustierbedarf Zoobio Online Shop für Tierbedarf & Tierfutter</span></article>
+          <article class="footer__payment-links df-c"><a class="footer__payment-image" href="#"><img class="image" src="/img/visa.png" alt="#"></a><a class="footer__payment-image" href="#"><img class="image" src="/img/mastercard.png" alt="#"></a><a class="footer__payment-image" href="#"><img class="image" src="/img/paypal.png" alt="#"></a></article>
         </div>
       </section>
     </div>

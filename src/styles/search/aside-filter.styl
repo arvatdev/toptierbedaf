@@ -1,0 +1,76 @@
+.aside-filter
+  margin-top 16px
+.filter
+  &__fieldset
+    margin-bottom 10px
+  &__legend
+    padding 12px 17px
+    text-transform uppercase
+    background-color #d9d9d9
+    color c_black
+    font-size 17px
+    line-height 20px
+    margin-bottom 10px
+    font-family r_bold
+  &__type
+    border 1px solid #d9d9d9
+    margin-bottom 10px
+    &-name
+      display block
+      padding 10px 15px
+      font-size 16px
+      color c_orange
+      font-family r_bold
+  &__list
+    padding 15px
+    max-height 210px
+    overflow-y scroll
+    &--with-border
+      border-top 1px solid #d9d9d9
+  &__item
+    justify-content space-between
+    align-items flex-start
+    &:nth-child(n+2)
+      margin-top 15px
+    & label
+      display inline-block
+      position relative
+      padding-left 20px
+      &::before
+        content ''
+        position absolute
+        left 0
+        top 0
+        width 13px
+        height 13px
+        box-sizing border-box
+        border-radius 2px
+        text-align center
+        border 1px solid c_black
+        outline none
+    & .input
+      display none
+      &:checked+label:before
+        background-color c_black
+      &:checked+label:after
+        position absolute
+        top 1px
+        left 1px
+        width 13px
+        height 13px
+        font-size 14px
+        line-height 13px
+        content '✓'
+        color white
+
+
+  &__list-label
+    max-width 210px
+    align-items flex-start
+    font-size 13px
+    & label
+      max-width 200px
+  &__list-numbers
+    font-size 13px
+    color c_orange
+    max-width 45px

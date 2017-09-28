@@ -1,0 +1,68 @@
+.main-banner
+  margin-top 138px
+  &__wrapper
+    position relative
+  &__next-btn
+    position absolute
+    content ''
+    right 35px
+    top 45%
+    border 20px solid transparent
+    border-left 20px solid white
+    cursor pointer
+    z-index 1
+  &__prev-btn
+    position absolute
+    content ''
+    left 35px
+    top 45%
+    border 20px solid transparent
+    border-right 20px solid white
+    cursor pointer
+    z-index 1
+  &__list
+    height 100%
+    width 100%
+
+  &__element
+    height 650px
+    width 100%
+    &--backgound1
+      background url("/img/banner.jpg") no-repeat center
+      background-size cover
+  &__text-block
+    height 100%
+    flex-direction column
+  &__best
+    display block
+    font-family r_med
+    font-size 30px
+    color white
+    background-color c_orange
+    padding 10px
+    margin-bottom 25px
+  &__header
+    display block
+    font-family r_bold
+    font-size 90px
+    margin-bottom 15px
+    color white
+  &__header-sub
+    display block
+    font-family r_reg
+    font-size 22px
+    margin-bottom 45px
+    color white
+  &__text-big
+    display block
+    font-family r_bold
+    font-size 20px
+    color white
+    background-color c_orange
+    padding 5px
+    margin-bottom 15px
+  &__text
+    display block
+    font-family r_reg
+    font-size 15px
+    color white

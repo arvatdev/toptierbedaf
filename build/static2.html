@@ -12,37 +12,37 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="main">
+    <div id="wrapper">
       <header class="main-header">
         <div class="main-wrapper df-c h100p">
           <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
-          <article class="contacts df-cc">
-            <div class="contacts__image df-cc"><i class="material-icons">phone</i></div>
-            <div class="contacts__number"><span>+49 30 208 476 906</span></div>
-            <div class="contacts__time"><span>Mo - Fr 9:00 - 18:00 Uhr</span></div>
+          <article class="main-header__contacts df-cc">
+            <div class="main-header__contacts-image df-cc"><i class="material-icons">phone</i></div>
+            <div class="main-header__contacts-number"><span>+49 30 208 476 906</span></div>
+            <div class="main-header__contacts-time"><span>Mo - Fr 9:00 - 18:00 Uhr</span></div>
           </article>
-          <article class="account"><a class="account__image" href="#"></a></article>
-          <article class="wishlist"><a class="wishlist__image" href="#"></a></article>
-          <article class="cart"><a class="df-c" href="#">
-              <div class="cart__image"></div><span>€12.00</span></a></article>
+          <article class="main-header__account"><a class="main-header__account-image" href="#"></a></article>
+          <article class="main-header__wishlist"><a class="main-header__wishlist-image" href="#"></a></article>
+          <article class="main-header__cart"><a class="df-c" href="#">
+              <div class="main-header__cart-image"></div><span class="main-header__cart-price">€12.00</span></a></article>
         </div>
       </header>
       <nav class="main-navigation">
-        <div class="main-wrapper df-c h100p"><a class="sandwich df-cc" href="#"><i class="material-icons">menu</i></a>
-          <ul class="list df-c">
-            <li><a class="list__element" href="#">HUND</a></li>
-            <li><a class="list__element" href="#">KATZE</a></li>
-            <li><a class="list__element" href="#">VOGEL</a></li>
-            <li><a class="list__element" href="#">KLEINTIERE</a></li>
-            <li><a class="list__element" href="#">AQUARISTIK</a></li>
-            <li><a class="list__element" href="#">PFERD</a></li>
-            <li><a class="list__element" href="#">MARKEN</a></li>
-            <li><a class="list__element" href="#">TERRARISTIK</a></li>
+        <div class="main-wrapper df-c h100p"><a class="main-navigation__sandwich df-cc" href="#"><i class="main-navigation__sandwich-icon material-icons">menu</i></a>
+          <ul class="main-navigation__list df-c">
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">HUND</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">KATZE</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">VOGEL</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">KLEINTIERE</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">AQUARISTIK</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">PFERD</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">MARKEN</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">TERRARISTIK</a></li>
           </ul>
-          <article class="search"><a class="search__image" href="#"><i class="material-icons">search</i></a></article>
+          <article class="main-navigation__search"><a class="main-navigation__search-image" href="#"><i class="material-icons">search</i></a></article>
         </div>
       </nav>
-      <section class="main-body body--margin">
+      <main class="static2-page">
         <div class="main-wrapper">
           <article class="breadcrumbs">
             <ul class="breadcrumbs__list">
@@ -50,22 +50,22 @@
               <li><a href="#">Datenschutz</a></li>
             </ul>
           </article>
-          <article class="static-wrapper df--b dfw">
-            <h1 class="static-header"><span>DATENSCHUTZ</span></h1>
-            <div class="static-column">
-              <h3 class="main-block__header"><span>PERSONENBEZOGENE DATEN</span></h3>
-              <p class="static-column__text">
+          <article class="static__wrapper df--b dfw">
+            <h1 class="static__main-header"><span>DATENSCHUTZ</span></h1>
+            <div class="static__column">
+              <h3 class="static__column-header"><span>PERSONENBEZOGENE DATEN</span></h3>
+              <p class="static__column-text">
                 Unsere Datenschutzpraxis steht im Einklang mit dem Bundesdatenschutzgesetz (BDSG) sowie dem
                 Telemediengesetz (TMG).
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 Sie haben die Möglichkeit unsere Webseite Zoobio.de zu besuchen, ohne Angaben zu Ihrer Person machen
                 zu müssen. Gespeichert werden lediglich Zugriffsdaten ohne Personenbezug wie z.B. Name Ihres
                 Internet Providers, die Seite, von der aus Sie uns besuchen oder eventuell Namen der angeforderten
                 Dateien. Diese Daten werden ausschließlich und nur zur Verbesserung unseres Webangebotes verwendet
                 und erlauben keinerlei Rückschlüsse auf Ihre Person.
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 Personenbezogene Daten werden nur dann erhoben, wenn Sie uns diese im Verlauf Ihrer Warenbestellung
                 oder bei Registrierung für unseren Newsletter freiwillig preisgeben. Die von Ihnen an uns
                 übersandten Daten werden ohne Ihre gesonderte Einwilligung ausschließlich zur Erfüllung und
@@ -76,19 +76,19 @@
                 mitgeteilten Daten, um Ihnen den Newsletter zuzusenden. Diese Einwilligung können Sie jederzeit mit
                 Wirkung für die Zukunft widerrufen, indem Sie sich vom Newsletter abmelden.
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 Ohne Ihre ausdrückliche Zustimmung werden wir die Trackingtools nicht dazu benutzen, um unbemerkt:
                 persönliche Daten über Sie zu sammeln, solche Daten an Drittanbieter und Marketingplattformen zu
                 übermitteln und die Daten mit Ihren persönlichen Daten (Name, Adresse usw.) zu verknüpfen.
               </p>
-              <h3 class="main-block__header"><span>WEITERGABE PERSONENBEZOGENER DATEN</span></h3>
-              <p class="static-column__text">
+              <h3 class="static__column-header"><span>WEITERGABE PERSONENBEZOGENER DATEN</span></h3>
+              <p class="static__column-text">
                 Eine Weitergabe Ihrer Daten erfolgt an das mit der Lieferung beauftragte Versandunternehmen, soweit
                 dies zur Lieferung der Waren notwendig ist. Zur Abwicklung von Zahlungen geben wir Ihre notwendigen
                 Daten ausschließlich an das mit der Zahlung beauftragte Kreditinstitut weiter.
               </p>
-              <h3 class="main-block__header"><span>VERWENDUNG VON COOKIES</span></h3>
-              <p class="static-column__text">
+              <h3 class="static__column-header"><span>VERWENDUNG VON COOKIES</span></h3>
+              <p class="static__column-text">
                 Auf verschiedenen Seiten verwenden wir Cookies, um den Besuch unserer Webseite attraktiver zu
                 gestalten und die Nutzung bestimmter Funktionen möglich zu machen. Hierbei handelt es sich um kleine
                 Textdateien, die auf Ihrem Rechner abgelegt werden. Der Großteil der von uns verwendeten Cookies
@@ -105,8 +105,8 @@
                 verknüpft. Ohne Ihre ausdrückliche Zustimmung werden wir die in unseren Cookies gespeicherten Daten
                 nicht mit Ihren persönlichen Daten (Name, Adresse usw.) verknüpfen.
               </p>
-              <h3 class="main-block__header"><span>GOOGLE ANALYTICST</span></h3>
-              <p class="static-column__text">
+              <h3 class="static__column-header"><span>GOOGLE ANALYTICST</span></h3>
+              <p class="static__column-text">
                 „Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. („Google“). Google
                 Analytics verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer gespeichert werden und die
                 eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten
@@ -117,14 +117,14 @@
                 gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA
                 übertragen und dort gekürzt.
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung
                 der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit
                 der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem
                 Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte
                 IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt.
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software
                 verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche
                 Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die
@@ -134,9 +134,9 @@
                 http://tools.google.com/dlpage/gaoptout?hl=de
               </p>
             </div>
-            <div class="static-column">
-              <h3 class="main-block__header"><span>VERWENDUNG DER PERSONENBEZOGENEN DATEN BEI AUSWAHL VON KLARNA ALS ZAHLUNGSART</span></h3>
-              <p class="static-column__text">
+            <div class="static__column">
+              <h3 class="static__column-header"><span>VERWENDUNG DER PERSONENBEZOGENEN DATEN BEI AUSWAHL VON KLARNA ALS ZAHLUNGSART</span></h3>
+              <p class="static__column-text">
                 Wenn Sie sich für Klarnas Zahlungsdienstleistungen Klarna Rechnung und Klarna Ratenkauf als
                 Zahlungsoption entschieden haben, haben Sie eingewilligt, dass wir die für die Abwicklung des
                 Rechnungskaufes und einer Identitäts und Bonitätsprüfung notwendigen, folgenden personenbezogenen
@@ -151,15 +151,15 @@
                 Bonitätsprüfung Auskunft einzuholen. In Deutschland können dies die folgenden
                 Wirtschaftsauskunfteien sein:
               </p>
-              <p class="static-column__text">Bürgel Wirtschaftsinformationen GmbH & Co. KG, Postfach 5001 66, 22701 Hamburg</p>
-              <p class="static-column__text">Creditreform Boniversum GmbH, Hellersbergstraße 11 41460 Neuss</p>
-              <p class="static-column__text">Deltavista GmbH, Freisinger Landstr. 74 80939 München</p>
-              <p class="static-column__text">
+              <p class="static__column-text">Bürgel Wirtschaftsinformationen GmbH & Co. KG, Postfach 5001 66, 22701 Hamburg</p>
+              <p class="static__column-text">Creditreform Boniversum GmbH, Hellersbergstraße 11 41460 Neuss</p>
+              <p class="static__column-text">Deltavista GmbH, Freisinger Landstr. 74 80939 München</p>
+              <p class="static__column-text">
                 Arvato Infoscore Consumer Data GmbH and Infoscore Consumer Data GmbH, Rheinstraße 99, 76532
                 Baden-Baden
               </p>
-              <p class="static-column__text">SCHUFA Holding AG, Kormoranweg 5, 65201 Wiesbaden</p>
-              <p class="static-column__text">
+              <p class="static__column-text">SCHUFA Holding AG, Kormoranweg 5, 65201 Wiesbaden</p>
+              <p class="static__column-text">
                 Im Rahmen der Entscheidung über die Begründung, Durchführung oder Beendigung des vertraglichen
                 Verhältnisses erhebt und nutzt Klarna abgesehen von einer Adressprüfung auch Informationen zu dem
                 bisherigen Zahlungsverhalten des Käufers sowie Wahrscheinlichkeitswerte zu diesem Verhalten in der
@@ -168,103 +168,103 @@
                 Ihre Adressdaten benutzen. Sollte sich nach dieser Berechnung zeigen, dass Ihre Kreditwürdigkeit
                 nicht gegeben ist, wird Klarna Sie hierüber umgehend informieren.
               </p>
-              <p class="static-column__text">Widerruf der Verwendung von personenbezogenen Daten gegenüber Klarna:</p>
-              <p class="static-column__text">
+              <p class="static__column-text">Widerruf der Verwendung von personenbezogenen Daten gegenüber Klarna:</p>
+              <p class="static__column-text">
                 1. Sie können Ihre Einwilligung zur Verwendung der personenbezogenen Daten jederzeit gegenüber
                 Klarna widerrufen. Jedoch bleibt Klarna gegebenenfalls weiterhin dazu berechtigt, die
                 personenbezogenen Daten zu verarbeiten, zu nutzen und zu übermitteln, insofern dies zur
                 vertragsmäßigen Zahlungsabwicklung durch Klarnas Dienste notwendig ist, rechtlich vorgeschrieben
                 ist, oder von einem Gericht oder einer Behörde gefordert wird.
               </p>
-              <p class="static-column__text">
+              <p class="static__column-text">
                 2. Selbstverständlich können Sie jederzeit Auskunft über die von Klarna gespeicherten
                 personenbezogenen Daten erhalten. Dieses Recht garantiert das Bundesdatenschutzgesetz. Sollten Sie
                 als Käufer dies wünschen oder Klarna Änderungen bezüglich der gespeicherten Daten mitteilen wollen,
                 so können Sie sich an Datenschutz@klarna.de wenden.
               </p>
-              <h3 class="main-block__header"><span>DATENSICHERHEIT</span></h3>
-              <p class="static-column__text">
+              <h3 class="static__column-header"><span>DATENSICHERHEIT</span></h3>
+              <p class="static__column-text">
                 Ihre personenbezogenen Daten werden nicht nur bei der Registrierung und im persönlich angelegten
                 Profil, sondern auch im gesamten Bereich des Warenkorbs verschlüsselt mittels SSL v3, SHA-1, With
                 RSA Encryption, RSA mit 1024 Bit über das Internet übertragen. Wir sichern unsere Webseite und
                 sonstigen Systeme durch technische und organisatorische Maßnahmen gegen Verlust, Zerstörung,
                 Zugriff, Veränderung oder Verbreitung Ihrer Daten durch unbefugte Personen.
               </p>
-              <h3 class="main-block__header"><span>SPEICHERUNG DES VERTRAGSTEXTES</span></h3>
-              <p class="static-column__text">
+              <h3 class="static__column-header"><span>SPEICHERUNG DES VERTRAGSTEXTES</span></h3>
+              <p class="static__column-text">
                 Wir speichern den Vertragstext und senden Ihnen die Bestelldaten sowie unsere AGB per E-Mail zu.
                 Die AGB können Sie jederzeit auch hier einsehen. Ihre vergangenen und aktuellen Bestellungen können
                 Sie in unserem Kunden LogIn-Bereich jederzeit einsehen.
               </p>
-              <h3 class="main-block__header"><span>AUSKUNFT, KORREKTUR UND LÖSCHUNG VON DATEN</span></h3>
-              <p class="static-column__text">
+              <h3 class="static__column-header"><span>AUSKUNFT, KORREKTUR UND LÖSCHUNG VON DATEN</span></h3>
+              <p class="static__column-text">
                 Im Rahmen des Bundesdatenschutzgesetzes haben Sie jederzeit ein Recht auf Auskunft, Korrektur oder
                 Löschung Ihrer gespeicherten Daten. Sofern der Löschung gesetzliche, vertragliche, handels- bzw.
                 steuerrechtliche Aufbewahrungsfristen oder Gründe entgegenstehen, erfolgt anstelle einer Löschung
                 eine Sperrung Ihrer Daten. Kontaktieren Sie uns unter:
               </p>
-              <p class="static-column__text">Zoobio GmbH</p>
-              <p class="static-column__text">Josef-Orlopp-Straße 55</p>
-              <p class="static-column__text">10365 Berlin</p>
-              <h3 class="main-block__header"><span>WIDERRUF VON EINWILLIGUNGEN</span></h3>
-              <p class="static-column__text">
+              <p class="static__column-text">Zoobio GmbH</p>
+              <p class="static__column-text">Josef-Orlopp-Straße 55</p>
+              <p class="static__column-text">10365 Berlin</p>
+              <h3 class="static__column-header"><span>WIDERRUF VON EINWILLIGUNGEN</span></h3>
+              <p class="static__column-text">
                 Die nachstehende Einwilligung haben Sie ggf. ausdrücklich erteilt. Wir möchten Sie darauf hinweisen,
                 dass Sie Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen können.
               </p>
             </div>
           </article>
         </div>
-      </section>
+      </main>
       <footer class="footer">
         <div class="main-wrapper df">
           <article class="footer__column">
-            <h3 class="header"><span>KUNDENSERVICE</span></h3>
-            <ul class="list">
-              <li><a class="list__element" href="#">Registrieren</a></li>
-              <li><a class="list__element" href="#">Kontakt</a></li>
-              <li><a class="list__element" href="#">Versand</a></li>
-              <li><a class="list__element" href="#">Zahlung</a></li>
-              <li><a class="list__element" href="#">Widerruf</a></li>
-              <li><a class="list__element" href="#">FAQ</a></li>
+            <h3 class="footer__header"><span>KUNDENSERVICE</span></h3>
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#">Registrieren</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Kontakt</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Versand</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Zahlung</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Widerruf</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">FAQ</a></li>
             </ul>
           </article>
           <article class="footer__column">
-            <h3 class="header"><span>ÜBER ZOOBOOM</span></h3>
-            <ul class="list">
-              <li><a class="list__element" href="#">Impressum</a></li>
-              <li><a class="list__element" href="#">AGB</a></li>
-              <li><a class="list__element" href="#">Datenschutz</a></li>
-              <li><a class="list__element" href="#">Newsletter</a></li>
-              <li><a class="list__element" href="#">Blog</a></li>
-              <li><a class="list__element" href="#">Partnerprogramm</a></li>
+            <h3 class="footer__header"><span>ÜBER ZOOBOOM</span></h3>
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#">Impressum</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">AGB</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Datenschutz</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Newsletter</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Blog</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Partnerprogramm</a></li>
             </ul>
           </article>
           <article class="footer__column">
-            <h3 class="header"><span>SICHER EINKAUFEN</span></h3>
-            <ul class="list marked">
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Schneller Versand</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Käuferschutz</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Datenschutz</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Sichere Zahlung mit SSL-Ver­schlüs­se­lung</a></li>
-              <li><i class="material-icons">done</i><a class="list__element" href="#">Günstige Preise</a></li>
+            <h3 class="footer__header"><span>SICHER EINKAUFEN</span></h3>
+            <ul class="footer__list">
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Schneller Versand</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Käuferschutz</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Datenschutz</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Sichere Zahlung mit SSL-Ver­schlüs­se­lung</a></li>
+              <li class="footer__item footer__item--marked"><i class="material-icons">done</i><a class="footer__link" href="#">Günstige Preise</a></li>
             </ul>
           </article>
-          <article class="footer__label-column"><a class="logo" href="#"><img class="image" src="/img/logo-white.png" alt="#"></a>
-            <h3 class="header"><span>Folge auf</span></h3>
-            <ul class="social">
-              <li><a class="social__element df-cc" href="#"><img class="image" src="/img/facebook.png" alt="#"></a></li>
-              <li><a class="social__element df-cc" href="#"><img class="image" src="/img/twitter.png" alt="#"></a></li>
-              <li><a class="social__element df-cc" href="#"><img class="image" src="/img/linked-in.png" alt="#"></a></li>
+          <article class="footer__label-column"><a class="footer__logo" href="#"><img class="image" src="/img/logo-white.png" alt="#"></a>
+            <h3 class="footer__header"><span>Folge auf</span></h3>
+            <ul class="footer__social">
+              <li class="footer__social-item"><a class="footer__social-link df-cc" href="#"><img class="image" src="/img/facebook.png" alt="#"></a></li>
+              <li class="footer__social-item"><a class="footer__social-link df-cc" href="#"><img class="image" src="/img/twitter.png" alt="#"></a></li>
+              <li class="footer__social-item"><a class="footer__social-link df-cc" href="#"><img class="image" src="/img/linked-in.png" alt="#"></a></li>
             </ul>
-            <div class="delivery df-c"><a class="delivery__element df-cc" href="#"><img class="image" src="/img/dhl.png" alt="#"></a><a class="delivery__element df-cc" href="#"><img class="image" src="/img/dhl-pack.png" alt="#"></a></div>
+            <div class="footer__delivery df-c"><a class="footer__delivery-element df-cc" href="#"><img class="image" src="/img/dhl.png" alt="#"></a><a class="footer__delivery-element df-cc" href="#"><img class="image" src="/img/dhl-pack.png" alt="#"></a></div>
           </article>
         </div>
       </footer>
-      <section class="footer-info">
+      <section class="footer__info">
         <div class="main-wrapper h100p df-c">
-          <article class="language df-c"><span>Sprache</span><img class="image" src="/img/flags/deu.png" alt="#"></article>
-          <article class="information"><span>© 2016, Haustierbedarf Zoobio Online Shop für Tierbedarf & Tierfutter</span></article>
-          <article class="payment-links df-c"><a class="payment-links__image" href="#"><img class="image" src="/img/visa.png" alt="#"></a><a class="payment-links__image" href="#"><img class="image" src="/img/mastercard.png" alt="#"></a><a class="payment-links__image" href="#"><img class="image" src="/img/paypal.png" alt="#"></a></article>
+          <article class="footer__language df-c"><span>Sprache</span><img class="footer__language-image image" src="/img/flags/deu.png" alt="#"></article>
+          <article class="footer__information"><span>© 2016, Haustierbedarf Zoobio Online Shop für Tierbedarf & Tierfutter</span></article>
+          <article class="footer__payment-links df-c"><a class="footer__payment-image" href="#"><img class="image" src="/img/visa.png" alt="#"></a><a class="footer__payment-image" href="#"><img class="image" src="/img/mastercard.png" alt="#"></a><a class="footer__payment-image" href="#"><img class="image" src="/img/paypal.png" alt="#"></a></article>
         </div>
       </section>
     </div>
