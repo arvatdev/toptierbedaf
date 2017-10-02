@@ -11,7 +11,7 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="main">
+    <div id="wrapper">
       <header class="main-header">
         <div class="main-wrapper df-c h100p">
           <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
@@ -41,31 +41,29 @@
           <article class="main-navigation__search"><a class="main-navigation__search-image" href="#"><i class="material-icons">search</i></a></article>
         </div>
       </nav>
-      <section class="main-body body--margin">
+      <main class="pass1-page">
         <div class="main-wrapper">
           <article class="breadcrumbs">
             <ul class="breadcrumbs__list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Passwort-wiederherstellung</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Home</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Passwort-wiederherstellung</a></li>
             </ul>
           </article>
           <article class="progress-bar">
             <h1 class="progress-bar__header"><span>PASSWORT-WIEDERHERSTELLUNG</span></h1>
           </article>
-          <article class="form-block form-block--center df">
-            <div class="form-block__element form-block__element--full-width">
-              <form class="forms">
-                <label class="forms__label" for="email"><span>E-Mail-Adresse</span></label>
-                <input class="forms__input" type="email" id="email">
-              </form>
-              <p class="form-block__caption">Wir senden Ihnen eine Bestätigungsmail. Klicken Sie auf den darin enthaltenen Link, um Ihr Passwort zu ändern.</p>
-              <div class="social social--center df-cb">
-                <button class="big-orange-btn" type="button">Senden</button>
-              </div>
+          <form class="pass-form">
+            <div class="pass-form__wrapper">
+              <label class="pass-form__label" for="email"><span>E-Mail-Adresse</span></label>
+              <input class="pass-form__input" type="email" id="email">
             </div>
-          </article>
+            <p class="pass-form__caption">Wir senden Ihnen eine Bestätigungsmail. Klicken Sie auf den darin enthaltenen Link, um Ihr Passwort zu ändern.</p>
+            <div class="pass-form__button df">
+              <button class="big-orange-btn" type="submit">Senden</button>
+            </div>
+          </form>
         </div>
-      </section>
+      </main>
       <footer class="footer">
         <div class="main-wrapper df">
           <article class="footer__column">

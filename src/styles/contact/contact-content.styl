@@ -1,0 +1,229 @@
+.progress-bar
+  margin 55px 0 0 0
+  width 100%
+  &__wrapper
+    margin 0px auto 40px
+    width 842px
+  &__header
+    width 100%
+    text-align center
+    font-family r_med
+    text-transform uppercase
+    font-size 24px
+    margin-bottom 40px
+  &__description
+    width 100%
+    flex-wrap wrap
+    font-size 16px
+    line-height 20px
+  &__callback
+    width 67%
+    margin-right 5%
+  &__address
+    width 28%
+  &__legend
+    padding 10px 0px 18px
+    position relative
+    font-weight 400
+    text-transform uppercase
+    font-size 18px
+    &::before
+      content ''
+      position absolute
+      left 0px
+      top -5px
+      width 46px
+      height 3px
+      background-color #f95318
+  &__element
+    height 100%
+    position relative
+    &:last-of-type
+      .progress-bar__element-sub
+        border-right none
+    &-sub
+      height 70%
+      padding 0 50px
+      text-align center
+      color white
+      font-size 18px
+      font-family r_reg
+      border-right 1px solid white
+    &-number
+      min-height 30px
+      min-width 30px
+      height 30px
+      width 30px
+      border-radius 50%
+      background-color white
+      color c_orange
+      font-family r_bold
+      font-size 18px
+      margin 10px 10px 10px 0
+    .active-border
+      height 63px
+      width 63px
+      position absolute
+      margin auto
+      top 0
+      bottom 0
+      right -31px
+      border-left 7px solid white
+      border-bottom 7px solid white
+      background-color c_orange
+      transform rotateY(220deg) rotate(45deg)
+.contact-form
+  box-sizing border-box
+  width 842px
+  margin 0 auto
+  margin-bottom 100px
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  align-items flex-start
+  background-color #ffffff
+  border 1px solid c_lgray
+  padding 35px
+  &__sex
+    margin-bottom 0
+    margin-top 30px
+    flex-wrap wrap
+    &-header
+      font-family r_reg
+      font-size 16px
+      margin-right 20px
+      display inline-block
+    .label
+      font-family r_reg
+      font-size 16px
+      margin-right 15px
+      position relative
+      padding-left 20px
+      &::before
+        position absolute
+        top 0
+        left 0
+        content ''
+        display block
+        width 12px
+        height 12px
+        border-radius 50%
+        background-color transparent
+        border 1px solid transparent
+        box-shadow 0px 0px 0px 1px c_orange
+    .input
+      display none
+      &:checked+label::after
+        position absolute
+        top 2px
+        left 2px
+        content ''
+        display block
+        width 10px
+        height 10px
+        border-radius 50%
+        background-color c_orange
+  &__half
+    width 362px
+  &__label
+    display flex
+    align-items center
+    justify-content space-between
+    font-family r_reg
+    font-size 16px
+    margin 0 5px 5px 5px
+    width 100%
+    box-sizing border-box
+    &-info
+      font-family r_reg
+      font-size 10px
+      color c_gray
+  &__input
+    width 100%
+    height 35px
+    padding 0 20px
+    box-sizing border-box
+    margin-bottom 15px
+    font-family r_reg
+    font-size 16px
+    border-radius 2px
+    border none
+    &--gray
+      background-color c_lgray
+    &--border
+      background-color transparent
+      border 1px solid c_lgray
+  &__link
+    font-family r_reg
+    font-size 14px
+    text-decoration underline
+    margin-left 5px
+  &__info
+    width 100%
+    color c_gray
+    line-height 18px
+    font-family r_reg
+    font-size 12px
+  &__caption
+    color #949494
+    font-size 12px
+    width 100%
+    margin-bottom 30px
+    padding 0
+  &__info-mark
+    margin-bottom 25px
+    font-family r_reg
+    font-size 12px
+    color #777
+    width 100%
+    .label
+      font-family r_reg
+      font-size 14px
+      margin-right auto
+      color c_black
+      max-width 90%
+      padding-left 25px
+      box-sizing border-box
+      position relative
+      display inline-block
+      &:before
+        content ''
+        position absolute
+        left 0
+        top 0
+        width 13px
+        height 13px
+        box-sizing border-box
+        border-radius 2px
+        outline none
+        border 1px solid c_orange
+        display inline-block
+        vertical-align middle
+    .input
+      display none
+      &:checked+label::before
+        background-color c_orange
+      &:checked+label::after
+        position absolute
+        top 1px
+        left 1px
+        width 13px
+        height 13px
+        font-size 14px
+        line-height 13px
+        content '✓'
+        color white
+  &__textarea
+    width 100%
+    height 222px
+    background-color c_lgray
+    margin 10px 0 30px
+    padding 20px
+    box-sizing border-box
+    border 0
+    &--border
+      height 110px
+      background-color transparent
+      border 1px solid c_lgray
+  &__submit-block
+    width 100%
