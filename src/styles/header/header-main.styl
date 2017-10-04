@@ -2,7 +2,7 @@
   width 1100px
   margin 0 auto
   padding 0 10px
-.main-header
+.header-main
   position fixed
   top 0
   left 0
@@ -18,7 +18,7 @@
       border 1px solid c_lgray
       border-radius 50%
       color c_orange
-      & i
+      & .material-icons
         font-size 20px
     &-number
       font-size 14px
@@ -59,11 +59,10 @@
       font-family r_bold
       transition all .2s ease
     &:hover
-      & .main-header__cart-image
+      & .header-main__cart-image
         background url("/img/cart-active.svg") no-repeat center center
-      & .main-header__cart-price
+      & .header-main__cart-price
         color c_orange
-
 .account-popup
   position relative
   &__block
@@ -101,7 +100,6 @@
     margin-left 10px
     position relative
     top -2px
-
 .account-login
   &__form
     padding 23px

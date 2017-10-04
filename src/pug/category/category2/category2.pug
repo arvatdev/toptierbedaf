@@ -1,51 +1,12 @@
-//- aside.aside-block
-//-     h3.aside-block__header
-//-         span HUNDESHOP
-//-     ul.aside-block__navigation
-//-         li.aside-block__navigation-element
-//-             a(href="#") Hundefutter
-//-         li.aside-block__navigation-element
-//-             a(href="#") Hundeboxen & Autozubehör
-//-         li.aside-block__navigation-element
-//-             a(href="#") Hundeschlafplatz
-//-         li.aside-block__navigation-element
-//-             a(href="#") Training & Hundesportartikel
-//-         li.aside-block__navigation-element
-//-             a(href="#") Leinen & Halsbänder
-//-         li.aside-block__navigation-element.aside-block__navigation-element--active Hundespielzeug
-//-           ul.aside-block__sub-navigation
-//-             li.aside-block__sub-navigation-element.aside-block__sub-navigation-element--active
-//-               a(href="#") Hunde Quietschies
-//-             li.aside-block__sub-navigation-element
-//-               a(href="#") Schwimmspielzeug
-//-             li.aside-block__sub-navigation-element
-//-               a(href="#") Intelligenzspielzeug
-//-             li.aside-block__sub-navigation-element
-//-               a(href="#") Bälle & Ringe
-//-             li.aside-block__sub-navigation-element
-//-               a(href="#") Hundefrisbees
-//-             li.aside-block__sub-navigation-element
-//-               a(href="#") Kauspielzeug
-//-             li.aside-block__sub-navigation-element
-//-               a(href="#") Kuscheltiere
-//-             li.aside-block__sub-navigation-element
-//-               a(href="#") Welpenspielzeug
-//-         li.aside-block__navigation-element
-//-             a(href="#") Napf & Tränke
-//-         li.aside-block__navigation-element
-//-             a(href="#") Hundepflege & Hygiene
-//-         li.aside-block__navigation-element
-//-             a(href="#") Hundehütte & Freilauf
-//-         li.aside-block__navigation-element
-//-             a(href="#") Hundebekleidung
-//-         li.aside-block__navigation-element
-//-             a(href="#") Junge Hunde & Welpenartikel
 section.main-block
     article.breadcrumbs
         ul.breadcrumbs__list
-            li.breadcrumbs__item: a(href="#").breadcrumbs__link Hundeprodukte
-            li.breadcrumbs__item: a(href="#").breadcrumbs__link Hundespielzeuge
-            li.breadcrumbs__item: a(href="#").breadcrumbs__link Quietschies für Hunde
+            li.breadcrumbs__item
+                a(href="#").breadcrumbs__link Hundeprodukte
+            li.breadcrumbs__item
+                a(href="#").breadcrumbs__link Hundespielzeuge
+            li.breadcrumbs__item
+                a(href="#").breadcrumbs__link Quietschies für Hunde
     article.oshop-block
         h3.oshop-block__header
             span Hunde Quietschies
@@ -110,7 +71,7 @@ section.main-block
           input(class="input" type="checkbox" id="stock" name="stock")
           label(for="stock").column__label
               span auf Lager
-    article.products-main.dfw
+    section.products-main.dfw
         .products-main__content.df
             ul.products-main__list.df--b.dfw
                 li.products-main__element.df
@@ -329,7 +290,7 @@ section.main-block
                 li.products-main__element.df
                     .products-main__element-visible
                         .natural-corner.corner
-                          span NATURAL
+                          span.natural-corner__text NATURAL
                         .products-main__element-image.df-cc.df-cc
                             img(src="/img/product4.png" alt="#").image
                         .products-main__element-text

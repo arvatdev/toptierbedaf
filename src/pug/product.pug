@@ -2,9 +2,9 @@ extends template
 
 block content
     #wrapper
-        include include/header
-        include include/navigation
+        include header/header-base
+        include navigation/navigation
         main.product-page
-            .main-wrapper
+            section.main-wrapper
                 include product/product-content
-        include include/footer
+        include footer/footer-base

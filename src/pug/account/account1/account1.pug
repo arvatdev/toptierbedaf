@@ -12,13 +12,13 @@ aside.account-menu
             a(href="#").account-menu__link Zuletzt gesehene  Artikel
         li.account-menu__item
             a(href="#").account-menu__link Wunschliste
-.account__main-content.df-cb.dfw
+section.account__main-content.df-cb.dfw
     h1.account__header
         span MEIN KONTO
     article.account__ordering-block
         h2.account__sub-header
             span Zuletzt gesehene Artikel
-        .account-recent
+        section.account-recent
             table.account-recent__table
                 tr.account-recent__content
                     td.account-recent__image.t-ac
@@ -61,7 +61,7 @@ aside.account-menu
     article.account__ordering-block.account__ordering-block--half
         h2.account__sub-header
             span Lieferadresse
-        .delivery
+        section.delivery
             .delivery__wrapper
                 ul.delivery__list
                     li.delivery__item
@@ -84,10 +84,10 @@ aside.account-menu
                             span.delivery__btn Wahlen
             .account__ordering-footer.df
                 a(href="#").account__show-all Alles anzeigen
-    article.account__ordering-block.account__ordering-block--half
+    section.account__ordering-block.account__ordering-block--half
         h2.account__sub-header
             span Bestellungen verwalten
-        .order-details
+        section.order-details
             .order-details__wrapper
                 .order-details__item
                     b.order-details__name Bestellung stornieren:
@@ -109,8 +109,8 @@ aside.account-menu
     article.account__ordering-block
         h2.account__sub-header
             span Lieferadresse
-        .payment
-            article.payment__account-wrapper
+        section.payment
+            .payment__account-wrapper
                 ul.payment__list
                     li.payment__element
                         .payment__wrapper.df-cb 

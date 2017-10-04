@@ -1,8 +1,10 @@
 section.main-block
     article.breadcrumbs
         ul.breadcrumbs__list
-            li.breadcrumbs__item: a(href="#").breadcrumbs__link Home
-            li.breadcrumbs__item: a(href="#").breadcrumbs__link Hund
+            li.breadcrumbs__item
+                a(href="#").breadcrumbs__link Home
+            li.breadcrumbs__item
+                a(href="#").breadcrumbs__link Hund
     article.oshop-block
         h3.oshop-block__header
             span HUNDEBEDARF & ZUBEHÖR ONLINE SHOP
@@ -91,8 +93,8 @@ section.main-block
             li
                 a(href="#").market-brands__element.df-cc
                     img(src="/img/market-brands5.jpg" alt="#").image
-    article.main-block__separator
-    article.products-main.dfw
+    .main-block__separator
+    section.products-main.dfw
         .products-main__prev.df-cc
             i.material-icons keyboard_arrow_left
         .products-main__next.df-cc
@@ -287,7 +289,7 @@ section.main-block
                 li.products-main__element.df
                     .products-main__element-visible
                         .natural-corner.corner
-                          span NATURAL
+                          span.natural-corner__text NATURAL
                         .products-main__element-image.df-cc.df-cc
                             img(src="/img/product4.png" alt="#").image
                         .products-main__element-text

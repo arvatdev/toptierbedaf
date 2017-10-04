@@ -1,10 +1,12 @@
 article.breadcrumbs
     ul.breadcrumbs__list
-        li.breadcrumbs__item: a(href="#").breadcrumbs__link Home
-        li.breadcrumbs__item: a(href="#").breadcrumbs__link Newsletter
+        li.breadcrumbs__item
+            a(href="#").breadcrumbs__link Home
+        li.breadcrumbs__item
+            a(href="#").breadcrumbs__link Newsletter
 article.static__wrapper.df--b.dfw
     h1.static__main-header
-        span NEWSLETTER
+        span.new-corner__text NEWSLETTER
     .static__main-text
         p.
             Abonnieren Sie unseren kostenlosen Newsletter! Lassen Sie sich über Neuheiten, attraktive Angebote
@@ -13,7 +15,7 @@ article.static__wrapper.df--b.dfw
             Passen Sie den Newsletter für sich an und wählen Sie die Newsletter-Kategorien für die Sie sich
             interessieren.
 article.main-form
-    .main-form__columns.df
+    form.main-form__columns.df
         .column
             label(for="email").column__label
                 span E-Mail-Adresse*
@@ -37,7 +39,7 @@ article.main-form
                 span Nachname*
             input(type="text" id="nachname").column__input
 article.static__wrapper-small
-    h3.static__column-header
+    h2.static__column-header
         span INTERESSENGEBIETE:
     .static__wrapper-small__choice.df.dfw
         .main-form__info-mark.df

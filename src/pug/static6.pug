@@ -2,9 +2,9 @@ extends template
 
 block content
     #wrapper
-        include include/header
-        include include/navigation
+        include header/header-base
+        include navigation/navigation
         main.static6-page
-            .main-wrapper
+            section.main-wrapper
                 include static/static6/static6
-        include include/footer
+        include footer/footer-base

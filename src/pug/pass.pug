@@ -2,9 +2,9 @@ extends template
 
 block content
     #wrapper
-        include include/header
-        include include/navigation
+        include header/header-base
+        include navigation/navigation
         main.pass-page
-            .main-wrapper
-                include pass/pass/pass
-        include include/footer
+            section.main-wrapper
+                include auth/pass/pass/pass
+        include footer/footer-base

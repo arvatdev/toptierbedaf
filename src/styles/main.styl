@@ -1,27 +1,18 @@
-/***************************************************************
-***
-***    CORE STYLES
-***
-***************************************************************/
+//@import 'nib'
 
-// NIB - lib for Stylus. Add prefixes and many other things.
-@import 'nib'
-
+// COMMON
 @import "include/variables"
 @import "mixins/reset"
 @import "mixins/sprites"
 @import "mixins/base"
 @import "mixins/breadcrumbs"
 
-/***************************************************************
-***
-***    STYLES FOR TEMPLATES
-***
-***************************************************************/
+// INCLUDES AND INDEX DIRS
 @import "include/modifiers"
-@import "header/header-base"
-@import "footer/footer-base"
-@import "navigation/navigation"
+@import "include/addons"
+@import "header/header-main"
+@import "footer/footer-main"
+@import "navigation/navigation-main"
 @import "index/index-main"
 @import "search/search-main"
 @import "brand/brand-main"
@@ -43,14 +34,12 @@
 @import "category/category1/category1-main"
 @import "category/category2/category2-main"
 @import "category/category3/category3-main"
-@import "include/addons"
-// @import "include/common"
 @import "product/product-main"
 @import "catalog/catalog-main"
 @import "contact/contact-main"
-@import "pass/pass/pass-main"
-@import "pass/pass1/pass1-main"
-@import "registration/registration-main"
+@import "auth/pass/pass/pass-main"
+@import "auth/pass/pass1/pass1-main"
+@import "auth/registration/registration-main"
 @import "account/account1/account1-main"
 @import "account/account2/account2-main"
 @import "account/account2-payment/account2-payment-main"

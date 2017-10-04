@@ -109,9 +109,9 @@ $(document).ready(function () {
         $(this).find('.faq-drop__arrow').toggleClass('faq-drop__arrow-active')
     })
 
-    //--------------------------
-    // Cards
-    //--------------------------
+//--------------------------
+// Cards
+//--------------------------
 
     //change card-views to blocks
     $(".filter__button--cards").addClass("filter__button--active");
@@ -129,9 +129,9 @@ $(document).ready(function () {
       $(".products-main__element").removeClass("products-main__element--list");
     });
 
-    //--------------------------
-    // Slider
-    //--------------------------
+// --------------------------
+// Slider
+// --------------------------
     $('.product-slider__list').slick({
       nextArrow: '<button type="button" class="slick-next product-slider__next"><i class="material-icons">keyboard_arrow_right</i></button>',
       prevArrow: '<button type="button" class="slick-prev product-slider__prev"><i class="material-icons">keyboard_arrow_left</i></button>',
@@ -152,7 +152,9 @@ $(document).ready(function () {
       slideMargin:0
     });
 
-
+// --------------------------
+// Account-page accordion
+// --------------------------
     var allPanels = $('.account-accordion__content').hide();
     $('.account-accordion__btn').click(function() {
       $(this).toggleClass('account-accordion__btn--active');
@@ -160,8 +162,9 @@ $(document).ready(function () {
       return false;
     });
 
-
-
+// --------------------------
+// Product-page tabs
+// --------------------------
     var tabs = document.querySelectorAll('[data-tablink]');
     if (tabs && tabs.length > 0) {
       [].forEach.call(tabs, function(tab) {
