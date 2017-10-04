@@ -11,7 +11,7 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="main">
+    <div id="wrapper">
       <header class="main-header">
         <div class="main-wrapper df-c h100p">
           <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
@@ -41,112 +41,114 @@
           <article class="main-navigation__search"><a class="main-navigation__search-image" href="#"><i class="material-icons">search</i></a></article>
         </div>
       </nav>
-      <section class="main-body body--margin">
+      <main class="account3-page">
         <div class="main-wrapper">
-          <div class="account-page df">
-            <aside class="account-menu">
-              <ul class="account-menu__list">
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Bestellungen  verwalten</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Zahlungsart</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Lieferadresse</a></li>
-                <li class="account-menu__item"><a class="account-menu__link account-menu__link--active" href="#">Meine Daten</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Zuletzt gesehene  Artikel</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Wunschliste</a></li>
-              </ul>
-            </aside>
-            <div class="account-main-content account-main-content--full-width">
-              <h1 class="account__header"><span>MEIN KONTO</span></h1>
-              <article class="account__ordering-block">
-                <h2 class="title-with-stripe"><span>Lieferadresse</span></h2>
-                <div class="account__form-table">
-                  <div class="account__block-header"><span>Bearbeiten</span></div>
-                  <div class="delivery account__wrapper">
-                    <ul class="delivery__list">
-                      <li class="delivery__item">
-                        <label class="delivery__label df-cb" for="address1">
-                          <div class="delivery__left-block df-cb">
-                            <input class="input-radio-red" type="radio" name="address" id="address1">
-                            <label class="label-for-radio" for="address1"></label>
-                            <div class="delivery__address">
-                              <p class="text">Asfesdfg, 21.<br>Portugal fsd, 1000-001 </p>
-                            </div>
-                          </div>
-                          <div class="delivery__right-block df-cb"><span class="delivery__btn">Wahlen</span><a href="#"><i class="material-icons">close</i></a></div>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </article>
-              <div class="form-block__element form-block__element--full-width">
-                <div class="forms forms--transparent-wide">
-                  <div class="main-form__columns df dfw">
-                    <div class="column">
-                      <div class="main-form__sex main-form__sex--column df-c"><span class="header">Anrede*</span>
-                        <input class="input" type="radio" name="sex" id="sex1">
-                        <label class="label" for="sex1"><span>Herr</span></label>
-                        <input class="input" type="radio" name="sex" id="sex2">
-                        <label class="label" for="sex2"><span>Frau</span></label>
-                        <input class="input" type="radio" name="sex" id="sex3">
-                        <label class="label" for="sex3"><span>Firma</span></label>
-                      </div>
-                      <label class="column__label" for="vorname"><span>Vorname*</span></label>
-                      <input class="forms__input forms__input--gray" type="text" id="vorname">
-                      <label class="column__label" for="nachname"><span>Nachname*</span></label>
-                      <input class="forms__input forms__input--gray" type="text" id="nachname">
-                      <label class="column__label" for="firma"><span>Firma*</span></label>
-                      <input class="forms__input forms__input--gray" type="text" id="firma">
-                      <label class="column__label" for="ust"><span>USt-IdNr.*</span></label>
-                      <div class="select-wrapper df">
-                        <select class="js-cart-select2">
-                          <option></option>
-                          <option></option>
-                          <option><span><img class="image" src="/img/flags/deu.png"></span></option>
-                        </select>
-                        <input class="column__input-small forms__input--gray" type="text" id="telefon">
-                      </div>
-                      <label class="column__label" for="strabe"><span>Straße*</span></label>
-                      <input class="forms__input forms__input--gray" type="text" id="strabe">
-                    </div>
-                    <div class="column">
-                      <label class="column__label" for="adresszusatz"><span>Adresszusatz</span></label>
-                      <input class="forms__input forms__input--gray" type="text" id="adresszusatz">
-                      <label class="column__label" for="hausnummer"><span>Hausnr.*</span></label>
-                      <input class="forms__input forms__input--gray" type="text" id="hausnummer">
-                      <label class="column__label" for="postleitzahl"><span>Postleitzahl*</span></label>
-                      <input class="forms__input forms__input--gray" type="text" id="postleitzahl">
-                      <label class="column__label" for="stadt"><span>Stadt*</span></label>
-                      <input class="forms__input forms__input--gray" type="text" id="stadt">
-                      <label class="column__label" for="land"><span>Land*</span></label>
-                      <select class="column__select column__select--gray js-cart-select">
-                        <option>Deutschland</option>
-                        <option>Ukraine</option>
-                        <option>Something</option>
-                      </select>
-                      <label class="column__label w100p" for="telefon"><span>Telefon*</span></label>
-                      <div class="select-wrapper df">
-                        <select class="js-cart-select3">
-                          <option></option>
-                          <option></option>
-                          <option><span><img class="image" src="/img/flags/deu.png"></span></option>
-                        </select>
-                        <div class="column__input-pre df-cc"><span>+049</span></div>
-                        <input class="column__input-small forms__input--gray" type="text" id="telefon">
-                      </div>
-                    </div>
-                    <div class="main-form__submit-block df-ce">
-                      <button class="big-orange-btn" type="submit">Senden</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <aside class="account-menu">
+            <ul class="account-menu__list">
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Bestellungen  verwalten</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Zahlungsart</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Lieferadresse</a></li>
+              <li class="account-menu__item"><a class="account-menu__link account-menu__link--active" href="#">Meine Daten</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Zuletzt gesehene  Artikel</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Wunschliste</a></li>
+            </ul>
+          </aside>
+          <div class="account__main-content">
+            <h1 class="account__header"><span>MEIN KONTO</span></h1>
+            <article class="account__ordering-block">
+              <h2 class="account__sub-header"><span>Lieferadresse</span></h2>
               <div class="account__form-table">
-                <div class="account__wrapper"><a class="account__add-address" href="#"> <span>Eine neue Lieferadresse hinzufügen</span><i class="material-icons">add_circle_outline</i></a></div>
+                <div class="account__block-header"><span>Bearbeiten</span></div>
+                <div class="delivery account__wrapper">
+                  <ul class="delivery__list">
+                    <li class="delivery__item">
+                      <label class="delivery__label df-cb" for="address1">
+                        <div class="delivery__left-block df-cb">
+                          <input class="input-radio-red" type="radio" name="address" id="address1">
+                          <label class="label-for-radio" for="address1"></label>
+                          <div class="delivery__address">
+                            <p class="text">Asfesdfg, 21.<br>Portugal fsd, 1000-001 </p>
+                          </div>
+                        </div>
+                        <div class="delivery__right-block df-cb"><span class="delivery__btn">Wahlen</span><a href="#"><i class="material-icons">close</i></a></div>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </article>
+            <div class="account-data">
+              <form class="account-data__form">
+                <div class="account-data__column">
+                  <div class="account-data__sex df"><span class="account-data__sex-header">Anrede*</span>
+                    <input class="account-data__sex-input" type="radio" name="sex" id="sex1">
+                    <label class="account-data__sex-label" for="sex1"><span>Herr</span></label>
+                    <input class="account-data__sex-input" type="radio" name="sex" id="sex2">
+                    <label class="account-data__sex-label" for="sex2"><span>Frau</span></label>
+                    <input class="account-data__sex-input" type="radio" name="sex" id="sex3">
+                    <label class="account-data__sex-label" for="sex3"><span>Firma</span></label>
+                  </div>
+                  <label class="account-data__column-label" for="vorname"><span>Vorname*</span></label>
+                  <input class="account-data__column-input" type="text" id="vorname">
+                  <label class="account-data__column-label" for="nachname"><span>Nachname*</span></label>
+                  <input class="account-data__column-input" type="text" id="nachname">
+                  <label class="account-data__column-label" for="firma"><span>Firma*</span></label>
+                  <input class="account-data__column-input" type="text" id="firma">
+                  <div class="account-data__phone">
+                    <label class="account-data__column-label" for="ust"><span>USt-IdNr.*</span></label>
+                    <div class="select-wrapper df">
+                      <select class="js-cart-select2">
+                        <option></option>
+                        <option></option>
+                        <option><span><img class="image" src="/img/flags/deu.png"></span></option>
+                      </select>
+                      <input class="account-data__column-input-small" type="text" id="ust">
+                    </div>
+                  </div>
+                  <label class="account-data__column-label" for="strabe"><span>Straße*</span></label>
+                  <input class="account-data__column-input" type="text" id="strabe">
+                </div>
+                <div class="account-data__column">
+                  <label class="account-data__column-label" for="adresszusatz"><span>Adresszusatz</span></label>
+                  <input class="account-data__column-input" type="text" id="adresszusatz">
+                  <label class="account-data__column-label" for="hausnummer"><span>Hausnr.*</span></label>
+                  <input class="account-data__column-input" type="text" id="hausnummer">
+                  <label class="account-data__column-label" for="postleitzahl"><span>Postleitzahl*</span></label>
+                  <input class="account-data__column-input" type="text" id="postleitzahl">
+                  <label class="account-data__column-label" for="stadt"><span>Stadt*</span></label>
+                  <input class="account-data__column-input" type="text" id="stadt">
+                  <div class="account-data__land">
+                    <label class="account-data__column-label" for="land"><span>Land*</span></label>
+                    <select class="account-data__column-select js-cart-select">
+                      <option>Deutschland</option>
+                      <option>Ukraine</option>
+                      <option>Something</option>
+                    </select>
+                  </div>
+                  <div class="account-data__phone">
+                    <label class="account-data__column-label w100p" for="telefon"><span>Telefon*</span></label>
+                    <div class="select-wrapper df">
+                      <select class="js-cart-select3">
+                        <option></option>
+                        <option></option>
+                        <option><span><img class="image" src="/img/flags/deu.png"></span></option>
+                      </select>
+                      <div class="account-data__column-input-pre df-cc"><span>+049</span></div>
+                      <input class="account-data__column-input-small" type="text" id="telefon">
+                    </div>
+                  </div>
+                </div>
+                <div class="account-data__submit-block df-ce">
+                  <button class="big-orange-btn" type="submit">Senden</button>
+                </div>
+              </form>
+            </div>
+            <div class="account__form-table">
+              <div class="account__wrapper"><a class="account__add-address" href="#"> <span>Eine neue Lieferadresse hinzufügen</span><i class="material-icons">add_circle_outline</i></a></div>
             </div>
           </div>
         </div>
-      </section>
+      </main>
       <footer class="footer">
         <div class="main-wrapper df">
           <article class="footer__column">

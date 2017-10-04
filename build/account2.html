@@ -11,7 +11,7 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="main">
+    <div id="wrapper">
       <header class="main-header">
         <div class="main-wrapper df-c h100p">
           <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
@@ -41,164 +41,160 @@
           <article class="main-navigation__search"><a class="main-navigation__search-image" href="#"><i class="material-icons">search</i></a></article>
         </div>
       </nav>
-      <section class="main-body body--margin">
+      <main class="account2-page">
         <div class="main-wrapper">
-          <div class="account-page df">
-            <aside class="account-menu">
-              <ul class="account-menu__list">
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Bestellungen  verwalten</a></li>
-                <li class="account-menu__item"><a class="account-menu__link account-menu__link--active" href="#">Zahlungsart</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Lieferadresse</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Meine Daten</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Zuletzt gesehene  Artikel</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Wunschliste</a></li>
-              </ul>
-            </aside>
-            <div class="account-main-content account-main-content--wide">
-              <h1 class="account__header"><span>MEIN KONTO</span></h1>
-              <div class="account__form-header"><span class="account__form-title">Bestellungen verwalten</span>
-                <div class="account__unit-ammount"><span>2 </span>Menge</div>
-              </div>
-              <div class="account__form-table">
-                <article class="account__orders cart-table cart-table--transparent">
-                  <div class="account__accordion" id="account__accordion">
-                    <table class="table">
-                      <tr class="table__header table__header--black-color">
-                        <th>Datum</th>
-                        <th>Bestellung</th>
-                        <th>Betrag</th>
-                        <th colspan="2">Status</th>
-                        <th class="t-ac">Gekaufte artikeln</th>
-                      </tr>
-                      <tr class="table__content table__content--border-top">
-                        <td class="table__data"><span>March 17, 2017</span></td>
-                        <td class="table__order-number"><span>12654</span></td>
-                        <td class="table__order-price"><span>75,58€</span></td>
-                        <td class="table__status"><span>Bestellprozess</span></td>
-                        <td class="table__products"><img class="image" src="/img/product5.png" alt="#"><img class="image" src="/img/product5.png" alt="#"><img class="image" src="/img/product5.png" alt="#"></td>
-                        <td class="table__btn-more t-ar">
-                          <button class="table__accordion-btn" type="button">Bestellung anzeigen</button>
-                        </td>
-                      </tr>
-                    </table>
-                    <div class="account__tab-content"><span>пролпополрп</span></div>
-                    <table class="table">
-                      <tr class="table__content table__content--border-top">
-                        <td class="table__data"><span>March 17, 2017</span></td>
-                        <td class="table__order-number"><span>12654</span></td>
-                        <td class="table__order-price"><span>75,58€</span></td>
-                        <td class="table__status"><span>Bestellprozess</span></td>
-                        <td class="table__products"><img class="image" src="/img/product5.png" alt="#"><img class="image" src="/img/product5.png" alt="#"></td>
-                        <td class="table__btn-more t-ar">
-                          <button class="table__accordion-btn" type="button">Bestellung anzeigen</button>
-                        </td>
-                      </tr>
-                    </table>
-                    <div class="account__tab-content">
-                      <div class="account__progress df--b dfw">
-                        <h2 class="account__progress-title"><span>FORTSCHRITTSANZEIGE DER BESTELLUNG</span></h2>
-                        <ul class="account__progress-list df--b">
-                          <li class="account__progress-item df df-cb"><span class="account__progress-step">1</span>
-                            <p class="account__progress-description">Ihre Bestellung wurde bearbeitet</p>
-                          </li>
-                          <li class="account__progress-item df df-cb"><span class="account__progress-step">2</span>
-                            <p class="account__progress-description">Ihre Bestellung wurde bearbeitet</p>
-                          </li>
-                          <li class="account__progress-item df df-cb"><span class="account__progress-step">3</span>
-                            <p class="account__progress-description">Ihre Bestellung wurde bearbeitet</p>
-                          </li>
-                          <li class="account__progress-item df df-cb"><span class="account__progress-step">4</span>
-                            <p class="account__progress-description">Ihre Bestellung wurde bearbeitet</p>
-                          </li>
-                        </ul>
-                        <button class="account__progress-button" type="button" disabled>Alles zum Warenkorb hinzufügen</button>
-                      </div>
-                      <article class="cart-table cart-table--transparent">
-                        <h2 class="account__table-title">DETAILS DER BESTELLUNG</h2>
-                        <table class="table table--transparent"> 
-                          <tr class="table__header table__header--transparent">
-                            <th colspan="3">Artikel</th>
-                            <th>Lieferzeit</th>
-                            <th>Mehr</th>
-                            <th>Einzelprris</th>
-                            <th>Gesamtpreis</th>
-                          </tr>
-                          <tr class="table__content table__content--white">
-                            <td class="table__input">
-                              <input class="input-red" type="checkbox" id="product1" name="product1">
-                              <label class="label-for-checkbox" for="product1"></label>
-                            </td>
-                            <td class="table__image table__image--small"><img class="image" src="/img/product5.png" alt="#"></td>
-                            <td class="table__product-name">
-                              <h3 class="header"> <span>RAFINE ADULT HUHN, LACHS & SCHRIMPS</span></h3>
-                            </td>
-                            <td class="table__delivery"><span>
-                                 Voraussichtlicher Versand <br>Montag, 20.03.2017 - <br>Mittwoch, 22.03.2017</span></td>
-                            <td class="table__value-wrapper">
-                              <div class="table__value">
-                                <input class="input" type="text" placeholder="2">
-                                <div class="arrow"></div>
-                              </div>
-                            </td>
-                            <td class="table__unit-price"><span>€3,45</span></td>
-                            <td class="table__total-price t-ar"><span class="table__price">€3,45</span></td>
-                          </tr>
-                          <tr class="table__content table__content--white">
-                            <td class="table__input">
-                              <input class="input-red" type="checkbox" id="product2" name="product2">
-                              <label class="label-for-checkbox" for="product2"></label>
-                            </td>
-                            <td class="table__image table__image--small"><img class="image" src="/img/product7.png" alt="#"></td>
-                            <td class="table__product-name">
-                              <h3 class="header"><span>Cat Dose Natural Huhn, Rind mit Reis</span></h3>
-                            </td>
-                            <td class="table__delivery"><span>
-                                 Voraussichtlicher Versand <br>Montag, 20.03.2017 - <br>Mittwoch, 22.03.2017</span></td>
-                            <td class="table__value-wrapper">
-                              <div class="table__value">
-                                <input class="input" type="text" placeholder="2">
-                                <div class="arrow"></div>
-                              </div>
-                            </td>
-                            <td class="table__unit-price"><span>€23,49</span></td>
-                            <td class="table__total-price t-ar"><span class="table__price">€23,49</span></td>
-                          </tr>
-                          <tr class="table__content table__content--white">
-                            <td class="table__input">
-                              <input class="input-red" type="checkbox" id="product3" name="product3">
-                              <label class="label-for-checkbox" for="product3"></label>
-                            </td>
-                            <td class="table__image table__image--small"><img class="image" src="/img/product6.png" alt="#"></td>
-                            <td class="table__product-name">
-                              <h3 class="header"><span>Cat Dose Natural Huhn, Rind mit Reis</span></h3>
-                            </td>
-                            <td class="table__delivery"><span>
-                                 Voraussichtlicher Versand <br>Montag, 20.03.2017 - <br>Mittwoch, 22.03.2017 </span></td>
-                            <td class="table__value-wrapper">
-                              <div class="table__value">
-                                <input class="input" type="text" placeholder="2">
-                                <div class="arrow"></div>
-                              </div>
-                            </td>
-                            <td class="table__unit-price"><span>€3,45</span></td>
-                            <td class="table__total-price t-ar"><span class="table__price">€3,45</span></td>
-                          </tr>
-                        </table>
-                        <div class="account__final df df--b">
-                          <p class="account__address">Adresse<br>Robert Thomson <br>asfesdfg, 234234 21 <br>Deutschland</p>
-                          <div class="account__final-price t-ar"><span class="account__final-info">Gesamtpreis</span><span class="account__final-value">114.10 €</span>
-                            <button class="big-orange-btn" type="submit">Zur Kasse</button>
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                </article>
-              </div>
+          <aside class="account-menu">
+            <ul class="account-menu__list">
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Bestellungen  verwalten</a></li>
+              <li class="account-menu__item"><a class="account-menu__link account-menu__link--active" href="#">Zahlungsart</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Lieferadresse</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Meine Daten</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Zuletzt gesehene  Artikel</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Wunschliste</a></li>
+            </ul>
+          </aside>
+          <div class="account__main-content">
+            <h1 class="account__header"><span>MEIN KONTO</span></h1>
+            <div class="account__form-header"><span class="account__form-title">Bestellungen verwalten</span>
+              <div class="account__unit-ammount"><span>2 </span>Menge</div>
             </div>
+            <article class="account__manage-orders">
+              <div class="account-accordion" id="account-accordion">
+                <table class="account-accordion__table">
+                  <tr class="account-accordion__table-header">
+                    <th>Datum</th>
+                    <th>Bestellung</th>
+                    <th>Betrag</th>
+                    <th colspan="2">Status</th>
+                    <th class="t-ac">Gekaufte artikeln</th>
+                  </tr>
+                  <tr class="account-accordion__table-content">
+                    <td class="account-accordion__data"><span>March 17, 2017</span></td>
+                    <td class="account-accordion__order-number"><span>12654</span></td>
+                    <td class="account-accordion__order-price"><span>75,58€</span></td>
+                    <td class="account-accordion__status"><span>Bestellprozess</span></td>
+                    <td class="account-accordion__products"><img class="image" src="/img/product5.png" alt="#"><img class="image" src="/img/product5.png" alt="#"><img class="image" src="/img/product5.png" alt="#"></td>
+                    <td class="account-accordion__btn-more t-ar">
+                      <button class="account-accordion__btn" type="button">Bestellung anzeigen</button>
+                    </td>
+                  </tr>
+                </table>
+                <div class="account-accordion__content"><span>пролпополрп</span></div>
+                <table class="account-accordion__table">
+                  <tr class="account-accordion__table-content">
+                    <td class="account-accordion__data"><span>March 17, 2017</span></td>
+                    <td class="account-accordion__order-number"><span>12654</span></td>
+                    <td class="account-accordion__order-price"><span>75,58€</span></td>
+                    <td class="account-accordion__status"><span>Bestellprozess</span></td>
+                    <td class="account-accordion__products"><img class="image" src="/img/product5.png" alt="#"><img class="image" src="/img/product5.png" alt="#"></td>
+                    <td class="account-accordion__btn-more t-ar">
+                      <button class="account-accordion__btn" type="button">Bestellung anzeigen</button>
+                    </td>
+                  </tr>
+                </table>
+                <div class="account-accordion__content">
+                  <div class="account__progress df--b dfw">
+                    <h2 class="account__progress-title"><span>FORTSCHRITTSANZEIGE DER BESTELLUNG</span></h2>
+                    <ul class="account__progress-list df--b">
+                      <li class="account__progress-item df df-cb"><span class="account__progress-step">1</span>
+                        <p class="account__progress-description">Ihre Bestellung wurde bearbeitet</p>
+                      </li>
+                      <li class="account__progress-item df df-cb"><span class="account__progress-step">2</span>
+                        <p class="account__progress-description">Ihre Bestellung wurde bearbeitet</p>
+                      </li>
+                      <li class="account__progress-item df df-cb"><span class="account__progress-step">3</span>
+                        <p class="account__progress-description">Ihre Bestellung wurde bearbeitet</p>
+                      </li>
+                      <li class="account__progress-item df df-cb"><span class="account__progress-step">4</span>
+                        <p class="account__progress-description">Ihre Bestellung wurde bearbeitet</p>
+                      </li>
+                    </ul>
+                    <button class="account__progress-button" type="button" disabled>Alles zum Warenkorb hinzufügen</button>
+                  </div>
+                  <article class="account-order-details">
+                    <h2 class="account-order-details__title">DETAILS DER BESTELLUNG</h2>
+                    <table class="account-order-details__table">
+                      <tr class="account-order-details__table-header">
+                        <th colspan="3">Artikel</th>
+                        <th>Lieferzeit</th>
+                        <th>Mehr</th>
+                        <th>Einzelprris</th>
+                        <th>Gesamtpreis</th>
+                      </tr>
+                      <tr class="account-order-details__table-content">
+                        <td class="account-order-details__input">
+                          <input class="input-red" type="checkbox" id="product1" name="product1">
+                          <label class="label-for-checkbox" for="product1"></label>
+                        </td>
+                        <td class="account-order-details__image account-order-details__image--small"><img class="image" src="/img/product5.png" alt="#"></td>
+                        <td class="account-order-details__product-name">
+                          <h3 class="account-order-details__product-header"> <span>RAFINE ADULT HUHN, LACHS & SCHRIMPS</span></h3>
+                        </td>
+                        <td class="account-order-details__delivery"><span>
+                             Voraussichtlicher Versand <br>Montag, 20.03.2017 - <br>Mittwoch, 22.03.2017</span></td>
+                        <td class="account-order-details__value-wrapper">
+                          <div class="account-order-details__value">
+                            <input class="input" type="text" placeholder="2">
+                            <div class="arrow"></div>
+                          </div>
+                        </td>
+                        <td class="account-order-details__unit-price"><span>€3,45</span></td>
+                        <td class="account-order-details__total-price t-ar"><span class="account-order-details__price">€3,45</span></td>
+                      </tr>
+                      <tr class="account-order-details__table-content">
+                        <td class="account-order-details__input">
+                          <input class="input-red" type="checkbox" id="product2" name="product2">
+                          <label class="label-for-checkbox" for="product2"></label>
+                        </td>
+                        <td class="account-order-details__image account-order-details__image--small"><img class="image" src="/img/product7.png" alt="#"></td>
+                        <td class="account-order-details__product-name">
+                          <h3 class="account-order-details__product-header"><span>Cat Dose Natural Huhn, Rind mit Reis</span></h3>
+                        </td>
+                        <td class="account-order-details__delivery"><span>
+                             Voraussichtlicher Versand <br>Montag, 20.03.2017 - <br>Mittwoch, 22.03.2017</span></td>
+                        <td class="account-order-details__value-wrapper">
+                          <div class="account-order-details__value">
+                            <input class="input" type="text" placeholder="2">
+                            <div class="arrow"></div>
+                          </div>
+                        </td>
+                        <td class="account-order-details__unit-price"><span>€23,49</span></td>
+                        <td class="account-order-details__total-price t-ar"><span class="account-order-details__price">€23,49</span></td>
+                      </tr>
+                      <tr class="account-order-details__table-content">
+                        <td class="account-order-details__input">
+                          <input class="input-red" type="checkbox" id="product3" name="product3">
+                          <label class="label-for-checkbox" for="product3"></label>
+                        </td>
+                        <td class="account-order-details__image account-order-details__image--small"><img class="image" src="/img/product6.png" alt="#"></td>
+                        <td class="account-order-details__product-name">
+                          <h3 class="account-order-details__product-header"><span>Cat Dose Natural Huhn, Rind mit Reis</span></h3>
+                        </td>
+                        <td class="account-order-details__delivery"><span>
+                             Voraussichtlicher Versand <br>Montag, 20.03.2017 - <br>Mittwoch, 22.03.2017 </span></td>
+                        <td class="account-order-details__value-wrapper">
+                          <div class="account-order-details__value">
+                            <input class="input" type="text" placeholder="2">
+                            <div class="arrow"></div>
+                          </div>
+                        </td>
+                        <td class="account-order-details__unit-price"><span>€3,45</span></td>
+                        <td class="account-order-details__total-price t-ar"><span class="account-order-details__price">€3,45</span></td>
+                      </tr>
+                    </table>
+                    <div class="account__final df df--b">
+                      <p class="account__address">Adresse<br>Robert Thomson <br>asfesdfg, 234234 21 <br>Deutschland</p>
+                      <div class="account__final-price t-ar"><span class="account__final-info">Gesamtpreis</span><span class="account__final-value">114.10 €</span>
+                        <button class="big-orange-btn" type="submit">Zur Kasse</button>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
-      </section>
+      </main>
       <footer class="footer">
         <div class="main-wrapper df">
           <article class="footer__column">

@@ -153,27 +153,9 @@ $(document).ready(function () {
     });
 
 
-    // var acc = document.getElementsByClassName("accordion-ite");
-    // var i;
-    //
-    // for (i = 0; i < acc.length; i++) {
-    //     acc[i].onclick = function(){
-    //         /* Toggle between adding and removing the "active" class,
-    //         to highlight the button that controls the panel */
-    //         this.classList.toggle("active");
-    //
-    //         /* Toggle between hiding and showing the active panel */
-    //         var panel = this.nextElementSibling;
-    //         if (panel.style.display === "block") {
-    //             panel.style.display = "none";
-    //         } else {
-    //             panel.style.display = "block";
-    //         }
-    //     }
-    // }
-    var allPanels = $('.account__tab-content').hide();
-    $('.table__accordion-btn').click(function() {
-      $(this).toggleClass('table__accordion-btn--active');
+    var allPanels = $('.account-accordion__content').hide();
+    $('.account-accordion__btn').click(function() {
+      $(this).toggleClass('account-accordion__btn--active');
       $(this).closest('table').next().toggle();
       return false;
     });

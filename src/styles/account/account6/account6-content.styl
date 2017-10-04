@@ -1,0 +1,139 @@
+.account
+  &-menu
+    width 175px
+    padding-right 35px
+    box-sizing border-box
+    &__item
+      margin-bottom 25px
+    &__link
+      text-transform uppercase
+      color c_mgray
+      font-size 14px
+      font-family r_med
+      &--active
+        color c_orange
+        font-size 18px
+      &:hover
+        color c_orange
+  &__main-content
+    width 900px
+    align-items flex-start
+  &__header
+    width 100%
+    text-align center
+    font-family r_med
+    text-transform uppercase
+    font-size 24px
+    margin-bottom 30px
+  &__sub-header
+    padding 10px 15px 18px
+    position relative
+    font-weight 400
+    text-transform uppercase
+    font-size 18px
+    font-family r_med
+    &::before
+      content ''
+      position absolute
+      left 15px
+      top -5px
+      width 46px
+      height 3px
+      background-color #f95318
+  &__submit-block
+    width 100%
+    margin-bottom 40px
+  &__ordering-block
+    width 100%
+    margin-bottom 30px
+    &--half
+      width 452px
+.account-wishlist
+  border 1px solid #a6a6a6
+  &__table
+    width 100%
+    &-header
+      background-color c_lgray
+      height 40px
+      color white
+      font-family r_reg
+      font-size 14px
+      text-align left
+      vertical-align middle
+      color c_black
+      & th
+        text-align left
+        padding-right 5px
+        box-sizing border-box
+      & th:first-of-type
+        padding-left 25px
+      & th:last-of-type
+        padding-right 25px
+  &__content
+    text-align left
+    vertical-align middle
+    border-bottom 1px solid #a6a6a6
+    &:last-child
+      border-bottom 0
+  &__image
+    height 85px
+    width 85px
+    padding 10px 10px 10px 15px
+    &--small
+      text-align center
+      & img
+        width 45px
+        height auto
+  &__product
+    &-info
+      width 245px
+      padding-left 25px
+      padding-right 5px
+    &-header
+      width 100%
+      font-family r_bold
+      font-size 14px
+      margin-bottom 5px
+    &-article
+      font-family r_reg
+      font-size 12px
+      margin-bottom 5px
+  &__packedge
+    min-width 180px
+    padding-right 5px
+    box-sizing border-box
+    font-family r_reg
+    font-size 14px
+    line-height 20px
+    & span
+      display inline-block
+  &__unit-price
+    padding-right 5px
+    box-sizing border-box
+    width 100px
+    font-family r_reg
+    font-size 20px
+  &__btn-buy
+    width 110px
+    background-color c_orange
+    color #fff
+    border-radius 3px
+    text-align center
+    padding 7px 10px
+    box-sizing border-box
+    font-size 14px
+    text-decoration none
+    border 2px solid #f95318
+    &:hover
+      background-color #fff
+      color #f95318
+      transition all 0.2s ease
+  &__to-cart
+    vertical-align middle
+  &__remove
+    padding 0 15px
+    box-sizing border-box
+    text-align center
+    & .material-icons
+      font-size 20px
+      font-weight bold

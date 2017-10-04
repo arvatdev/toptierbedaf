@@ -11,7 +11,7 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="main">
+    <div id="wrapper">
       <header class="main-header">
         <div class="main-wrapper df-c h100p">
           <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
@@ -41,73 +41,69 @@
           <article class="main-navigation__search"><a class="main-navigation__search-image" href="#"><i class="material-icons">search</i></a></article>
         </div>
       </nav>
-      <section class="main-body body--margin">
+      <main class="account6-page">
         <div class="main-wrapper">
-          <div class="account-page df">
-            <aside class="account-menu">
-              <ul class="account-menu__list">
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Bestellungen  verwalten</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Zahlungsart</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Lieferadresse</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Meine Daten</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Zuletzt gesehene  Artikel</a></li>
-                <li class="account-menu__item"><a class="account-menu__link account-menu__link--active" href="#">Wunschliste</a></li>
-              </ul>
-            </aside>
-            <div class="account-main-content account-main-content--wide df df-dc">
-              <h1 class="account__header"><span>MEIN KONTO</span></h1>
-              <article class="account__ordering-block">
-                <h2 class="title-with-stripe"><span>Wunschliste</span></h2>
-                <div class="account__form-table">
-                  <div class="account__orders cart-table cart-table--transparent">
-                    <table class="table">
-                      <tr class="table__header table__header--black-color">
-                        <th colspan="2">Artikel</th>
-                        <th>Lieferzeit</th>
-                        <th colspan="3">Einzelpreis</th>
-                      </tr>
-                      <tr class="table__content table__content--border-bottom"> 
-                        <td class="table__image"><img class="image" src="/img/product5.png" alt="#"></td>
-                        <td class="table__product-info table__product-info--small">
-                          <h3 class="header"><span>Brit JUNIOR LARGE BREED </span></h3>
-                          <div class="article"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
-                          <div class="stars df-c">
-                            <div class="active"><span>★★</span></div>
-                            <div class="not-active"><span>☆☆☆</span></div>
-                          </div>
-                        </td>
-                        <td class="table__packedge"><span>Sofort versandfertig, Lieferzeit ca.</span><span>1-3 Werktage</span></td>
-                        <td class="table__unit-price"><span>€12.00</span></td>
-                        <td class="table__to-cart t-ar">
-                          <button class="table__btn-buy" type="button">Kaufen</button>
-                        </td>
-                        <td class="table__remove"><a href="#"><i class="material-icons">close</i></a></td>
-                      </tr>
-                      <tr class="table__content">
-                        <td class="table__image"><img class="image" src="/img/product5.png" alt="#"></td>
-                        <td class="table__product-info table__product-info--small">
-                          <h3 class="header"><span>Brit JUNIOR LARGE BREED </span></h3>
-                          <div class="article"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
-                          <div class="stars df-c">
-                            <div class="active"><span>★★</span></div>
-                            <div class="not-active"><span>☆☆☆</span></div>
-                          </div>
-                        </td>
-                        <td class="table__packedge"><span>Sofort versandfertig, Lieferzeit ca.</span><span>1-3 Werktage</span></td>
-                        <td class="table__unit-price"><span>€12.00</span></td>
-                        <td class="table__to-cart t-ar">
-                          <button class="table__btn-buy" type="button">Kaufen</button>
-                        </td>
-                        <td class="table__remove"><a href="#"><i class="material-icons">close</i></a></td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </article>
-            </div>
+          <aside class="account-menu">
+            <ul class="account-menu__list">
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Bestellungen  verwalten</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Zahlungsart</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Lieferadresse</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Meine Daten</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Zuletzt gesehene  Artikel</a></li>
+              <li class="account-menu__item"><a class="account-menu__link account-menu__link--active" href="#">Wunschliste</a></li>
+            </ul>
+          </aside>
+          <div class="account__main-content account__main-content--wide df df-dc">
+            <h1 class="account__header"><span>MEIN KONTO</span></h1>
+            <article class="account__ordering-block">
+              <h2 class="account__sub-header"><span>Wunschliste</span></h2>
+              <div class="account-wishlist">
+                <table class="account-wishlist__table">
+                  <tr class="account-wishlist__table-header">
+                    <th colspan="2">Artikel</th>
+                    <th>Lieferzeit</th>
+                    <th colspan="3">Einzelpreis</th>
+                  </tr>
+                  <tr class="account-wishlist__content">
+                    <td class="account-wishlist__image"><img class="image" src="/img/product5.png" alt="#"></td>
+                    <td class="account-wishlist__product-info">
+                      <h3 class="account-wishlist__product-header"><span>Brit JUNIOR LARGE BREED </span></h3>
+                      <div class="account-wishlist__product-article"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
+                      <div class="stars df-c">
+                        <div class="active"><span>★★</span></div>
+                        <div class="not-active"><span>☆☆☆</span></div>
+                      </div>
+                    </td>
+                    <td class="account-wishlist__packedge"><span>Sofort versandfertig, Lieferzeit ca.</span><span>1-3 Werktage</span></td>
+                    <td class="account-wishlist__unit-price"><span>€12.00</span></td>
+                    <td class="account-wishlist__to-cart t-ar">
+                      <button class="account-wishlist__btn-buy" type="button">Kaufen</button>
+                    </td>
+                    <td class="account-wishlist__remove"><a href="#"><i class="material-icons">close</i></a></td>
+                  </tr>
+                  <tr class="account-wishlist__content">
+                    <td class="account-wishlist__image"><img class="image" src="/img/product5.png" alt="#"></td>
+                    <td class="account-wishlist__product-info">
+                      <h3 class="account-wishlist__product-header"><span>Brit JUNIOR LARGE BREED </span></h3>
+                      <div class="account-wishlist__product-article"><span>Getreidefrei Lachs & Kartoffel 1kg</span></div>
+                      <div class="stars df-c">
+                        <div class="active"><span>★★</span></div>
+                        <div class="not-active"><span>☆☆☆</span></div>
+                      </div>
+                    </td>
+                    <td class="account-wishlist__packedge"><span>Sofort versandfertig, Lieferzeit ca.</span><span>1-3 Werktage</span></td>
+                    <td class="account-wishlist__unit-price"><span>€12.00</span></td>
+                    <td class="account-wishlist__to-cart t-ar">
+                      <button class="account-wishlist__btn-buy" type="button">Kaufen</button>
+                    </td>
+                    <td class="account-wishlist__remove"><a href="#"><i class="material-icons">close</i></a></td>
+                  </tr>
+                </table>
+              </div>
+            </article>
           </div>
         </div>
-      </section>
+      </main>
       <footer class="footer">
         <div class="main-wrapper df">
           <article class="footer__column">

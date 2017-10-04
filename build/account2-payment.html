@@ -11,7 +11,7 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="main">
+    <div id="wrapper">
       <header class="main-header">
         <div class="main-wrapper df-c h100p">
           <article class="main-logo"><a href="#"><img class="image" src="/img/logo.png" alt="#"></a></article>
@@ -41,70 +41,68 @@
           <article class="main-navigation__search"><a class="main-navigation__search-image" href="#"><i class="material-icons">search</i></a></article>
         </div>
       </nav>
-      <section class="main-body body--margin">
+      <main class="account2-payment-page">
         <div class="main-wrapper">
-          <div class="account-page df">
-            <aside class="account-menu">
-              <ul class="account-menu__list">
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Bestellungen  verwalten</a></li>
-                <li class="account-menu__item"><a class="account-menu__link account-menu__link--active" href="#">Zahlungsart</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Lieferadresse</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Meine Daten</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Zuletzt gesehene  Artikel</a></li>
-                <li class="account-menu__item"><a class="account-menu__link" href="#">Wunschliste</a></li>
-              </ul>
-            </aside>
-            <div class="account-main-content account-main-content--wide df df-dc">
-              <h1 class="account__header"><span>MEIN KONTO</span></h1>
-              <article class="account__ordering-block">
-                <h2 class="title-with-stripe title-with-stripe--without-space"><span>Zahlungsart wählen</span></h2>
-                <div class="account__payment">
-                  <article class="payment payment--info-list">
-                    <ul class="payment__list">
-                      <li class="payment__element">
-                        <div class="payment__wrapper df-cb"> 
-                          <div class="payment__status"><i class="material-icons">done</i></div>
-                          <div class="payment__image payment__image--small df-c"><img class="image" src="/img/paypal-pay.png" alt="#"></div>
-                          <div class="payment__text">
-                            <p class="text">Master Card, VISA. Sie werden direkt auf die sicher verschlüsselte Seite geleitet, wo Sie die Zahlung per Kreditkarte vornehmen.</p>
-                          </div>
+          <aside class="account-menu">
+            <ul class="account-menu__list">
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Bestellungen  verwalten</a></li>
+              <li class="account-menu__item"><a class="account-menu__link account-menu__link--active" href="#">Zahlungsart</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Lieferadresse</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Meine Daten</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Zuletzt gesehene  Artikel</a></li>
+              <li class="account-menu__item"><a class="account-menu__link" href="#">Wunschliste</a></li>
+            </ul>
+          </aside>
+          <div class="account__main-content df df-dc">
+            <h1 class="account__header"><span>MEIN KONTO</span></h1>
+            <article class="account__ordering-block">
+              <h2 class="account__sub-header"><span>Zahlungsart wählen</span></h2>
+              <div class="account__payment">
+                <article class="payment payment--info-list">
+                  <ul class="payment__list">
+                    <li class="payment__element">
+                      <div class="payment__wrapper df-cb"> 
+                        <div class="payment__status"><i class="material-icons">done</i></div>
+                        <div class="payment__image payment__image--small df-c"><img class="image" src="/img/paypal-pay.png" alt="#"></div>
+                        <div class="payment__text">
+                          <p class="payment__text-content">Master Card, VISA. Sie werden direkt auf die sicher verschlüsselte Seite geleitet, wo Sie die Zahlung per Kreditkarte vornehmen.</p>
                         </div>
-                      </li>
-                      <li class="payment__element">
-                        <div class="payment__wrapper df-cb">
-                          <div class="payment__status"><i class="material-icons">done</i></div>
-                          <div class="payment__image payment__image--small df-c"><img class="image" src="/img/sofort-pay.png" alt="#"></div>
-                          <div class="payment__text">
-                            <p class="text">Sie werden auf die geschützte PayPal-Seite weitergeleitet um die Bezahlung abzuschließen. </p>
-                          </div>
+                      </div>
+                    </li>
+                    <li class="payment__element">
+                      <div class="payment__wrapper df-cb">
+                        <div class="payment__status"><i class="material-icons">done</i></div>
+                        <div class="payment__image payment__image--small df-c"><img class="image" src="/img/sofort-pay.png" alt="#"></div>
+                        <div class="payment__text">
+                          <p class="payment__text-content">Sie werden auf die geschützte PayPal-Seite weitergeleitet um die Bezahlung abzuschließen. </p>
                         </div>
-                      </li>
-                      <li class="payment__element">
-                        <div class="payment__wrapper df-cb">
-                          <div class="payment__status"><i class="material-icons">done</i></div>
-                          <div class="payment__image payment__image--small df-c"><img class="image" src="/img/vorkasse-pay.png" alt="#"></div>
-                          <div class="payment__text">
-                            <p class="text">Sofortige und bequeme Zahlungsart für Online-Banking Nutzer.  </p>
-                          </div>
+                      </div>
+                    </li>
+                    <li class="payment__element">
+                      <div class="payment__wrapper df-cb">
+                        <div class="payment__status"><i class="material-icons">done</i></div>
+                        <div class="payment__image payment__image--small df-c"><img class="image" src="/img/vorkasse-pay.png" alt="#"></div>
+                        <div class="payment__text">
+                          <p class="payment__text-content">Sofortige und bequeme Zahlungsart für Online-Banking Nutzer.  </p>
                         </div>
-                      </li>
-                      <li class="payment__element">
-                        <div class="payment__wrapper df-cb">
-                          <div class="payment__status"><i class="material-icons">done</i></div>
-                          <div class="payment__image payment__image--small df-c"><img class="image" src="/img/bar-nachnahme.jpg" alt="#"></div>
-                          <div class="payment__text">
-                            <p class="text">Einfache Überweisung über Ihre Hausbank.</p>
-                          </div>
+                      </div>
+                    </li>
+                    <li class="payment__element">
+                      <div class="payment__wrapper df-cb">
+                        <div class="payment__status"><i class="material-icons">done</i></div>
+                        <div class="payment__image payment__image--small df-c"><img class="image" src="/img/bar-nachnahme.jpg" alt="#"></div>
+                        <div class="payment__text">
+                          <p class="payment__text-content">Einfache Überweisung über Ihre Hausbank.</p>
                         </div>
-                      </li>
-                    </ul>
-                  </article>
-                </div>
-              </article>
-            </div>
+                      </div>
+                    </li>
+                  </ul>
+                </article>
+              </div>
+            </article>
           </div>
         </div>
-      </section>
+      </main>
       <footer class="footer">
         <div class="main-wrapper df">
           <article class="footer__column">

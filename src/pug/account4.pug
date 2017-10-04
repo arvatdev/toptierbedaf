@@ -1,8 +1,10 @@
 extends template
 
 block content
-    .main
+    #wrapper
         include include/header
         include include/navigation
-        include account/account4
+        main.account4-page
+            .main-wrapper
+                include account/account4/account4
         include include/footer
