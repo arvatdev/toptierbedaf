@@ -10592,32 +10592,32 @@ text-align
 .registration-page .main-block {
   width: 785px;
 }
-.account1-page .account-menu {
+.profile1-page .account-menu {
   width: 175px;
   padding-right: 35px;
   box-sizing: border-box;
 }
-.account1-page .account-menu__item {
+.profile1-page .account-menu__item {
   margin-bottom: 25px;
 }
-.account1-page .account-menu__link {
+.profile1-page .account-menu__link {
   text-transform: uppercase;
   color: #b9b9b9;
   font-size: 14px;
   font-family: "Roboto-Medium", sans-serif;
 }
-.account1-page .account-menu__link--active {
+.profile1-page .account-menu__link--active {
   color: #f95318;
   font-size: 18px;
 }
-.account1-page .account-menu__link:hover {
+.profile1-page .account-menu__link:hover {
   color: #f95318;
 }
-.account1-page .account__main-content {
+.profile1-page .account__main-content {
   width: 924px;
   align-items: flex-start;
 }
-.account1-page .account__header {
+.profile1-page .account__header {
   width: 100%;
   text-align: center;
   font-family: "Roboto-Medium", sans-serif;
@@ -10625,7 +10625,7 @@ text-align
   font-size: 24px;
   margin-bottom: 30px;
 }
-.account1-page .account__sub-header {
+.profile1-page .account__sub-header {
   padding: 10px 15px 18px;
   position: relative;
   font-weight: 400;
@@ -10633,7 +10633,7 @@ text-align
   font-size: 18px;
   font-family: "Roboto-Medium", sans-serif;
 }
-.account1-page .account__sub-header::before {
+.profile1-page .account__sub-header::before {
   content: '';
   position: absolute;
   left: 15px;
@@ -10642,7 +10642,7 @@ text-align
   height: 3px;
   background-color: #f95318;
 }
-.account1-page .account__block-header {
+.profile1-page .account__block-header {
   background-color: #ececed;
   padding: 15px 30px;
   padding-right: 100px;
@@ -10650,7 +10650,7 @@ text-align
   box-sizing: border-box;
   font-size: 14px;
 }
-.account1-page .account__show-all {
+.profile1-page .account__show-all {
   text-align: center;
   display: inline-block;
   color: #fff;
@@ -10664,28 +10664,28 @@ text-align
   text-decoration: none;
   font-size: 14px;
 }
-.account1-page .account__show-all:hover {
+.profile1-page .account__show-all:hover {
   background-color: #777;
   transition: all 0.2s ease;
 }
-.account1-page .account__form-header {
+.profile1-page .account__form-header {
   margin-bottom: 20px;
 }
-.account1-page .account__form-title {
+.profile1-page .account__form-title {
   font-size: 18px;
   font-family: "Roboto-Medium", sans-serif;
   display: inline-block;
   vertical-align: baseline;
   margin-right: 40px;
 }
-.account1-page .account__ordering-block {
+.profile1-page .account__ordering-block {
   width: 100%;
   margin-bottom: 30px;
 }
-.account1-page .account__ordering-block--half {
+.profile1-page .account__ordering-block--half {
   width: 452px;
 }
-.account1-page .account__ordering-footer {
+.profile1-page .account__ordering-footer {
   background-color: #ececed;
   padding: 15px 30px;
   box-sizing: border-box;
@@ -10693,18 +10693,18 @@ text-align
   border: 1px solid #a6a6a6;
   border-top: 0;
 }
-.account1-page .delivery__wrapper {
+.profile1-page .delivery__wrapper {
   padding: 30px;
   border: 1px solid #a6a6a6;
   border-bottom: 0;
 }
-.account1-page .delivery__item {
+.profile1-page .delivery__item {
   margin-bottom: 20px;
 }
-.account1-page .delivery__item:last-child {
+.profile1-page .delivery__item:last-child {
   margin-bottom: 0;
 }
-.account1-page .delivery__address {
+.profile1-page .delivery__address {
   width: 220px;
   font-size: 14px;
   line-height: 21px;
@@ -10712,7 +10712,7 @@ text-align
   box-sizing: border-box;
   font-family: "Roboto-Regular", sans-serif;
 }
-.account1-page .delivery__btn {
+.profile1-page .delivery__btn {
   width: 118px;
   display: inline-block;
   border: 1px solid #727272;
@@ -10723,36 +10723,36 @@ text-align
   text-align: center;
   border-radius: 3px;
 }
-.account1-page .delivery__btn:hover {
+.profile1-page .delivery__btn:hover {
   background-color: #727272;
   color: #fff;
 }
-.account1-page .delivery__left-block {
+.profile1-page .delivery__left-block {
   width: 255px;
 }
-.account1-page .delivery__right-block {
+.profile1-page .delivery__right-block {
   width: 160px;
 }
-.account1-page .order-details__wrapper {
+.profile1-page .order-details__wrapper {
   padding: 30px;
   border: 1px solid #a6a6a6;
   border-bottom: 0;
 }
-.account1-page .order-details__item {
+.profile1-page .order-details__item {
   margin-bottom: 8px;
   font-size: 14px;
 }
-.account1-page .order-details__item:last-child {
+.profile1-page .order-details__item:last-child {
   margin-bottom: 0;
 }
-.account1-page .order-details__name {
+.profile1-page .order-details__name {
   margin-right: 5px;
   font-family: "Roboto-Bold", sans-serif;
 }
-.account1-page .order-details__value {
+.profile1-page .order-details__value {
   font-family: "Roboto-Regular", sans-serif;
 }
-.account1-page .payment {
+.profile1-page .payment {
   width: 100%;
   margin: 0 auto;
   padding: 30px;
@@ -10760,118 +10760,118 @@ text-align
   border-bottom: 0;
   box-sizing: border-box;
 }
-.account1-page .payment__account-wrapper {
+.profile1-page .payment__account-wrapper {
   width: 100%;
 }
-.account1-page .payment__account-wrapper .payment__list {
+.profile1-page .payment__account-wrapper .payment__list {
   margin-bottom: 0;
 }
-.account1-page .payment .big-orange-btn.big-orange-btn--invert {
+.profile1-page .payment .big-orange-btn.big-orange-btn--invert {
   margin: 0 30px 85px 238px;
 }
-.account1-page .payment__list {
+.profile1-page .payment__list {
   width: 100%;
   margin-bottom: 40px;
 }
-.account1-page .payment__element {
+.profile1-page .payment__element {
   margin-bottom: 5px;
   width: 100%;
 }
-.account1-page .payment__element:last-child .payment__wrapper {
+.profile1-page .payment__element:last-child .payment__wrapper {
   padding-bottom: 0;
 }
-.account1-page .payment__status .material-icons {
+.profile1-page .payment__status .material-icons {
   color: #20a85e;
   font-size: 27px;
 }
-.account1-page .payment__label {
+.profile1-page .payment__label {
   background-color: rgba(255,255,255,0);
   height: 100%;
   width: 100%;
   padding: 10px 0;
   border: 2px solid transparent;
 }
-.account1-page .payment__label:hover {
+.profile1-page .payment__label:hover {
   border: 2px solid #f95318;
 }
-.account1-page .payment__image {
+.profile1-page .payment__image {
   height: 50px;
   width: 150px;
   min-height: 50px;
   justify-content: flex-end;
 }
-.account1-page .payment__image--small {
+.profile1-page .payment__image--small {
   justify-content: flex-start;
   width: 120px;
 }
-.account1-page .payment__input+label {
+.profile1-page .payment__input+label {
   margin: 0 40px 0 30px;
 }
-.account1-page .payment__text {
+.profile1-page .payment__text {
   direction: ltr;
   width: 643px;
 }
-.account1-page .payment__text-content {
+.profile1-page .payment__text-content {
   display: block;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
-.account1-page .payment__wrapper {
+.profile1-page .payment__wrapper {
   padding-bottom: 20px;
 }
-.account1-page .account-recent {
+.profile1-page .account-recent {
   padding: 0 30px;
   border: 1px solid #a6a6a6;
   border-bottom: 0;
 }
-.account1-page .account-recent__table {
+.profile1-page .account-recent__table {
   width: 100%;
 }
-.account1-page .account-recent__content {
+.profile1-page .account-recent__content {
   text-align: left;
   vertical-align: middle;
   border-bottom: 1px solid #a6a6a6;
 }
-.account1-page .account-recent__content:last-child {
+.profile1-page .account-recent__content:last-child {
   border: 0;
 }
-.account1-page .account-recent__image {
+.profile1-page .account-recent__image {
   height: 85px;
   width: 85px;
   padding: 10px 10px 10px 15px;
 }
-.account1-page .account-recent__image--small {
+.profile1-page .account-recent__image--small {
   text-align: center;
 }
-.account1-page .account-recent__image--small img {
+.profile1-page .account-recent__image--small img {
   width: 45px;
   height: auto;
 }
-.account1-page .account-recent__product-info {
+.profile1-page .account-recent__product-info {
   width: 245px;
   padding-left: 25px;
   padding-right: 5px;
 }
-.account1-page .account-recent__product-header {
+.profile1-page .account-recent__product-header {
   width: 100%;
   font-family: "Roboto-Bold", sans-serif;
   font-size: 14px;
   margin-bottom: 5px;
 }
-.account1-page .account-recent__product-article {
+.profile1-page .account-recent__product-article {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 12px;
   margin-bottom: 5px;
 }
-.account1-page .account-recent__unit-price {
+.profile1-page .account-recent__unit-price {
   padding-right: 5px;
   box-sizing: border-box;
   width: 100px;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 20px;
 }
-.account1-page .account-recent__btn-buy {
+.profile1-page .account-recent__btn-buy {
   width: 110px;
   background-color: #f95318;
   color: #fff;
@@ -10883,19 +10883,19 @@ text-align
   text-decoration: none;
   border: 2px solid #f95318;
 }
-.account1-page .account-recent__btn-buy:hover {
+.profile1-page .account-recent__btn-buy:hover {
   background-color: #fff;
   color: #f95318;
   transition: all 0.2s ease;
 }
-.account1-page .account-recent__stars {
+.profile1-page .account-recent__stars {
   width: 140px;
   padding-right: 10px;
 }
-.account1-page .account-recent__to-cart {
+.profile1-page .account-recent__to-cart {
   vertical-align: middle;
 }
-.account1-page .account-recent__btn-to-cart {
+.profile1-page .account-recent__btn-to-cart {
   width: 150px;
   background-color: #f95318;
   color: #fff;
@@ -10907,12 +10907,12 @@ text-align
   text-decoration: none;
   border: 2px solid #f95318;
 }
-.account1-page .account-recent__btn-to-cart:hover {
+.profile1-page .account-recent__btn-to-cart:hover {
   background-color: #fff;
   color: #f95318;
   transition: all 0.2s ease;
 }
-.account1-page .main-wrapper {
+.profile1-page .main-wrapper {
   width: 1100px;
   margin: 0 auto;
   margin-top: 140px;
@@ -10922,32 +10922,32 @@ text-align
   min-height: 600px;
   padding: 40px 10px;
 }
-.account2-page .account-menu {
+.profile2-page .account-menu {
   width: 175px;
   padding-right: 35px;
   box-sizing: border-box;
 }
-.account2-page .account-menu__item {
+.profile2-page .account-menu__item {
   margin-bottom: 25px;
 }
-.account2-page .account-menu__link {
+.profile2-page .account-menu__link {
   text-transform: uppercase;
   color: #b9b9b9;
   font-size: 14px;
   font-family: "Roboto-Medium", sans-serif;
 }
-.account2-page .account-menu__link--active {
+.profile2-page .account-menu__link--active {
   color: #f95318;
   font-size: 18px;
 }
-.account2-page .account-menu__link:hover {
+.profile2-page .account-menu__link:hover {
   color: #f95318;
 }
-.account2-page .account__main-content {
+.profile2-page .account__main-content {
   width: 900px;
   align-items: flex-start;
 }
-.account2-page .account__header {
+.profile2-page .account__header {
   width: 100%;
   text-align: center;
   font-family: "Roboto-Medium", sans-serif;
@@ -10955,7 +10955,7 @@ text-align
   font-size: 24px;
   margin-bottom: 30px;
 }
-.account2-page .account__sub-header {
+.profile2-page .account__sub-header {
   padding: 10px 15px 18px;
   position: relative;
   font-weight: 400;
@@ -10963,7 +10963,7 @@ text-align
   font-size: 18px;
   font-family: "Roboto-Medium", sans-serif;
 }
-.account2-page .account__sub-header::before {
+.profile2-page .account__sub-header::before {
   content: '';
   position: absolute;
   left: 15px;
@@ -10972,10 +10972,10 @@ text-align
   height: 3px;
   background-color: #f95318;
 }
-.account2-page .account__wrapper {
+.profile2-page .account__wrapper {
   padding: 30px;
 }
-.account2-page .account__block-header {
+.profile2-page .account__block-header {
   background-color: #ececed;
   padding: 15px 30px;
   padding-right: 100px;
@@ -10983,7 +10983,7 @@ text-align
   box-sizing: border-box;
   font-size: 14px;
 }
-.account2-page .account__add-address {
+.profile2-page .account__add-address {
   color: #f95318;
   text-transform: uppercase;
   font-size: 14px;
@@ -10992,13 +10992,13 @@ text-align
   text-decoration: underline;
   display: inline-block;
 }
-.account2-page .account__add-address:hover {
+.profile2-page .account__add-address:hover {
   text-decoration: none;
 }
-.account2-page .account__add-address:hover .material-icons {
+.profile2-page .account__add-address:hover .material-icons {
   color: #f95318;
 }
-.account2-page .account__add-address .material-icons {
+.profile2-page .account__add-address .material-icons {
   color: #191919;
   margin-left: 20px;
   display: inline-block;
@@ -11006,12 +11006,12 @@ text-align
   font-size: 19px;
   margin-bottom: 3px;
 }
-.account2-page .account__footer {
+.profile2-page .account__footer {
   background-color: #ececed;
   padding: 15px 30px;
   box-sizing: border-box;
 }
-.account2-page .account__show-all {
+.profile2-page .account__show-all {
   text-align: center;
   display: inline-block;
   color: #fff;
@@ -11025,76 +11025,76 @@ text-align
   text-decoration: none;
   font-size: 14px;
 }
-.account2-page .account__show-all:hover {
+.profile2-page .account__show-all:hover {
   background-color: #777;
   transition: all 0.2s ease;
 }
-.account2-page .account__form-header {
+.profile2-page .account__form-header {
   margin-bottom: 20px;
 }
-.account2-page .account__form-title {
+.profile2-page .account__form-title {
   font-size: 18px;
   font-family: "Roboto-Medium", sans-serif;
   display: inline-block;
   vertical-align: baseline;
   margin-right: 40px;
 }
-.account2-page .account__unit-ammount {
+.profile2-page .account__unit-ammount {
   font-size: 18px;
   font-family: "Roboto-Medium", sans-serif;
   display: inline-block;
   vertical-align: baseline;
   color: #777;
 }
-.account2-page .account__submit-block {
+.profile2-page .account__submit-block {
   width: 100%;
   margin-bottom: 40px;
 }
-.account2-page .account__small-wrapper {
+.profile2-page .account__small-wrapper {
   padding: 0 15px;
   box-sizing: border-box;
 }
-.account2-page .account__final {
+.profile2-page .account__final {
   padding: 10px;
 }
-.account2-page .account__final-info {
+.profile2-page .account__final-info {
   font-size: 14px;
   margin-bottom: 10px;
   display: block;
 }
-.account2-page .account__final-value {
+.profile2-page .account__final-value {
   display: block;
   margin-bottom: 10px;
   font-size: 32px;
   color: #f95318;
   font-family: "Roboto-Medium", sans-serif;
 }
-.account2-page .account__final-price {
+.profile2-page .account__final-price {
   width: 210px;
 }
-.account2-page .account__address {
+.profile2-page .account__address {
   width: 120px;
   font-size: 12px;
   line-height: 15px;
   font-family: "Roboto-Regular", sans-serif;
 }
-.account2-page .account__progress {
+.profile2-page .account__progress {
   margin-bottom: 15px;
 }
-.account2-page .account__progress-title {
+.profile2-page .account__progress-title {
   text-transform: uppercase;
   font-family: "Roboto-Medium", sans-serif;
   font-size: 14px;
   width: 100%;
   margin-bottom: 10px;
 }
-.account2-page .account__progress-list {
+.profile2-page .account__progress-list {
   width: 610px;
 }
-.account2-page .account__progress-item {
+.profile2-page .account__progress-item {
   width: 140px;
 }
-.account2-page .account__progress-step {
+.profile2-page .account__progress-step {
   width: 30px;
   height: 30px;
   display: block;
@@ -11106,13 +11106,13 @@ text-align
   border-radius: 50%;
   background-color: #f6f6f6;
 }
-.account2-page .account__progress-description {
+.profile2-page .account__progress-description {
   font-size: 11px;
   line-height: 15px;
   color: #777;
   width: 90px;
 }
-.account2-page .account__progress-button {
+.profile2-page .account__progress-button {
   width: 215px;
   background-color: #a6a6a6;
   text-align: center;
@@ -11123,27 +11123,27 @@ text-align
   border: 0;
   text-decoration: none;
 }
-.account2-page .account__footer {
+.profile2-page .account__footer {
   justify-content: flex-end;
 }
-.account2-page .account__ordering-block {
+.profile2-page .account__ordering-block {
   width: 100%;
   margin-bottom: 30px;
 }
-.account2-page .account__ordering-block--half {
+.profile2-page .account__ordering-block--half {
   width: 452px;
 }
-.account2-page .account__manage-orders {
+.profile2-page .account__manage-orders {
   width: 100%;
   border: 1px solid #a6a6a6;
 }
-.account2-page .account-accordion__content {
+.profile2-page .account-accordion__content {
   padding: 25px;
   box-sizing: border-box;
   background-color: #e5e5e5;
   position: relative;
 }
-.account2-page .account-accordion__content:before {
+.profile2-page .account-accordion__content:before {
   content: '';
   position: absolute;
   z-index: 20;
@@ -11155,10 +11155,10 @@ text-align
   border-right: 25px solid transparent;
   border-bottom: 20px solid #e5e5e5;
 }
-.account2-page .account-accordion__table {
+.profile2-page .account-accordion__table {
   width: 100%;
 }
-.account2-page .account-accordion__table-header {
+.profile2-page .account-accordion__table-header {
   background-color: #ececed;
   height: 40px;
   color: #fff;
@@ -11168,60 +11168,60 @@ text-align
   vertical-align: middle;
   color: #191919;
 }
-.account2-page .account-accordion__table-header th {
+.profile2-page .account-accordion__table-header th {
   text-align: left;
   padding-right: 5px;
   box-sizing: border-box;
 }
-.account2-page .account-accordion__table-header th.t-ac {
+.profile2-page .account-accordion__table-header th.t-ac {
   text-align: center;
 }
-.account2-page .account-accordion__table-header th:first-of-type {
+.profile2-page .account-accordion__table-header th:first-of-type {
   padding-left: 25px;
 }
-.account2-page .account-accordion__table-header th:last-of-type {
+.profile2-page .account-accordion__table-header th:last-of-type {
   padding-right: 25px;
 }
-.account2-page .account-accordion__table-content {
+.profile2-page .account-accordion__table-content {
   text-align: left;
   vertical-align: middle;
   border-top: 1px solid #a6a6a6;
 }
-.account2-page .account-accordion__table-content td:first-of-type {
+.profile2-page .account-accordion__table-content td:first-of-type {
   padding-left: 25px;
 }
-.account2-page .account-accordion__table-content td:last-of-type {
+.profile2-page .account-accordion__table-content td:last-of-type {
   padding-right: 25px;
 }
-.account2-page .account-accordion__data {
+.profile2-page .account-accordion__data {
   font-size: 13px;
   padding-top: 50px;
   vertical-align: top;
   width: 140px;
   padding-right: 10px;
 }
-.account2-page .account-accordion__order-number {
+.profile2-page .account-accordion__order-number {
   font-size: 13px;
   padding-top: 50px;
   vertical-align: top;
   width: 100px;
   padding-right: 10px;
 }
-.account2-page .account-accordion__order-price {
+.profile2-page .account-accordion__order-price {
   font-size: 13px;
   padding-top: 50px;
   vertical-align: top;
   width: 80px;
   padding-right: 10px;
 }
-.account2-page .account-accordion__status {
+.profile2-page .account-accordion__status {
   font-size: 13px;
   padding-top: 50px;
   vertical-align: top;
   width: 120px;
   padding-right: 10px;
 }
-.account2-page .account-accordion__btn {
+.profile2-page .account-accordion__btn {
   min-height: 40px;
   text-align: center;
   background-color: #fff;
@@ -11235,7 +11235,7 @@ text-align
   font-weight: normal;
   font-family: "Roboto-Regular", sans-serif;
 }
-.account2-page .account-accordion__btn::after {
+.profile2-page .account-accordion__btn::after {
   content: '';
   display: inline-block;
   vertical-align: middle;
@@ -11245,37 +11245,37 @@ text-align
   border: 5px solid transparent;
   border-top: 5px solid #191919;
 }
-.account2-page .account-accordion__btn--active {
+.profile2-page .account-accordion__btn--active {
   background-color: #e5e5e5;
 }
-.account2-page .account-accordion__btn--active::after {
+.profile2-page .account-accordion__btn--active::after {
   top: -3px;
   border: 5px solid transparent;
   border-bottom: 5px solid #191919;
 }
-.account2-page .account-accordion__products {
+.profile2-page .account-accordion__products {
   width: 153px;
   padding: 30px 0;
   padding-right: 10px;
   box-sizing: border-box;
 }
-.account2-page .account-accordion__products img {
+.profile2-page .account-accordion__products img {
   min-width: 45px;
   max-width: 52px;
   height: auto;
 }
-.account2-page .account-order-details__title {
+.profile2-page .account-order-details__title {
   text-transform: uppercase;
   font-family: "Roboto-Medium", sans-serif;
   font-size: 14px;
   width: 100%;
 }
-.account2-page .account-order-details__table {
+.profile2-page .account-order-details__table {
   width: 100%;
   border-spacing: 0 15px;
   border-collapse: separate;
 }
-.account2-page .account-order-details__table-header {
+.profile2-page .account-order-details__table-header {
   height: 20px;
   color: #fff;
   font-family: "Roboto-Regular", sans-serif;
@@ -11284,70 +11284,70 @@ text-align
   vertical-align: middle;
   color: #191919;
 }
-.account2-page .account-order-details__table-header th {
+.profile2-page .account-order-details__table-header th {
   text-align: left;
   padding-right: 5px;
   box-sizing: border-box;
 }
-.account2-page .account-order-details__table-header th.t-ac {
+.profile2-page .account-order-details__table-header th.t-ac {
   text-align: center;
 }
-.account2-page .account-order-details__table-header th:first-of-type {
+.profile2-page .account-order-details__table-header th:first-of-type {
   padding-left: 15px;
 }
-.account2-page .account-order-details__table-header th:last-of-type {
+.profile2-page .account-order-details__table-header th:last-of-type {
   padding-right: 35px;
 }
-.account2-page .account-order-details__table-content {
+.profile2-page .account-order-details__table-content {
   text-align: left;
   vertical-align: middle;
   background-color: #fff;
   margin-bottom: 10px;
   box-shadow: 0px 0px 0px 1px #cdcdcd;
 }
-.account2-page .account-order-details__input {
+.profile2-page .account-order-details__input {
   padding-left: 38px;
   width: 15px;
 }
-.account2-page .account-order-details__image {
+.profile2-page .account-order-details__image {
   height: 85px;
   width: 85px;
   padding: 10px 10px 10px 15px;
 }
-.account2-page .account-order-details__image--small {
+.profile2-page .account-order-details__image--small {
   text-align: center;
 }
-.account2-page .account-order-details__image--small img {
+.profile2-page .account-order-details__image--small img {
   width: 45px;
   height: auto;
 }
-.account2-page .account-order-details__product-name {
+.profile2-page .account-order-details__product-name {
   min-width: 180px;
   padding-right: 10px;
 }
-.account2-page .account-order-details__product-header {
+.profile2-page .account-order-details__product-header {
   width: 100%;
   font-family: "Roboto-Medium", sans-serif;
   font-size: 14px;
   margin-bottom: 5px;
 }
-.account2-page .account-order-details__delivery {
+.profile2-page .account-order-details__delivery {
   font-size: 13px;
   line-height: 15px;
   font-family: "Roboto-Regular", sans-serif;
   min-width: 187px;
   text-transform: none;
 }
-.account2-page .account-order-details__value-wrapper {
+.profile2-page .account-order-details__value-wrapper {
   min-width: 100px;
   padding-right: 5px;
   box-sizing: border-box;
 }
-.account2-page .account-order-details__value {
+.profile2-page .account-order-details__value {
   display: inline-block;
   position: relative;
 }
-.account2-page .account-order-details__value .input {
+.profile2-page .account-order-details__value .input {
   height: 30px;
   width: 75px;
   border: 1px solid #b9b9b9;
@@ -11358,19 +11358,19 @@ text-align
   font-family: "Roboto-Bold", sans-serif;
   font-size: 18px;
 }
-.account2-page .account-order-details__value .input::-webkit-input-placeholder {
+.profile2-page .account-order-details__value .input::-webkit-input-placeholder {
   color: #191919;
 }
-.account2-page .account-order-details__value .input:-moz-placeholder {
+.profile2-page .account-order-details__value .input:-moz-placeholder {
   color: #191919;
 }
-.account2-page .account-order-details__value .input::-moz-placeholder {
+.profile2-page .account-order-details__value .input::-moz-placeholder {
   color: #191919;
 }
-.account2-page .account-order-details__value .input:-ms-input-placeholder {
+.profile2-page .account-order-details__value .input:-ms-input-placeholder {
   color: #191919;
 }
-.account2-page .account-order-details__value .arrow {
+.profile2-page .account-order-details__value .arrow {
   position: absolute;
   content: '';
   height: 28px;
@@ -11381,7 +11381,7 @@ text-align
   background-color: #fff;
   cursor: pointer;
 }
-.account2-page .account-order-details__value .arrow::before {
+.profile2-page .account-order-details__value .arrow::before {
   position: absolute;
   content: '';
   top: 12px;
@@ -11389,25 +11389,25 @@ text-align
   border: 5px solid transparent;
   border-top: 5px solid #191919;
 }
-.account2-page .account-order-details__unit-price {
+.profile2-page .account-order-details__unit-price {
   padding-right: 5px;
   box-sizing: border-box;
   width: 100px;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 20px;
 }
-.account2-page .account-order-details__total-price {
+.profile2-page .account-order-details__total-price {
   padding-right: 34px;
   box-sizing: border-box;
 }
-.account2-page .account-order-details__price {
+.profile2-page .account-order-details__price {
   font-size: 24px;
   font-family: "Roboto-Bold", sans-serif;
   display: block;
   font-size: 26px;
   color: #f95318;
 }
-.account2-page .main-wrapper {
+.profile2-page .main-wrapper {
   width: 1100px;
   margin: 0 auto;
   margin-top: 140px;
@@ -11416,32 +11416,32 @@ text-align
   min-height: 600px;
   padding: 40px 10px;
 }
-.account2-payment-page .account-menu {
+.profile2-payment-page .account-menu {
   width: 175px;
   padding-right: 35px;
   box-sizing: border-box;
 }
-.account2-payment-page .account-menu__item {
+.profile2-payment-page .account-menu__item {
   margin-bottom: 25px;
 }
-.account2-payment-page .account-menu__link {
+.profile2-payment-page .account-menu__link {
   text-transform: uppercase;
   color: #b9b9b9;
   font-size: 14px;
   font-family: "Roboto-Medium", sans-serif;
 }
-.account2-payment-page .account-menu__link--active {
+.profile2-payment-page .account-menu__link--active {
   color: #f95318;
   font-size: 18px;
 }
-.account2-payment-page .account-menu__link:hover {
+.profile2-payment-page .account-menu__link:hover {
   color: #f95318;
 }
-.account2-payment-page .account__main-content {
+.profile2-payment-page .account__main-content {
   width: 900px;
   align-items: flex-start;
 }
-.account2-payment-page .account__header {
+.profile2-payment-page .account__header {
   width: 100%;
   text-align: center;
   font-family: "Roboto-Medium", sans-serif;
@@ -11449,7 +11449,7 @@ text-align
   font-size: 24px;
   margin-bottom: 30px;
 }
-.account2-payment-page .account__sub-header {
+.profile2-payment-page .account__sub-header {
   padding: 10px 0px 18px;
   position: relative;
   font-weight: 400;
@@ -11457,7 +11457,7 @@ text-align
   font-size: 18px;
   font-family: "Roboto-Medium", sans-serif;
 }
-.account2-payment-page .account__sub-header::before {
+.profile2-payment-page .account__sub-header::before {
   content: '';
   position: absolute;
   left: 0px;
@@ -11466,71 +11466,71 @@ text-align
   height: 3px;
   background-color: #f95318;
 }
-.account2-payment-page .account__ordering-block {
+.profile2-payment-page .account__ordering-block {
   width: 100%;
   margin-bottom: 30px;
 }
-.account2-payment-page .account__ordering-block--half {
+.profile2-payment-page .account__ordering-block--half {
   width: 452px;
 }
-.account2-payment-page .payment {
+.profile2-payment-page .payment {
   width: 940px;
   margin: 0 auto;
 }
-.account2-payment-page .payment--info-list {
+.profile2-payment-page .payment--info-list {
   width: 100%;
 }
-.account2-payment-page .payment--info-list .payment__list {
+.profile2-payment-page .payment--info-list .payment__list {
   margin-bottom: 0;
 }
-.account2-payment-page .payment .big-orange-btn.big-orange-btn--invert {
+.profile2-payment-page .payment .big-orange-btn.big-orange-btn--invert {
   margin: 0 30px 85px 238px;
 }
-.account2-payment-page .payment__list {
+.profile2-payment-page .payment__list {
   width: 100%;
   margin-bottom: 40px;
 }
-.account2-payment-page .payment__wrapper {
+.profile2-payment-page .payment__wrapper {
   padding-bottom: 20px;
 }
-.account2-payment-page .payment__element {
+.profile2-payment-page .payment__element {
   margin-bottom: 5px;
   width: 100%;
 }
-.account2-payment-page .payment__element:last-child .payment__wrapper {
+.profile2-payment-page .payment__element:last-child .payment__wrapper {
   padding-bottom: 0;
 }
-.account2-payment-page .payment__status .material-icons {
+.profile2-payment-page .payment__status .material-icons {
   color: #20a85e;
   font-size: 27px;
 }
-.account2-payment-page .payment__image {
+.profile2-payment-page .payment__image {
   height: 50px;
   width: 150px;
   min-height: 50px;
   justify-content: flex-end;
 }
-.account2-payment-page .payment__image--small {
+.profile2-payment-page .payment__image--small {
   justify-content: flex-start;
   width: 120px;
 }
-.account2-payment-page .payment__text {
+.profile2-payment-page .payment__text {
   direction: ltr;
   width: 643px;
 }
-.account2-payment-page .payment__text-header {
+.profile2-payment-page .payment__text-header {
   display: block;
   font-family: "Roboto-Bold", sans-serif;
   font-size: 16px;
   margin-bottom: 7px;
 }
-.account2-payment-page .payment__text-content {
+.profile2-payment-page .payment__text-content {
   display: block;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
-.account2-payment-page .main-wrapper {
+.profile2-payment-page .main-wrapper {
   width: 1100px;
   margin: 0 auto;
   margin-top: 140px;
@@ -11539,32 +11539,32 @@ text-align
   min-height: 600px;
   padding: 40px 10px;
 }
-.account3-page .account-menu {
+.profile3-page .account-menu {
   width: 175px;
   padding-right: 35px;
   box-sizing: border-box;
 }
-.account3-page .account-menu__item {
+.profile3-page .account-menu__item {
   margin-bottom: 25px;
 }
-.account3-page .account-menu__link {
+.profile3-page .account-menu__link {
   text-transform: uppercase;
   color: #b9b9b9;
   font-size: 14px;
   font-family: "Roboto-Medium", sans-serif;
 }
-.account3-page .account-menu__link--active {
+.profile3-page .account-menu__link--active {
   color: #f95318;
   font-size: 18px;
 }
-.account3-page .account-menu__link:hover {
+.profile3-page .account-menu__link:hover {
   color: #f95318;
 }
-.account3-page .account__main-content {
+.profile3-page .account__main-content {
   width: 924px;
   align-items: flex-start;
 }
-.account3-page .account__header {
+.profile3-page .account__header {
   width: 100%;
   text-align: center;
   font-family: "Roboto-Medium", sans-serif;
@@ -11572,7 +11572,7 @@ text-align
   font-size: 24px;
   margin-bottom: 30px;
 }
-.account3-page .account__sub-header {
+.profile3-page .account__sub-header {
   padding: 10px 15px 18px;
   position: relative;
   font-weight: 400;
@@ -11580,7 +11580,7 @@ text-align
   font-size: 18px;
   font-family: "Roboto-Medium", sans-serif;
 }
-.account3-page .account__sub-header::before {
+.profile3-page .account__sub-header::before {
   content: '';
   position: absolute;
   left: 15px;
@@ -11589,13 +11589,13 @@ text-align
   height: 3px;
   background-color: #f95318;
 }
-.account3-page .account__form-table {
+.profile3-page .account__form-table {
   border: 1px solid #a6a6a6;
 }
-.account3-page .account__wrapper {
+.profile3-page .account__wrapper {
   padding: 30px;
 }
-.account3-page .account__block-header {
+.profile3-page .account__block-header {
   background-color: #ececed;
   padding: 15px 30px;
   padding-right: 100px;
@@ -11603,7 +11603,7 @@ text-align
   box-sizing: border-box;
   font-size: 14px;
 }
-.account3-page .account__add-address {
+.profile3-page .account__add-address {
   color: #f95318;
   text-transform: uppercase;
   font-size: 14px;
@@ -11612,13 +11612,13 @@ text-align
   text-decoration: underline;
   display: inline-block;
 }
-.account3-page .account__add-address:hover {
+.profile3-page .account__add-address:hover {
   text-decoration: none;
 }
-.account3-page .account__add-address:hover .material-icons {
+.profile3-page .account__add-address:hover .material-icons {
   color: #f95318;
 }
-.account3-page .account__add-address .material-icons {
+.profile3-page .account__add-address .material-icons {
   color: #191919;
   margin-left: 20px;
   display: inline-block;
@@ -11626,24 +11626,24 @@ text-align
   font-size: 19px;
   margin-bottom: 3px;
 }
-.account3-page .account__submit-block {
+.profile3-page .account__submit-block {
   width: 100%;
   margin-bottom: 40px;
 }
-.account3-page .account__ordering-block {
+.profile3-page .account__ordering-block {
   width: 100%;
   margin-bottom: 30px;
 }
-.account3-page .account__ordering-block--half {
+.profile3-page .account__ordering-block--half {
   width: 452px;
 }
-.account3-page .delivery__item {
+.profile3-page .delivery__item {
   margin-bottom: 20px;
 }
-.account3-page .delivery__item:last-child {
+.profile3-page .delivery__item:last-child {
   margin-bottom: 0;
 }
-.account3-page .delivery__address {
+.profile3-page .delivery__address {
   width: 220px;
   font-size: 14px;
   line-height: 21px;
@@ -11651,7 +11651,7 @@ text-align
   box-sizing: border-box;
   font-family: "Roboto-Regular", sans-serif;
 }
-.account3-page .delivery__btn {
+.profile3-page .delivery__btn {
   width: 118px;
   display: inline-block;
   border: 1px solid #727272;
@@ -11662,20 +11662,20 @@ text-align
   text-align: center;
   border-radius: 3px;
 }
-.account3-page .delivery__btn:hover {
+.profile3-page .delivery__btn:hover {
   background-color: #727272;
   color: #fff;
 }
-.account3-page .delivery__left-block {
+.profile3-page .delivery__left-block {
   width: 255px;
 }
-.account3-page .delivery__right-block {
+.profile3-page .delivery__right-block {
   width: 160px;
 }
-.account3-page .account-data {
+.profile3-page .account-data {
   width: 100%;
 }
-.account3-page .account-data__form {
+.profile3-page .account-data__form {
   padding: 45px 72px;
   box-sizing: border-box;
   width: 100%;
@@ -11687,32 +11687,32 @@ text-align
   background-color: #fff;
   border: 1px solid #a6a6a6;
 }
-.account3-page .account-data__land .select2-dropdown {
+.profile3-page .account-data__land .select2-dropdown {
   border: none;
 }
-.account3-page .account-data__land .select2 .select2-selection--single {
+.profile3-page .account-data__land .select2 .select2-selection--single {
   background-color: #ececed;
 }
-.account3-page .account-data__land .select2.select2-container.select2-container--default {
+.profile3-page .account-data__land .select2.select2-container.select2-container--default {
   margin-bottom: 20px;
   border-radius: 2px;
   overflow: hidden;
 }
-.account3-page .account-data__land .select2-container--default .select2-selection--single {
+.profile3-page .account-data__land .select2-container--default .select2-selection--single {
   height: 35px;
   padding: 0 45px 0 20px;
   box-sizing: border-box;
   border: none;
   border-radius: 2px;
 }
-.account3-page .account-data__land .select2-container--default .select2-selection--single .select2-selection__rendered {
+.profile3-page .account-data__land .select2-container--default .select2-selection--single .select2-selection__rendered {
   padding: 0;
   line-height: 35px;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
   color: #191919;
 }
-.account3-page .account-data__land .select2-container--default .select2-selection--single .select2-selection__arrow {
+.profile3-page .account-data__land .select2-container--default .select2-selection--single .select2-selection__arrow {
   height: 100%;
   width: 40px;
   background-color: #b9b9b9;
@@ -11720,35 +11720,35 @@ text-align
   top: 0;
   right: 0;
 }
-.account3-page .account-data__land .select2-container--default .select2-selection--single .select2-selection__arrow b {
+.profile3-page .account-data__land .select2-container--default .select2-selection--single .select2-selection__arrow b {
   border-color: #191919 transparent transparent transparent;
 }
-.account3-page .account-data__land .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+.profile3-page .account-data__land .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
   border-color: transparent transparent #191919 transparent;
 }
-.account3-page .account-data__phone .select2-dropdown {
+.profile3-page .account-data__phone .select2-dropdown {
   border: none;
 }
-.account3-page .account-data__phone .select2.select2-container.select2-container--default {
+.profile3-page .account-data__phone .select2.select2-container.select2-container--default {
   margin-bottom: 20px;
   border-radius: 2px;
   overflow: hidden;
 }
-.account3-page .account-data__phone .select2-container--default .select2-selection--single {
+.profile3-page .account-data__phone .select2-container--default .select2-selection--single {
   height: 35px;
   padding: 0 45px 0 20px;
   box-sizing: border-box;
   border: none;
   border-radius: 2px;
 }
-.account3-page .account-data__phone .select2-container--default .select2-selection--single .select2-selection__rendered {
+.profile3-page .account-data__phone .select2-container--default .select2-selection--single .select2-selection__rendered {
   padding: 0;
   line-height: 35px;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
   color: #191919;
 }
-.account3-page .account-data__phone .select2-container--default .select2-selection--single .select2-selection__arrow {
+.profile3-page .account-data__phone .select2-container--default .select2-selection--single .select2-selection__arrow {
   height: 100%;
   width: 40px;
   background-color: #b9b9b9;
@@ -11756,21 +11756,21 @@ text-align
   top: 0;
   right: 0;
 }
-.account3-page .account-data__phone .select2-container--default .select2-selection--single .select2-selection__arrow b {
+.profile3-page .account-data__phone .select2-container--default .select2-selection--single .select2-selection__arrow b {
   border-color: #191919 transparent transparent transparent;
 }
-.account3-page .account-data__phone .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+.profile3-page .account-data__phone .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
   border-color: transparent transparent #191919 transparent;
 }
-.account3-page .account-data__phone .select-wrapper {
+.profile3-page .account-data__phone .select-wrapper {
   border-radius: 2px;
   overflow: hidden;
   margin-bottom: 20px;
 }
-.account3-page .account-data__phone .select-wrapper .js-cart-select3 ~ .select2.select2-container.select2-container--default {
+.profile3-page .account-data__phone .select-wrapper .js-cart-select3 ~ .select2.select2-container.select2-container--default {
   border-radius: 2px;
 }
-.account3-page .account-data__phone .select-wrapper .select-flag {
+.profile3-page .account-data__phone .select-wrapper .select-flag {
   display: block;
   background-color: #b9b9b9;
   height: 20px;
@@ -11778,41 +11778,41 @@ text-align
   background: #b9b9b9 url("/img/flags/deu.png") no-repeat 7px;
   background-size: 20px;
 }
-.account3-page .account-data__phone .select-wrapper .select2.select2-container.select2-container--default {
+.profile3-page .account-data__phone .select-wrapper .select2.select2-container.select2-container--default {
   margin-bottom: 0;
   border-radius: 0;
   min-width: 60px;
 }
-.account3-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single {
+.profile3-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single {
   padding: 0;
 }
-.account3-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
+.profile3-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
   padding: 4px 0 0 10px;
   background-color: #b9b9b9;
 }
-.account3-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow {
+.profile3-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow {
   background-color: #b9b9b9;
   width: 20px;
   top: 0;
   left: 40px;
 }
-.account3-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow b {
+.profile3-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow b {
   border-color: #191919 transparent transparent transparent;
 }
-.account3-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+.profile3-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
   border-color: transparent transparent #191919 transparent;
 }
-.account3-page .account-data__column {
+.profile3-page .account-data__column {
   width: 365px;
 }
-.account3-page .account-data__column-label {
+.profile3-page .account-data__column-label {
   display: inline-block;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
   margin: 0 5px 5px 5px;
   box-sizing: border-box;
 }
-.account3-page .account-data__column-label-sub {
+.profile3-page .account-data__column-label-sub {
   margin-bottom: 7px;
   padding: 0 5px;
   box-sizing: border-box;
@@ -11821,7 +11821,7 @@ text-align
   font-family: "Roboto-Regular", sans-serif;
   font-size: 10px;
 }
-.account3-page .account-data__column-input {
+.profile3-page .account-data__column-input {
   width: 100%;
   height: 35px;
   padding: 0 20px;
@@ -11833,20 +11833,20 @@ text-align
   border: none;
   background-color: #ececed;
 }
-.account3-page .account-data__column-input--border {
+.profile3-page .account-data__column-input--border {
   background-color: transparent;
   border: 1px solid #ececed;
 }
-.account3-page .account-data__column-input-pre {
+.profile3-page .account-data__column-input-pre {
   margin-left: 5px;
   border-radius: 2px 0 0 2px;
   padding: 0 10px;
   background-color: #b9b9b9;
 }
-.account3-page .account-data__column-input-sub {
+.profile3-page .account-data__column-input-sub {
   margin-bottom: 3px;
 }
-.account3-page .account-data__column-input-small {
+.profile3-page .account-data__column-input-small {
   display: inline-block;
   flex: 1;
   height: 35px;
@@ -11857,14 +11857,14 @@ text-align
   border: none;
   background-color: #ececed;
 }
-.account3-page .account-data__column-select {
+.profile3-page .account-data__column-select {
   width: 100%;
 }
-.account3-page .account-data__sex {
+.profile3-page .account-data__sex {
   margin-bottom: 16px;
   flex-wrap: wrap;
 }
-.account3-page .account-data__sex-header {
+.profile3-page .account-data__sex-header {
   padding-left: 5px;
   box-sizing: border-box;
   width: 100%;
@@ -11872,14 +11872,14 @@ text-align
   padding-right: 20px;
   margin-bottom: 15px;
 }
-.account3-page .account-data__sex-label {
+.profile3-page .account-data__sex-label {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
   margin-right: 15px;
   position: relative;
   padding-left: 20px;
 }
-.account3-page .account-data__sex-label::before {
+.profile3-page .account-data__sex-label::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -11892,10 +11892,10 @@ text-align
   border: 1px solid transparent;
   box-shadow: 0px 0px 0px 1px #f95318;
 }
-.account3-page .account-data__sex-input {
+.profile3-page .account-data__sex-input {
   display: none;
 }
-.account3-page .account-data__sex-input:checked+label::after {
+.profile3-page .account-data__sex-input:checked+label::after {
   position: absolute;
   top: 2px;
   left: 2px;
@@ -11906,10 +11906,10 @@ text-align
   border-radius: 50%;
   background-color: #f95318;
 }
-.account3-page .account-data__submit-block {
+.profile3-page .account-data__submit-block {
   width: 100%;
 }
-.account3-page .main-wrapper {
+.profile3-page .main-wrapper {
   width: 1100px;
   margin: 0 auto;
   margin-top: 140px;
@@ -11919,38 +11919,38 @@ text-align
   min-height: 600px;
   padding: 40px 10px;
 }
-.account4-page .account-menu {
+.profile4-page .account-menu {
   width: 175px;
   padding-right: 35px;
   box-sizing: border-box;
 }
-.account4-page .account-menu__item {
+.profile4-page .account-menu__item {
   margin-bottom: 25px;
 }
-.account4-page .account-menu__link {
+.profile4-page .account-menu__link {
   text-transform: uppercase;
   color: #b9b9b9;
   font-size: 14px;
   font-family: "Roboto-Medium", sans-serif;
 }
-.account4-page .account-menu__link--active {
+.profile4-page .account-menu__link--active {
   color: #f95318;
   font-size: 18px;
 }
-.account4-page .account-menu__link:hover {
+.profile4-page .account-menu__link:hover {
   color: #f95318;
 }
-.account4-page .account__main-content {
+.profile4-page .account__main-content {
   width: 842px;
   align-items: flex-start;
 }
-.account4-page .account__main-content--wide {
+.profile4-page .account__main-content--wide {
   width: 900px;
 }
-.account4-page .account__main-content--full-width {
+.profile4-page .account__main-content--full-width {
   width: 924px;
 }
-.account4-page .account__header {
+.profile4-page .account__header {
   width: 100%;
   text-align: center;
   font-family: "Roboto-Medium", sans-serif;
@@ -11958,7 +11958,7 @@ text-align
   font-size: 24px;
   margin-bottom: 30px;
 }
-.account4-page .account__sub-header {
+.profile4-page .account__sub-header {
   padding: 10px 15px 18px;
   position: relative;
   font-weight: 400;
@@ -11966,7 +11966,7 @@ text-align
   font-size: 18px;
   font-family: "Roboto-Regular", sans-serif;
 }
-.account4-page .account__sub-header::before {
+.profile4-page .account__sub-header::before {
   content: '';
   position: absolute;
   left: 15px;
@@ -11975,20 +11975,20 @@ text-align
   height: 3px;
   background-color: #f95318;
 }
-.account4-page .account__submit-block {
+.profile4-page .account__submit-block {
   width: 100%;
   margin-bottom: 40px;
 }
-.account4-page .account__small-wrapper {
+.profile4-page .account__small-wrapper {
   padding: 0 15px;
   width: 100%;
   box-sizing: border-box;
 }
-.account4-page .account-data {
+.profile4-page .account-data {
   width: 100%;
   margin: 0px 0 30px;
 }
-.account4-page .account-data__form {
+.profile4-page .account-data__form {
   padding: 40px;
   box-sizing: border-box;
   background-color: #ececed;
@@ -11999,29 +11999,29 @@ text-align
   justify-content: space-between;
   align-items: flex-start;
 }
-.account4-page .account-data__land .select2-dropdown {
+.profile4-page .account-data__land .select2-dropdown {
   border: none;
 }
-.account4-page .account-data__land .select2.select2-container.select2-container--default {
+.profile4-page .account-data__land .select2.select2-container.select2-container--default {
   margin-bottom: 20px;
   border-radius: 2px;
   overflow: hidden;
 }
-.account4-page .account-data__land .select2-container--default .select2-selection--single {
+.profile4-page .account-data__land .select2-container--default .select2-selection--single {
   height: 35px;
   padding: 0 45px 0 20px;
   box-sizing: border-box;
   border: none;
   border-radius: 2px;
 }
-.account4-page .account-data__land .select2-container--default .select2-selection--single .select2-selection__rendered {
+.profile4-page .account-data__land .select2-container--default .select2-selection--single .select2-selection__rendered {
   padding: 0;
   line-height: 35px;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
   color: #191919;
 }
-.account4-page .account-data__land .select2-container--default .select2-selection--single .select2-selection__arrow {
+.profile4-page .account-data__land .select2-container--default .select2-selection--single .select2-selection__arrow {
   height: 100%;
   width: 40px;
   background-color: #b9b9b9;
@@ -12029,35 +12029,35 @@ text-align
   top: 0;
   right: 0;
 }
-.account4-page .account-data__land .select2-container--default .select2-selection--single .select2-selection__arrow b {
+.profile4-page .account-data__land .select2-container--default .select2-selection--single .select2-selection__arrow b {
   border-color: #191919 transparent transparent transparent;
 }
-.account4-page .account-data__land .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+.profile4-page .account-data__land .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
   border-color: transparent transparent #191919 transparent;
 }
-.account4-page .account-data__phone .select2-dropdown {
+.profile4-page .account-data__phone .select2-dropdown {
   border: none;
 }
-.account4-page .account-data__phone .select2.select2-container.select2-container--default {
+.profile4-page .account-data__phone .select2.select2-container.select2-container--default {
   margin-bottom: 20px;
   border-radius: 2px;
   overflow: hidden;
 }
-.account4-page .account-data__phone .select2-container--default .select2-selection--single {
+.profile4-page .account-data__phone .select2-container--default .select2-selection--single {
   height: 35px;
   padding: 0 45px 0 20px;
   box-sizing: border-box;
   border: none;
   border-radius: 2px;
 }
-.account4-page .account-data__phone .select2-container--default .select2-selection--single .select2-selection__rendered {
+.profile4-page .account-data__phone .select2-container--default .select2-selection--single .select2-selection__rendered {
   padding: 0;
   line-height: 35px;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
   color: #191919;
 }
-.account4-page .account-data__phone .select2-container--default .select2-selection--single .select2-selection__arrow {
+.profile4-page .account-data__phone .select2-container--default .select2-selection--single .select2-selection__arrow {
   height: 100%;
   width: 40px;
   background-color: #b9b9b9;
@@ -12065,21 +12065,21 @@ text-align
   top: 0;
   right: 0;
 }
-.account4-page .account-data__phone .select2-container--default .select2-selection--single .select2-selection__arrow b {
+.profile4-page .account-data__phone .select2-container--default .select2-selection--single .select2-selection__arrow b {
   border-color: #191919 transparent transparent transparent;
 }
-.account4-page .account-data__phone .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+.profile4-page .account-data__phone .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
   border-color: transparent transparent #191919 transparent;
 }
-.account4-page .account-data__phone .select-wrapper {
+.profile4-page .account-data__phone .select-wrapper {
   border-radius: 2px;
   overflow: hidden;
   margin-bottom: 20px;
 }
-.account4-page .account-data__phone .select-wrapper .js-cart-select3 ~ .select2.select2-container.select2-container--default {
+.profile4-page .account-data__phone .select-wrapper .js-cart-select3 ~ .select2.select2-container.select2-container--default {
   border-radius: 2px;
 }
-.account4-page .account-data__phone .select-wrapper .select-flag {
+.profile4-page .account-data__phone .select-wrapper .select-flag {
   display: block;
   background-color: #b9b9b9;
   height: 20px;
@@ -12087,45 +12087,45 @@ text-align
   background: #b9b9b9 url("/img/flags/deu.png") no-repeat 7px;
   background-size: 20px;
 }
-.account4-page .account-data__phone .select-wrapper .select2.select2-container.select2-container--default {
+.profile4-page .account-data__phone .select-wrapper .select2.select2-container.select2-container--default {
   margin-bottom: 0;
   border-radius: 0;
   min-width: 60px;
 }
-.account4-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single {
+.profile4-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single {
   padding: 0;
 }
-.account4-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
+.profile4-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
   padding: 4px 0 0 10px;
   background-color: #b9b9b9;
 }
-.account4-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow {
+.profile4-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow {
   background-color: #b9b9b9;
   width: 20px;
   top: 0;
   left: 40px;
 }
-.account4-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow b {
+.profile4-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow b {
   border-color: #191919 transparent transparent transparent;
 }
-.account4-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+.profile4-page .account-data__phone .select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
   border-color: transparent transparent #191919 transparent;
 }
-.account4-page .account-data__columns {
+.profile4-page .account-data__columns {
   justify-content: space-between;
   width: 100%;
 }
-.account4-page .account-data__column {
+.profile4-page .account-data__column {
   width: 365px;
 }
-.account4-page .account-data__column-label {
+.profile4-page .account-data__column-label {
   display: inline-block;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
   margin: 0 5px 5px 5px;
   box-sizing: border-box;
 }
-.account4-page .account-data__column-label-sub {
+.profile4-page .account-data__column-label-sub {
   margin-bottom: 7px;
   padding: 0 5px;
   box-sizing: border-box;
@@ -12134,7 +12134,7 @@ text-align
   font-family: "Roboto-Regular", sans-serif;
   font-size: 10px;
 }
-.account4-page .account-data__column-input {
+.profile4-page .account-data__column-input {
   width: 100%;
   height: 35px;
   padding: 0 20px;
@@ -12145,20 +12145,20 @@ text-align
   border-radius: 2px;
   border: none;
 }
-.account4-page .account-data__column-input--border {
+.profile4-page .account-data__column-input--border {
   background-color: transparent;
   border: 1px solid #ececed;
 }
-.account4-page .account-data__column-input-pre {
+.profile4-page .account-data__column-input-pre {
   margin-left: 5px;
   border-radius: 2px 0 0 2px;
   padding: 0 10px;
   background-color: #b9b9b9;
 }
-.account4-page .account-data__column-input-sub {
+.profile4-page .account-data__column-input-sub {
   margin-bottom: 3px;
 }
-.account4-page .account-data__column-input-small {
+.profile4-page .account-data__column-input-small {
   display: inline-block;
   flex: 1;
   height: 35px;
@@ -12168,28 +12168,28 @@ text-align
   font-size: 16px;
   border: none;
 }
-.account4-page .account-data__column-select {
+.profile4-page .account-data__column-select {
   width: 100%;
 }
-.account4-page .account-data__sex {
+.profile4-page .account-data__sex {
   margin-bottom: 16px;
   flex-wrap: wrap;
   width: 100%;
 }
-.account4-page .account-data__sex-header {
+.profile4-page .account-data__sex-header {
   padding-left: 5px;
   box-sizing: border-box;
   display: inline-block;
   padding-right: 20px;
 }
-.account4-page .account-data__sex-label {
+.profile4-page .account-data__sex-label {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
   margin-right: 15px;
   position: relative;
   padding-left: 20px;
 }
-.account4-page .account-data__sex-label::before {
+.profile4-page .account-data__sex-label::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -12202,10 +12202,10 @@ text-align
   border: 1px solid transparent;
   box-shadow: 0px 0px 0px 1px #f95318;
 }
-.account4-page .account-data__sex-input {
+.profile4-page .account-data__sex-input {
   display: none;
 }
-.account4-page .account-data__sex-input:checked+label::after {
+.profile4-page .account-data__sex-input:checked+label::after {
   position: absolute;
   top: 2px;
   left: 2px;
@@ -12216,16 +12216,16 @@ text-align
   border-radius: 50%;
   background-color: #f95318;
 }
-.account4-page .account-data__submit-block {
+.profile4-page .account-data__submit-block {
   width: 100%;
 }
-.account4-page .account-data__info-mark {
+.profile4-page .account-data__info-mark {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 12px;
   color: #777;
   width: 100%;
 }
-.account4-page .account-data__info-mark-label {
+.profile4-page .account-data__info-mark-label {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 14px;
   margin-right: auto;
@@ -12236,7 +12236,7 @@ text-align
   position: relative;
   display: inline-block;
 }
-.account4-page .account-data__info-mark-label:before {
+.profile4-page .account-data__info-mark-label:before {
   content: '';
   position: absolute;
   left: 0;
@@ -12250,13 +12250,13 @@ text-align
   display: inline-block;
   vertical-align: middle;
 }
-.account4-page .account-data__info-mark-input {
+.profile4-page .account-data__info-mark-input {
   display: none;
 }
-.account4-page .account-data__info-mark-input:checked+label::before {
+.profile4-page .account-data__info-mark-input:checked+label::before {
   background-color: #f95318;
 }
-.account4-page .account-data__info-mark-input:checked+label::after {
+.profile4-page .account-data__info-mark-input:checked+label::after {
   position: absolute;
   top: 1px;
   left: 1px;
@@ -12267,11 +12267,11 @@ text-align
   content: '✓';
   color: #fff;
 }
-.account4-page .account-registration {
+.profile4-page .account-registration {
   margin-bottom: 60px;
   width: 100%;
 }
-.account4-page .account-registration__form {
+.profile4-page .account-registration__form {
   padding: 35px 40px;
   box-sizing: border-box;
   background-color: #ececed;
@@ -12280,7 +12280,7 @@ text-align
   justify-content: space-between;
   align-items: flex-start;
 }
-.account4-page .account-registration__form-legend {
+.profile4-page .account-registration__form-legend {
   padding: 10px 15px 18px;
   position: relative;
   font-weight: 400;
@@ -12289,7 +12289,7 @@ text-align
   width: 100%;
   box-sizing: border-box;
 }
-.account4-page .account-registration__form-legend::before {
+.profile4-page .account-registration__form-legend::before {
   content: '';
   position: absolute;
   left: 15px;
@@ -12298,10 +12298,10 @@ text-align
   height: 3px;
   background-color: #f95318;
 }
-.account4-page .account-registration__form-half {
+.profile4-page .account-registration__form-half {
   width: 362px;
 }
-.account4-page .account-registration__form-label {
+.profile4-page .account-registration__form-label {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12311,7 +12311,7 @@ text-align
   width: 100%;
   box-sizing: border-box;
 }
-.account4-page .account-registration__form-input {
+.profile4-page .account-registration__form-input {
   width: 100%;
   height: 35px;
   padding: 0 20px;
@@ -12322,29 +12322,29 @@ text-align
   border-radius: 2px;
   border: none;
 }
-.account4-page .account-registration__form-input--gray {
+.profile4-page .account-registration__form-input--gray {
   background-color: #ececed;
 }
-.account4-page .account-registration__form-input--border {
+.profile4-page .account-registration__form-input--border {
   background-color: transparent;
   border: 1px solid #ececed;
 }
-.account4-page .account-interest {
+.profile4-page .account-interest {
   width: 100%;
   justify-content: space-between;
 }
-.account4-page .account-interest__column {
+.profile4-page .account-interest__column {
   width: 30%;
   flex-direction: column;
 }
-.account4-page .account-interest__column-label {
+.profile4-page .account-interest__column-label {
   display: inline-block;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
   margin: 0 5px 5px 5px;
   box-sizing: border-box;
 }
-.account4-page .account-interest__column-label-sub {
+.profile4-page .account-interest__column-label-sub {
   margin-bottom: 7px;
   padding: 0 5px;
   box-sizing: border-box;
@@ -12353,7 +12353,7 @@ text-align
   font-family: "Roboto-Regular", sans-serif;
   font-size: 10px;
 }
-.account4-page .account-interest__column-input {
+.profile4-page .account-interest__column-input {
   width: 100%;
   height: 35px;
   padding: 0 20px;
@@ -12364,20 +12364,20 @@ text-align
   border-radius: 2px;
   border: none;
 }
-.account4-page .account-interest__column-input--border {
+.profile4-page .account-interest__column-input--border {
   background-color: transparent;
   border: 1px solid #ececed;
 }
-.account4-page .account-interest__column-input-pre {
+.profile4-page .account-interest__column-input-pre {
   margin-left: 5px;
   border-radius: 2px 0 0 2px;
   padding: 0 10px;
   background-color: #b9b9b9;
 }
-.account4-page .account-interest__column-input-sub {
+.profile4-page .account-interest__column-input-sub {
   margin-bottom: 3px;
 }
-.account4-page .account-interest__column-input-small {
+.profile4-page .account-interest__column-input-small {
   display: inline-block;
   flex: 1;
   height: 35px;
@@ -12387,19 +12387,19 @@ text-align
   font-size: 16px;
   border: none;
 }
-.account4-page .account-interest__column-select {
+.profile4-page .account-interest__column-select {
   width: 100%;
 }
-.account4-page .account-interest__input-wrapper {
+.profile4-page .account-interest__input-wrapper {
   margin-bottom: 20px;
 }
-.account4-page .account-interest__input {
+.profile4-page .account-interest__input {
   display: none;
 }
-.account4-page .account-interest__input:checked+label::before {
+.profile4-page .account-interest__input:checked+label::before {
   background-color: #f95318;
 }
-.account4-page .account-interest__input:checked+label::after {
+.profile4-page .account-interest__input:checked+label::after {
   position: absolute;
   top: 1px;
   left: 1px;
@@ -12410,7 +12410,7 @@ text-align
   content: '✓';
   color: #fff;
 }
-.account4-page .account-interest__label {
+.profile4-page .account-interest__label {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 14px;
   margin-right: auto;
@@ -12421,7 +12421,7 @@ text-align
   position: relative;
   display: inline-block;
 }
-.account4-page .account-interest__label:before {
+.profile4-page .account-interest__label:before {
   content: '';
   position: absolute;
   left: 0;
@@ -12435,7 +12435,7 @@ text-align
   display: inline-block;
   vertical-align: middle;
 }
-.account4-page .main-wrapper {
+.profile4-page .main-wrapper {
   width: 1100px;
   margin: 0 auto;
   margin-top: 140px;
@@ -12444,32 +12444,32 @@ text-align
   min-height: 600px;
   padding: 40px 10px;
 }
-.account5-page .account-menu {
+.profile5-page .account-menu {
   width: 175px;
   padding-right: 35px;
   box-sizing: border-box;
 }
-.account5-page .account-menu__item {
+.profile5-page .account-menu__item {
   margin-bottom: 25px;
 }
-.account5-page .account-menu__link {
+.profile5-page .account-menu__link {
   text-transform: uppercase;
   color: #b9b9b9;
   font-size: 14px;
   font-family: "Roboto-Medium", sans-serif;
 }
-.account5-page .account-menu__link--active {
+.profile5-page .account-menu__link--active {
   color: #f95318;
   font-size: 18px;
 }
-.account5-page .account-menu__link:hover {
+.profile5-page .account-menu__link:hover {
   color: #f95318;
 }
-.account5-page .account__main-content {
+.profile5-page .account__main-content {
   width: 900px;
   align-items: flex-start;
 }
-.account5-page .account__header {
+.profile5-page .account__header {
   width: 100%;
   text-align: center;
   font-family: "Roboto-Medium", sans-serif;
@@ -12477,7 +12477,7 @@ text-align
   font-size: 24px;
   margin-bottom: 30px;
 }
-.account5-page .account__sub-header {
+.profile5-page .account__sub-header {
   padding: 10px 15px 18px;
   position: relative;
   font-weight: 400;
@@ -12485,7 +12485,7 @@ text-align
   font-size: 18px;
   font-family: "Roboto-Medium", sans-serif;
 }
-.account5-page .account__sub-header::before {
+.profile5-page .account__sub-header::before {
   content: '';
   position: absolute;
   left: 15px;
@@ -12494,24 +12494,24 @@ text-align
   height: 3px;
   background-color: #f95318;
 }
-.account5-page .account__submit-block {
+.profile5-page .account__submit-block {
   width: 100%;
   margin-bottom: 40px;
 }
-.account5-page .account__ordering-block {
+.profile5-page .account__ordering-block {
   width: 100%;
   margin-bottom: 30px;
 }
-.account5-page .account__ordering-block--half {
+.profile5-page .account__ordering-block--half {
   width: 452px;
 }
-.account5-page .account-wishlist {
+.profile5-page .account-wishlist {
   border: 1px solid #a6a6a6;
 }
-.account5-page .account-wishlist__table {
+.profile5-page .account-wishlist__table {
   width: 100%;
 }
-.account5-page .account-wishlist__table-header {
+.profile5-page .account-wishlist__table-header {
   background-color: #ececed;
   height: 40px;
   color: #fff;
@@ -12521,53 +12521,53 @@ text-align
   vertical-align: middle;
   color: #191919;
 }
-.account5-page .account-wishlist__table-header th {
+.profile5-page .account-wishlist__table-header th {
   text-align: left;
   padding-right: 5px;
   box-sizing: border-box;
 }
-.account5-page .account-wishlist__table-header th:first-of-type {
+.profile5-page .account-wishlist__table-header th:first-of-type {
   padding-left: 25px;
 }
-.account5-page .account-wishlist__table-header th:last-of-type {
+.profile5-page .account-wishlist__table-header th:last-of-type {
   padding-right: 25px;
 }
-.account5-page .account-wishlist__content {
+.profile5-page .account-wishlist__content {
   text-align: left;
   vertical-align: middle;
   border-bottom: 1px solid #a6a6a6;
 }
-.account5-page .account-wishlist__content:last-child {
+.profile5-page .account-wishlist__content:last-child {
   border-bottom: 0;
 }
-.account5-page .account-wishlist__image {
+.profile5-page .account-wishlist__image {
   height: 85px;
   width: 85px;
   padding: 10px 10px 10px 15px;
 }
-.account5-page .account-wishlist__image--small {
+.profile5-page .account-wishlist__image--small {
   text-align: center;
 }
-.account5-page .account-wishlist__image--small img {
+.profile5-page .account-wishlist__image--small img {
   width: 45px;
   height: auto;
 }
-.account5-page .account-wishlist__product-info {
+.profile5-page .account-wishlist__product-info {
   width: 220px;
   padding-left: 0;
 }
-.account5-page .account-wishlist__product-header {
+.profile5-page .account-wishlist__product-header {
   width: 100%;
   font-family: "Roboto-Bold", sans-serif;
   font-size: 14px;
   margin-bottom: 5px;
 }
-.account5-page .account-wishlist__product-article {
+.profile5-page .account-wishlist__product-article {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 12px;
   margin-bottom: 5px;
 }
-.account5-page .account-wishlist__packedge {
+.profile5-page .account-wishlist__packedge {
   min-width: 180px;
   padding-right: 5px;
   box-sizing: border-box;
@@ -12575,14 +12575,14 @@ text-align
   font-size: 14px;
   line-height: 20px;
 }
-.account5-page .account-wishlist__packedge span {
+.profile5-page .account-wishlist__packedge span {
   display: inline-block;
 }
-.account5-page .account-wishlist__value {
+.profile5-page .account-wishlist__value {
   display: inline-block;
   position: relative;
 }
-.account5-page .account-wishlist__value-input {
+.profile5-page .account-wishlist__value-input {
   height: 30px;
   width: 75px;
   border: 1px solid #b9b9b9;
@@ -12593,19 +12593,19 @@ text-align
   font-family: "Roboto-Bold", sans-serif;
   font-size: 18px;
 }
-.account5-page .account-wishlist__value-input::-webkit-input-placeholder {
+.profile5-page .account-wishlist__value-input::-webkit-input-placeholder {
   color: #191919;
 }
-.account5-page .account-wishlist__value-input:-moz-placeholder {
+.profile5-page .account-wishlist__value-input:-moz-placeholder {
   color: #191919;
 }
-.account5-page .account-wishlist__value-input::-moz-placeholder {
+.profile5-page .account-wishlist__value-input::-moz-placeholder {
   color: #191919;
 }
-.account5-page .account-wishlist__value-input:-ms-input-placeholder {
+.profile5-page .account-wishlist__value-input:-ms-input-placeholder {
   color: #191919;
 }
-.account5-page .account-wishlist__value-arrow {
+.profile5-page .account-wishlist__value-arrow {
   position: absolute;
   content: '';
   height: 28px;
@@ -12616,7 +12616,7 @@ text-align
   background-color: #fff;
   cursor: pointer;
 }
-.account5-page .account-wishlist__value-arrow::before {
+.profile5-page .account-wishlist__value-arrow::before {
   position: absolute;
   content: '';
   top: 12px;
@@ -12624,19 +12624,19 @@ text-align
   border: 5px solid transparent;
   border-top: 5px solid #191919;
 }
-.account5-page .account-wishlist__value-wrapper {
+.profile5-page .account-wishlist__value-wrapper {
   min-width: 100px;
   padding-right: 5px;
   box-sizing: border-box;
 }
-.account5-page .account-wishlist__unit-price {
+.profile5-page .account-wishlist__unit-price {
   padding-right: 5px;
   box-sizing: border-box;
   width: 100px;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 20px;
 }
-.account5-page .account-wishlist__btn-buy {
+.profile5-page .account-wishlist__btn-buy {
   width: 110px;
   background-color: #f95318;
   color: #fff;
@@ -12648,16 +12648,16 @@ text-align
   text-decoration: none;
   border: 2px solid #f95318;
 }
-.account5-page .account-wishlist__btn-buy:hover {
+.profile5-page .account-wishlist__btn-buy:hover {
   background-color: #fff;
   color: #f95318;
   transition: all 0.2s ease;
 }
-.account5-page .account-wishlist__to-cart {
+.profile5-page .account-wishlist__to-cart {
   vertical-align: middle;
   padding-right: 20px;
 }
-.account5-page .main-wrapper {
+.profile5-page .main-wrapper {
   width: 1100px;
   margin: 0 auto;
   margin-top: 140px;
@@ -12666,32 +12666,32 @@ text-align
   min-height: 600px;
   padding: 40px 10px;
 }
-.account6-page .account-menu {
+.profile6-page .account-menu {
   width: 175px;
   padding-right: 35px;
   box-sizing: border-box;
 }
-.account6-page .account-menu__item {
+.profile6-page .account-menu__item {
   margin-bottom: 25px;
 }
-.account6-page .account-menu__link {
+.profile6-page .account-menu__link {
   text-transform: uppercase;
   color: #b9b9b9;
   font-size: 14px;
   font-family: "Roboto-Medium", sans-serif;
 }
-.account6-page .account-menu__link--active {
+.profile6-page .account-menu__link--active {
   color: #f95318;
   font-size: 18px;
 }
-.account6-page .account-menu__link:hover {
+.profile6-page .account-menu__link:hover {
   color: #f95318;
 }
-.account6-page .account__main-content {
+.profile6-page .account__main-content {
   width: 900px;
   align-items: flex-start;
 }
-.account6-page .account__header {
+.profile6-page .account__header {
   width: 100%;
   text-align: center;
   font-family: "Roboto-Medium", sans-serif;
@@ -12699,7 +12699,7 @@ text-align
   font-size: 24px;
   margin-bottom: 30px;
 }
-.account6-page .account__sub-header {
+.profile6-page .account__sub-header {
   padding: 10px 15px 18px;
   position: relative;
   font-weight: 400;
@@ -12707,7 +12707,7 @@ text-align
   font-size: 18px;
   font-family: "Roboto-Medium", sans-serif;
 }
-.account6-page .account__sub-header::before {
+.profile6-page .account__sub-header::before {
   content: '';
   position: absolute;
   left: 15px;
@@ -12716,24 +12716,24 @@ text-align
   height: 3px;
   background-color: #f95318;
 }
-.account6-page .account__submit-block {
+.profile6-page .account__submit-block {
   width: 100%;
   margin-bottom: 40px;
 }
-.account6-page .account__ordering-block {
+.profile6-page .account__ordering-block {
   width: 100%;
   margin-bottom: 30px;
 }
-.account6-page .account__ordering-block--half {
+.profile6-page .account__ordering-block--half {
   width: 452px;
 }
-.account6-page .account-wishlist {
+.profile6-page .account-wishlist {
   border: 1px solid #a6a6a6;
 }
-.account6-page .account-wishlist__table {
+.profile6-page .account-wishlist__table {
   width: 100%;
 }
-.account6-page .account-wishlist__table-header {
+.profile6-page .account-wishlist__table-header {
   background-color: #ececed;
   height: 40px;
   color: #fff;
@@ -12743,54 +12743,54 @@ text-align
   vertical-align: middle;
   color: #191919;
 }
-.account6-page .account-wishlist__table-header th {
+.profile6-page .account-wishlist__table-header th {
   text-align: left;
   padding-right: 5px;
   box-sizing: border-box;
 }
-.account6-page .account-wishlist__table-header th:first-of-type {
+.profile6-page .account-wishlist__table-header th:first-of-type {
   padding-left: 25px;
 }
-.account6-page .account-wishlist__table-header th:last-of-type {
+.profile6-page .account-wishlist__table-header th:last-of-type {
   padding-right: 25px;
 }
-.account6-page .account-wishlist__content {
+.profile6-page .account-wishlist__content {
   text-align: left;
   vertical-align: middle;
   border-bottom: 1px solid #a6a6a6;
 }
-.account6-page .account-wishlist__content:last-child {
+.profile6-page .account-wishlist__content:last-child {
   border-bottom: 0;
 }
-.account6-page .account-wishlist__image {
+.profile6-page .account-wishlist__image {
   height: 85px;
   width: 85px;
   padding: 10px 10px 10px 15px;
 }
-.account6-page .account-wishlist__image--small {
+.profile6-page .account-wishlist__image--small {
   text-align: center;
 }
-.account6-page .account-wishlist__image--small img {
+.profile6-page .account-wishlist__image--small img {
   width: 45px;
   height: auto;
 }
-.account6-page .account-wishlist__product-info {
+.profile6-page .account-wishlist__product-info {
   width: 245px;
   padding-left: 25px;
   padding-right: 5px;
 }
-.account6-page .account-wishlist__product-header {
+.profile6-page .account-wishlist__product-header {
   width: 100%;
   font-family: "Roboto-Bold", sans-serif;
   font-size: 14px;
   margin-bottom: 5px;
 }
-.account6-page .account-wishlist__product-article {
+.profile6-page .account-wishlist__product-article {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 12px;
   margin-bottom: 5px;
 }
-.account6-page .account-wishlist__packedge {
+.profile6-page .account-wishlist__packedge {
   min-width: 180px;
   padding-right: 5px;
   box-sizing: border-box;
@@ -12798,17 +12798,17 @@ text-align
   font-size: 14px;
   line-height: 20px;
 }
-.account6-page .account-wishlist__packedge span {
+.profile6-page .account-wishlist__packedge span {
   display: inline-block;
 }
-.account6-page .account-wishlist__unit-price {
+.profile6-page .account-wishlist__unit-price {
   padding-right: 5px;
   box-sizing: border-box;
   width: 100px;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 20px;
 }
-.account6-page .account-wishlist__btn-buy {
+.profile6-page .account-wishlist__btn-buy {
   width: 110px;
   background-color: #f95318;
   color: #fff;
@@ -12820,24 +12820,24 @@ text-align
   text-decoration: none;
   border: 2px solid #f95318;
 }
-.account6-page .account-wishlist__btn-buy:hover {
+.profile6-page .account-wishlist__btn-buy:hover {
   background-color: #fff;
   color: #f95318;
   transition: all 0.2s ease;
 }
-.account6-page .account-wishlist__to-cart {
+.profile6-page .account-wishlist__to-cart {
   vertical-align: middle;
 }
-.account6-page .account-wishlist__remove {
+.profile6-page .account-wishlist__remove {
   padding: 0 15px;
   box-sizing: border-box;
   text-align: center;
 }
-.account6-page .account-wishlist__remove .material-icons {
+.profile6-page .account-wishlist__remove .material-icons {
   font-size: 20px;
   font-weight: bold;
 }
-.account6-page .main-wrapper {
+.profile6-page .main-wrapper {
   width: 1100px;
   margin: 0 auto;
   margin-top: 140px;
