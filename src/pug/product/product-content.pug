@@ -192,35 +192,33 @@ section.product.df.dfw.df--b
             a(href="#" data-tablink="reviews").tabs__nav-item Eine Bewertung schreiben
         section.tabs__content(data-tabgroup="product-footer")
             article(data-tabcontent="form").tabs__item.df
-                .form-block.form-block--reviews
-                    .form-block__element.form-block__element--full-width
-                        form.df-cb.dfw
-                            .form-block__stars.df
-                                .form-block__description Bewerten Sie das Produkt nach den folgenden Kriterien 
-                                    span (1 Stern- schlecht, 5 - sehr gut)
-                                .element__stars
-                                    .not-active
-                                        span ☆☆☆☆☆
-                            .form-block__inputs-wrapper.df-cb.dfw
-                                .form-block__name
-                                    label(for="name")
-                                        span Name*
-                                    input(type="name" id="name" placeholder="Name").forms__input.forms__input--border
-                                .form-block__mail
-                                    label(for="email")
-                                        span E-Mail-Adresse*
-                                    input(type="email" id="email" placeholder="E-Mail-Adresse*").forms__input.forms__input--border
-                                .form-block__sex
-                                    .main-form__sex.df-c
-                                        span.header Anrede
-                                        input(type="radio" name="sex" id="sex1" checked).input
-                                        label(for="sex1").label
-                                            span Herr
-                                        input(type="radio" name="sex" id="sex2").input
-                                        label(for="sex2").label
-                                            span Frau
-                                textarea.textarea.textarea--border
-                                .main-form__submit-block.df-cb
-                                    button(type="submit").big-orange-btn Bewertung hinzufügen
+                section.product-form
+                    form.product-form__wrapper.df-cb.dfw
+                        .product-form__header.df
+                            .product-form__description Bewerten Sie das Produkt nach den folgenden Kriterien 
+                                span (1 Stern- schlecht, 5 - sehr gut)
+                            .product-form__stars
+                                .not-active
+                                    span ☆☆☆☆☆
+                        .form-block__inputs-wrapper.df-cb.dfw
+                            .product-form__name
+                                label(for="name")
+                                    span Name*
+                                input(type="name" id="name" placeholder="Name").product-form__input
+                            .product-form__mail
+                                label(for="email")
+                                    span E-Mail-Adresse*
+                                input(type="email" id="email" placeholder="E-Mail-Adresse*").product-form__input
+                            .product-form__sex.df-c
+                                span.product-form__sex-header Anrede
+                                input(type="radio" name="sex" id="sex1" checked).product-form__sex-input
+                                label(for="sex1").product-form__sex-label
+                                    span Herr
+                                input(type="radio" name="sex" id="sex2").product-form__sex-input
+                                label(for="sex2").product-form__sex-label
+                                    span Frau
+                            textarea.product-form__textarea
+                            .main-form__submit-block.df-cb
+                                button(type="submit").big-orange-btn Bewertung hinzufügen
             article(data-tabcontent="reviews" hidden="").tabs__item.df.hidden
                 span Your text

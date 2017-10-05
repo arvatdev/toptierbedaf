@@ -170,40 +170,36 @@
               <div class="tabs__nav"><a class="tabs__nav-item tabs__nav-item--active" href="#" data-tablink="form">Bewertungen</a><a class="tabs__nav-item" href="#" data-tablink="reviews">Eine Bewertung schreiben</a></div>
               <section class="tabs__content" data-tabgroup="product-footer">
                 <article class="tabs__item df" data-tabcontent="form">
-                  <div class="form-block form-block--reviews">
-                    <div class="form-block__element form-block__element--full-width">
-                      <form class="df-cb dfw">
-                        <div class="form-block__stars df">
-                          <div class="form-block__description">Bewerten Sie das Produkt nach den folgenden Kriterien <span>(1 Stern- schlecht, 5 - sehr gut)</span></div>
-                          <div class="element__stars">
-                            <div class="not-active"><span>☆☆☆☆☆</span></div>
-                          </div>
+                  <section class="product-form">
+                    <form class="product-form__wrapper df-cb dfw">
+                      <div class="product-form__header df">
+                        <div class="product-form__description">Bewerten Sie das Produkt nach den folgenden Kriterien <span>(1 Stern- schlecht, 5 - sehr gut)</span></div>
+                        <div class="product-form__stars">
+                          <div class="not-active"><span>☆☆☆☆☆</span></div>
                         </div>
-                        <div class="form-block__inputs-wrapper df-cb dfw">
-                          <div class="form-block__name">
-                            <label for="name"><span>Name*</span></label>
-                            <input class="forms__input forms__input--border" type="name" id="name" placeholder="Name">
-                          </div>
-                          <div class="form-block__mail">
-                            <label for="email"><span>E-Mail-Adresse*</span></label>
-                            <input class="forms__input forms__input--border" type="email" id="email" placeholder="E-Mail-Adresse*">
-                          </div>
-                          <div class="form-block__sex">
-                            <div class="main-form__sex df-c"><span class="header">Anrede</span>
-                              <input class="input" type="radio" name="sex" id="sex1" checked>
-                              <label class="label" for="sex1"><span>Herr</span></label>
-                              <input class="input" type="radio" name="sex" id="sex2">
-                              <label class="label" for="sex2"><span>Frau</span></label>
-                            </div>
-                          </div>
-                          <textarea class="textarea textarea--border"></textarea>
-                          <div class="main-form__submit-block df-cb">
-                            <button class="big-orange-btn" type="submit">Bewertung hinzufügen</button>
-                          </div>
+                      </div>
+                      <div class="form-block__inputs-wrapper df-cb dfw">
+                        <div class="product-form__name">
+                          <label for="name"><span>Name*</span></label>
+                          <input class="product-form__input" type="name" id="name" placeholder="Name">
                         </div>
-                      </form>
-                    </div>
-                  </div>
+                        <div class="product-form__mail">
+                          <label for="email"><span>E-Mail-Adresse*</span></label>
+                          <input class="product-form__input" type="email" id="email" placeholder="E-Mail-Adresse*">
+                        </div>
+                        <div class="product-form__sex df-c"><span class="product-form__sex-header">Anrede</span>
+                          <input class="product-form__sex-input" type="radio" name="sex" id="sex1" checked>
+                          <label class="product-form__sex-label" for="sex1"><span>Herr</span></label>
+                          <input class="product-form__sex-input" type="radio" name="sex" id="sex2">
+                          <label class="product-form__sex-label" for="sex2"><span>Frau</span></label>
+                        </div>
+                        <textarea class="product-form__textarea"></textarea>
+                        <div class="main-form__submit-block df-cb">
+                          <button class="big-orange-btn" type="submit">Bewertung hinzufügen</button>
+                        </div>
+                      </div>
+                    </form>
+                  </section>
                 </article>
                 <article class="tabs__item df hidden" data-tabcontent="reviews" hidden=""><span>Your text</span></article>
               </section>

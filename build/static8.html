@@ -50,7 +50,7 @@
             </ul>
           </article>
           <article class="static__wrapper df--b dfw">
-            <h1 class="static__main-header"><span>NEWSLETTER</span></h1>
+            <h1 class="static__main-header"><span class="new-corner__text">NEWSLETTER</span></h1>
             <div class="static__main-text">
               <p>
                 Abonnieren Sie unseren kostenlosen Newsletter! Lassen Sie sich über Neuheiten, attraktive Angebote
@@ -61,85 +61,85 @@
               </p>
             </div>
           </article>
-          <article class="main-form">
-            <form class="main-form__columns df">
-              <div class="column">
-                <label class="column__label" for="email"><span>E-Mail-Adresse*</span></label>
-                <input class="column__input" type="text" id="email">
-                <label class="column__label" for="vorname"><span>Vorname*</span></label>
-                <input class="column__input" type="text" id="vorname">
+          <form class="subscribe-form">
+            <div class="subscribe-form__main-info df">
+              <div class="subscribe-form__column">
+                <label class="subscribe-form__label" for="email"><span>E-Mail-Adresse*</span></label>
+                <input class="subscribe-form__input" type="text" id="email">
+                <label class="subscribe-form__label" for="vorname"><span>Vorname*</span></label>
+                <input class="subscribe-form__input" type="text" id="vorname">
               </div>
-              <div class="column">
-                <div class="main-form__sex df-c"><span class="header">Anrede</span>
-                  <input class="input" type="radio" name="sex" id="sex1">
-                  <label class="label" for="sex1"><span>Herr</span></label>
-                  <input class="input" type="radio" name="sex" id="sex2">
-                  <label class="label" for="sex2"><span>Frau</span></label>
-                  <input class="input" type="radio" name="sex" id="sex3">
-                  <label class="label" for="sex3"><span>Firma</span></label>
+              <div class="subscribe-form__column">
+                <div class="subscribe-form__sex df-c"><span class="subscribe-form__sex-header">Anrede</span>
+                  <input class="subscribe-form__sex-input" type="radio" name="sex" id="sex1">
+                  <label class="subscribe-form__sex-label" for="sex1"><span>Herr</span></label>
+                  <input class="subscribe-form__sex-input" type="radio" name="sex" id="sex2">
+                  <label class="subscribe-form__sex-label" for="sex2"><span>Frau</span></label>
+                  <input class="subscribe-form__sex-input" type="radio" name="sex" id="sex3">
+                  <label class="subscribe-form__sex-label" for="sex3"><span>Firma</span></label>
                 </div>
-                <label class="column__label" for="nachname"><span>Nachname*</span></label>
-                <input class="column__input" type="text" id="nachname">
-              </div>
-            </form>
-          </article>
-          <article class="static__wrapper-small">
-            <h2 class="static__column-header"><span>INTERESSENGEBIETE:</span></h2>
-            <div class="static__wrapper-small__choice df dfw">
-              <div class="main-form__info-mark df">
-                <input class="input" type="checkbox" id="inter1" name="interrest">
-                <label class="label" for="inter1"><span>Hunde</span></label>
-              </div>
-              <div class="main-form__info-mark df">
-                <input class="input" type="checkbox" id="inter2" name="interrest">
-                <label class="label" for="inter2"><span>Kleintiere</span></label>
-              </div>
-              <div class="main-form__info-mark df">
-                <input class="input" type="checkbox" id="inter3" name="interrest">
-                <label class="label" for="inter3"><span>Biofutter für Hunde</span></label>
-              </div>
-              <div class="main-form__info-mark df">
-                <input class="input" type="checkbox" id="inter4" name="interrest">
-                <label class="label" for="inter4"><span>Katzen</span></label>
-              </div>
-              <div class="main-form__info-mark df">
-                <input class="input" type="checkbox" id="inter5" name="interrest">
-                <label class="label" for="inter5"><span>Aquaristik</span></label>
-              </div>
-              <div class="main-form__info-mark df">
-                <input class="input" type="checkbox" id="inter6" name="interrest">
-                <label class="label" for="inter6"><span>Biofutter für Katzen</span></label>
-              </div>
-              <div class="main-form__info-mark df">
-                <input class="input" type="checkbox" id="inter7" name="interrest">
-                <label class="label" for="inter7"><span>Vogel</span></label>
-              </div>
-              <div class="main-form__info-mark df">
-                <input class="input" type="checkbox" id="inter8" name="interrest">
-                <label class="label" for="inter8"><span>Pferd</span></label>
-              </div>
-              <div class="main-form__info-mark df">
-                <input class="input" type="checkbox" id="inter9" name="interrest">
-                <label class="label" for="inter9"><span>Terraristik</span></label>
+                <label class="subscribe-form__label" for="nachname"><span>Nachname*</span></label>
+                <input class="subscribe-form__input" type="text" id="nachname">
               </div>
             </div>
-          </article>
-          <article class="static__wrapper-med">
-            <div class="main-form__info-mark df">
-              <input class="input" type="checkbox" id="info1" name="info">
-              <label class="label" for="info1"><span>Ja, ich möchte per Email informiert werden. Abmeldung jederzeit möglich*</span></label>
+            <div class="subscribe-form__interest">
+              <h2 class="subscribe-form__interest-header"><span>INTERESSENGEBIETE:</span></h2>
+              <div class="subscribe-form__interest-wrapper df dfw">
+                <div class="subscribe-form__interest-column df">
+                  <input class="subscribe-form__interest-input" type="checkbox" id="inter1" name="interest1">
+                  <label class="subscribe-form__interest-label" for="inter1"><span>Hunde</span></label>
+                </div>
+                <div class="subscribe-form__interest-column df">
+                  <input class="subscribe-form__interest-input" type="checkbox" id="inter2" name="interest2">
+                  <label class="subscribe-form__interest-label" for="inter2"><span>Kleintiere</span></label>
+                </div>
+                <div class="subscribe-form__interest-column df">
+                  <input class="subscribe-form__interest-input" type="checkbox" id="inter3" name="interest3">
+                  <label class="subscribe-form__interest-label" for="inter3"><span>Biofutter für Hunde</span></label>
+                </div>
+                <div class="subscribe-form__interest-column df">
+                  <input class="subscribe-form__interest-input" type="checkbox" id="inter4" name="interest4">
+                  <label class="subscribe-form__interest-label" for="inter4"><span>Katzen</span></label>
+                </div>
+                <div class="subscribe-form__interest-column df">
+                  <input class="subscribe-form__interest-input" type="checkbox" id="inter5" name="interest5">
+                  <label class="subscribe-form__interest-label" for="inter5"><span>Aquaristik</span></label>
+                </div>
+                <div class="subscribe-form__interest-column df">
+                  <input class="subscribe-form__interest-input" type="checkbox" id="inter6" name="interest6">
+                  <label class="subscribe-form__interest-label" for="inter6"><span>Biofutter für Katzen</span></label>
+                </div>
+                <div class="subscribe-form__interest-column df">
+                  <input class="subscribe-form__interest-input" type="checkbox" id="inter7" name="interest7">
+                  <label class="subscribe-form__interest-label" for="inter7"><span>Vogel</span></label>
+                </div>
+                <div class="subscribe-form__interest-column df">
+                  <input class="subscribe-form__interest-input" type="checkbox" id="inter8" name="interest8">
+                  <label class="subscribe-form__interest-label" for="inter8"><span>Pferd</span></label>
+                </div>
+                <div class="subscribe-form__interest-column df">
+                  <input class="subscribe-form__interest-input" type="checkbox" id="inter9" name="interest9">
+                  <label class="subscribe-form__interest-label" for="inter9"><span>Terraristik</span></label>
+                </div>
+              </div>
             </div>
-            <div class="main-form__info-mark df">
-              <input class="input" type="checkbox" id="info2" name="info">
-              <label class="label" for="info2"><span>Erhalten Sie einen 10% Rabatt für das Abonnieren des Newsletters</span></label>
+            <div class="subscribe-form__addition">
+              <div class="subscribe-form__addition-column df">
+                <input class="subscribe-form__addition-input" type="checkbox" id="info1" name="info">
+                <label class="subscribe-form__addition-label" for="info1"><span>Ja, ich möchte per Email informiert werden. Abmeldung jederzeit möglich*</span></label>
+              </div>
+              <div class="subscribe-form__addition-column df">
+                <input class="subscribe-form__addition-input" type="checkbox" id="info2" name="info">
+                <label class="subscribe-form__addition-label" for="info2"><span>Erhalten Sie einen 10% Rabatt für das Abonnieren des Newsletters</span></label>
+              </div>
             </div>
-          </article>
-          <article class="static__wrapper-large">
-            <div class="newsletter df-cb"><span class="newsletter__label df-c">Newsletter abbestellen<i class="material-icons">keyboard_arrow_right</i></span><span class="newsletter__info">* Pflichtfelder</span></div>
-          </article>
-          <article class="static__wrapper-button">
-            <button class="big-orange-btn" type="button">ABSENDEN</button>
-          </article>
+            <div class="subscribe-form__newsletter">
+              <div class="subscribe-form__newsletter-wrapper df-cb"><span class="subscribe-form__newsletter-label df-c">Newsletter abbestellen<i class="material-icons">keyboard_arrow_right</i></span><span class="subscribe-form__newsletter-info">* Pflichtfelder</span></div>
+            </div>
+            <div class="static__wrapper-button">
+              <button class="big-orange-btn" type="button">ABSENDEN</button>
+            </div>
+          </form>
         </section>
       </main>
       <footer class="footer-main">
