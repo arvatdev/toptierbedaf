@@ -1,0 +1,371 @@
+.main-block__separator
+  border-bottom 1px solid c_lgray
+  margin-bottom 35px
+.oshop-block
+  margin 20px 0 25px 0
+  &__header
+    font-family r_med
+    font-size 18px
+    padding 15px 0
+    position relative
+    &::before
+      position absolute
+      content ''
+      left 0
+      top 0
+      width 45px
+      border-top 3px solid #f95318
+  &__text
+    font-family r_reg
+    font-size 14px
+    line-height 18px
+.tabs-block
+  border-top 1px solid c_lgray
+  padding-top 20px
+  &__header
+    font-family r_med
+    font-size 18px
+    padding 15px 0
+    position relative
+    &::before
+      position absolute
+      content ''
+      left 0
+      top 0
+      width 45px
+      border-top 3px solid #f95318
+  &__list
+    margin-top 10px
+  &__item
+    width 23%
+    margin 0 2.66% 2.66% 0
+    &:nth-child(4n)
+      margin-right 0
+    &:last-of-type
+      margin-right auto
+  &__link
+    display block
+    height 180px
+    width 180px
+    overflow hidden
+    position relative
+    &:hover
+      & img
+        top -5px
+        bottom -5px
+        left -5px
+        right -5px
+        height 105%
+        width 105%
+    & img
+      position absolute
+      top 0
+      bottom 0
+      left 0
+      right 0
+      height 100%
+      max-width inherit
+      width 100%
+      transition all .3s ease
+  &__text
+    position absolute
+    left 0
+    bottom 0
+    height 50px
+    width 100%
+    padding 0 15px
+    box-sizing border-box
+    background-color rgba(0, 0, 0, .4)
+    color white
+    font-family r_black
+    font-size 13px
+.market-brands
+  margin 35px 0 35px 0
+  &__header
+    display block
+    width 100%
+    text-align center
+    letter-spacing 1px
+    font-family r_med
+    font-size 26px
+    padding-bottom 20px
+    margin-bottom 20px
+    position relative
+    &::before
+      position absolute
+      content ''
+      bottom  0
+      right 48%
+      text-align center
+      width 30px
+      border-bottom 2px solid c_orange
+  &__element
+    width 140px
+    transition all .2s ease
+    &:hover
+      -webkit-filter brightness(110%)
+      filter brightness(110%)
+.products-main
+  margin-bottom 35px
+  flex-direction column
+  position relative
+  &:last-of-type
+    margin-bottom 20px
+  &__prev
+    position absolute
+    content ''
+    top 0
+    right 30px
+    height 15px
+    width 15px
+    border 1px solid c_lgray
+    border-radius 3px
+    cursor pointer
+    transition all .2s ease
+    &:hover
+      border 1px solid c_gray
+    & .material-icons
+      color c_black
+      font-size 18px
+      font-weight bold
+  &__next
+    position absolute
+    content ''
+    top 0
+    right 0
+    height 15px
+    width 15px
+    border 1px solid c_lgray
+    border-radius 3px
+    cursor pointer
+    transition all .2s ease
+    &:hover
+      border 1px solid c_gray
+    & .material-icons
+      color c_black
+      font-size 18px
+      font-weight bold
+  &__header
+    padding-right 50px
+    box-sizing border-box
+    font-family r_bold
+    font-size 18px
+    width 100%
+  &__content
+    margin-left 15px
+    width 100%
+  &__list
+    flex 1
+    overflow hidden
+    margin-top 15px
+    .slick-list
+      height 302px
+    .slick-track
+      height 100%
+  &__element
+    position relative
+    min-height 302px
+    width 150px
+    margin-right 56px
+    margin-top 35px
+    &:hover
+      & .products-main__hover
+        display block
+    &:nth-child(4n)
+      margin-right 0
+      & .products-main__hover
+        left -216px
+        padding-right 8px
+        width 216px
+    &-visible
+      width 100%
+      min-height 302px
+      display flex
+      flex-direction column
+      justify-content space-between
+      position relative
+    &-image
+      height 120px
+      min-height 120px
+      width 100%
+      text-align center
+      margin-bottom 15px
+    &-header
+      width 100%
+      font-family r_black
+      font-size 14px
+      margin-bottom 5px
+    &-info
+      font-family r_reg
+      font-size 12px
+      color c_gray
+      margin-bottom 5px
+    &-stars
+      margin 5px 0
+      & .stars-active
+        font-size 14px
+        color c_yellow
+      & .stars-not-active
+        font-size 14px
+        color c_gray
+    &-price
+      font-family r_black
+      font-size 18px
+      margin-bottom 5px
+    &-button
+      height 35px
+      font-family r_black
+      font-size 14px
+      color white
+      background-color c_orange
+      border 1px solid c_orange
+      border-radius 2px
+      transition all .2s ease
+      &:hover
+        background-color white
+        color c_black
+  &__hover
+    display none
+    position absolute
+    top 0
+    left 149px
+    padding-left 8px
+    box-sizing border-box
+    height 100%
+    width 208px
+    z-index 2
+    &-container
+      flex-direction column
+      height 100%
+      width 100%
+      padding 5px
+      box-sizing border-box
+      background-color c_lgray
+    &-header
+      margin-bottom 10px
+    &-brand
+      flex 1
+      flex-wrap wrap
+    &-buttons
+      min-width 60px
+      width 60px
+      &-block
+        flex-wrap wrap
+      &-image
+        margin-bottom 5px
+        height 25px
+        width 25px
+        border 1px solid c_gray
+        border-radius 2px
+        color c_orange
+        transition all .2s ease
+        & .material-icons
+          font-size 18px
+        &:hover
+          border 1px solid c_orange
+    &-status
+      &-block
+        margin-top 5px
+      &-header
+        font-family r_reg
+        font-size 12px
+        color c_black
+      &-info
+        font-family r_reg
+        font-size 12px
+        color c_green
+    &-info
+      flex 1
+      overflow-y scroll
+      flex-wrap wrap
+      &-block
+        width 50%
+        font-family r_med
+        font-size 12px
+        margin-bottom 10px
+      &-block-big
+        width 100%
+        font-family r_med
+        font-size 12px
+        margin-bottom 5px
+.sale-corner
+  position absolute
+  top 0
+  content ''
+  width 100%
+  padding 7px
+  box-sizing border-box
+  font-family r_black
+  font-size 10px
+  color c_black
+  &__text
+    position relative
+    z-index 1
+  &::before
+    position absolute
+    content ''
+    top 0
+    left 0
+    border 15px solid transparent
+    border-left 15px solid c_orange
+    border-top 15px solid c_orange
+  &--big
+    padding 15px
+    left 0
+    &__text
+      font-size 26px
+    &::before
+      border 35px solid transparent
+      border-left 35px solid c_orange
+      border-top 35px solid c_orange
+.natural-corner
+  position absolute
+  top 0
+  content ''
+  width 100%
+  padding 7px
+  box-sizing border-box
+  font-family r_black
+  font-size 10px
+  color c_black
+  &__text
+    position relative
+    z-index 1
+  &::before
+    position absolute
+    content ''
+    top 0
+    left 0
+    border 15px solid transparent
+    border-left 15px solid c_bgreen
+    border-top 15px solid c_bgreen
+.new-corner
+  position absolute
+  top 0
+  content ''
+  width 100%
+  padding 7px
+  box-sizing border-box
+  font-family r_black
+  font-size 10px
+  color c_black
+  &__text
+    position relative
+    z-index 1
+  &::before
+    position absolute
+    content ''
+    top 0
+    left 0
+    border 15px solid transparent
+    border-left 15px solid c_bblue
+    border-top 15px solid c_bblue
+.main-block__sub-info
+  text-align right
+  margin 25px 0 25px 0
+  color c_mgray
+  font-family r_reg
+  font-size 14px
+  &-link
+    color c_orange
+    text-decoration underline

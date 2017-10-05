@@ -1,10 +1,12 @@
 article.breadcrumbs
     ul.breadcrumbs__list
-        li: a(href="#") Home
-        li: a(href="#") Newsletter
+        li.breadcrumbs__item
+            a(href="#").breadcrumbs__link Home
+        li.breadcrumbs__item
+            a(href="#").breadcrumbs__link Newsletter
 article.static__wrapper.df--b.dfw
     h1.static__main-header
-        span NEWSLETTER
+        span.new-corner__text NEWSLETTER
     .static__main-text
         p.
             Abonnieren Sie unseren kostenlosen Newsletter! Lassen Sie sich über Neuheiten, attraktive Angebote
@@ -12,83 +14,83 @@ article.static__wrapper.df--b.dfw
             Zoobio.de Newsletter abonnieren und einen 10% Rabatt Gutschein für Ihre nächste Bestellung sichern!
             Passen Sie den Newsletter für sich an und wählen Sie die Newsletter-Kategorien für die Sie sich
             interessieren.
-article.main-form
-    .main-form__columns.df
-        .column
-            label(for="email").column__label
+form.subscribe-form
+    .subscribe-form__main-info.df
+        .subscribe-form__column
+            label(for="email").subscribe-form__label
                 span E-Mail-Adresse*
-            input(type="text" id="email").column__input
-            label(for="vorname").column__label
+            input(type="text" id="email").subscribe-form__input
+            label(for="vorname").subscribe-form__label
                 span Vorname*
-            input(type="text" id="vorname").column__input
-        .column
-            .main-form__sex.df-c
-                span.header Anrede
-                input(type="radio" name="sex" id="sex1").input
-                label(for="sex1").label
+            input(type="text" id="vorname").subscribe-form__input
+        .subscribe-form__column
+            .subscribe-form__sex.df-c
+                span.subscribe-form__sex-header Anrede
+                input(type="radio" name="sex" id="sex1").subscribe-form__sex-input
+                label(for="sex1").subscribe-form__sex-label
                     span Herr
-                input(type="radio" name="sex" id="sex2").input
-                label(for="sex2").label
+                input(type="radio" name="sex" id="sex2").subscribe-form__sex-input
+                label(for="sex2").subscribe-form__sex-label
                     span Frau
-                input(type="radio" name="sex" id="sex3").input
-                label(for="sex3").label
+                input(type="radio" name="sex" id="sex3").subscribe-form__sex-input
+                label(for="sex3").subscribe-form__sex-label
                     span Firma
-            label(for="nachname").column__label
+            label(for="nachname").subscribe-form__label
                 span Nachname*
-            input(type="text" id="nachname").column__input
-article.static__wrapper-small
-    h3.static__column-header
-        span INTERESSENGEBIETE:
-    .static__wrapper-small__choice.df.dfw
-        .main-form__info-mark.df
-            input(type="checkbox" id="inter1" name="interrest").input
-            label(for="inter1").label
-                span Hunde
-        .main-form__info-mark.df
-            input(type="checkbox" id="inter2" name="interrest").input
-            label(for="inter2").label
-                span Kleintiere
-        .main-form__info-mark.df
-            input(type="checkbox" id="inter3" name="interrest").input
-            label(for="inter3").label
-                span Biofutter für Hunde
-        .main-form__info-mark.df
-            input(type="checkbox" id="inter4" name="interrest").input
-            label(for="inter4").label
-                span Katzen
-        .main-form__info-mark.df
-            input(type="checkbox" id="inter5" name="interrest").input
-            label(for="inter5").label
-                span Aquaristik
-        .main-form__info-mark.df
-            input(type="checkbox" id="inter6" name="interrest").input
-            label(for="inter6").label
-                span Biofutter für Katzen
-        .main-form__info-mark.df
-            input(type="checkbox" id="inter7" name="interrest").input
-            label(for="inter7").label
-                span Vogel
-        .main-form__info-mark.df
-            input(type="checkbox" id="inter8" name="interrest").input
-            label(for="inter8").label
-                span Pferd
-        .main-form__info-mark.df
-            input(type="checkbox" id="inter9" name="interrest").input
-            label(for="inter9").label
-                span Terraristik
-article.static__wrapper-med
-    .main-form__info-mark.df
-        input(type="checkbox" id="info1" name="info").input
-        label(for="info1").label
-            span Ja, ich möchte per Email informiert werden. Abmeldung jederzeit möglich*
-    .main-form__info-mark.df
-        input(type="checkbox" id="info2" name="info").input
-        label(for="info2").label
-            span Erhalten Sie einen 10% Rabatt für das Abonnieren des Newsletters
-article.static__wrapper-large
-    .newsletter.df-cb
-        span.newsletter__label.df-c Newsletter abbestellen
-            i.material-icons keyboard_arrow_right
-        span.newsletter__info * Pflichtfelder
-article.static__wrapper-button
-    button(type="button").big-orange-btn ABSENDEN
+            input(type="text" id="nachname").subscribe-form__input
+    .subscribe-form__interest
+        h2.subscribe-form__interest-header
+            span INTERESSENGEBIETE:
+        .subscribe-form__interest-wrapper.df.dfw
+            .subscribe-form__interest-column.df
+                input(type="checkbox" id="inter1" name="interest1").subscribe-form__interest-input
+                label(for="inter1").subscribe-form__interest-label
+                    span Hunde
+            .subscribe-form__interest-column.df
+                input(type="checkbox" id="inter2" name="interest2").subscribe-form__interest-input
+                label(for="inter2").subscribe-form__interest-label
+                    span Kleintiere
+            .subscribe-form__interest-column.df
+                input(type="checkbox" id="inter3" name="interest3").subscribe-form__interest-input
+                label(for="inter3").subscribe-form__interest-label
+                    span Biofutter für Hunde
+            .subscribe-form__interest-column.df
+                input(type="checkbox" id="inter4" name="interest4").subscribe-form__interest-input
+                label(for="inter4").subscribe-form__interest-label
+                    span Katzen
+            .subscribe-form__interest-column.df
+                input(type="checkbox" id="inter5" name="interest5").subscribe-form__interest-input
+                label(for="inter5").subscribe-form__interest-label
+                    span Aquaristik
+            .subscribe-form__interest-column.df
+                input(type="checkbox" id="inter6" name="interest6").subscribe-form__interest-input
+                label(for="inter6").subscribe-form__interest-label
+                    span Biofutter für Katzen
+            .subscribe-form__interest-column.df
+                input(type="checkbox" id="inter7" name="interest7").subscribe-form__interest-input
+                label(for="inter7").subscribe-form__interest-label
+                    span Vogel
+            .subscribe-form__interest-column.df
+                input(type="checkbox" id="inter8" name="interest8").subscribe-form__interest-input
+                label(for="inter8").subscribe-form__interest-label
+                    span Pferd
+            .subscribe-form__interest-column.df
+                input(type="checkbox" id="inter9" name="interest9").subscribe-form__interest-input
+                label(for="inter9").subscribe-form__interest-label
+                    span Terraristik
+    .subscribe-form__addition
+        .subscribe-form__addition-column.df
+            input(type="checkbox" id="info1" name="info").subscribe-form__addition-input
+            label(for="info1").subscribe-form__addition-label
+                span Ja, ich möchte per Email informiert werden. Abmeldung jederzeit möglich*
+        .subscribe-form__addition-column.df
+            input(type="checkbox" id="info2" name="info").subscribe-form__addition-input
+            label(for="info2").subscribe-form__addition-label
+                span Erhalten Sie einen 10% Rabatt für das Abonnieren des Newsletters
+    .subscribe-form__newsletter
+        .subscribe-form__newsletter-wrapper.df-cb
+            span.subscribe-form__newsletter-label.df-c Newsletter abbestellen
+                i.material-icons keyboard_arrow_right
+            span.subscribe-form__newsletter-info * Pflichtfelder
+    .static__wrapper-button
+        button(type="button").big-orange-btn ABSENDEN

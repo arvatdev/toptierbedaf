@@ -1,0 +1,379 @@
+.progress-bar
+  margin 55px 0 0 0
+  width 100%
+  &__header
+    width 100%
+    text-align center
+    font-family r_med
+    text-transform uppercase
+    font-size 24px
+    margin-bottom 40px
+  &__list
+    overflow hidden
+    height 50px
+    width 100%
+    background-color c_mgray
+    border-radius 4px
+  &__description
+    width 100%
+    flex-wrap wrap
+    margin-bottom 40px
+    font-size 16px
+    line-height 20px
+    & .progress-bar__legend
+      padding-left 0
+      padding-right 0
+      &::before
+        left 0
+  &__callback
+    width 67%
+    margin-right 5%
+  &__address
+    width 28%
+  &__legend
+    padding 10px 15px 18px
+    position relative
+    font-weight 400
+    text-transform uppercase
+    font-size 18px
+    &::before
+      content ''
+      position absolute
+      left 15px
+      top -5px
+      width 46px
+      height 3px
+      background-color #f95318
+  &__element
+    height 100%
+    position relative
+    &--active
+      background-color c_orange
+      & .progress-bar__element-sub
+        font-size 22px
+        font-family r_med
+    &--active-pass
+      .progress-bar__element-sub
+        font-size 18px
+        font-family r_reg
+    &:last-of-type
+      .progress-bar__element-sub
+        border-right none
+    &-sub
+      height 70%
+      padding 0 50px
+      text-align center
+      color white
+      font-size 18px
+      font-family r_reg
+      border-right 1px solid white
+    &-number
+      min-height 30px
+      min-width 30px
+      height 30px
+      width 30px
+      border-radius 50%
+      background-color white
+      color c_orange
+      font-family r_bold
+      font-size 18px
+      margin 10px 10px 10px 0
+    .active-border
+      height 63px
+      width 63px
+      position absolute
+      margin auto
+      top 0
+      bottom 0
+      right -31px
+      border-left 7px solid white
+      border-bottom 7px solid white
+      background-color c_orange
+      transform rotateY(220deg) rotate(45deg)
+.reg-info
+  margin 25px 0 40px 0
+  justify-content space-between
+  &__element
+    flex 2
+    min-height 180px
+    flex-direction column
+    padding 0 25px
+    box-sizing border-box
+    border-right 1px solid c_mgray
+    &:last-of-type
+      flex 1
+      border-right none
+  &__link
+    display inline
+    font-family r_med
+    font-size 16px
+    color c_gray
+    transition all .2s ease
+    &:hover
+      color c_black
+    & .material-icons
+      line-height 30px
+      display inline
+      font-size 14px
+      margin-right 10px
+  &__text
+    flex 1
+    display inline-block
+    font-family r_reg
+    font-size 18px
+    line-height 25px
+  &--text-margin
+    margin-bottom 20px
+  &__text-link
+    font-family r_reg
+    font-size 18px
+    text-decoration underline
+    color c_orange
+    transition all .2s ease
+    &:hover
+      color c_black
+  &__header
+    font-family r_med
+    font-size 18px
+    line-height 25px
+.cart-table
+  border-bottom 2px solid c_mgray
+  padding-bottom 10px
+  margin-bottom 20px
+  &--transparent
+    border 0
+    padding 0
+    margin 0
+  &--padding
+    padding 0 30px
+.table
+  width 100%
+  &--transparent
+    border-spacing 0 15px
+    border-collapse separate
+  &__header
+    background-color c_mgray
+    height 40px
+    color white
+    font-family r_reg
+    font-size 16px
+    text-align left
+    vertical-align middle
+    &-item
+      padding-right 5px
+      box-sizing border-box
+      &:first-of-type
+        padding-left 50px
+        box-sizing border-box
+      &:last-of-type
+        padding-right 55px
+        box-sizing border-box
+  &__content
+    text-align left
+    vertical-align middle
+  &__image
+    height 85px
+    width 85px
+    padding 10px 10px 10px 15px
+  &__product
+    &-info
+      width 300px
+      padding-right 5px
+      &--small
+        width 245px
+        padding-left 25px
+      &--very-small
+        width 220px
+        padding-left 0
+    &-header
+      width 100%
+      font-family r_bold
+      font-size 14px
+      margin-bottom 5px
+    &-article
+      font-family r_reg
+      font-size 12px
+      margin-bottom 5px
+  &__delivery
+    font-size 13px
+    line-height 15px
+    font-family r_reg
+    min-width 187px
+    text-transform none
+  &__package
+    min-width 180px
+    padding-right 5px
+    box-sizing border-box
+    font-family r_reg
+    font-size 14px
+    line-height 20px
+  &__value-wrapper
+    min-width 100px
+    padding-right 5px
+    box-sizing border-box
+  &__value
+    display inline-block
+    position relative
+    .input
+      height 30px
+      width 75px
+      border 1px solid c_mgray
+      border-radius 3px
+      padding 0 30px 0 15px
+      box-sizing border-box
+      text-align center
+      font-family r_bold
+      font-size  18px
+      &::-webkit-input-placeholder
+        color c_black
+      &:-moz-placeholder
+        color c_black
+      &::-moz-placeholder
+        color c_black
+      &:-ms-input-placeholder
+        color c_black
+    .arrow
+      position absolute
+      content ''
+      height 28px
+      width 30px
+      top 1px
+      right 1px
+      border-radius 0 3px 3px 0
+      background-color white
+      cursor pointer
+      &::before
+        position absolute
+        content ''
+        top 12px
+        left 11px
+        border 5px solid transparent
+        border-top 5px solid c_black
+  &__old-price
+    padding-right 5px
+    box-sizing border-box
+    min-width 160px
+    text-align right
+    font-family r_reg
+    font-size 22px
+    text-decoration line-through
+    color #b9b9b9
+  &__unit-price
+    padding-right 5px
+    box-sizing border-box
+    width 100px
+    font-family r_reg
+    font-size 20px
+  &__total-price
+    padding-right 34px
+    box-sizing border-box
+    & .table__price
+      font-size 24px
+      font-family r_bold
+  &__price-wrapper
+    padding-right 5px
+    box-sizing border-box
+    min-width 160px
+  &__price
+    display block
+    font-family r_reg
+    font-size 26px
+    color c_orange
+  &__price-info
+    display block
+    font-family r_reg
+    font-size 10px
+  &__remove
+    padding 0 15px
+    box-sizing border-box
+    text-align center
+    font-size 20px
+    font-weight bold
+.cart-final
+  margin-bottom 40px
+  &__block
+    flex 1
+    padding 5px 25px
+    box-sizing border-box
+    border-right 1px solid c_mgray
+    &--large
+      flex 1.5
+    &:last-of-type
+      border-right none
+  &__price
+    line-height 20px
+    margin-bottom 20px
+    &:last-of-type
+      margin-bottom 0
+    &-button
+      height 55px
+      min-width 290px
+      font-family r_reg
+      font-size 18px
+      color white
+      background-color c_orange
+      border-radius 3px
+      border none
+      &--transparent
+        border 1px solid c_orange
+        background-color transparent
+        color c_orange
+    &-header
+      display inline-block
+      max-width 50%
+      text-align left
+      font-family r_reg
+      font-size 16px
+    &-value
+      display inline-block
+      font-family r_reg
+      font-size 22px
+    &-final
+      &-value
+        display block
+        font-family r_med
+        font-size 30px
+        color c_orange
+        margin-bottom 5px
+      &-info
+        display block
+        font-family r_reg
+        font-size 10px
+  &__header
+    display block
+    font-family r_med
+    font-size 18px
+    margin-bottom 10px
+    line-height 20px
+  &__text
+    font-family r_reg
+    font-size 14px
+    line-height 20px
+  &__subs
+    margin 20px 0 10px 0
+    &-input
+      width 210px
+      flex 1
+      height 55px
+      border-radius 3px
+      border 1px solid c_mgray
+      padding 0 10px
+      box-sizing border-box
+      font-family r_reg
+      font-size 18px
+    &-button
+      margin-left 10px
+      height 55px
+      min-width 140px
+      font-family r_reg
+      font-size 18px
+      color white
+      background-color c_mgray
+      border-radius 3px
+      border none
+.stars
+  font-family 18px
+  .active
+    color c_yellow
+  .not-active
+    color c_gray

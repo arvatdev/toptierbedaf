@@ -1,8 +1,10 @@
 extends template
 
 block content
-    .main
-        include include/header
-        include include/navigation
-        include contact/contact
-        include include/footer
+    #wrapper
+        include header/header-base
+        include navigation/navigation
+        main.contact-page
+            section.main-wrapper
+                include contact/contact
+        include footer/footer-base

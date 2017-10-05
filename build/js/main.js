@@ -75,6 +75,14 @@ $(document).ready(function () {
     };
 
 //--------------------------
+// Header registration
+//--------------------------
+
+    $('.account-popup__button').on('click', function () {
+        $('.account-popup__block').toggleClass('hidden')
+    })
+
+//--------------------------
 // Aside navigation
 //--------------------------
 
@@ -82,7 +90,6 @@ $(document).ready(function () {
         $(this).find('.aside-nav-sub').toggleClass('hidden')
         $(this).find('.main-arrow').toggleClass('hidden')
     })
-
 //--------------------------
 // Catalog page rating ease loading
 //--------------------------
@@ -102,9 +109,9 @@ $(document).ready(function () {
         $(this).find('.faq-drop__arrow').toggleClass('faq-drop__arrow-active')
     })
 
-    //--------------------------
-    // Cards
-    //--------------------------
+//--------------------------
+// Cards
+//--------------------------
 
     //change card-views to blocks
     $(".filter__button--cards").addClass("filter__button--active");
@@ -122,18 +129,15 @@ $(document).ready(function () {
       $(".products-main__element").removeClass("products-main__element--list");
     });
 
-    //--------------------------
-    // Slider
-    //--------------------------
-    $('.slider__list').bxSlider({
-        nextSelector: '#slider-next',
-        prevSelector: '#slider-prev',
-        nextText: '<i class="material-icons">keyboard_arrow_right</i>',
-        prevText: '<i class="material-icons">keyboard_arrow_left</i>',
-        moveSlides: 1,
-        maxSlides: 5,
-        minSlides: 5,
-        touchEnabled: false
+// --------------------------
+// Slider
+// --------------------------
+    $('.product-slider__list').slick({
+      nextArrow: '<button type="button" class="slick-next product-slider__next"><i class="material-icons">keyboard_arrow_right</i></button>',
+      prevArrow: '<button type="button" class="slick-prev product-slider__prev"><i class="material-icons">keyboard_arrow_left</i></button>',
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      touchMove: false
     })
 
     $('#vertical').lightSlider({
@@ -148,34 +152,19 @@ $(document).ready(function () {
       slideMargin:0
     });
 
-
-    // var acc = document.getElementsByClassName("accordion-ite");
-    // var i;
-    //
-    // for (i = 0; i < acc.length; i++) {
-    //     acc[i].onclick = function(){
-    //         /* Toggle between adding and removing the "active" class,
-    //         to highlight the button that controls the panel */
-    //         this.classList.toggle("active");
-    //
-    //         /* Toggle between hiding and showing the active panel */
-    //         var panel = this.nextElementSibling;
-    //         if (panel.style.display === "block") {
-    //             panel.style.display = "none";
-    //         } else {
-    //             panel.style.display = "block";
-    //         }
-    //     }
-    // }
-    var allPanels = $('.account__tab-content').hide();
-    $('.table__accordion-btn').click(function() {
-      $(this).toggleClass('table__accordion-btn--active');
+// --------------------------
+// Account-page accordion
+// --------------------------
+    var allPanels = $('.account-accordion__content').hide();
+    $('.account-accordion__btn').click(function() {
+      $(this).toggleClass('account-accordion__btn--active');
       $(this).closest('table').next().toggle();
       return false;
     });
 
-
-
+// --------------------------
+// Product-page tabs
+// --------------------------
     var tabs = document.querySelectorAll('[data-tablink]');
     if (tabs && tabs.length > 0) {
       [].forEach.call(tabs, function(tab) {

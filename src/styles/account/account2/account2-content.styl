@@ -1,0 +1,401 @@
+.account
+  &-menu
+    width 175px
+    padding-right 35px
+    box-sizing border-box
+    &__item
+      margin-bottom 25px
+    &__link
+      text-transform uppercase
+      color c_mgray
+      font-size 14px
+      font-family r_med
+      &--active
+        color c_orange
+        font-size 18px
+      &:hover
+        color c_orange
+  &__main-content
+    width 900px
+    align-items flex-start
+  &__header
+    width 100%
+    text-align center
+    font-family r_med
+    text-transform uppercase
+    font-size 24px
+    margin-bottom 30px
+  &__sub-header
+    padding 10px 15px 18px
+    position relative
+    font-weight 400
+    text-transform uppercase
+    font-size 18px
+    font-family r_med
+    &::before
+      content ''
+      position absolute
+      left 15px
+      top -5px
+      width 46px
+      height 3px
+      background-color #f95318
+  &__wrapper
+    padding 30px
+  &__block-header
+    background-color c_lgray
+    padding 15px 30px
+    padding-right 100px
+    text-align right
+    box-sizing border-box
+    font-size 14px
+  &__add-address
+    color c_orange
+    text-transform uppercase
+    font-size 14px
+    line-height 16px
+    font-family r_reg
+    text-decoration underline
+    display inline-block
+    &:hover
+      text-decoration none
+      & .material-icons
+        color c_orange
+    & .material-icons
+      color c_black
+      margin-left 20px
+      display inline-block
+      vertical-align middle
+      font-size 19px
+      margin-bottom 3px
+  &__footer
+    background-color c_lgray
+    padding 15px 30px
+    box-sizing border-box
+  &__show-all
+    text-align center
+    display inline-block
+    color #fff
+    background-color #a6a6a6
+    border-radius 2px
+    padding 10px 15px
+    min-width 150px
+    box-sizing border-box
+    max-width 200px
+    border none
+    text-decoration none
+    font-size 14px
+    &:hover
+      background-color c_gray
+      transition all 0.2s ease
+  &__form-header
+    margin-bottom 20px
+  &__form-title
+    font-size 18px
+    font-family r_med
+    display inline-block
+    vertical-align baseline
+    margin-right 40px
+  &__unit-ammount
+    font-size 18px
+    font-family r_med
+    display inline-block
+    vertical-align baseline
+    color c_gray
+  &__submit-block
+    width 100%
+    margin-bottom 40px
+  &__small-wrapper
+    padding 0 15px
+    box-sizing border-box
+  &__final
+    padding 10px
+    &-info
+      font-size 14px
+      margin-bottom 10px
+      display block
+    &-value
+      display block
+      margin-bottom 10px
+      font-size 32px
+      color c_orange
+      font-family r_med
+    &-price
+      width 210px
+  &__address
+    width 120px
+    font-size 12px
+    line-height 15px
+    font-family r_reg
+  &__progress
+    margin-bottom 15px
+    &-title
+      text-transform uppercase
+      font-family r_med
+      font-size 14px
+      width 100%
+      margin-bottom 10px
+    &-list
+      width 610px
+    &-item
+      width 140px
+    &-step
+      width 30px
+      height 30px
+      display block
+      border 2px solid c_gray
+      line-height 30px
+      text-align center
+      font-size 14px
+      color c_gray
+      border-radius 50%
+      background-color #f6f6f6
+    &-description
+      font-size 11px
+      line-height 15px
+      color c_gray
+      width 90px
+    &-button
+      width 215px
+      background-color #a6a6a6
+      text-align center
+      padding 7px 20px
+      border-radius 4px
+      box-sizing border-box
+      color #fff
+      border 0
+      text-decoration none
+  &__footer
+    justify-content flex-end
+  &__ordering-block
+    width 100%
+    margin-bottom 30px
+    &--half
+      width 452px
+  &__manage-orders
+    width 100%
+    border 1px solid #a6a6a6
+.account-accordion
+  &__content
+    padding 25px
+    box-sizing border-box
+    background-color #e5e5e5
+    position relative
+    &:before
+      content ''
+      position absolute
+      z-index 20
+      top -20px
+      right 108px
+      width 0
+      height 0
+      border-left 25px solid transparent
+      border-right 25px solid transparent
+      border-bottom 20px solid #e5e5e5
+  &__table
+    width 100%
+    &-header
+      background-color c_lgray
+      height 40px
+      color white
+      font-family r_reg
+      font-size 14px
+      text-align left
+      vertical-align middle
+      color c_black
+      & th
+        text-align left
+        padding-right 5px
+        box-sizing border-box
+        &.t-ac
+          text-align center
+      & th:first-of-type
+        padding-left 25px
+      & th:last-of-type
+        padding-right 25px
+    &-content
+      text-align left
+      vertical-align middle
+      border-top 1px solid #a6a6a6
+      & td:first-of-type
+        padding-left 25px
+      & td:last-of-type
+        padding-right 25px
+  &__data
+    font-size 13px
+    padding-top 50px
+    vertical-align top
+    width 140px
+    padding-right 10px
+  &__order-number
+    font-size 13px
+    padding-top 50px
+    vertical-align top
+    width 100px
+    padding-right 10px
+  &__order-price
+    font-size 13px
+    padding-top 50px
+    vertical-align top
+    width 80px
+    padding-right 10px
+  &__status
+    font-size 13px
+    padding-top 50px
+    vertical-align top
+    width 120px
+    padding-right 10px
+  &__btn
+    min-height 40px
+    text-align center
+    background-color #fff
+    border 1px solid #cdcdcd
+    border-radius 4px
+    font-size 13px
+    padding 10px
+    width 100%
+    box-sizing border-box
+    text-decoration none
+    font-weight normal
+    font-family r_reg
+    &::after
+      content: ''
+      display inline-block
+      vertical-align middle
+      position relative
+      top 2px
+      margin-left 5px
+      border 5px solid transparent
+      border-top 5px solid #191919
+    &--active
+      background-color #e5e5e5
+      &::after
+        top -3px
+        border 5px solid transparent
+        border-bottom 5px solid #191919
+  &__products
+    width 153px
+    padding 30px 0
+    padding-right 10px
+    box-sizing border-box
+    & img
+      min-width 45px
+      max-width 52px
+      height auto
+.account-order-details
+  &__title
+    text-transform uppercase
+    font-family r_med
+    font-size 14px
+    width 100%
+  &__table
+    width 100%
+    border-spacing 0 15px
+    border-collapse separate
+    &-header
+      height 20px
+      color white
+      font-family r_reg
+      font-size 14px
+      text-align left
+      vertical-align middle
+      color c_black
+      & th
+        text-align left
+        padding-right 5px
+        box-sizing border-box
+        &.t-ac
+          text-align center
+      & th:first-of-type
+        padding-left 15px
+      & th:last-of-type
+        padding-right 35px
+    &-content
+      text-align left
+      vertical-align middle
+      background-color #ffffff
+      margin-bottom 10px
+      box-shadow 0px 0px 0px 1px #cdcdcd
+  &__input
+    padding-left 38px
+    width 15px
+  &__image
+    height 85px
+    width 85px
+    padding 10px 10px 10px 15px
+    &--small
+      text-align center
+      & img
+        width 45px
+        height auto
+  &__product-name
+    min-width 180px
+    padding-right 10px
+  &__product-header
+    width 100%
+    font-family r_med
+    font-size 14px
+    margin-bottom 5px
+  &__delivery
+    font-size 13px
+    line-height 15px
+    font-family r_reg
+    min-width 187px
+    text-transform none
+  &__value-wrapper
+    min-width 100px
+    padding-right 5px
+    box-sizing border-box
+  &__value
+    display inline-block
+    position relative
+    .input
+      height 30px
+      width 75px
+      border 1px solid c_mgray
+      border-radius 3px
+      padding 0 30px 0 15px
+      box-sizing border-box
+      text-align center
+      font-family r_bold
+      font-size  18px
+      &::-webkit-input-placeholder
+        color c_black
+      &:-moz-placeholder
+        color c_black
+      &::-moz-placeholder
+        color c_black
+      &:-ms-input-placeholder
+        color c_black
+    .arrow
+      position absolute
+      content ''
+      height 28px
+      width 30px
+      top 1px
+      right 1px
+      border-radius 0 3px 3px 0
+      background-color white
+      cursor pointer
+      &::before
+        position absolute
+        content ''
+        top 12px
+        left 11px
+        border 5px solid transparent
+        border-top 5px solid c_black
+  &__unit-price
+    padding-right 5px
+    box-sizing border-box
+    width 100px
+    font-family r_reg
+    font-size 20px
+  &__total-price
+    padding-right 34px
+    box-sizing border-box
+  &__price
+    font-size 24px
+    font-family r_bold
+    display block
+    font-size 26px
+    color c_orange

@@ -1,28 +1,20 @@
-/***************************************************************
-***
-***    CORE STYLES
-***
-***************************************************************/
+//@import 'nib'
 
-// NIB - lib for Stylus. Add prefixes and many other things.
-@import 'nib'
-
-@import "include/variables"
+// COMMON
 @import "mixins/reset"
 @import "mixins/sprites"
 @import "mixins/base"
+@import "mixins/variables"
 @import "mixins/breadcrumbs"
 
-/***************************************************************
-***
-***    STYLES FOR TEMPLATES
-***
-***************************************************************/
-@import "header/header-base"
-@import "footer/footer-base"
-@import "navigation/navigation"
-@import "index/index"
-@import "search/search"
+// INCLUDES AND INDEX DIRS
+@import "mixins/modifiers"
+@import "mixins/addons"
+@import "header/header-main"
+@import "footer/footer-main"
+@import "navigation/navigation-main"
+@import "index/index-main"
+@import "search/search-main"
 @import "brand/brand-main"
 @import "static/static1/static1-main"
 @import "static/static2/static2-main"
@@ -33,25 +25,25 @@
 @import "static/static7/static7-main"
 @import "static/static8/static8-main"
 @import "static/static9/static9-main"
-@import "include/addons"
-// @import "include/common"
-@import "include/modifiers"
-@import "include/product"
-
-.big-orange-btn
-  height 50px
-  min-width 210px
-  font-family r_bold
-  font-size 18px
-  color white
-  background-color c_orange
-  border 2px solid c_orange
-  border-radius 3px
-  transition all .2s ease
-  &:hover
-    background-color white
-    color c_orange
-  &--huge
-    min-width 284px
-    height 52px
-    text-transform uppercase
+@import "cart/cart1/cart1-main"
+@import "cart/cart2/cart2-main"
+@import "cart/cart3/cart3-main"
+@import "cart/cart4/cart4-main"
+@import "cart/cart5/cart5-main"
+@import "cart/cart6/cart6-main"
+@import "category/category1/category1-main"
+@import "category/category2/category2-main"
+@import "category/category3/category3-main"
+@import "product/product-main"
+@import "catalog/catalog-main"
+@import "contact/contact-main"
+@import "auth/pass/pass/pass-main"
+@import "auth/pass/pass1/pass1-main"
+@import "auth/registration/registration-main"
+@import "account/account1/account1-main"
+@import "account/account2/account2-main"
+@import "account/account2-payment/account2-payment-main"
+@import "account/account3/account3-main"
+@import "account/account4/account4-main"
+@import "account/account5/account5-main"
+@import "account/account6/account6-main"

@@ -1,0 +1,142 @@
+article.breadcrumbs
+    ul.breadcrumbs__list
+        li.breadcrumbs__item
+            a(href="#").breadcrumbs__link Home
+        li.breadcrumbs__item
+            a(href="#").breadcrumbs__link Registration
+
+article.progress-bar
+    h1.progress-bar__header
+        span BENUTZERKONTO ANLEGEN
+
+article.registration-form
+    h2.registration-form__legend
+        span ANMELDEINFORMATION
+    form
+        .registration-form__wrapper
+            label(for="email2").registration-form__label
+                span E-Mail-Adresse*
+            input(type="email" id="email2").registration-form__input
+            .registration-form__half
+              label(for="passwot1").registration-form__label
+                  span Passwort*
+              input(type="password" id="passwot1").registration-form__input
+            .registration-form__half
+              label(for="passwot2").registration-form__label
+                  span Passwort wiederholen*
+              input(type="password" id="passwot2").registration-form__input
+        h2.registration-form__legend
+            span PERSÖNLICHE INFORMATION
+        .registration-form__wrapper
+            .registration-form__columns.df
+                .registration-form__anrede
+                    label(for="anrede").registration-form__column-label
+                        span Anrede
+                    select.registration-form__column-select.js-cart-select
+                        option Herr
+                        option Frau
+                        option Firma
+            .registration-form__columns.df
+                .registration-form__column
+                    label(for="vorname").registration-form__column-label
+                        span Vorname*
+                    input(type="text" id="vorname").registration-form__column-input
+                    label(for="firma").registration-form__column-label
+                        span Haustiername
+                    input(type="text" id="haustiername").registration-form__column-input
+                    label(for="strabe").registration-form__column-label
+                        span Straße*
+                    input(type="text" id="strabe").registration-form__column-input
+                    label(for="stadt").registration-form__column-label
+                        span Stadt*
+                    input(type="text" id="stadt").registration-form__column-input
+                    .registration-form__land
+                        label(for="land").registration-form__column-label
+                            span Land*
+                        select.registration-form__column-select.js-cart-select
+                            option Deutschland
+                            option Ukraine
+                            option Something
+                .registration-form__column
+                    label(for="nachname").registration-form__column-label
+                        span Nachname*
+                    input(type="text" id="nachname").registration-form__column-input
+                    label(for="adresszusatz").registration-form__column-label
+                        span Firma / Adresszusatz
+                    input(type="text" id="adresszusatz").registration-form__column-input
+                    label(for="nummer").registration-form__column-label
+                        span Nummer*
+                    input(type="text" id="nummer").registration-form__column-input
+                    label(for="postleitzahl").registration-form__column-label
+                        span Postleitzahl*
+                    input(type="text" id="postleitzahl").registration-form__column-input
+                    .registration-form__phone
+                        label(for="telefon").registration-form__column-label.w100p
+                            span Telefon*
+                        .select-wrapper.df
+                            select.js-cart-select3
+                                option
+                                option
+                                option
+                                    span: img(src="/img/flags/deu.png").image
+                            .registration-form__column-input-pre.df-cc
+                                span +049
+                            input(type="text" id="telefon").registration-form__column-input-small
+            .registration-form__info-mark.df-c
+                input(type="checkbox" id="news").input
+                label(for="news").label
+                    span Erhalten Sie einen 10% Rabatt für das Abonnieren des Newsletters
+        h2.registration-form__legend
+            span INTERESSENGEBIETE:
+        .registration-form__checks
+            .registration-form__columns.df
+                .registration-form__column-third.df
+                    .registration-form__input-wrapper
+                      input(type="checkbox" id="hunde").input
+                      label(for="hunde").label
+                          span Hunde
+                    .registration-form__input-wrapper 
+                      input(type="checkbox" id="katzen").input
+                      label(for="katzen").label
+                          span Katzen
+                    .registration-form__input-wrapper
+                      input(type="checkbox" id="vogel").input
+                      label(for="vogel").label
+                          span Vogel
+                .registration-form__column-third.df
+                    .registration-form__input-wrapper
+                        input(type="checkbox" id="kleintiere").input
+                        label(for="kleintiere").label
+                            span Kleintiere 
+                    .registration-form__input-wrapper
+                        input(type="checkbox" id="aquaristik").input
+                        label(for="aquaristik").label
+                            span Aquaristik
+                    .registration-form__input-wrapper
+                        input(type="checkbox" id="pferd").input
+                        label(for="pferd").label
+                            span Pferd
+                .registration-form__column-third.df
+                    .registration-form__input-wrapper
+                        input(type="checkbox" id="biofutter-hunde").input
+                        label(for="biofutter-hunde").label
+                            span Biofutter für Hunde
+                    .registration-form__input-wrapper
+                        input(type="checkbox" id="biofutter-katzen").input
+                        label(for="biofutter-katzen").label
+                            span Biofutter für Katzen
+                    .registration-form__input-wrapper
+                        input(type="checkbox" id="terraristik").input
+                        label(for="terraristik").label
+                            span Terraristik
+            .registration-form__input-wrapper.registration-form__input-wrapper--gray
+                input(type="checkbox" id="news-yes").input.input--gray
+                label(for="news-yes").label.label--gray
+                    span Ja, ich möchte per Email informiert werden. Abmeldung jederzeit möglich.
+            .registration-form__input-wrapper.registration-form__input-wrapper--gray
+                input(type="checkbox" id="news-no").input.input--gray
+                label(for="news-no").label.label--gray
+                    span Nach meiner ersten Bestellung darf mich Zoobio mit einem Willkommensanruf begrüßen
+        p.registration-form__caption * Pflichtfelder
+        .registration-form__button.df
+              button(type="button").big-orange-btn Absenden

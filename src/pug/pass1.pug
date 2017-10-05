@@ -1,8 +1,10 @@
 extends template
 
 block content
-    .main
-        include include/header
-        include include/navigation
-        include pass/pass1
-        include include/footer
+    #wrapper
+        include header/header-base
+        include navigation/navigation
+        main.pass1-page
+            section.main-wrapper
+                include auth/pass/pass1/pass1
+        include footer/footer-base

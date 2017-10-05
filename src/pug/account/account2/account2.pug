@@ -1,0 +1,175 @@
+aside.account-menu
+    ul.account-menu__list
+        li.account-menu__item
+            a(href="#").account-menu__link Bestellungen  verwalten
+        li.account-menu__item
+            a(href="#").account-menu__link.account-menu__link--active Zahlungsart
+        li.account-menu__item
+            a(href="#").account-menu__link Lieferadresse
+        li.account-menu__item
+            a(href="#").account-menu__link Meine Daten
+        li.account-menu__item
+            a(href="#").account-menu__link Zuletzt gesehene  Artikel
+        li.account-menu__item
+            a(href="#").account-menu__link Wunschliste
+section.account__main-content
+    h1.account__header
+        span MEIN KONTO
+    .account__form-header
+        span.account__form-title Bestellungen verwalten
+        .account__unit-ammount
+            span 2 
+            | Menge
+    article.account__manage-orders
+        .account-accordion(id="account-accordion")
+            table.account-accordion__table
+                tr.account-accordion__table-header
+                    th Datum
+                    th Bestellung
+                    th Betrag
+                    th(colspan="2") Status
+                    th.t-ac Gekaufte artikeln
+                tr.account-accordion__table-content
+                    td.account-accordion__data
+                        span March 17, 2017
+                    td.account-accordion__order-number
+                        span 12654
+                    td.account-accordion__order-price
+                        span 75,58€
+                    td.account-accordion__status
+                        span Bestellprozess
+                    td.account-accordion__products
+                        img(src="/img/product5.png" alt="#").image
+                        img(src="/img/product5.png" alt="#").image
+                        img(src="/img/product5.png" alt="#").image
+                    td.account-accordion__btn-more.t-ar
+                        button(type="button").account-accordion__btn Bestellung anzeigen
+            section.account-accordion__content
+                span Your text
+            table.account-accordion__table
+                tr.account-accordion__table-content
+                    td.account-accordion__data
+                        span March 17, 2017
+                    td.account-accordion__order-number
+                        span 12654
+                    td.account-accordion__order-price
+                        span 75,58€
+                    td.account-accordion__status
+                        span Bestellprozess
+                    td.account-accordion__products
+                        img(src="/img/product5.png" alt="#").image
+                        img(src="/img/product5.png" alt="#").image
+                    td.account-accordion__btn-more.t-ar
+                        button(type="button").account-accordion__btn Bestellung anzeigen
+            section.account-accordion__content
+                .account__progress.df--b.dfw
+                    h2.account__progress-title
+                        span FORTSCHRITTSANZEIGE DER BESTELLUNG
+                    ul.account__progress-list.df--b
+                        li.account__progress-item.df.df-cb
+                            span.account__progress-step 1
+                            p.account__progress-description Ihre Bestellung wurde bearbeitet
+                        li.account__progress-item.df.df-cb
+                            span.account__progress-step 2
+                            p.account__progress-description Ihre Bestellung wurde bearbeitet
+                        li.account__progress-item.df.df-cb
+                            span.account__progress-step 3
+                            p.account__progress-description Ihre Bestellung wurde bearbeitet
+                        li.account__progress-item.df.df-cb
+                            span.account__progress-step 4
+                            p.account__progress-description Ihre Bestellung wurde bearbeitet
+                    button(type="button" disabled).account__progress-button Alles zum Warenkorb hinzufügen
+                article.account-order-details
+                    h2.account-order-details__title DETAILS DER BESTELLUNG
+                    table.account-order-details__table
+                        tr.account-order-details__table-header
+                            th(colspan="3") Artikel
+                            th Lieferzeit
+                            th Mehr
+                            th Einzelprris
+                            th Gesamtpreis
+                        tr.account-order-details__table-content
+                            td.account-order-details__input
+                                input(type="checkbox" id="product1" name="product1").input-red
+                                label(for="product1").label-for-checkbox
+                            td.account-order-details__image.account-order-details__image--small
+                                img(src="/img/product5.png" alt="#").image
+                            td.account-order-details__product-name
+                                h3.account-order-details__product-header 
+                                    span RAFINE ADULT HUHN, LACHS & SCHRIMPS
+                            td.account-order-details__delivery
+                                span 
+                                    | Voraussichtlicher Versand 
+                                    br
+                                    | Montag, 20.03.2017 - 
+                                    br
+                                    | Mittwoch, 22.03.2017
+                            td.account-order-details__value-wrapper
+                                .account-order-details__value
+                                    input(type="text" placeholder="2").input
+                                    .arrow
+                            td.account-order-details__unit-price
+                                span €3,45
+                            td.account-order-details__total-price.t-ar
+                                span.account-order-details__price €3,45
+                        tr.account-order-details__table-content
+                            td.account-order-details__input
+                                input(type="checkbox" id="product2" name="product2").input-red
+                                label(for="product2").label-for-checkbox
+                            td.account-order-details__image.account-order-details__image--small
+                                img(src="/img/product7.png" alt="#").image
+                            td.account-order-details__product-name
+                                h3.account-order-details__product-header
+                                    span Cat Dose Natural Huhn, Rind mit Reis
+                            td.account-order-details__delivery
+                                span 
+                                    | Voraussichtlicher Versand 
+                                    br
+                                    | Montag, 20.03.2017 - 
+                                    br
+                                    | Mittwoch, 22.03.2017
+                            td.account-order-details__value-wrapper
+                                .account-order-details__value
+                                    input(type="text" placeholder="2").input
+                                    .arrow
+                            td.account-order-details__unit-price
+                                span €23,49
+                            td.account-order-details__total-price.t-ar
+                                span.account-order-details__price €23,49
+                        tr.account-order-details__table-content
+                            td.account-order-details__input
+                                input(type="checkbox" id="product3" name="product3").input-red
+                                label(for="product3").label-for-checkbox
+                            td.account-order-details__image.account-order-details__image--small
+                                img(src="/img/product6.png" alt="#").image
+                            td.account-order-details__product-name
+                                h3.account-order-details__product-header
+                                    span Cat Dose Natural Huhn, Rind mit Reis
+                            td.account-order-details__delivery
+                                span 
+                                    | Voraussichtlicher Versand 
+                                    br
+                                    | Montag, 20.03.2017 - 
+                                    br
+                                    | Mittwoch, 22.03.2017 
+                            td.account-order-details__value-wrapper
+                                .account-order-details__value
+                                    input(type="text" placeholder="2").input
+                                    .arrow
+                            td.account-order-details__unit-price
+                                span €3,45
+                            td.account-order-details__total-price.t-ar
+                                span.account-order-details__price €3,45
+                    .account__final.df.df--b
+                        p.account__address
+                            | Adresse
+                            br
+                            | Robert Thomson 
+                            br
+                            | asfesdfg, 234234 21 
+                            br
+                            | Deutschland
+                        .account__final-price.t-ar
+                            span.account__final-info Gesamtpreis
+                            span.account__final-value 114.10 €
+                            button(type="submit").big-orange-btn Zur Kasse

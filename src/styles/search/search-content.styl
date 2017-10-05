@@ -3,7 +3,6 @@
   margin-top 16px
   flex-wrap wrap
   justify-content space-between
-
   &__search
     align-items center
     padding 10px 0
@@ -61,7 +60,6 @@
       line-height 34px
     .select2-container--default .select2-selection--single .select2-selection__arrow
       height 34px
-
   &__button
     background-color #e8e8e8
     font-size 0
@@ -84,7 +82,7 @@
     justify-content flex-end
     align-items center
     display flex
-    & label
+    & .label
       position relative
       padding-right 20px
       &::before
@@ -132,7 +130,7 @@
     transition all .2s ease
     &:hover
       border 1px solid c_gray
-    & i
+    & .material-icons
       color c_black
       font-size 18px
       font-weight bold
@@ -149,7 +147,7 @@
     transition all .2s ease
     &:hover
       border 1px solid c_gray
-    & i
+    & .material-icons
       color c_black
       font-size 18px
       font-weight bold
@@ -171,21 +169,20 @@
       height 100%
   &__element
     position relative
-    margin-top 35px
-    margin-right 35px
     width 150px
+    margin-right 56px
+    margin-top 35px
     &:hover
       & .products-main__hover
         display block
     &:nth-child(4n)
+      margin-right 0
       & .products-main__hover
         left -216px
         padding-right 8px
         width 216px
     &-visible
       display flex
-      min-height 302px
-      width 150px
       flex-direction column
       justify-content space-between
       position relative
@@ -341,7 +338,7 @@
       border-radius 2px
       color #f95318
       transition all 0.2s ease
-      & i
+      & .material-icons
         font-size 18px
     & .status-block
       display block
@@ -380,3 +377,77 @@
         margin-top 3px
         font-size 20px
         margin-left -13px
+.sale-corner
+  position absolute
+  top 0
+  content ''
+  width 100%
+  padding 7px
+  box-sizing border-box
+  font-family r_black
+  font-size 10px
+  color c_black
+  &__text
+    position relative
+    z-index 1
+  &::before
+    position absolute
+    content ''
+    top 0
+    left 0
+    border 15px solid transparent
+    border-left 15px solid c_orange
+    border-top 15px solid c_orange
+  &--big
+    padding 15px
+    left 0
+    & .sale-corner__text
+      font-size 26px
+    &::before
+      border 35px solid transparent
+      border-left 35px solid c_orange
+      border-top 35px solid c_orange
+
+.natural-corner
+  position absolute
+  top 0
+  content ''
+  width 100%
+  padding 7px
+  box-sizing border-box
+  font-family r_black
+  font-size 10px
+  color c_black
+  &__text
+    position relative
+    z-index 1
+  &::before
+    position absolute
+    content ''
+    top 0
+    left 0
+    border 15px solid transparent
+    border-left 15px solid c_bgreen
+    border-top 15px solid c_bgreen
+
+.new-corner
+  position absolute
+  top 0
+  content ''
+  width 100%
+  padding 7px
+  box-sizing border-box
+  font-family r_black
+  font-size 10px
+  color c_black
+  &__text
+    position relative
+    z-index 1
+  &::before
+    position absolute
+    content ''
+    top 0
+    left 0
+    border 15px solid transparent
+    border-left 15px solid c_bblue
+    border-top 15px solid c_bblue

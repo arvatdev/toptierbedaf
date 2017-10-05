@@ -1,0 +1,60 @@
+aside.account-menu
+    ul.account-menu__list
+        li.account-menu__item
+            a(href="#").account-menu__link Bestellungen  verwalten
+        li.account-menu__item
+            a(href="#").account-menu__link.account-menu__link--active Zahlungsart
+        li.account-menu__item
+            a(href="#").account-menu__link Lieferadresse
+        li.account-menu__item
+            a(href="#").account-menu__link Meine Daten
+        li.account-menu__item
+            a(href="#").account-menu__link Zuletzt gesehene  Artikel
+        li.account-menu__item
+            a(href="#").account-menu__link Wunschliste
+section.account__main-content.df.df-dc
+    h1.account__header
+        span MEIN KONTO
+    article.account__ordering-block
+      h2.account__sub-header
+          span Zahlungsart wählen
+      .account__payment
+          article.payment.payment--info-list
+              ul.payment__list
+                  li.payment__element
+                      .payment__wrapper.df-cb 
+                          .payment__status
+                              i.material-icons done
+                          .payment__image.payment__image--small.df-c
+                              img(src="/img/paypal-pay.png" alt="#").image
+                          .payment__text
+                              p.payment__text-content.
+                                Master Card, VISA. Sie werden direkt auf die sicher verschlüsselte Seite geleitet, wo Sie die Zahlung per Kreditkarte vornehmen.
+                  li.payment__element
+                      .payment__wrapper.df-cb
+                          .payment__status
+                              i.material-icons done
+                          .payment__image.payment__image--small.df-c
+                              img(src="/img/sofort-pay.png" alt="#").image
+                          .payment__text
+                              p.payment__text-content.
+                                Sie werden auf die geschützte PayPal-Seite weitergeleitet um die Bezahlung abzuschließen. 
+                  li.payment__element
+                      .payment__wrapper.df-cb
+                          .payment__status
+                              i.material-icons done
+                          .payment__image.payment__image--small.df-c
+                              img(src="/img/vorkasse-pay.png" alt="#").image
+                          .payment__text
+                              p.payment__text-content.
+                                Sofortige und bequeme Zahlungsart für Online-Banking Nutzer.  
+                  li.payment__element
+                      .payment__wrapper.df-cb
+                          .payment__status
+                              i.material-icons done
+                          .payment__image.payment__image--small.df-c
+                              img(src="/img/bar-nachnahme.jpg" alt="#").image
+                          .payment__text
+                              p.payment__text-content.
+                                Einfache Überweisung über Ihre Hausbank.
+      

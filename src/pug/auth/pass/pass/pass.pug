@@ -1,0 +1,27 @@
+article.breadcrumbs
+    ul.breadcrumbs__list
+        li.breadcrumbs__item
+            a(href="#").breadcrumbs__link Home
+        li.breadcrumbs__item
+            a(href="#").breadcrumbs__link Passwort ändern
+article.progress-bar
+    h1.progress-bar__header
+        span Passwort ändern
+form.pass-form
+    h2.pass-form__legend
+        span ANMELDEINFORMATION
+    .pass-form__wrapper
+        label(for="email2").pass-form__label
+            span E-Mail-Adresse
+        input(type="email" id="email2").pass-form__input
+        .pass-form__half
+          label(for="passwot1").pass-form__label
+              span PasswotAltes Passwort*
+          input(type="password" id="passwot1").pass-form__input
+        .pass-form__half
+          label(for="passwot2").pass-form__label
+              span Neues Kennwort*
+          input(type="password" id="passwot2").pass-form__input
+    p.pass-form__caption * Pflichtfelder
+    .pass-form__button.df
+        button(type="submit").big-orange-btn Senden

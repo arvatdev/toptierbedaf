@@ -1,0 +1,75 @@
+article.breadcrumbs
+    ul.breadcrumbs__list
+        li.breadcrumbs__item
+            a(href="#").breadcrumbs__link Home
+        li.breadcrumbs__item
+            a(href="#").breadcrumbs__link Haustiershop Marken
+        li.breadcrumbs__item
+            a(href="#").breadcrumbs__link Warenkorb
+
+article.progress-bar
+    h1.progress-bar__header
+        span SICHERE VERBINDUNG
+    ul.progress-bar__list.df-c
+        li.progress-bar__element.df-c.progress-bar__element--active
+            .active-border
+            .progress-bar__element-sub.df-cc
+                .progress-bar__element-number.df-cc
+                    span 1
+                span WARENKORB
+        li.progress-bar__element.df-c
+            .progress-bar__element-sub.df-cc
+                span ANMELDEN
+        li.progress-bar__element.df-c
+            .progress-bar__element-sub.df-cc
+                span RECHNUNG & LIEFERUNG
+        li.progress-bar__element.df-c
+            .progress-bar__element-sub.df-cc
+                span ZAHLUNG & BESTELLUNG
+article.form-block.df
+    .form-block__element
+        h3.form-block__element-header
+            span BESTEHENDE KUNDEN
+        form.forms
+            label(for="email").forms__label
+                span E-Mail-Adresse
+            input(type="email" id="email").forms__input
+            label(for="pass").forms__label
+                span Passwort
+            input(type="password" id="pass").forms__input
+            a(href="#").forms__link Passwort vergessen?
+        .social.df-cb
+            button(type="button").big-orange-btn Anmelden
+            span.social__and or
+            a(href="#").social__link
+                img(src="/img/facebook-link.png" alt="#").image
+            a(href="#").social__link
+                img(src="/img/google-link.png" alt="#").image
+            a(href="#").social__link
+                img(src="/img/twitter-link.png" alt="#").image
+            a(href="#").social__link
+                img(src="/img/instagram-link.png" alt="#").image
+    .form-block__element
+        h3.form-block__element-header
+            span NEU BEI DEV.TOPTIERBEDAF.DE?
+        form.forms
+            label(for="email2").forms__label
+                span E-Mail-Adresse
+                span.forms__label-info Die Bestätigung wird an diese E-Mail-Adresse gesendet
+            input(type="email" id="email2").forms__input
+            label(for="passwot1").forms__label
+                span Passwot
+            input(type="password" id="passwot1").forms__input
+            label(for="passwot2").forms__label
+                span Passwort wiederholen
+            input(type="password" id="passwot2").forms__input
+            .forms__subscribe.df-c
+                input(type="checkbox" id="subs").input
+                label(for="subs").label
+                    span Ich möchte den Newsletter abonnieren.
+            p.forms__info.
+                Sie können der Werbung unter Verwendung Ihrer Email-Adresse jederzeit
+                widersprechen. Dabei entstehen lediglich übliche Übermittlungskosten nach
+                den Basistarifen.
+        .social
+            button(type="button").big-orange-btn WEITER
